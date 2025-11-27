@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 基本設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_ipk_left_list.html');chengeHeaderText('[ 基本設定 ]');">
+<div id="container"><a name="top"></a>
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="IP管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+    <p>基本設定を行う画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_ipk030.gif" alt="基本設定 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">登録ボタン</h2>
+		  <p>基本設定を登録します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>遷移元画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">全グループから選択ボタン</h2>
+          <p>ポップアップで全グループから選択画面が開きます。<br>全グループから選択画面でユーザを選択し、適用ボタンを押すと、<br></>クリックしたユーザが選択ユーザに表示されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">グループコンボ</h2>
+          <p>選択したグループに所属するユーザがユーザリストに表示されます
+           （すでに全ネットワーク管理者リストに追加されているユーザは表示されません）。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+		  </p>
+		</th>
+        <td>
+          <h2 class="num-back06">追加ボタン</h2>
+          <p>ユーザリストで選択されているユーザを、全ネットワーク管理者リストに追加します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">削除ボタン</h2>
+          <p>全ネットワーク管理者リストで選択されているユーザを、全ネットワーク管理者リストから除外します。</p>
+          </p>
+        </td>
+		<td></td>
+		</tr>
+		</table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>全ネットワーク管理者</h2><p>全ネットワーク管理者を設定します。</p>
+    </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>
+

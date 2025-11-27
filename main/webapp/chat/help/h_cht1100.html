@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] チャット グループ登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_cht_left_list.html');chengeHeaderText('[ チャット グループ登録 ]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="チャット トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+     <p>チャットグループの登録を行うことができます。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_cht110.gif" alt="チャット グループ登録 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>チャットグループ登録確認画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面に遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+        <h2 class="num-back03">グループコンボ</h2>
+          <p>選択したグループに所属するユーザ又はグループが一覧に表示されます（既に選択済みのユーザは表示されません）。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">管理メンバー追加ボタン</h2>
+          <p>一覧で選択されているユーザ又はグループを、管理メンバーに追加します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">管理メンバー削除ボタン</h2>
+          <p>管理メンバーで選択されているユーザ又はグループを、管理メンバーから除外します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">一般メンバー追加ボタン</h2>
+          <p>一覧で選択されているユーザ又はグループを、一般メンバーに追加します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">一般メンバー削除ボタン</h2>
+          <p>一般メンバーで選択されているユーザ又はグループを、一般メンバーから除外します。</p>
+        </td>
+        </tr>
+
+        </table>
+
+        <!-- 項目の説明 -->
+<p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>チャットグループID</h2>
+    <p>チャットグループIDを入力します（20文字以内）。</p>
+    <h2>カテゴリ</h2>
+    <p>カテゴリを選択します。</p>
+    <h2>グループ名</h2>
+    <p>グループ名を入力します（100文字以内）。</p>
+    <h2>メンバー</h2>
+    <p>チャットグループのメンバーを設定します。</p>
+    <h2>備考</h2>
+    <p>備考を入力します（500文字以内）。</p>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

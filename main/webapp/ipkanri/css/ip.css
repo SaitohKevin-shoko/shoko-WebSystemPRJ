@@ -1,0 +1,52 @@
+.header_icon {
+    padding-top: 4px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    border: 0px;
+}
+
+.scroll {
+  overflow:auto;
+  height:200px;
+  clip:auto(0px,50apx,50px,0px);
+}
+
+.radio_position {
+  position:relative; top:10px; left:-4px;
+  height:auto;
+  width:30px;
+}
+
+.name_position2 {
+  position:relative; top:-4px; left:60px;
+  height:auto;
+  font-size: 90%;
+}
+
+.name_position {
+  position:relative; top:-8px; left:36px;
+  height:auto;
+  font-size:90%;
+}
+
+.table_scr {
+  border: 1px;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 350px;
+}
+
+.ipkanri_icon {
+  position:relative; top:10px; left:0px;
+  border: 0px;
+}
+
+.hp35 {
+  height: 35px!important;
+}
+
+.fw_b{
+  font-weight: bold!important;
+}

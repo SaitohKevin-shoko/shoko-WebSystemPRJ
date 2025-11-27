@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>[GROUPSESSION ヘルプ] チャット 一覧</title>
+    <link rel=stylesheet href="../../help/css/default.css" type="text/css">
+    <link rel=stylesheet href="../../help/css/help.css" type="text/css">
+    <script src='../../common/js/jquery-1.5.2.min.js'></script>
+    <script type="text/javascript" src="../../help/js/help.js"></script>
+  </head>
+  <!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+  <body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_cht_left_list.html');chengeHeaderText('[ チャット 一覧 ]');">
+    <div id="container"><a name="top"></a>
+      <div align="right" class="help-align-right">
+        <input type="button" value="チャット トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+      </div>
+      <!-- ナビゲーション -->
+      <div id="help-left-func">
+        <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+        </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+      </div>
+
+      <!-- コンテンツ -->
+      <div id="help-right-func">
+        <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+          <p>メッセージの送受信を行うことが出来ます。</p>
+          <!-- img要素のsrc,alt属性を編集 -->
+          <h1 class="help-right-func-img"><img src="images/scr_help_big_cht010.gif" alt="チャット 一覧 機能詳細"></h1>
+          <p class="help-right-func-p">機能説明</p>
+          <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+            <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+            <tr>
+              <th>
+                <h2 class="num-back01">再接続ボタン</h2>
+                <p>チャットの再接続を行います。</p>
+              </th>
+              <td>
+                <h2 class="num-back02">全てタブ</h2>
+                <p>お気に入りチャット、チャットグループ、ユーザチャットを表示します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back03"><a href="h_cht010_3.html"><span class="linkTitle">タイムラインタブ</span></a></h2>
+                <p>チャットの履歴を一覧で表示します。</p>
+              </td>
+              <th>
+                <h2 class="num-back04">お気に入り欄</h2>
+                <p>お気に入りに設定したチャットグループ/ユーザチャットを表示します。<br>
+                  クリックすることで、お気に入り欄の表示/非表示を切り替えます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+              <h2 class="num-back05">お気に入りチャットグループ</h2>
+                <p>中央ペインに表示するチャットグループを選択します。<br>
+                  未読メッセージがある場合、未読メッセージ件数が括弧内に表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back06">お気に入りユーザチャット</h2>
+                <p>中央ペインに表示するユーザチャットを選択します。<br>
+                  未読メッセージがある場合、未読メッセージ件数が括弧内に表示されます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back07">グループ情報欄</h2>
+                <p>所属しているチャットグループ一覧を表示します。<br>
+                    クリックすることで、グループ情報欄の表示/非表示を切り替えます。</p>
+              </td>
+              <th>
+                <h2 class="num-back08"><a href="h_cht010_2.html"><span class="linkTitle">グループ管理アイコン</span></a></h2>
+                <p>チャットグループの追加、編集、削除を行います。チャットグループの作成が制限されている、かつチャットグループの編集権限を一つももっていない場合、アイコンは表示されません。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back09">チャットグループ</h2>
+                <p>中央ペインに表示するチャットグループを選択します。<br>
+                  未読メッセージがある場合、未読メッセージ件数が括弧内に表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back10">アーカイブの表示チェックボックス</h2>
+                <p>アーカイブ状態のチャットグループの表示/非表示を切り替えます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back11">ユーザ情報欄</h2>
+                <p>選択したグループに所属するユーザ一覧を表示します。<br>
+                    クリックすることで、ユーザ情報欄の表示/非表示を切り替えます。</p>
+              </td>
+              <th>
+                <h2 class="num-back12">グループコンボ・ボタン</h2>
+                <p>グループを選択します。グループボタンをクリックすることで、グループ選択画面が表示されます。<br>
+                    グループ選択画面でグループをクリックすると、 クリックしたグループが選択グループに表示されます。
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back13">ユーザチャット</h2>
+                <p>中央ペインに表示するユーザチャットを選択します。<br>
+                  未読メッセージがある場合、未読メッセージ件数が括弧内に表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back14">インフォメーションアイコン</h2>
+                <p>チャットグループの場合はグループ情報、ユーザ間チャットの場合はユーザ情報を表示します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <h2 class="num-back15">お気に入りアイコン</h2>
+                <p>チャットグループ、ユーザ間チャットをお気に入りに登録/削除します。</p>
+              </td>
+              <th>
+              <h2 class="num-back16">通知アイコン</h2>
+                <p>通知をオン/オフします。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back17">ユーザ名</h2>
+                <p>クリックすることで、メンション先に設定できます。</p>
+              </th>
+
+              <td>
+                <h2 class="num-back18">添付ファイル名</h2>
+                <p>クリックすることで、添付ファイルをダウンロードします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back19">プレビューアイコン</h2>
+                <p>添付ファイルを別ウィンドウでプレビュー表示します。<br>
+                    ※pdf, png, jpg, jpeg, gif, txt, css, js, html形式に対応</p>
+              </td>
+              <th>
+                <h2 class="num-back20">リアクションボタン</h2>
+                <p>メッセージに対してリアクションを行います。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back21">ピンどめアイコン</h2>
+                <p>メッセージをピンどめ/ピンどめを解除します。<br>
+                    メッセージをホバーした際に表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back22">返信元メッセージ</h2>
+                <p>クリックすることで、返信元メッセージにジャンプします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back23">編集</h2>
+                <p>メッセージを編集します。メッセージをホバーした際に表示されます。<br>
+                    ※自身のメッセージのみ編集可能</p>
+              </td>
+              <th>
+                <h2 class="num-back24">削除</h2>
+                <p>メッセージを削除します。メッセージをホバーした際に表示されます。<br>
+                  ※自身のメッセージのみ削除可能</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back25">リアクション</h2>
+                <p>メッセージにリアクションします。メッセージをホバーした際に表示されます。<br>
+                  クリックすることで、リアクション選択パレットが表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back26">返信</h2>
+                <p>メッセージに返信します。メッセージをホバーした際に表示されます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back27">新着メッセージ通知</h2>
+                <p>表示中のチャットに新着メッセージがあった場合に表示されます。<br>
+                    クリックすることで、新着メッセージにジャンプします。</p>
+              </td>
+              <th>
+                <h2 class="num-back28">最新を表示ボタン</h2>
+                <p>チャット内の既読済みの最新メッセージを表示していない場合に表示されます。<br>
+                    クリックすることで、既読済みの最新メッセージにジャンプします。<br>
+                    未読メッセージがある場合は、未読メッセージの最新にジャンプします。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back29">Enter送信チェックボックス</h2>
+                <p>入力したメッセージをEnterキーにより送信するか、Shift+Enterキーにより送信するかを設定します。</p>
+              </th>
+              <td>
+                <h2 class="num-back30">添付アイコン</h2>
+                <p>クリックすることで、フォルダウィンドウが開きます。<br>
+                    フォルダウィンドウでファイルを選択すると、メッセージ入力欄に添付ファイル名が表示されます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back31">絵文字アイコン</h2>
+                <p>クリックすることで、絵文字選択パレットが表示されます。<br>
+                  絵文字選択パレットで絵文字を選択すると、メッセージ入力欄に絵文字が入力されます。</p>
+              </td>
+              <th>
+                <h2 class="num-back32">スタンプアイコン</h2>
+                <p>クリックすることで、スタンプ選択パレットが表示されます。<br>
+                    スタンプクリック時に表示される送信ボタンでスタンプを送信します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back33">メンションアイコン</h2>
+                <p>クリックすることで、メンション先選択パレットが表示されます。<br>
+                    メンション先選択パレットでメンション先を選択すると、メッセージ入力欄にメンション先が表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back34">送信ボタン</h2>
+                <p>メッセージを送信します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back35">右ペイン開閉ボタン</h2>
+                <p>右ペイン（検索欄およびピンどめ欄）の表示/非表示を切り替えます。</p>
+              </td>
+              <th>
+                <h2 class="num-back36">検索欄</h2>
+                <p>クリックすることで、検索欄の表示/非表示を切り替えます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back37">検索ボタン</h2>
+                <p>入力したキーワードでメッセージを検索します。<br>
+                    メッセージと添付ファイル名を対象にキーワード検索を行います。</p>
+              </th>
+              <td>
+                <h2 class="num-back38">詳細検索ボタン</h2>
+                <p>詳細検索欄の表示/非表示を切り替えます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back39">検索条件</h2>
+                <p>クリックすることで、検索条件を削除します。</p>
+              </td>
+              <th>
+                <h2 class="num-back40">クリアボタン</h2>
+                <p>全ての検索条件を削除します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back41">検索結果メッセージ</h2>
+                <p>クリックすることで、メッセージにジャンプします。</p>
+              </th>
+              <td>
+                <h2 class="num-back42">ピンどめ欄</h2>
+                <p>ピンどめ欄の表示/非表示を切り替えます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back43">ピンどめメッセージ</h2>
+                <p>クリックすることで、メッセージにジャンプします。</p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- 項目の説明 -->
+          <p class="help-right-func-p">表示・入力項目説明</p>
+          <div class="help-right-func-item">
+            <h2>メッセージ</h2>
+            <p>投稿されたメッセージを表示します。検索にヒットした場合、ヒットした検索キーワードおよび送信者名がハイライト表示されます。</p>
+            <h2>メッセージ入力欄</h2>
+            <p>メッセージを入力します。3000文字以上のメッセージを入力して送信すると、3000字毎にメッセージが分割されて送信されます。</p>
+            <h2>チャット検索キーワード入力欄</h2>
+            <p>検索キーワードを入力します。スペース区切りで最大10個のキーワードを入力できます。1キーワードは50文字まで入力できます。</p>
+            <h2>チャット絞り込み選択コンボ</h2>
+            <p>絞り込み条件を「添付ファイルあり/なし」「URLあり/なし」から選択します。</p>
+          </div>
+        </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+        <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+      </div>
+    </div>
+  </body>
+</html>

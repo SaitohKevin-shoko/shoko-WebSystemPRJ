@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                         -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<configuration>
+
+  <appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d %-5p %c: - %m%n%ex" />
+    </Console>
+  </appenders>
+
+
+  <!-- ================ -->
+  <!-- Limit categories -->
+  <!-- ================ -->
+
+  <loggers>
+    <root level="WARN">
+      <appender-ref ref="Console" />
+    </root>
+  </loggers>
+
+</configuration>

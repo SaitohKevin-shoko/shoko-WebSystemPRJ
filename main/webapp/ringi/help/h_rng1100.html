@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 経路テンプレート登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 経路テンプレート登録 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>経路テンプレートを登録する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng1100.gif" alt="稟議 経路テンプレート登録 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">OKボタン</h2>
+      <p>経路テンプレートを登録し、登録完了画面へ遷移します。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">戻るボタン</h2>
+      <p>個人設定画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back03">経路名称</h2>
+          <p>登録する個人経路の名称を入力します。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">経路要素</h2>
+          <p>承認経路、最終確認に用いる経路の種別です。<br>
+          経路要素を承認経路や最終確認にドラッグ&ドロップすることで、それぞれの経路へ追加します。<br>
+          追加後に経路の設定を行うダイアログが表示されるので、そこで設定を完了し登録を行います。<br>
+          一度登録した経路要素は、クリックすることで設定の編集ができます。また、×ボタンをクリックすることで削除することができます。
+          </p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back05">承認経路</h2>
+          <p>稟議の審議を進行する経路です。<br>
+          承認経路内で経路要素をドラッグ&ドロップして移動することが可能です。</p>
+    </td>
+    <td>
+          <h2 class="num-back06">最終確認</h2>
+          <p>稟議が承認された後、審議の結果を確認する経路です。<br>
+          最終確認内で経路要素をドラッグ&ドロップして移動することが可能です。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>経路名称</h2>
+    <p>経路名称を入力します（20文字以内）。</p>
+    <h2>経路要素：<a href="h_rng240_ninni.html"><span class="linkTitle">任意設定</span></a></h2>
+    <p>稟議申請時に複数のユーザ・グループを選択して経路に設定します。また、経路の数を任意に増減させることもできます。</p>
+    <h2>経路要素：<a href="h_rng240_user.html"><span class="linkTitle">ユーザ指定</span></a></h2>
+    <p>ここで指定したユーザ・グループを申請時の経路に設定します。</p>
+    <h2>経路要素：<a href="h_rng240_post.html"><span class="linkTitle">役職指定</span></a></h2>
+    <p>ここで指定したグループおよび役職に就いているユーザを申請時の経路に設定します。</p>
+    <h2>経路要素：<a href="h_rng240_Uselect.html"><span class="linkTitle">ユーザ選択</span></a></h2>
+    <p>稟議申請時にユーザを選択して経路に設定します。ユーザの選択は指定されたグループに所属するユーザの中から行います。</p>
+    <h2>経路要素：<a href="h_rng240_Gselect.html"><span class="linkTitle">グループ選択</span></a></h2>
+    <p>稟議申請時にグループを選択して経路に設定します。グループの選択は指定されたグループの中から行います。</p>
+    <h2>経路要素：<a href="h_rng240_boss.html"><span class="linkTitle">上長指定</span></a></h2>
+    <p>稟議申請時に申請者が所属するグループを一つ選択します。そのグループから指定された階層数分さかのぼったグループの管理者ユーザを経路に設定します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

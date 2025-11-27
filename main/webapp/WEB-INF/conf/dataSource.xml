@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DataSourceSetting>
+
+  <!-- 通常使用  -->
+  <datasource>
+    <id>GsDataSource</id>
+    <driverClassName>org.h2.Driver</driverClassName>
+    <username>gsession</username>
+    <password>gsession</password>
+    <defaultAutoCommit>false</defaultAutoCommit>
+    <defaultReadOnly>false</defaultReadOnly>
+    <maxTotal>40</maxTotal>
+    <maxIdle>10</maxIdle>
+    <maxWait>3000</maxWait>
+    <validationQuery></validationQuery>
+    <removeAbandonedOnBorrow>true</removeAbandonedOnBorrow>
+    <removeAbandonedTimeout>600</removeAbandonedTimeout>
+    <logAbandoned>false</logAbandoned>
+  </datasource>
+
+  <!-- 採番用 -->
+  <datasource>
+    <id>GsDataSourceNum</id>
+    <driverClassName>org.h2.Driver</driverClassName>
+    <username>gsession</username>
+    <password>gsession</password>
+    <defaultAutoCommit>false</defaultAutoCommit>
+    <defaultReadOnly>false</defaultReadOnly>
+    <maxTotal>1</maxTotal>
+    <maxIdle>1</maxIdle>
+    <maxWait>3000</maxWait>
+    <validationQuery></validationQuery>
+    <removeAbandonedOnBorrow>false</removeAbandonedOnBorrow>
+    <removeAbandonedTimeout></removeAbandonedTimeout>
+    <logAbandoned></logAbandoned>
+  </datasource>
+
+</DataSourceSetting>

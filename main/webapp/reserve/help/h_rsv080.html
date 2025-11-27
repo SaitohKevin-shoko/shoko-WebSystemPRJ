@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 施設予約 施設情報設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rsv_left_list.html');chengeHeaderText('[ 施設予約 施設情報設定 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="施設予約 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>登録した施設一覧が表示される画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_rsv080.gif" alt="施設情報設定 機能詳細"></h1>
+
+        <p>施設区分毎に施設に設定できる項目が違うため、表示も異なります。<br>
+           施設区分毎の表示の違いは下記を参照してください。</p>
+		<h1 class="help-right-func-img"><span class="reserve_mhead">施設区分 [部屋] の場合</span><br><img src="images/scr_help_big_rsv0801.gif" alt="施設情報設定（施設区分が部屋）"></h1>
+		<h1 class="help-right-func-img"><span class="reserve_mhead">施設区分 [物品] の場合</span><br><img src="images/scr_help_big_rsv0802.gif" alt="施設情報設定（施設区分が物品）"></h1>
+		<h1 class="help-right-func-img"><span class="reserve_mhead">施設区分 [車] の場合</span><br><img src="images/scr_help_big_rsv0803.gif" alt="施設情報設定（施設区分が車）"></h1>
+		<h1 class="help-right-func-img"><span class="reserve_mhead">施設区分 [書籍] の場合</span><br><img src="images/scr_help_big_rsv0804.gif" alt="施設情報設定（施設区分が書籍）"></h1>
+		<h1 class="help-right-func-img"><span class="reserve_mhead">施設区分 [その他] の場合</span><br><img src="images/scr_help_big_rsv0805.gif" alt="施設情報設定（施設区分がその他）"></h1>
+
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">追加ボタン</h2>
+		  <p>施設登録画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">削除ボタン</h2>
+		  <p>削除確認画面へ遷移します。削除確認画面でOKボタンをクリックするとラジオボタンで選択されていた施設を削除します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">戻るボタン</h2>
+		  <p>遷移元の画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">上へボタン</h2>
+		  <p>ラジオボタンで選択されている施設の表示順を1つ上げます。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">下へボタン</h2>
+		  <p>ラジオボタンで選択されている施設の表示順を1つ下げます。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">施設一括設定ボタン</h2>
+		  <p>施設一括設定画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">施設インポートボタン</h2>
+		  <p>施設インポート画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">施設名</h2>
+		  <p>施設編集画面へ遷移します。</p>		
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back09">修正ボタン</h2>
+		  <p>施設編集画面へ遷移します。</p>
+		</th>
+		<td>
+		</td>
+		</tr>
+		
+		</table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>施設グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設情報一覧</h2>
+          <p>施設区分毎に設定可能な項目が表示されます。</p>
+        </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

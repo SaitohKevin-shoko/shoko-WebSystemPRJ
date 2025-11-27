@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メイン 管理者設定 プラグイン追加 </title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_man_left_list.html');chengeHeaderText('[ メイン 管理者設定 プラグイン追加　  ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="メイン トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>プラグインの追加を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_man340.gif" alt="機能詳細 管理者設定 プラグイン追加 "></h1>
+        <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">OKボタン</h2>
+      <p>プラグイン追加確認画面へ遷移します。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">戻るボタン</h2>
+      <p>プラグインマネージャー画面へ遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03">パラメータ設定</h2>
+      <p>パラメータを設定するかしないか選択できます。</p>
+    </td>
+    <th>
+      <h2 class="num-back04">送信方法</h2>
+      <p>パラメータをPOST形式、GET形式で送信するか選択できます。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back05">別ウィンドウ</h2>
+      <p>別ウィンドウで開くか、インラインで表示するかを選択できます。</p>
+    </th>
+    <td>
+      <h2 class="num-back06">削除ボタン</h2>
+      <p>添付のリストで選択中の添付ファイルを削除します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">添付ボタン</h2>
+      <p>添付ファイル選択画面をポップアップで表示します。ファイルを選択し、確定すると添付のリストに選択したファイル名が追加されます。</p>
+    </td>
+    </tr>
+
+    </table>
+
+    <br>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>プラグイン名</h2><p>プラグイン名を入力します。</p>
+    <h2>URL</h2><p>プラグインのURLを入力します。</p>
+    <h2>パラメータ名</h2><p>パラメータの名前を入力します。</p>
+    <h2>値</h2><p>パラメータの値を入力します。</p>
+    </div>
+
+    <!-- 予約語の説明 -->
+    <p class="help-right-func-p">予約語一覧</p>
+<!--     <div class="help-right-func-item"> -->
+<!--     </div> -->
+
+     <table width="60%" border="0">
+        <tr>
+        <td width="50%" align="center" valign="middle" style="background-color:#e5edfe!important;border:solid 1px #cccccc!important">パラメータ名</td>
+        <td width="50%" align="center" style="background-color:#e5edfe!important;border:solid 1px #cccccc!important">取得値</td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${USERID}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ユーザID
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${PASSWORD}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            パスワード
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${SYAINNO}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            社員/職員番号
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${NAME}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名(姓名)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${SEI}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名(姓のみ)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${MEI}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名(名のみ)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${NAMEKANA}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名カナ(姓名)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${SEIKANA}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名カナ(姓のみ)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${MEIKANA}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            氏名カナ(名のみ)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${SYOZOKU}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            所属
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${POSITION}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            役職
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${SEIBETU}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            性別
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${EDATE}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            入社年月日(西暦)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${BDATE}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            生年月日(西暦)
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${MAIL1}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            メールアドレス１
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${MAIL2}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            メールアドレス２
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${MAIL3}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            メールアドレス３
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${ZIP}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            郵便番号（ハイフン付き）
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${ADDR1}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            住所１
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${ADDR2}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            住所２
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${TEL1}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            電話番号１
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${TEL2}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            電話番号２
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${TEL3}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            電話番号３
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${FAX1}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ＦＡＸ１
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${FAX2}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ＦＡＸ２
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${FAX3}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ＦＡＸ３
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${GROUPID}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            デフォルトグループID
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${GROUPSID}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            デフォルトグループSID
+        </td>
+        </tr>
+
+        <tr>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            ${TIME}
+        </td>
+        <td align="left" style="border:solid 1px #cccccc!important">
+            タイムスタンプ<br>
+            ※実行時間を取得（yyyymmddhhmmss形式）
+        </td>
+        </tr>
+
+      </table>
+
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

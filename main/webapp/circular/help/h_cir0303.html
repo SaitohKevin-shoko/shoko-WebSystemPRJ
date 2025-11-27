@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 回覧板 送信状況確認（ゴミ箱）</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_cir_left_list.html');chengeHeaderText('[ 回覧板 送信状況確認（ゴミ箱） ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="回覧板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>ゴミ箱内の送信回覧板の内容を確認する画面です。<br>回覧先のユーザが確認したか照会することができます。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_cir0303.gif" alt="回覧板 送信状況確認（ゴミ箱）画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+        <th>
+            <h2 class="num-back01">PDF出力ボタン</h2>
+            <p>回覧板の情報をPDFファイルに出力します。</p>
+        </th>
+        <td>
+            <h2 class="num-back02">前へボタン</h2>
+            <p>1件前の受信回覧板を表示します。前のデータが無い場合はボタンの文字色が灰色になり、ボタンがクリックできなくなります。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <h2 class="num-back03">次へボタン</h2>
+            <p>1件次の受信回覧板を表示します。次のデータが無い場合はボタンの文字色が灰色になり、ボタンがクリックできなくなります。</p>
+        </td>
+        <th>
+            <h2 class="num-back04">削除ボタン</h2>
+            <p>削除確認画面へ遷移します。回覧板をゴミ箱から削除します。</p>
+        </th>
+        </tr>
+
+         <tr>
+        <th>
+            <h2 class="num-back05">元に戻すボタン</h2>
+            <p>元に戻す確認画面へ遷移します。回覧板をゴミ箱から元に戻します。</p>
+        </th>
+        <td>
+            <h2 class="num-back06">戻るボタン</h2>
+            <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <h2 class="num-back07">添付ファイル名</h2>
+            <p>クリックすると添付ファイルのダウンロードができます。</p>
+        </td>
+        <th>
+            <h2 class="num-back08">グループコンボ</h2>
+            <p>選択したグループに所属するユーザが回覧先リストに表示されます。</p>
+        </th>
+        </tr>
+
+         <tr>
+        <th>
+            <h2 class="num-back09">グループボタン</h2>
+            <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、クリックしたグループが選択グループに表示されます。</p>
+        </th>
+        <td>
+            <h2 class="num-back10">一括ファイルダウンロードボタン</h2>
+            <p>クリックすると回覧先ユーザーが添付した添付ファイルの一括ダウンロードができます。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+            <h2 class="num-back11">ヘッダタイトル</h2>
+            <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう1度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        <th>
+            <h2 class="num-back12">添付ファイル名</h2>
+            <p>クリックすると添付ファイルのダウンロードができます。</p>
+        </th>
+        </tr>
+
+    </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>タイトル</h2><p>回覧板のタイトルを表示します。</p>
+    <h2>発信日時</h2><p>回覧板の発信日時を表示します。</p>
+    <h2>内容</h2><p>回覧板の内容を表示します。</p>
+    <h2>添付</h2><p>回覧板の添付ファイル名を表示します。</p>
+    <h2>回覧先確認情報</h2><p>回覧先の氏名、メモ、確認状態を表示します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

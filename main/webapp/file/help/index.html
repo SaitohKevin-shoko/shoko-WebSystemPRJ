@@ -1,0 +1,570 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=file');chengeHeaderText('[ ファイル管理 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="ファイル管理画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_fil010.html"><img src="./images/scr_help_fil010.gif" alt="キャビネット一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil010.html">キャビネット一覧</a>
+          </strong>
+          <br><br>
+          キャビネットを一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil0200.html"><img src="./images/scr_help_fil0200.gif" alt="キャビネット詳細 更新履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0200.html">キャビネット詳細 更新履歴</a>
+          ・
+          <a href="h_fil0201.html">キャビネット詳細 アクセス制御</a>
+          </strong>
+          <br><br>
+          キャビネットの詳細画面です。<br>
+          キャビネットの更新履歴とアクセス制御を確認することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil03000.html"><img src="./images/scr_help_fil03000.gif" alt="共有キャビネット作成"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03000.html">共有キャビネット作成</a>
+          ・
+          <a href="h_fil03010.html">共有キャビネット編集</a>
+          ・
+          <a href="h_fil030kn00.html">共有キャビネット作成確認</a>
+          ・
+          <a href="h_fil030kn10.html">共有キャビネット編集確認</a>
+          </strong>
+          <br><br>
+          共有キャビネットの登録・編集、登録確認・編集確認の画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil03001.html"><img src="./images/scr_help_fil03001.gif" alt="個人キャビネット作成"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03001.html">個人キャビネット作成</a>
+          ・
+          <a href="h_fil03011.html">個人キャビネット編集</a>
+          ・
+          <a href="h_fil030kn01.html">個人キャビネット作成確認</a>
+          ・
+          <a href="h_fil030kn11.html">個人キャビネット編集確認</a>
+          </strong>
+          <br><br>
+          個人キャビネットの登録・編集、登録確認・編集確認の画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil03002.html"><img src="./images/scr_help_fil03002.gif" alt="電帳法キャビネット作成"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03002.html">電帳法キャビネット作成</a>
+          ・
+          <a href="h_fil03012.html">電帳法キャビネット編集</a>
+          ・
+          <a href="h_fil030kn02.html">電帳法キャビネット作成確認</a>
+          ・
+          <a href="h_fil030kn12.html">電帳法キャビネット編集確認</a>
+          </strong>
+          <br><br>
+          電帳法キャビネットの登録・編集、登録確認・編集確認の画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil03020.html"><img src="./images/scr_help_fil03020.gif" alt="共有キャビネット一括編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03020.html">共有キャビネット一括編集</a>
+          ・
+          <a href="h_fil030kn20.html">共有キャビネット一括編集確認</a>
+          </strong>
+          <br><br>
+          共有キャビネットの一括編集、一括編集確認画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil03021.html"><img src="./images/scr_help_fil03021.gif" alt="個人キャビネット一括編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03021.html">個人キャビネット一括編集</a>
+          ・
+          <a href="h_fil030kn21.html">個人キャビネット一括編集確認</a>
+          </strong>
+          <br><br>
+          個人キャビネットの一括編集、一括編集確認画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil03022.html"><img src="./images/scr_help_fil03022.gif" alt="電帳法キャビネット一括編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil03022.html">電帳法キャビネット一括編集</a>
+          ・
+          <a href="h_fil030kn22.html">電帳法キャビネット一括編集確認</a>
+          </strong>
+          <br><br>
+          電帳法キャビネットの一括編集、一括編集確認画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil0400.html"><img src="./images/scr_help_fil0400.gif" alt="フォルダ情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0400.html">フォルダ情報</a>
+          </strong>
+          <br><br>
+          フォルダ情報を確認する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil0401.html"><img src="./images/scr_help_fil0401.gif" alt="電帳法キャビネット フォルダ情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0401.html">電帳法キャビネット フォルダ情報</a>
+          </strong>
+          <br><br>
+          フォルダ情報を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil05000.html"><img src="./images/scr_help_fil05000.gif" alt="フォルダ詳細 更新履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil05000.html">フォルダ詳細 更新履歴</a>
+          </strong>
+          <br><br>
+         フォルダ詳細情報を確認する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil05001.html"><img src="./images/scr_help_fil05001.gif" alt="電帳法キャビネット フォルダ詳細 更新履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil05001.html">電帳法キャビネット フォルダ詳細 更新履歴</a>
+          </strong>
+          <br><br>
+         フォルダ詳細情報を確認する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil05010.html"><img src="./images/scr_help_fil05010.gif" alt="フォルダ詳細 アクセス制御"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil05010.html">フォルダ詳細 アクセス制御</a>
+          </strong>
+          <br><br>
+         フォルダ詳細情報を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil0600.html"><img src="./images/scr_help_fil0600.gif" alt="共有・電帳法キャビネット フォルダ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0600.html">共有・電帳法キャビネット フォルダ登録</a>
+          ・
+          <a href="h_fil0601.html">共有・電帳法キャビネット フォルダ編集</a>
+          </strong>
+          <br><br>
+           共有・電帳法キャビネットのフォルダの登録・編集、登録確認・編集確認の画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil06001.html"><img src="./images/scr_help_fil06001.gif" alt="個人キャビネット フォルダ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil06001.html">個人キャビネット フォルダ登録</a>
+          ・
+          <a href="h_fil06011.html">個人キャビネット フォルダ編集</a>
+          </strong>
+          <br><br>
+           個人キャビネットのフォルダの登録・編集、登録確認・編集確認の画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil07000.html"><img src="./images/scr_help_fil07000.gif" alt="ファイル詳細 更新履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil07000.html">ファイル詳細 更新履歴</a>
+          </strong>
+          <br><br>
+           ファイル詳細情報を確認する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil07001.html"><img src="./images/scr_help_fil07001.gif" alt="電帳法キャビネット ファイル詳細 更新履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil07001.html">電帳法キャビネット ファイル詳細 更新履歴</a>
+          </strong>
+          <br><br>
+           ファイル詳細情報を確認する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil07010.html"><img src="./images/scr_help_fil07010.gif" alt="ファイル詳細 アクセス制御"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil07010.html">ファイル詳細 アクセス制御</a>
+          </strong>
+          <br><br>
+           ファイル詳細情報を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil0800.html"><img src="./images/scr_help_fil0800.gif" alt="共有キャビネット ファイル追加"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0800.html">共有キャビネット ファイル追加</a>
+          ・
+          <a href="h_fil0801.html">共有キャビネット ファイル編集</a>
+          </strong>
+          <br><br>
+         共有キャビネットのファイルの追加・編集画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil08001.html"><img src="./images/scr_help_fil08001.gif" alt="個人キャビネット ファイル追加"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil08001.html">個人キャビネット ファイル追加</a>
+          ・
+          <a href="h_fil08011.html">個人キャビネット ファイル編集</a>
+          </strong>
+          <br><br>
+         個人キャビネットのファイルの追加・編集画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil08002.html"><img src="./images/scr_help_fil08012.gif" alt="電帳法キャビネット ファイル追加"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil08002.html">電帳法キャビネット ファイル追加</a>
+          ・
+          <a href="h_fil08012.html">電帳法キャビネット ファイル編集</a>
+          </strong>
+          <br><br>
+         電帳法キャビネットのファイルの追加・編集画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil0900.html"><img src="./images/scr_help_fil0900.gif" alt="フォルダ・ファイル移動"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil0900.html">フォルダ移動</a>
+          ・
+          <a href="h_fil0901.html">ファイル移動</a>
+          ・
+          <a href="h_fil0902.html">フォルダ･ファイル一括移動</a>
+          </strong>
+          <br><br>
+          フォルダ・ファイルの移動を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil1000.html"><img src="./images/scr_help_fil1000.gif" alt="ファイル詳細検索 個人・共有キャビネット"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil1000.html">ファイル詳細検索 個人・共有キャビネット</a>
+          </strong>
+          <br><br>
+          ファイルの詳細検索を行います。<br>
+          個人・共有キャビネットに登録されているファイル、フォルダを検索することができます。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil1001.html"><img src="./images/scr_help_fil1001.gif" alt="ファイル詳細検索 電帳法キャビネット"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil1001.html">ファイル詳細検索 電帳法キャビネット</a>
+          </strong>
+          <br><br>
+          ファイルの詳細検索を行います。<br>
+          電帳法キャビネットに登録されているファイル、フォルダを検索することができます。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil3000.html"><img src="./images/scr_help_fil3000.gif" alt="取引情報登録 単体登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil3000.html">取引情報登録 単体登録</a>
+          </strong>
+          <br><br>
+          仮登録ファイルの単体登録を行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil3001.html"><img src="./images/scr_help_fil3001.gif" alt="取引情報登録 一括登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil3001.html">取引情報登録 一括登録</a>
+          </strong>
+          <br><br>
+          仮登録ファイルの一括登録を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil110.html"><img src="./images/scr_help_fil110.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil110.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+         ファイル管理の個人設定を行うことができます。<br>
+         メイン画面への表示設定やショートメール通知設定を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil120.html"><img src="./images/scr_help_fil120.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil120.html">表示設定</a>
+          ・
+          <a href="h_fil120kn.html">表示設定確認</a>
+          </strong>
+          <br><br>
+          メイン画面への表示有無や履歴の表示件数を設定します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil130.html"><img src="./images/scr_help_fil130.gif" alt="ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil130.html">ショートメール通知設定</a>
+          ・
+          <a href="h_fil130kn.html">ショートメール通知設定確認</a>
+          </strong>
+          <br><br>
+          更新通知をショートメールで通知する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil200.html"><img src="./images/scr_help_fil200.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil200.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          ファイル管理の管理者設定を行うことができます。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil210.html"><img src="./images/scr_help_fil210.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil210.html">基本設定</a>
+          ・
+          <a href="h_fil210kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+           ファイル管理の基本的な設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil220.html"><img src="./images/scr_help_fil220.gif" alt="キャビネット管理設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil220.html">キャビネット管理設定</a>
+          </strong>
+          <br><br>
+          キャビネットのアクセス制限や表示順の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil290.html"><img src="./images/scr_help_fil290.gif" alt="個人キャビネット使用許可設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil290.html">個人キャビネット使用許可設定</a>
+          ・
+          <a href="h_fil290kn.html">個人キャビネット使用許可設定確認</a>
+          </strong>
+          <br><br>
+           個人キャビネットの使用を許可する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil280.html"><img src="./images/scr_help_fil280.gif" alt="個人キャビネット管理設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil280.html">個人キャビネット管理設定</a>
+          </strong>
+          <br><br>
+          個人キャビネットのアクセス制限や表示順の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil230.html"><img src="./images/scr_help_fil230.gif" alt="ファイルの一括削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil230.html">ファイルの一括削除</a>
+          ・
+          <a href="h_fil230kn.html">ファイルの一括削除確認</a>
+          </strong>
+          <br><br>
+          フォルダやファイルを指定して即時物理削除を行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil240.html"><img src="./images/scr_help_fil240.gif" alt="更新通知一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil240.html">更新通知一覧</a>
+          </strong>
+          <br><br>
+          ファイルの更新一覧画面を表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil260.html"><img src="./images/scr_help_fil260.gif" alt="ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          管理者 <a href="h_fil260.html">ショートメール通知設定</a>
+          ・
+          <a href="h_fil260kn.html">ショートメール通知設定確認</a>
+          </strong>
+          <br><br>
+          更新通知をショートメールで通知する設定を行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil250.html"><img src="./images/scr_help_fil250.gif" alt="更新通知一括設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil250.html">更新通知一括設定</a>
+          ・
+          <a href="h_fil250kn.html">更新通知一括設定確認</a>
+          </strong>
+          <br><br>
+          指定したフォルダの更新通知を一括で設定します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_fil270.html"><img src="./images/scr_help_fil270.gif" alt="統計情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil270.html">統計情報</a>
+          </strong>
+          <br><br>
+          ファイル管理の統計情報を確認することができます。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil310.html"><img src="./images/scr_help_fil310.gif" alt="外貨マスタ"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil310.html">外貨マスタ</a>
+          </strong>
+          <br><br>
+          外貨名を一覧で表示します。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil320.html"><img src="./images/scr_help_fil320.gif" alt="外貨登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil320.html">外貨登録</a>
+          </strong>
+          <br><br>
+          外貨名を登録できます。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_fil330.html"><img src="./images/scr_help_fil330.gif" alt="仮登録ファイル削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_fil330.html">仮登録ファイル削除</a>
+          ・
+          <a href="h_fil330kn.html">仮登録ファイル削除確認</a>
+          </strong>
+          <br><br>
+          仮登録ファイルを指定して削除を行います。
+        </td>
+        </tr>
+        
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

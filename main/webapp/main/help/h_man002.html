@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メイン 管理者設定メニュー</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_man_left_list.html');chengeHeaderText('[ メイン 管理者設定メニュー ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="メイン トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>GroupSessionの管理者設定を行う画面です。システム管理グループに所属するユーザのみ使用可能です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_man002.gif" alt="機能詳細 管理者設定メニュー"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">ライセンスファイルの登録・更新ボタン</h2>
+      <p>ライセンスファイル登録・更新画面へ遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03">ライセンスのご購入はこちらから</h2>
+      <p>ライセンスの購入ページへ遷移します。</p>
+    </td>
+    <th>
+      <h2 class="num-back04">プラグイン管理者設定</h2>
+      <p>各プラグインの管理者設定画面へ遷移します。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back05">モバイル使用一括設定</h2>
+      <p>モバイル使用一括設定画面へ遷移します。<br>モバイルの使用可否を一括で設定します。</p>
+    </th>
+    <td>
+      <h2 class="num-back06">自動削除設定</h2>
+      <p>自動削除設定画面へ遷移します。<br>各プラグインの自動削除設定を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">手動削除</h2>
+      <p>手動削除画面へ遷移します。<br>各プラグインの手動削除を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back08">ショートメール通知設定</h2>
+      <p>ショートメール通知設定画面へ遷移します。<br>各プラグインのショートメール通知設定を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back09">空きディスク容量通知</h2>
+      <p>ディスク容量管理画面へ遷移します。<br>ディスク容量の管理設定を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back10">オペレーションログ設定</h2>
+      <p>オペレーションログ設定画面へ遷移します。<br>Group オペレーションログ設定を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back11">オペレーションログ検索</h2>
+      <p>オペレーションログ検索画面へ遷移します。<br>オペレーションログ検索を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back12">オペレーションログ自動削除</h2>
+      <p>オペレーションログ自動削除画面へ遷移します。<br>オペレーションログの自動削除設定を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back13">オペレーションログ手動削除</h2>
+      <p>オペレーションログ手動削除画面へ遷移します。</p>
+    </th>
+    <td>
+      <h2 class="num-back14">アプリケーションログ一覧</h2>
+      <p>アプリケーションログ一覧画面へ遷移します。<br>Group Sessionのログ照会を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back15">最終ログイン時間</h2>
+      <p>最終ログイン時間一覧画面へ遷移します。<br>ユーザの最終ログイン時間を表示します。</p>
+    </td>
+    <th>
+      <h2 class="num-back16">ログイン履歴自動削除</h2>
+      <p>ログイン履歴自動削除設定画面へ遷移します。<br>ログイン履歴のバッチ処理削除設定を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+    <h2 class="num-back17">ログイン履歴手動削除</h2>
+      <p>ログイン履歴手動削除画面へ遷移します。<br>ログイン履歴の削除を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back18">統計情報</h2>
+      <p>ログイン履歴統計情報画面へ遷移します。<br>ログイン履歴の集計を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back19">プラグインマネージャー</h2>
+      <p>プラグインマネージャー画面へ遷移します。<br>GroupSession内で使用するプラグインの追加、削除などの管理を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back20">企業情報</h2>
+      <p>企業情報の登録画面へ遷移します。<br>企業情報の登録を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back21">グループマネージャー</h2>
+      <p>グループマネージャー画面へ遷移します。<br>グループの追加、削除、登録内容の変更などの管理を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back22">ユーザマネージャー</h2>
+      <p>ユーザーマネージャー画面へ遷移します。<br>ユーザの追加、削除、登録内容の変更などの管理を行います。ユーザのインポートも行えます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back23">所属情報一括設定</h2>
+      <p>所属情報一括設定画面へ遷移します。<br>ユーザの所属情報を一括でエクスポート・インポートを行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back24">役職マネージャー</h2>
+      <p>役職マネージャー画面へ遷移します。<br>役職の追加、削除、登録内容の変更などの管理を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back25">休日設定</h2>
+      <p>休日設定画面へ遷移します。<br>休日設定の登録を行えます。休日テンプレートを登録しておけば、毎年の登録作業を軽減できます。</p>
+    </th>
+    <td>
+      <h2 class="num-back26">プロキシサーバ設定</h2>
+      <p>プロキシサーバ設定画面へ遷移します。<br>プロキシサーバの設定を行います。プロキシサーバを経由してインターネットに接続している場合に設定します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back27">添付ファイルサイズ設定</h2>
+      <p>添付ファイル設定画面へ遷移します。<br>添付ファイルの最大容量の設定を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back28">バッチ処理起動時間設定</h2>
+      <p>バッチ処理起動時間設定画面へ遷移します。<br>バッチ処理の起動時間の設定を行います。バックアップの作成もここで設定した時間に行われます。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back29">個人情報編集権限設定</h2>
+      <p>個人情報編集権限の設定を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back30">グループ・ユーザ並び順設定</h2>
+      <p>グループ・ユーザ並び順設定画面へ遷移します。<br>グループコンボ、ユーザコンボの並び順設定を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back31">メイン画面レイアウト設定</h2>
+      <p>メイン画面レイアウト設定画面へ遷移します。<br>メイン画面のレイアウトの設定を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back32">自動連携設定</h2>
+      <p>自動連携設定画面に遷移します。<br>自動連携を使用するか否かの設定を行います。使用する場合は、自動連携を実行する時間の間隔を設定します。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back33">OAuth認証情報管理</h2>
+      <p>OAuth認証情報管理画面に遷移します。<br>Oauth認証情報の管理を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back34">連携API管理</h2>
+      <p>連携API管理画面に遷移します。<br>連携するAPI接続を管理します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back35">表示設定</h2>
+      <p>表示設定画面に遷移します。<br>各プラグイン共通の表示設定を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back36">GSファイアウォール設定</h2>
+      <p>GSファイアウォール設定画面へ遷移します。<br>指定外のIPアドレスからのアクセスを制限します</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back37">パスワードルール設定</h2>
+      <p>パスワードルール設定画面へ遷移します。<br>ユーザパスワードのルール設定を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back38">セッション保持時間設定</h2>
+      <p>セッション保持時間設定画面へ遷移します。<br>セッション保持時間の設定を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back39">ログイン設定</h2>
+      <p>ログイン設定画面へ遷移します。<br>ログインのロックアウト設定を行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back40">ワンタイムパスワード設定</h2>
+      <p>ワンタイムパスワード設定画面へ遷移します。<br>ワンタイムパスワードログインの設定を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back41">外部ページ表示制限設定</h2>
+      <p>外部ページ表示制限設定画面へ遷移します。<br>プGroupSession上に表示する外部ページを制限します。</p>
+    </th>
+    <td>
+      <h2 class="num-back42">自動バックアップ設定</h2>
+      <p>自動バックアップ設定画面へ遷移します。<br>バックアップファイルの管理や、自動バックアップを行うタイミングなどの設定を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back43">手動バックアップ</h2>
+      <p>手動バックアップ設定画面へ遷移します。<br>手動バックアップを行います。</p>
+    </td>
+    <th>
+      <h2 class="num-back44">システム情報確認</h2>
+      <p>システム情報確認画面へ遷移します。<br>システム情報の確認を行います。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back45">データ使用量一覧</h2>
+      <p>データ使用量一覧画面へ遷移します。<br>プラグイン別データ使用量の閲覧を行います。</p>
+    </th>
+    <td>
+      <h2 class="num-back46">パスワード変更</h2>
+      <p>パスワード変更画面へ遷移します。<br>GS管理者のパスワードの変更を行います。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back47">ワンタイムパスワード通知先メールアドレス変更</h2>
+      <p>ワンタイムパスワード通知先メールアドレス変更画面へ遷移します。<br>GS管理者のワンタイムパスワードを通知するメールアドレスを変更します。</p>
+    </td>
+    <th>
+    </th>
+    </tr>
+    </table>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

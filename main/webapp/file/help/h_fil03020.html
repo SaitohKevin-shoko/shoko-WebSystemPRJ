@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 共有キャビネット一括編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 共有キャビネット一括編集 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>共有キャビネットを一括編集する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_fil03020.gif" alt="ファイル管理 共有キャビネット一括編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">編集ボタン</h2>
+              <p>共有キャビネット一括編集確認画面へ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">全て削除ボタン</h2>
+              <p>追加・変更・削除エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">追加・変更・削除エリア / 閲覧エリア</h2>
+              <p>追加・変更・削除エリアと閲覧エリアのいずれかをクリックし、追加先として選択します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">全て削除ボタン</h2>
+              <p>閲覧エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">選択済グループ</h2>
+              <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのグループおよびユーザを選択したエリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">未選択グループ</h2>
+              <p>グループ名をクリックすることで、グループを選択したエリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択したエリアに追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">グループ名</h2>
+              <p>グループ名をクリックすることで、グループおよびグループに所属するユーザが未選択エリアに表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">全て削除ボタン</h2>
+              <p>管理者エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back16">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back17">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを管理者エリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back18">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを管理者エリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back19">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+          </tr>
+        </table>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>キャビネット名</h2><p>キャビネット名を入力します。(70文字以内)</p>
+          <h2>アクセス権限</h2><p>キャビネットのアクセス権限を設定します。</p>
+          <h2>キャビネット管理者</h2><p>キャビネットの管理者を設定します。</p>
+          <h2>容量設定</h2><p>キャビネットの容量を設定します。</p>
+          <h2>バージョン管理</h2><p>キャビネットのバージョン管理を設定します。</p>
+          <h2>備考</h2><p>キャビネットの備考を設定します。(1000文字以内)</p>
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

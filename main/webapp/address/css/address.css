@@ -1,0 +1,56 @@
+.hp1 {
+  height: 1px!important;
+}
+
+.hp44 {
+  height: 44px!important;
+}
+
+.font-bold {
+  font-weight: bold!important;
+}
+
+.main_searchArea {
+  border: 1px;
+  border-style: solid;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.mt35 {
+  margin-top: 35px!important;
+}
+
+.p3 {
+  padding: 2px!important;
+}
+
+.searchMenu_title {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.searchMenu_title-select {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.side_header-open .side_headerArrow:before {
+  margin-left: 4px!important;
+}
+
+.top449 {
+  top: 399px!important;
+}
+
+.w7 {
+  width: 7%!important;
+}
+
+.w22 {
+  width: 22%!important;
+}
+
+.w23 {
+  width: 23%!important;
+}

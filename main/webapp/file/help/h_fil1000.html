@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ファイル詳細検索</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 ファイル詳細検索 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>ファイル詳細検索を行う画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_fil1000.gif" alt="ファイル管理 ファイル詳細検索 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">個人・共有・電帳法キャビネットラジオボタン</h2>
+              <p>ラジオボタンでキャビネットコンボに表示するキャビネットを選択します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">キャビネットコンボ</h2>
+              <p>キャビネットの一覧が表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">更新日時指定無しチェック</h2>
+              <p>チェックを付けると日時が指定不可になります。チェックを外すと日時が指定可になります。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">カレンダーボタン</h2>
+              <p>日付選択カレンダーを表示します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">検索ボタン</h2>
+              <p>入力した検索条件からフォルダ・ファイルの検索を行い、検索結果を表示します。<br>
+              入力内容に不備、または検索条件に該当するフォルダ・ファイルがない場合はエラーメッセージが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">ページングコンボ・前頁・次頁</h2>
+              <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">ヘッダタイトル</h2>
+              <p>クリックによって一覧のソート条件の切り替えを行います。<br>
+              現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">フォルダ名</h2>
+              <p>クリックしたフォルダの詳細画面へ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">詳細ボタン</h2>
+              <p>フォルダ・ファイル詳細画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">検索文字列</h2>
+              <p>「「×××」をWEB検索する」リンククリックで、表示されている検索ワードでウェブ検索を行います。<br>
+             「×××」には、ファイル管理内検索を行ったキーワードが入ります。</p>
+            </th>
+          </tr>
+        </table>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>キャビネット</h2><p>検索するキャビネットを選択します。</p>
+          <h2>キーワード</h2><p>検索するファイル・フォルダのキーワードを入力します。(50文字以内)</p>
+          <h2>更新日時</h2><p>検索するファイル・フォルダの更新日時を指定します。</p>
+          <h2>対象</h2><p>検索する対象を選択します。</p>
+          <h2>検索対象</h2><p>キーワードの検索対象を選択します。</p>
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

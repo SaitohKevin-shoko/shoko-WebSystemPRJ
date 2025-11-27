@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 掲示板 スレッド一覧</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bbs_left_list.html');chengeHeaderText('[ 掲示板 スレッド一覧 ]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="掲示板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>フォーラムに属するスレッドを一覧表示する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_bbs0600.gif" alt="掲示板 スレッド一覧 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <tr>
+        <th>
+          <h2 class="num-back01">検索ボタン</h2>
+          <p>入力したキーワードから掲示板内の検索を行い、検索結果一覧画面へ遷移します。入力内容に不備、またはキーワードに該当する投稿がない場合はエラーメッセージが表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">詳細検索ボタン</h2>
+          <p>詳細検索画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">移動ボタン</h2>
+          <p>スレッドを他フォーラムへ移動させます。
+          </p>
+        </td>
+        <th>
+          <h2 class="num-back04">未読ボタン</h2>
+          <p>チェックボックスで選択したスレッドを未読状態へ変更します。<br>
+          ※閲覧数は変更されません。
+          </p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">草稿一覧ボタン</h2>
+          <p>草稿一覧画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">スレッド新規作成ボタン</h2>
+          <p>スレッド新規作成画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">掲示予定スレッドリンク</h2>
+          <p>表示中のフォーラムに掲示予定のスレッド数を表示します。<br>クリックすると掲示予定一覧画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">ページングコンボ・前頁・次頁</h2>
+          <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。
+          現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back11">スレッド情報</h2>
+          <p>タイトル、未読既読、投稿数、投稿者、最新書き込み日時、サイズを表示します。<br>
+          タイトルをクリックすると投稿一覧画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">閲覧数</h2>
+          <p>スレッドの閲覧数を表示します。<br>クリックするとフォーラムメンバー閲覧状態ポップアップ画面を表示します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">フォーラム一覧</h2>
+          <p>フォーラム一覧を表示します。タイトルをクリックするとクリックしたフォーラムへ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">未読スレッド一覧</h2>
+          <p>現在の未読スレッドを一覧表示します。タイトルをクリックするとクリックしたスレッドへ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back15">全て既読にするボタン</h2>
+          <p>フォーラムの未読スレッドを全て既読にします。<br>
+             フォーラムの設定で「全て既読にする」の使用を許可する場合のみ表示されます。<br>
+             未読スレッドが存在しない場合は、全て既読にするボタンは表示されません。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">選択チェックボックス</h2>
+          <p>未読にするスレッドを選択します。</p>
+        </th>
+        </tr>
+
+        </table>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] スケジュール スケジュール一覧</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sch_left_list.html');chengeHeaderText('[ スケジュール スケジュール一覧 ]');">
+<div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+    <input type="button" value="スケジュール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>詳細な検索条件を入力し、スケジュールを一覧表示で参照する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_sch100.gif" alt="スケジュール一覧 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">PDF出力ボタン</h2>
+          <p>表示画面のPDF出力を行います。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">インポートボタン</h2>
+          <p>スケジュールインポート画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">個人週間ボタン</h2>
+          <p>スケジュール 個人週間画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">日間ボタン</h2>
+          <p>スケジュール 日間画面へ遷移します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">週間ボタン</h2>
+          <p>スケジュール週間画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">月間ボタン</h2>
+          <p>スケジュール 月間画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">一覧ボタン</h2>
+          <p>スケジュール一覧画面へ遷移します。</p>
+        </td>
+        <th>
+        <h2 class="num-back08">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br>クリックしたグループが選択グループに表示されます。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back09">前日・今日・翌日移動ボタン</h2>
+          <p>現在表示している日付から、表示を切り替えます。
+          <br>前日：1日前へ移動
+          <br>今日：本日へ移動
+          <br>翌日：1日先へ移動</p>
+        </th>
+        <td>
+          <h2 class="num-back10">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。カレンダー画面で日付をクリックすると、クリックした日付がセットされます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back11">検索ボタン</h2>
+          <p>入力された検索条件で該当データを検索し一覧表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">検索結果エクスポート</h2>
+          <p>一覧表示されている検索結果をCSV形式でエクスポートします。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back13">削除ボタン</h2>
+          <p>選択中スケジュールの削除を行います。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">ページングコンボ・前頁・次頁</h2>
+          <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back15">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">検索結果内容</h2>
+          <p>名前、開始日時、終了日時、タイトル／内容を表示します。
+          <br>タイトルをクリックするとスケジュール編集画面へ遷移します。</p>
+        </th>
+        </tr>
+        </table>
+
+        <br>
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+
+          <h2>グループ・ユーザ</h2>
+          <p>検索するグループ・ユーザを選択します。</p>
+          <h2>開始日</h2>
+          <p>検索するスケジュールの開始日時を範囲指定で指定します。</p>
+          <h2>終了日</h2>
+          <p>検索するスケジュールの終了日時を範囲指定で指定します。</p>
+          <h2>キーワード</h2>
+          <p>タイトル・内容中の検索したいキーワードを入力します。</p>
+          <h2>検索対象</h2>
+          <p>キーワード検索の範囲を選択します。</p>
+          <h2>タイトル色</h2>
+          <p>検索するタイトル色を選択します。</p>
+          <h2>ソート順</h2>
+          <p>第1キーと、第2キーを指定できます。それぞれのソート順について、昇順、降順の設定ができます。<br>検索結果のタイトルと連動しています。</p>
+
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

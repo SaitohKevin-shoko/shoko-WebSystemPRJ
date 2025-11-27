@@ -1,0 +1,65 @@
+.fil_dspbox-l {
+    width: 30%;
+}
+
+.fil_dspbox-r {
+    width: 69%;
+    margin-left: 2%;
+}
+
+.searchMenu_title {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.searchMenu_title-select {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.userSelect_from-twoContent {
+  height: 270px;
+}
+
+.deletedFile {
+  opacity: 0.6;
+  zoom: 1;
+}
+
+.w6 {
+  width: 6%!important;
+}
+
+.w7 {
+  width: 7%!important;
+}
+
+.w8 {
+  width: 8%!important;
+}
+
+.listCloseArea {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file_tools {
+  padding: 3px;
+    border: 1px solid #666;
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(0, 0, 0);
+}
+
+.file_tools:hover {
+  background-color: rgb(182, 189, 210);
+}
+
+.ui-widget-overlay {
+  position: fixed!important;
+}
+.file_tradeMain {
+    width: calc(100% - 350px);
+}

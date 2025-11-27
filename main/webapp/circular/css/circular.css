@@ -1,0 +1,27 @@
+.pb1 {
+    padding-bottom:1px;
+}
+
+.pb2 {
+    padding-bottom:2px;
+}
+
+.atesakiSelPop_selector{
+  height: 310px;
+}
+.sendAtesakiList-scr {
+    max-height:220px;
+    overflow-y: auto;
+}
+
+.hp320{
+  height: 320px;
+}
+
+.display_flex {
+  display: flex!important;
+}
+
+.ui-widget-overlay {
+  position: fixed!important;
+}

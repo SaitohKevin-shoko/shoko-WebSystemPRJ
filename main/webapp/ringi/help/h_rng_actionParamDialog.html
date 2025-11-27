@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 アクションパラメータ追加・編集ダイアログ</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 アクションパラメータ追加・編集ダイアログ ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>アクションパラメータの実行条件を登録・編集します。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng_actionParamDialog.gif" alt="稟議 アクションパラメータ追加・編集ダイアログ"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+        <h2 class="num-back01">ヘルプアイコン</h2>
+        <p>実行条件についての説明を表示します。</p>
+    </td>
+    <td>
+        <h2 class="num-back02">実行条件区分ラジオ</h2>
+        <p>実行条件を「全てを満たす/いずれかを満たす」から選択します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <h2 class="num-back03">条件対象選択コンボ</h2>
+        <p>条件の対象を選択します。</p>
+    </td>
+    <td>
+        <h2 class="num-back04">条件対象詳細選択コンボ</h2>
+        <p>条件の対象の詳細を選択します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <h2 class="num-back05">比較対象コンボ/フォーム</h2>
+        <p>比較対象を選択/入力します。</p>
+    </td>
+    <td>
+        <h2 class="num-back06">比較条件選択コンボ</h2>
+        <p>比較条件を選択します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <h2 class="num-back07">複写アイコン</h2>
+        <p>実行条件を1行複写します。</p>
+    </td>
+    <td>
+        <h2 class="num-back08">削除アイコン</h2>
+        <p>実行条件を1行削除します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <h2 class="num-back09">実行条件を追加</h2>
+        <p>実行条件を1行追加します。</p>
+    </td>
+    <td>
+        <h2 class="num-back10">他アクションパラメータの実行条件を複写</h2>
+        <p>同じ連携APIに登録されているアクションパラメータの実行条件を1行選択し、複写します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <h2 class="num-back11">OKボタン</h2>
+        <p>アクションパラメータの名称と実行条件を登録・編集します。</p>
+    </td>
+    <td>
+        <h2 class="num-back12">閉じるボタン</h2>
+        <p>ダイアログを閉じます。</p>
+    </td>
+    </tr>
+
+    </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+        <h2>名称</h2>
+        <p>アクションパラメータの名称を入力します。（100文字以内）</p>
+        <h2>実行条件</h2>
+        <p>アクションパラメータの実行条件を設定します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

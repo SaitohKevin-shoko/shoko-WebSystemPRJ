@@ -1,0 +1,38 @@
+input[type="text"].clockpicker,
+input[type="text"].datepicker
+ {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+input[type="text"].clockpicker + .picker-acs,
+input[type="text"].datepicker + .picker-acs
+ {
+  align-items: center;
+  border-bottom-left-radius: 0;
+  border-radius: 0px 3px 3px 0px;
+  border-style: solid solid solid none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-width: 1px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding:0rem 0.5rem;
+  text-align:center;
+  white-space: nowrap;
+  height:23px;
+}
+
+.clpClear_area {
+  text-align: center;
+}
+
+.clpClear_button {
+  border: 1px solid #c5c5c5;
+  font-weight: normal;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}

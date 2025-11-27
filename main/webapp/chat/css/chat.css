@@ -1,0 +1,555 @@
+.cht_sideConfGear {
+  font-size: 18px;
+  line-height: 100%;
+  width: 20%;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.cht_archive {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.timelineBach {
+    display: block;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    left: 2px;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+}
+
+.cht_dayLine {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+.cht_dayLine:before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  margin-right: .4em;
+}
+
+.cht_dayLine:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  margin-left: .4em;
+}
+
+.edit_deleteArea {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 20px;
+}
+
+.edit_deleteArea div {
+  display: none;
+}
+
+.messagePinArea {
+  display: none;
+}
+
+.edit_time {
+    display: none;
+    z-index: 2;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px!important;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+}
+
+.edit_chat:hover .edit_time {
+  display: inline;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.cht_mention {
+  border-radius: 20px;
+}
+
+.cht_mention .cht_deleteIcon {
+  top: -5px;
+  right: 0;
+}
+
+.cht_mention:hover .cht_deleteIcon,
+.cht_tempFile:hover .cht_deleteIcon,
+.cht_reply:hover .cht_deleteIcon {
+  visibility: visible;
+}
+
+.cht_inputArea .cht_mentionArea:has(div){
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.cht_onePost {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.cht_onePost:not(.cht_button-lock):hover .edit_deleteArea div:not(.cht_reactionPanel),
+.cht_onePost:not(.cht_button-lock):hover .messagePinArea,
+.cht_reaction-selectd .edit_deleteArea div,
+.cht_pinMessage:hover .pinMessageDeleteArea {
+  display: inline!important;
+}
+
+.pinMessageSortHandle {
+  height: 100%;
+  width: 8px;
+  cursor: move;
+  padding-bottom: 5px;
+}
+
+.grpconfDspDustion {
+  visibility: hidden;
+}
+
+.grpconfSearchKeyword {
+  padding-right: 30px;
+}
+
+.leftmenu_disabled {
+    pointer-events: none;
+}
+
+.cht_grpConfSelectGroup:hover .grpconfDspDustion,
+.cht_grpConfSelectedGroup .grpconfDspDustion {
+  visibility: visible;
+}
+
+.leftmenu_abled {
+  pointer-events: auto;
+}
+
+.cht_grpConfSelectGroup {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.cht_grpConfAddGroup {
+  text-align: center!important;
+  cursor: pointer;
+}
+
+.cht_inputArea {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 60px;
+  cursor: text;
+}
+
+.cht_inputArea .cht_tempFile {
+  padding-right: 20px;
+}
+
+.cht_inputArea .cht_tempFileArea:has(.cht_tempFile) {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.cht_reaction {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.cht_reactionPanel {
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  width: 145px;
+  position: absolute;
+  z-index: 99;
+}
+
+.cht_reactionUser {
+  border-width: 1px;
+  border-style: solid;
+  max-width: 400px;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cht_reply {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 2px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.cht_reply:has(.cht_deleteIcon) {
+  padding-right: 20px;
+}
+
+.cht_tempFile {
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cht_tempFileArea{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cht_deleteIcon {
+  visibility: hidden;
+  top: -1px;
+  right: 0;
+}
+
+.chattextArea {
+  resize: none;
+  max-height: 200px;
+  width: 100%;
+  height: 25px;
+  vertical-align:top;
+}
+
+.chattextArea:focus {
+  box-shadow: none;
+}
+
+.selToukou {
+  position: relative;
+  top: 8px;
+  float: left;
+}
+
+.chatList {
+  min-height: 135px;
+  overflow: auto;
+}
+
+.chat_lrSpace {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.media_selected .edit_deleteArea div,
+.pinMessageDeleteArea {
+  display: none;
+}
+
+.searchIcon-submit::before {
+  position: absolute;
+  content: '';
+  width: 9px;
+  height: 9px;
+  top: calc(65% - 9px);
+  left: calc(93% + 1px);
+  border-radius: 50%;
+}
+.searchIcon-submit::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 3px;
+  top: calc(44% + 6px);
+  left: calc(93% + 8px);
+  transform: rotate(45deg);
+}
+
+.midokuCount:not(:empty):before {
+    content: ' ('
+}
+
+.midokuCount:not(:empty):after {
+    content: ')'
+}
+
+.chat_sendMessageArea {
+  padding: 5px 20px 10px 20px;
+}
+
+#timelineHeadArea > .side_headerTitle > .menuHead_txt-close {
+    display:none;
+}
+
+#timelineHeadArea > .side_headerTitle > .menuHead_txt-open {
+    display:none;
+}
+
+#timelineHeadArea .menuHead-midoku > .side_headerTitle > .menuHead_txt-midoku {
+    display:none;
+}
+
+#timelineHeadArea:not(.menuHead-midoku) > .side_headerTitle > .menuHead_txt-midoku {
+    display:none;
+}
+
+#timelineHeadArea:not(.menuHead-midoku) > .side_header-close > .menuHead_txt-open {
+    display:inline;
+}
+
+#timelineHeadArea:not(.menuHead-midoku) > .side_header-open > .menuHead_txt-close {
+    display:inline;
+}
+
+.chtTabHead_all {
+  padding-bottom: 1px;
+  padding-right: 1px;
+}
+.chtTabHead_timeline {
+  padding-bottom: 1px;
+  padding-left: 1px;
+}
+
+.chtFavoInfo_space {
+  padding-bottom: 3px;
+}
+
+/*チャット絞り込み入力フォーム */
+.cht010SearchInputRow_keyword {
+  flex: 1;
+  width:15px;/*FireFox用のおまじない*/
+}
+.cht010SearchInputRow_keyword:focus:not([type=radio]) {
+  box-shadow: none;
+  outline: none;
+}
+/*チャット絞り込み入力フォーム デフォルトモード選択*/
+/* pt0 pos_abs border_radius bor1 mt5*/
+.cht010SearchInput_selectDefault {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  margin-top: 5px;
+  padding-top: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  white-space: normal;
+  word-break: break-all;
+  z-index: 100;
+}
+.cht010SearchInput[data-mode="default"]:focus-within,
+.cht010SearchInput[data-mode="default"]:active
+{
+  .cht010SearchInput_selectDefault {
+      display: block;
+      transition: 1;
+  }
+}
+
+.cht010SearchInputSender_selectMergin {
+  position: absolute;
+}
+
+.cht_mentionPalette .cht010SearchInputSender_selectMergin {
+  position: static;
+}
+
+/*チャット絞り込み入力フォーム 選択要素なし時は非表示*/
+.cht010SearchInput_selectPane {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  white-space: normal;
+  word-break: break-all;
+  z-index: 100;
+  min-height: 110px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.cht_mentionPalette .cht010SearchInput_selectPane {
+  max-height: 200px;
+  overflow-y: scroll;
+  position: static;
+}
+.cht010SearchInput_selectPane+.overlapscroll_track {
+  z-index: 1000;
+}
+
+.cht010CenterPane {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+  height: calc(100vh - 139px);
+  flex: 1;
+}
+
+.cht010CenterPane_list {
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* メッセージ一覧下部余白領域*/
+cht010-chat-list::after {
+  content: ' ';
+  display: block;
+  margin-top: 40px;
+  margin-bottom:5px;
+}
+
+.cht010SearchHeader {
+  flex: 0;
+}
+
+.cht010SearchBottom {
+  flex: 0;
+}
+
+.cht010SearchInputRow {
+  display: flex;
+  align-items: center;
+}
+.cht010SearchInputRow_main {
+  flex: 1;
+  display: flex;
+  width: 1px; /*FireFox用のおまじない*/
+}
+.cht010SearchInputRow_searchAreaToggleBtn {
+  flex: 0;
+}
+/* チャット検索 条件ラベル欄 */
+.cht010SearchInput_result {
+  display: none;
+}
+.cht010SearchInput_result:has(.cht010SearchInput_resultChild) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+cht010-senderselect {
+  position: relative;
+}
+
+.cht010SearchInput_resultChildDelIcon::after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cht010SearchInput_resultClear {
+  display: none;
+}
+
+.cht010SearchInput_resultChild + .cht010SearchInput_resultClear {
+  display: inline;
+}
+
+.cht010SearchResultPane:not(:has(.cht010SearchResult[data-search="true"])) {
+  display:none;
+}
+
+.cht010SearchResult[data-search="false"] {
+  display:none;
+}
+.cht010SearchResult_count {
+  flex: 0;
+}
+.cht010SearchResult_list {
+  flex: 1;
+  overflow-y: auto;
+  height: 10px; /*FireFox用のおまじない*/
+
+}
+
+.cht010JumpMidokuButton {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 25px;
+
+}
+
+.cht010JumpMidokuButton_hukidashi {
+  position: absolute;
+  right: calc(100% + 15px);
+  margin-left: 20px;
+  height: 30px;
+}
+
+.cht010StampSendButton {
+  position: absolute;
+  top: 90px;
+  right: 25%;
+}
+
+.cht_mentionArea, .cht_stampArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cht_stampAddFlame {
+  border-style: dashed;
+  border-width: 5px;
+  display: table;
+}
+.cht_stampAddFlame > div {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.cht_stampHoverIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.messagePinArea {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
+
+.messagePinDelete {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.mediaArea {
+  min-height: 70px;
+}

@@ -1,0 +1,11 @@
+form {
+  margin-block-end: 0;
+}
+
+.preview_content {
+  pointer-events: none;
+}
+
+#contentUrl > div {
+  width: 100%!important;
+}

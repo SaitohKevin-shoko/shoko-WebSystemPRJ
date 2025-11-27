@@ -1,0 +1,958 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=main');chengeHeaderText('[ メイン ]')">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="メイン" cellpadding="0" cellspacing="0">
+
+        <tr>
+        <th><a href="h_man001.html"><img src="./images/scr_help_man001.gif" alt="メイン"></a></th>
+        <td>
+<a href="h_man001.html"><strong>メイン</strong></a><br><br>
+Group Sessionのメイン画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man002.html"><img src="./images/scr_help_man002.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+<a href="h_man002.html"><strong>管理者設定メニュー</strong></a><br><br>
+管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man020.html"><img src="./images/scr_help_man020.gif" alt="休日設定"></a></th>
+        <td>
+<a href="h_man020.html"><strong>休日設定</strong></a><br><br>
+GroupSession内で使用される休日を設定する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man021.html"><img src="./images/scr_help_man021.gif" alt="休日設定/追加"></a></th>
+        <td>
+<a href="h_man021.html"><strong>休日設定/追加</strong></a><br><br>
+休日を追加する画面です。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_man022kn.html"><img src="./images/scr_help_man022kn.gif" alt="休日削除確認"></a></th>
+        <td>
+<a href="h_man022kn.html"><strong>休日削除確認</strong></a><br><br>
+休日の削除を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man023.html"><img src="./images/scr_help_man023.gif" alt="休日テンプレート一覧"></a></th>
+        <td>
+<a href="h_man023.html"><strong>休日テンプレート一覧</strong></a><br><br>
+休日テンプレートの一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man024kn.html"><img src="./images/scr_help_man024kn.gif" alt="テンプレートから追加確認"></a></th>
+        <td>
+<a href="h_man024kn.html"><strong>テンプレートから追加確認</strong></a><br><br>
+選択した休日テンプレートを休日に反映させる画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man025.html"><img src="./images/scr_help_man025.gif" alt="テンプレート追加/通常"></a></th>
+        <td>
+          <strong>
+          <a href="h_man025.html">テンプレート追加/通常</a>
+          ・
+          <a href="h_man026.html">追加/拡張</a>
+          </strong>
+          <br><br>
+          休日テンプレートの作成画面です。
+          通常モード、拡張モードがあり、拡張モードでは高度な休日設定が行えます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man027kn.html"><img src="./images/scr_help_man027kn.gif" alt="テンプレート削除確認"></a></th>
+        <td>
+<a href="h_man027kn.html"><strong>テンプレート削除確認</strong></a><br><br>
+休日テンプレートの削除を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man040.html"><img src="./images/scr_help_man040.gif" alt="バッチ処理起動時間設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man040.html">バッチ処理起動時間設定</a>
+          ・
+          <a href="h_man040kn.html">設定確認</a>
+          </strong>
+          <br><br>
+          バッチ処理の起動時間を設定する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man060.html"><img src="./images/scr_help_man060.gif" alt="ディスク容量管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_man060.html">ディスク容量管理</a>
+          ・
+          <a href="h_man060kn.html">確認</a>
+          </strong>
+          <br><br>
+          ディスク容量管理画面です。ディスクが残り少なくなったときに通知を行うことが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man070.html"><img src="./images/scr_help_man070.gif" alt="プロキシサーバ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man070.html">プロキシサーバ設定</a>
+          ・
+          <a href="h_man070kn.html">設定確認</a>
+          </strong>
+          <br><br>
+          プロキシサーバの設定画面です。プロキシサーバ設定はプロキシサーバを経由してインターネットに接続している場合に設定します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man080.html"><img src="./images/scr_help_man080.gif" alt="自動バックアップ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man080.html">自動バックアップ設定</a>
+          ・
+          <a href="h_man080kn.html">設定確認</a>
+          </strong>
+          <br><br>
+          自動バックアップの設定画面です。定期的にGroupSessionデータの自動バックアップを行うことが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man081.html"><img src="./images/scr_help_man081.gif" alt="手動バックアップ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man081.html">手動バックアップ設定</a>
+          </strong>
+          <br><br>
+          手動バックアップの設定画面です。GroupSessionデータの手動バックアップを行うことが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man240.html"><img src="./images/scr_help_man240.gif" alt="オペレーションログ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man240.html">オペレーションログ設定</a>
+          ・
+          <a href="h_man240kn.html">確認</a>
+          </strong>
+          <br><br>
+          オペレーションログの設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man250.html"><img src="./images/scr_help_man250.gif" alt="オペレーションログ検索"></a></th>
+        <td>
+          <strong>
+          <a href="h_man250.html">オペレーションログ検索</a>
+          </strong>
+          <br><br>
+          オペレーションログの閲覧と削除を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man260.html"><img src="./images/scr_help_man260.gif" alt="オペレーションログ自動削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_man260.html">オペレーションログ自動削除</a>
+          ・
+          <a href="h_man260kn.html">確認</a>
+          </strong>
+          <br><br>
+          オペレーションログの自動削除設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man380.html"><img src="./images/scr_help_man260.gif" alt="オペレーションログ手動削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_man380.html">オペレーションログ手動削除</a>
+          ・
+          <a href="h_man380kn.html">確認</a>
+          </strong>
+          <br><br>
+          オペレーションログの手動削除設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man270.html"><img src="./images/scr_help_man270.gif" alt="ログイン設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man270.html">ログイン設定</a>
+          ・
+          <a href="h_man270kn.html">確認</a>
+          </strong>
+          <br><br>
+          ログイン設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man090.html"><img src="./images/scr_help_man090.gif" alt="アプリケーションログ一覧"></a></th>
+        <td>
+<a href="h_man090.html"><strong>アプリケーションログ一覧</strong></a><br><br>
+アプリケーションログの管理を行う画面です。ログのダウンロードなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man100.html"><img src="./images/scr_help_man100.gif" alt="役職マネージャー"></a></th>
+        <td>
+<a href="h_man100.html"><strong>役職マネージャー</strong></a><br><br>
+役職の管理を行う画面です。役職の追加、修正、削除、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man1100.html"><img src="./images/scr_help_man1100.gif" alt="役職登録"></a></th>
+        <td>
+          <strong>
+            <a href="h_man1100.html">役職登録</a>
+            ・
+            <a href="h_man1101.html">編集</a>
+            <br>
+            <a href="h_man110kn0.html">役職登録確認</a>
+            ・
+            <a href="h_man110kn1.html">編集確認</a>
+
+          </strong><br><br>
+役職の登録を行う画面です。役職の登録が出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man112.html"><img src="./images/scr_help_man112.gif" alt="役職インポート"></a></th>
+        <td>
+          <strong>
+            <a href="h_man112.html">役職インポート</a>
+            ・
+            <a href="h_man112kn.html">役職インポート確認</a>
+          </strong><br><br>
+役職のインポートを行う画面です。役職のインポートが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man150.html"><img src="./images/scr_help_man150.gif" alt="ライセンスファイル登録・更新"></a></th>
+        <td>
+          <strong>
+          <a href="h_man150.html">ライセンスファイル登録・更新</a>
+          ・
+          <a href="h_man150kn.html">確認</a>
+          </strong>
+          <br><br>
+          ライセンスファイルの登録、更新を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man120.html"><img src="./images/scr_help_man120.gif" alt="プラグインマネージャー"></a></th>
+        <td>
+<a href="h_man120.html"><strong>プラグインマネージャー</strong></a><br><br>
+GroupSession内で使用するプラグインの管理を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man130.html"><img src="./images/scr_help_man130.gif" alt="添付ファイル設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man130.html">添付ファイル設定</a>
+          ・
+          <a href="h_man130kn.html">確認</a>
+          </strong>
+          <br><br>
+          添付ファイルの設定を行う画面です。添付ファイルの最大容量の設定を行うことが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man140.html"><img src="./images/scr_help_man140.gif" alt="セッション保持時間設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man140.html">セッション保持時間設定</a>
+          ・
+          <a href="h_man140kn.html">確認</a>
+          </strong>
+          <br><br>
+          セッション保持時間の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man160.html"><img src="./images/scr_help_man160.gif" alt="モバイルID・パスワード保存設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man160.html">モバイルID・パスワード保存設定</a>
+          ・
+          <a href="h_man160kn.html">確認</a>
+          </strong>
+          <br><br>
+          モバイルID・パスワードの保存設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man210.html"><img src="./images/scr_help_man210.gif" alt="モバイル使用一括設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man210.html">モバイル使用一括設定</a>
+          ・
+          <a href="h_man210kn.html">確認</a>
+          </strong>
+          <br><br>
+          モバイル使用一括設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man180.html"><img src="./images/scr_help_man180.gif" alt="ログイン履歴自動削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man180.html">ログイン履歴自動削除設定</a>
+          ・
+          <a href="h_man180kn.html">確認</a>
+          </strong>
+          <br><br>
+          ログイン履歴のバッチ削除削除設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man190.html"><img src="./images/scr_help_man190.gif" alt="ログイン履歴手動削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_man190.html">ログイン履歴手動削定</a>
+          ・
+          <a href="h_man190kn.html">確認</a>
+          </strong>
+          <br><br>
+          ログイン履歴の手動削除を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man390.html"><img src="./images/scr_help_man390.gif" alt="ログイン履歴統計情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_man390.html">ログイン履歴統計情報</a>
+          </strong>
+          <br><br>
+          ログイン履歴の統計情報を一覧表示する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man0500.html"><img src="./images/scr_help_man0500.gif" alt="最終ログイン時間(管理者)"></a></th>
+        <td>
+          <strong>
+          <a href="h_man0500.html">最終ログイン時間(管理者)</a>
+          </strong>
+          <br><br>
+          各ユーザのGroup Session最終ログイン時間を一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man0501.html"><img src="./images/scr_help_man0501.gif" alt="最終ログイン時間 詳細検索(管理者)"></a></th>
+        <td>
+          <strong>
+          <a href="h_man0501.html">最終ログイン時間 詳細検索</a>
+          </strong>
+          <br><br>
+          各ユーザのGroup Sessionログイン時間を詳細検索し、一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man0502.html"><img src="./images/scr_help_man0502.gif" alt="最終ログイン時間(一般ユーザ)"></a></th>
+        <td>
+          <strong>
+          <a href="h_man0502.html">最終ログイン時間(一般ユーザ)</a>
+          </strong>
+          <br><br>
+          各ユーザのGroup Session最終ログイン時間を一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man170.html"><img src="./images/scr_help_man170.gif" alt="ログイン履歴詳細"></a></th>
+        <td>
+          <strong>
+          <a href="h_man170.html">ログイン履歴詳細</a>
+          </strong>
+          <br><br>
+          ログインの履歴を閲覧する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man420.html"><img src="./images/scr_help_man420.gif" alt="自動連携設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man420.html">自動連携設定</a>
+          </strong>
+          <br><br>
+          自動連携の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man420kn.html"><img src="./images/scr_help_man420kn.gif" alt="自動連携設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_man420kn.html">自動連携設定確認</a>
+          </strong>
+          <br><br>
+          自動連携の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man430.html"><img src="./images/scr_help_man430.gif" alt="外部ページ表示制限設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man430.html">外部ページ表示制限設定</a>
+          </strong>
+          <br><br>
+          外部ページ表示制限の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man430kn.html"><img src="./images/scr_help_man430kn.gif" alt="外部ページ表示制限設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_man430kn.html">外部ページ表示制限設定確認</a>
+          </strong>
+          <br><br>
+          外部ページ表示制限設定の確認を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man200.html"><img src="./images/scr_help_man200.gif" alt="パスワードルール設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man200.html">パスワードルール設定</a>・<a href="h_man200kn.html">確認</a>
+          </strong>
+          <br><br>
+          ユーザパスワードのルール設定を行う画面です。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_man510.html"><img src="./images/scr_help_man510.gif" alt="ワンタイムパスワード設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man510.html">ワンタイムパスワード設定</a>・<a href="h_man510kn.html">確認</a>
+          </strong>
+          <br><br>
+          ワンタイムパスワード設定を行う画面です。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_man520.html"><img src="./images/scr_help_man520.gif" alt="データ使用量一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_man520.html">データ使用量一覧</a>
+          </strong>
+          <br><br>
+          各プラグインのデータ使用量を確認する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr010.html"><img src="../../user/help/images/scr_help_usr010.gif" alt="グループマネージャー"></a></th>
+        <td>
+<a href="../../user/help/h_usr010.html"><strong>グループマネージャー</strong></a><br><br>
+グループの管理を行う画面です。グループの追加、修正、削除が行えます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr0110.html"><img src="../../user/help/images/scr_help_usr0110.gif" alt="グループマネージャー(追加)"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr0110.html">グループマネージャー(追加)</a>
+          ・
+          <a href="../../user/help/h_usr011kn0.html">追加確認</a>
+          ・
+          <a href="../../user/help/h_usr0111.html">グループマネージャー(編集)</a>
+          ・
+          <a href="../../user/help/h_usr011kn1.html">編集確認</a>
+          ・
+          <a href="../../user/help/h_usr011kn2.html">削除</a>
+          </strong>
+          <br><br>
+          グループの追加・編集画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr012.html"><img src="../../user/help/images/scr_help_usr012.gif" alt="グループマネージャー(所属ユーザ一覧) "></a></th>
+        <td>
+<a href="../../user/help/h_usr012.html"><strong>グループマネージャー(所属ユーザ一覧) </strong></a><br><br>
+グループマネージャ画面で選択したグループに所属するユーザを一覧表示する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr013.html"><img src="../../user/help/images/scr_help_usr013.gif" alt="グループインポート"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr013.html">グループインポート</a>
+          ・
+          <a href="../../user/help/h_usr013kn.html">確認</a>
+          </strong>
+          <br><br>
+          csvファイルからグループのインポートを行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr0300.html"><img src="../../user/help/images/scr_help_usr0300.gif" alt="ユーザマネージャー[五十音検索]"></a></th>
+        <td>
+<a href="../../user/help/h_usr0300.html"><strong>ユーザマネージャー[五十音検索]</strong></a><br><br>
+ユーザの管理を行う画面です。ユーザの追加、修正、削除が行えます。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="../../user/help/h_usr0301.html"><img src="../../user/help/images/scr_help_usr0301.gif" alt="ユーザマネージャー[詳細検索]"></a></th>
+        <td>
+<a href="../../user/help/h_usr0301.html"><strong>ユーザマネージャー[詳細検索]</strong></a><br><br>
+ユーザの管理を行う画面です。ユーザの詳細検索、追加、修正、削除が行えます。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="../../user/help/h_usr031add.html"><img src="../../user/help/images/scr_help_usr031add.gif" alt="ユーザマネージャー(追加)"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr031add.html">ユーザマネージャー(追加)</a>
+          ・
+          <a href="../../user/help/h_usr031knadd.html">追加確認</a>
+          ・
+          <a href="../../user/help/h_usr031kndel.html">削除確認</a>
+          </strong>
+          <br><br>
+          ユーザの追加･編集・削除を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr0320.html"><img src="../../user/help/images/scr_help_usr0320.gif" alt="ユーザインポート"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr0320.html">ユーザインポート(グループ指定)</a>
+          ・
+          <a href="../../user/help/h_usr032kn0.html">確認</a>
+          </strong>
+          <br>
+          <strong>
+          <a href="../../user/help/h_usr0321.html">ユーザインポート(ユーザー・グループ指定)</a>
+          ・
+          <a href="../../user/help/h_usr032kn1.html">確認</a>
+          </strong>
+          <br>
+          <strong>
+          <a href="../../user/help/h_usr0322.html">ユーザインポート(ユーザー・複数グループ指定)</a>
+          ・
+          <a href="../../user/help/h_usr032kn2.html">確認</a>
+          </strong>
+          <br><br>
+          csvファイルからユーザのインポートを行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr033.html"><img src="../../user/help/images/scr_help_usr033.gif" alt="ユーザ一括削除"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr033.html">ユーザ一括削除</a>
+          ・
+          <a href="../../user/help/h_usr033kn.html">確認</a>
+          </strong>
+          <br><br>
+          csvファイルによるユーザの一括削除を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn160.html"><img src="../../common/help/images/scr_help_cmn160.gif" alt="企業情報"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn160.html">企業情報登録</a>
+          ・
+          <a href="../../common/help/h_cmn160kn.html">確認</a>
+          </strong>
+          <br>
+          <br><br>
+          企業情報の登録を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../main/help/h_man230.html"><img src="../../main/help/images/scr_help_man230.gif" alt="システム情報"></a></th>
+        <td>
+          <strong>
+          <a href="../../main/help/h_man230.html">システム情報</a>
+          </strong>
+          <br>
+          <br><br>
+          サーバーのシステム情報を表示する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man030.html"><img src="./images/scr_help_man030.gif" alt="個人設定メニュー"></a></th>
+        <td>
+<a href="h_man030.html"><strong>個人設定メニュー</strong></a><br><br>
+メイン画面の項目表示･非表示の設定や、個人情報の修正、マイグループの登録などを行うことが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr050.html"><img src="../../user/help/images/scr_help_usr050.gif" alt="パスワード変更"></a></th>
+        <td>
+<a href="../../user/help/h_usr050.html"><strong>パスワード変更</strong></a><br><br>
+GroupSessionログイン時のパスワードを変更できます。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="../../user/help/h_usr060.html"><img src="../../user/help/images/scr_help_usr060.gif" alt="ワンタイムパスワード通知先メールアドレス変更"></a></th>
+        <td>
+            <a href="../../user/help/h_usr060.html"><strong>ワンタイムパスワード通知先メールアドレス変更</strong></a><br><br>
+            GroupSessionログイン時のワンタイムパスワード通知先メールアドレスを変更できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../user/help/h_usr031kojn_edit.html"><img src="../../user/help/images/scr_help_usr031kojn_edit.gif" alt="個人情報の修正"></a></th>
+        <td>
+          <strong>
+          <a href="../../user/help/h_usr031kojn_edit.html">個人情報の修正</a>
+          ・
+          <a href="../../user/help/h_usr031knkojn_edit.html">確認</a>
+          </strong>
+          <br><br>
+          GroupSession内で使用される個人情報の修正が行えます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn140.html"><img src="../../common/help/images/scr_help_cmn140.gif" alt="メニュー項目の設定"></a></th>
+        <td>
+<a href="../../common/help/h_cmn140.html"><strong>メニュー項目の設定</strong></a><br><br>
+上部メニューボタンの表示・非表示と、位置の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn150.html"><img src="../../common/help/images/scr_help_cmn150.gif" alt="メイン画面表示設定"></a></th>
+        <td>
+<a href="../../common/help/h_cmn150.html"><strong>メイン画面表示設定</strong></a><br><br>
+メイン画面の時計、最終ログイン時間の表示･非表示、自動リロード時間の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn130.html"><img src="../../common/help/images/scr_help_cmn130.gif" alt="マイグループ設定"></a></th>
+        <td>
+<a href="../../common/help/h_cmn130.html"><strong>マイグループ設定</strong></a><br><br>
+マイグループの設定を行います。よく利用する宛先をマイグループとして設定することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn131.html"><img src="../../common/help/images/scr_help_cmn1310.gif" alt="マイグループ登録"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn1310.html">マイグループ登録</a>
+          ・
+          <a href="../../common/help/h_cmn131kn0.html">登録確認</a>
+          ・
+          <a href="../../common/help/h_cmn1311.html">マイグループ編集</a>
+          ・
+          <a href="../../common/help/h_cmn131kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          マイグループの登録を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man320.html"><img src="./images/scr_help_man320.gif" alt="インフォメーション一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_man320.html">インフォメーション一覧</a>
+          </strong>
+          <br><br>
+          インフォメーションの管理を行う画面です。インフォメーションメッセージの登録、管理者設定などが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man2900.html"><img src="./images/scr_help_man2900.gif" alt="インフォメーション登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_man2900.html">インフォメーション登録</a>
+          ・
+          <a href="h_man2901.html">変更</a>
+          ・
+          <a href="h_man290kn0.html">登録確認</a>
+          ・
+          <a href="h_man290kn1.html">変更確認</a>
+          </strong>
+          <br><br>
+          インフォメーションメッセージの登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man300.html"><img src="./images/scr_help_man300.gif" alt="インフォメーション 管理者設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man300.html">管理者設定</a>
+          ・
+          <a href="h_man300kn.html">管理者設定確認</a>
+          </strong>
+          <br><br>
+          インフォメーションの管理者設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man3300.html"><img src="./images/scr_help_man3300.gif" alt="所属情報一括設定 エクスポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_man3300.html">所属情報一括エクスポート</a>
+          ・
+          <a href="h_man3301.html">所属情報一括インポート</a>
+          ・
+          <a href="h_man330kn1.html">所属情報一括インポート確認</a>
+          </strong>
+          <br><br>
+          ユーザの所属情報をエクスポート・インポートする画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man350.html"><img src="./images/scr_help_man350.gif" alt="管理者設定　メイン画面レイアウト設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man350.html">管理者設定 メイン画面レイアウト設定</a>
+          ・
+          <a href="h_man350kn.html">管理者設定 メイン画面レイアウト設定確認</a>
+          </strong>
+          <br><br>
+          メイン画面のレイアウトの設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_man360.html"><img src="./images/scr_help_man360.gif" alt="個人設定メイン画面レイアウト設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_man360.html">個人設定 メイン画面レイアウト設定</a>
+          ・
+          <a href="h_man360kn.html">個人設定 メイン画面レイアウト設定確認</a>
+          </strong>
+          <br><br>
+          メイン画面のレイアウトの設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn250.html"><img src="../../common/help/images/scr_help_cmn250.gif" alt="OAuth認証情報管理"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn250.html">OAuth認証情報管理</a>
+          </strong>
+          <br><br>
+          登録されているOAuth認証情報の管理を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn260.html"><img src="../../common/help/images/scr_help_cmn260.gif" alt="OAuth認証情報登録"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn260.html">OAuth認証情報登録</a>
+          </strong>
+          <br><br>
+          OAuth認証情報の新規登録・編集を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn260kn.html"><img src="../../common/help/images/scr_help_cmn260kn.gif" alt="OAuth認証情報登録確認"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn260kn.html">OAuth認証情報登録確認</a>
+          </strong>
+          <br><br>
+          OAuth認証情報の新規登録・編集を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn280sch.html"><img src="../../common/help/images/scr_help_cmn280sch.gif" alt="管理者設定ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn280sch.html">管理者設定ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          各プラグインのショートメール通知設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn290sch.html"><img src="../../common/help/images/scr_help_cmn290sch.gif" alt="個人設定ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn290sch.html">個人設定ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          各プラグインのショートメール通知設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn300sch.html"><img src="../../common/help/images/scr_help_cmn300sch.gif" alt="自動削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn300sch.html">自動削除設定</a>
+          </strong>
+          <br><br>
+          各プラグインの自動削除設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn310sch.html"><img src="../../common/help/images/scr_help_cmn310sch.gif" alt="手動削除"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn310sch.html">手動削除</a>
+          </strong>
+          <br><br>
+          各プラグインの手動削除を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn320.html"><img src="../../common/help/images/scr_help_cmn320.gif" alt="管理者設定 表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn320.html">管理者設定 表示設定</a>
+          </strong>
+          <br><br>
+          GroupSession内全体の表示設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="../../common/help/h_cmn350.html"><img src="../../common/help/images/scr_help_cmn350.gif" alt="個人設定 表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="../../common/help/h_cmn350.html">個人設定 表示設定</a>
+          </strong>
+          <br><br>
+          GroupSession内全体の表示設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+          <th><a href="../../common/help/h_cmn400.html"><img src="../../common/help/images/scr_help_cmn400.gif" alt="ブラウザ通知設定"></a></th>
+          <td>
+            <strong>
+            <a href="../../common/help/h_cmn400.html">ブラウザ通知設定</a>
+            </strong>
+            <br><br>
+            ブラウザ通知を送信し、正常に通知が行われるかを確認します。
+          </td>
+        </tr>
+
+        <tr>
+          <th><a href="../../common/help/h_cmn330.html"><img src="../../common/help/images/scr_help_cmn330.gif" alt="連携API管理"></a></th>
+          <td>
+            <strong>
+            <a href="../../common/help/h_cmn330.html">連携API管理</a>
+            </strong>
+            <br><br>
+            登録されている連携APIの管理を行います。
+          </td>
+        </tr>
+
+        <tr>
+          <th><a href="../../common/help/h_cmn340.html"><img src="../../common/help/images/scr_help_cmn340.gif" alt="連携API登録"></a></th>
+          <td>
+            <strong>
+            <a href="../../common/help/h_cmn340.html">連携API登録</a>
+            </strong>
+            <br><br>
+            連携APIの新規登録・編集を行います。
+          </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

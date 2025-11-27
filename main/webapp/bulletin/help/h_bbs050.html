@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 掲示板 表示設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bbs_left_list.html');chengeHeaderText('[ 掲示板 表示設定 ]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="掲示板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>掲示板に関する表示設定を行う画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_bbs050.gif" alt="掲示板 表示設定 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">OKボタン</h2>
+		  <p>掲示板個人設定表示設定を登録し、掲示板個人設定メニュー画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>遷移元の画面へ遷移します。</p>
+		</td>
+		</tr>
+		</table>
+
+		<!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+		<div class="help-right-func-item">
+		<h2>フォーラム表示件数</h2>
+		<p>掲示板一覧に表示するフォーラム数を選択します。</p>
+		<h2>スレッド表示件数</h2>
+		<p>スレッド一覧に表示するスレッド数を選択します。</p>
+		<h2>投稿表示件数</h2>
+		<p>投稿一覧に表示する投稿数を選択します。</p>
+		<h2>new表示日数</h2>
+		<p>新しい投稿が書き込まれてから
+		<img src="../../bulletin/images/classic/icon_new.gif" alt="new">
+		を表示する日数を選択します。</p>
+		<h2>投稿一覧表示順</h2>
+		<p>投稿一覧画面に表示する投稿の表示順を設定します。（ソート対象は投稿日時）</p>
+    	<h2>投稿者画像表示</h2>
+        <p>投稿者画像の表示・非表示を設定します。</p>
+        <h2>添付画像表示</h2>
+		<p>添付画像の表示・非表示を設定します。</p>
+    	<h2>サブコンテンツ<br>新着スレッド一覧</h2>
+		<p>フォーラム一覧画面、左の新着スレッドの表示・非表示を設定できます。</p>
+    	<h2>サブコンテンツ<br>フォーラム一覧</h2>
+		<p>スレッド一覧・投稿一覧画面、左のフォーラム一覧の表示・非表示を設定できます。</p>
+    	<h2>サブコンテンツ<br>未読スレッド一覧</h2>
+		<p>スレッド一覧・投稿一覧画面、左の未読スレッドの表示・非表示を設定できます。</p>
+		<h2>メイン画面スレッド表示件数</h2>
+		<p>メイン画面に表示するスレッド数を設定します。</p>
+		<h2>メイン画面の既読投稿表示</h2>
+		<p>メイン画面の投稿一覧に既読投稿を表示するかを設定します。</p>
+		</div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

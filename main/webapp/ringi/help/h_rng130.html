@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 稟議詳細検索</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議詳細検索 ]');">
+<div id="container"><a name="top"></a>
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>稟議の詳細検索を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng130.gif" alt="稟議詳細検索画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+    <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+      <tr>
+        <td>
+          <h2 class="num-back01">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        <td>
+          <h2 class="num-back02">アカウントコンボボックス</h2>
+          <p>検索対象のアカウントを切り替えます。<br>
+             選択可能なアカウントは、自分および自分が代理人となっているユーザのアカウントです。</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="num-back03">グループ選択ボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。</p>
+        </td>
+        <td>
+          <h2 class="num-back04">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。<br>カレンダー画面で日付をクリックすると、クリックした日付が検索条件に設定されます。</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="num-back05">検索ボタン</h2>
+          <p>入力された検索条件で検索を行い結果を表示します。</p>
+        </td>
+        <td>
+          <h2 class="num-back06">PDF出力ボタン</h2>
+          <p>表示中の案件をPDF出力・エクスポートします。<br>
+          PDF出力を行うと、表示中の案件を1件ずつPDF形式で出力し、全てのファイルをzip形式で圧縮したデータをダウンロードできます。</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="num-back07">エクスポートボタン</h2>
+          <p>エクスポートを行うと、表示中の案件をcsv形式でダウンロードできます。<br>
+          エクスポートファイルには、「稟議タイトル」「申請者」「申請日」「稟議状態」「最終処理日時」「申請内容」「経路」「各経路の審議状況」が出力されます。</p>
+        </td>
+        <td>
+          <h2 class="num-back08">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="num-back09">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        <td>
+          <h2 class="num-back10">稟議内容</h2>
+          <p>稟議のタイトル、申請者、申請日時、最終処理日時、作成日時を表示します。</p>
+        </td>
+      </tr>
+    </table>
+
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>種別</h2><p>稟議の種別を選択します。</p>
+    <h2>状態</h2><p>稟議の状態を選択します。</p>
+    <h2>キーワード</h2><p>件名または内容の検索に使用するキーワードを入力します(100文字以内)。</p>
+    <h2>申請日時</h2><p>申請日時を選択します。(種別 = 草稿の場合は入力不可)</p>
+    <h2>最終確認日時</h2><p>最終処理日時を選択します。(種別 = 受信、草稿の場合は入力不可)</p>
+    <h2>ソート順</h2><p>第1キーと、第2キーを指定できます。それぞれのソート順について、昇順、降順の設定ができます。<br>検索結果のタイトルと連動しています。</p>
+
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

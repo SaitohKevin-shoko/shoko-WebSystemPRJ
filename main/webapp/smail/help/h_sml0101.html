@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ショートメール ショートメール一覧 送信</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sml_left_list.html');chengeHeaderText('[ ショートメール ショートメール一覧 送信 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="ショートメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>送信したショートメールの一覧を確認する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_sml0101.gif" alt="ショートメール一覧　送信画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">再読込ボタン</h2>
+		  <p>ショートメール一覧を再読込します。再読込が終了すると送信したショートメールの一覧を表示します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">アカウント管理ボタン</h2>
+		  <p>個人設定のアカウントの管理画面へ遷移します。</p>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+          <h2 class="num-back03">管理者設定ボタン</h2>
+		  <p>管理者設定画面へ遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">個人設定ボタン</h2>
+		  <p>個人設定画面へ遷移します。</p>
+		</th>
+		</tr>
+
+		<tr>
+		<th>
+          <h2 class="num-back05">検索ボタン</h2>
+		  <p>入力されたキーワードを元に詳細検索画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">新規作成ボタン</h2>
+		  <p>ショートメール新規作成画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">PDF出力ボタン</h2>
+		  <p>選択されたメッセージのPDF出力を行います。<br>※HTML形式の場合でもテキスト形式で出力されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">eml出力ボタン</h2>
+		  <p>選択されたメッセージのeml出力を行います。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back09">ラベル追加ボタン</h2>
+		  <p>ラベル追加ポップアップが表示されます。
+		     <br>選択されたメールにラベルを選択して追加することが出来ます。
+		</th>
+		<td>
+          <h2 class="num-back10">ラベル削除ボタン</h2>
+		  <p>ラベル削除ポップアップが表示されます。
+		     <br>選択されたメールのラベルを選択して削除することが出来ます。
+		     </p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back11">削除ボタン</h2>
+		  <p>削除確認画面へ遷移します。削除確認画面でOKボタンをクリックすると、一覧でチェックを付けた送信メールをゴミ箱へ移動します。</p>
+		  </p>
+		</td>
+		<th>
+          <h2 class="num-back12">ページコンボ・前頁・次頁</h2>
+		  <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back13">ヘッダチェックボックス</h2>
+		  <p>チェックをつけると、１ページ分の全てのチェックボックスにチェックが付きます。チェックを外すと、１ページ分の全てのチェックボックスのチェックが外れます。</p>
+		</th>
+		<td>
+          <h2 class="num-back14">ヘッダタイトル</h2>
+		  <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+		</td>
+        </tr>
+		<tr>
+		<td>
+          <h2 class="num-back15">ショートメールメール内容</h2>
+          <p>ショートメールのマーク、件名、差出人、日時を表示します。<br>
+          添付ファイルが存在する場合、クリップのアイコンが表示されます。<br>
+          ラベルが追加されている場合、追加されたラベル名が表示されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back16">アカウント詳細切り替え</h2>
+          <p>クリックするとアカウント詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+		</th>
+        </tr>
+        <tr>
+		<th>
+          <h2 class="num-back17">アカウント一覧</h2>
+		  <p>表示されているアカウントを選択することが出来ます。
+		  <br>選択されたアカウントのショートメール送信一覧が表示されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back18">メールボックス詳細切り替え</h2>
+          <p>クリックするとメールボックス詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+		</td>
+		</tr>
+        <tr>
+		<td>
+          <h2 class="num-back19"><a href="h_sml0100.html"><span class="linkTitle">受信ボックス</span></a></h2>
+          <p>受信したショートメールの一覧を表示します。括弧内の数字は、未読のショートメールの数です。</p>
+		</td>
+		<th>
+          <h2 class="num-back20"><a href="h_sml0101.html"><span class="linkTitle">送信ボックス</span></a></h2>
+          <p>送信したショートメールの一覧を表示します。</p>
+		</th>
+		</tr>
+        <tr>
+		<th>
+          <h2 class="num-back21"><a href="h_sml0102.html"><span class="linkTitle">草稿ボックス</span></a></h2>
+          <p>作成した草稿の一覧を表示します。括弧内の数字は、草稿保存されている数です。</p>
+		</th>
+		<td>
+          <h2 class="num-back22"><a href="h_sml0104.html"><span class="linkTitle">ゴミ箱ボックス</span></a></h2>
+          <p>ゴミ箱へ移動したショートメールの一覧を表示します。</p>
+		</td>
+		</tr>
+        <tr>
+		<td>
+          <h2 class="num-back23"><a href="h_sml0105.html"><span class="linkTitle">ラベルボックス</span></a></h2>
+          <p>選択されたラベルのショートメール一覧を表示します。括弧内の数字は、未読のショートメールの数です。</p>
+		</td>
+		<th>
+          <h2 class="num-back24">ユーザ情報詳細切り替え</h2>
+          <p>クリックするとユーザ情報詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back25">グループボタン</h2>
+		  <p>ポップアップでグループ選択画面が開きます。
+             <br>グループ選択画面でグループをクリックすると、
+             <br>クリックしたグループが選択グループに表示されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back26">宛先ボタン</h2>
+          <p>チェックボックスで選択したユーザを宛先に設定し、新規作成画面を開きます。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back27">CCボタン</h2>
+          <p>チェックボックスで選択したユーザをCCに設定し、新規作成画面を開きます。</p>
+		</td>
+		<th>
+          <h2 class="num-back28">BCCボタン</h2>
+		  <p>チェックボックスで選択したユーザをBCCに設定し、新規作成画面を開きます。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back29">全選択チェックボックス</h2>
+		  <p>チェックをつけると、全てのユーザのチェックボックスにチェックが付きます。チェックを外すと、全てのユーザのチェックボックスのチェックが外れます。</p>
+		</th>
+		<td>
+          <h2 class="num-back30">ユーザリンク</h2>
+          <p>選択したユーザを宛先に設定し、新規作成画面を開きます。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back31">ひな形（共通）一覧切り替え</h2>
+          <p>クリックするとひな形（共通）一覧が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+		</td>
+		<th>
+          <h2 class="num-back32">ひな形（個人）一覧切り替え</h2>
+		  <p>クリックするとひな形（個人）一覧が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+		</th>
+		</tr>
+		<tr>
+		<tr>
+		<th>
+          <h2 class="num-back33">ひな形追加リンク</h2>
+		  <p>ひな形一覧画面へ遷移します。</p>
+		</th>
+		</tr>
+		</table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>検索キーワード</h2><p>検索するキーワードを入力します。</p>
+    </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

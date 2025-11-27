@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 回覧板 詳細</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_cir_left_list.html');chengeHeaderText('[ 回覧板 詳細検索 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="回覧板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+       </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>回覧板機能の詳細検索を行う画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_cir060.gif" alt="回覧板 詳細検索画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back03">選択ボタン</h2>
+          <p>宛先選択画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">クリアボタン</h2>
+          <p>現在選択されている宛先をクリアします。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">検索ボタン</h2>
+          <p>入力された検索条件で検索を行い結果を表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">回覧板内容</h2>
+          <p>タイトル、確認、日時、発信者を表示します。確認前の回覧板は青、確認済の回覧板は紫の文字で表示されます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">検索文字列</h2>
+          <p>「「×××」をWEB検索する」リンククリックで、表示されている検索ワードでウェブ検索を行います。<br>
+         「×××」には、回覧板内検索を行ったキーワードが入ります。</p>
+        </th>
+        </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>対象アカウント</h2><p>詳細検索を行う対象アカウントを表示します。</p>
+        <h2>回覧板種別</h2><p>回覧板種別を選択します。</p>
+        <h2>発信者</h2><p>発信者を選択します。グループ指定のみ可（回覧板種別が送信済の時は選択できません）。</p>
+        <h2>回覧先</h2><p>回覧先選択を行います（回覧板種別が受信の時は選択できません）。</p>
+        <h2>キーワード</h2><p>検索するキーワードを入力します。</p>
+        <h2>検索対象</h2><p>キーワード検索の範囲を選択します。</p>
+        <h2>ソート順</h2><p>第1キーと、第2キーを指定できます。それぞれのソート順について、昇順、降順の設定ができます。<br>検索結果のタイトルと連動しています。</p>
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ブックマーク 新着ブックマーク一覧</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bmk_left_list.html');chengeHeaderText('[ ブックマーク 新着ブックマーク一覧]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="ブックマーク トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>新着ブックマークの一覧を表示する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_bmk150.gif" alt="ブックマーク 新着ブックマーク一覧 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">戻るボタン</h2>
+		  <p>遷移元の画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">ページングコンボ・前頁・次頁</h2>
+		  <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">ブックマークリンク</h2>
+		  <p>ブックマークのページ先が別ウィンドウで開きます。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">登録人数</h2>
+		  <p>コメント・評価画面へ遷移します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">追加ボタン</h2>
+		  <p>ブックマーク登録-URL入力画面へ遷移します。</p>
+		</th>
+		<td>
+		</td>
+		</tr>
+		</table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+		<div class="help-right-func-item">
+		<h2>新着ブックマーク一覧</h2><p>新着ブックマークを一覧表示します。</p>
+
+		</div>
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

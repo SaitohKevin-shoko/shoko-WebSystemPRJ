@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ユーザ情報 ユーザ情報POPUP</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_usr_left_list.html');chengeHeaderText('[ ユーザ情報 ユーザ情報POPUP ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="ユーザ情報 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>個人情報の確認を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_usr100.gif" alt="機能詳細 個人情報の確認"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">閉じるボタン</h2>
+      <p>個人情報ポップアップ画面を閉じます。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">アドレスリンク</h2>
+      <p>メーラーが起動し、クリックしたアドレスにメールを送信することができます。</p>
+    </td>
+    </tr>
+
+    </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>社員/職員番号</h2><p>社員/職員番号が表示されます。</p>
+    <h2>写真</h2><p>写真が表示されます。</p>
+    <h2>氏名</h2><p>氏名が表示されます。</p>
+    <h2>氏名カナ</h2><p>氏名カナが表示されます。</p>
+    <h2>所属</h2><p>所属が表示されます。</p>
+    <h2>役職</h2><p>役職が表示されます。</p>
+    <h2>生年月日(西暦)</h2><p>生年月日(西暦)が表示されます。</p>
+    <h2>メールアドレス１</h2><p>メールアドレス１が表示されます。</p>
+    <h2>メールアドレス２</h2><p>メールアドレス２が表示されます。</p>
+    <h2>メールアドレス３</h2><p>メールアドレス３が表示されます。</p>
+    <h2>郵便番号</h2><p>郵便番号が表示されます。</p>
+    <h2>都道府県</h2><p>都道府県が表示されます。</p>
+    <h2>住所１</h2><p>住所１が表示されます。</p>
+    <h2>住所２</h2><p>住所２が表示されます。</p>
+    <h2>電話番号１</h2><p>電話番号１が表示されます。</p>
+    <h2>電話番号２</h2><p>電話番号２が表示されます。</p>
+    <h2>電話番号３</h2><p>電話番号３が表示されます。</p>
+    <h2>ＦＡＸ１</h2><p>ＦＡＸ１が表示されます。</p>
+    <h2>ＦＡＸ２</h2><p>ＦＡＸ２が表示されます。</p>
+    <h2>ＦＡＸ３</h2><p>ＦＡＸ３が表示されます。</p>
+    <h2>モバイル使用</h2><p>モバイル使用状態が表示されます。</p>
+    <h2>備考</h2><p>備考が表示されます。</p>
+    <h2>所属グループ</h2><p>所属グループが表示されます。</p>
+    <h2>QRコード</h2><p>各キャリアで利用できるQRコードが表示されます。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

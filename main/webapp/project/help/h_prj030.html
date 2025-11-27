@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] プロジェクトメイン</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_prj_left_list.html');chengeHeaderText('[ プロジェクトメイン ]');">
+<div id="container"><a name="top"></a>
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="プロジェクト管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+    <p>プロジェクト情報を表示する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_prj030.gif" alt="プロジェクトメイン画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">修正ボタン</h2>
+		  <p>プロジェクト編集画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>遷移元画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">開始予定コンボ</h2>
+		  <p>TODO一覧に表示する開始予定の条件を変更して一覧を表示します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">状態コンボ</h2>
+		  <p>TODO一覧に表示する状態の条件を変更して一覧を表示します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">ラベルコンボ</h2>
+   	      <p>TODO一覧に表示するラベルの条件を変更して一覧を表示します。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">メンバーコンボ</h2>
+   	      <p>TODO一覧に表示するメンバーの条件を変更して一覧を表示します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		  <h2 class="num-back07">詳細検索ボタン</h2>
+   	      <p>TODO詳細検索画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">日付変更リンク</h2>
+          <p>日付変更ダイアログが表示され、TODO日付をシフトできます。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back09">変更ボタン</h2>
+          <p>TODOの状態をコンボボックスで選択し、変更します。</p>
+		</th>
+		<td>
+		  <h2 class="num-back10">インポートボタン</h2>
+          <p>TODOインポート画面へ遷移します。</p>
+		</td>
+		</tr>
+	    <tr>
+		<td>
+          <h2 class="num-back11">新規登録ボタン</h2>
+          <p>TODO登録画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back12">削除ボタン</h2>
+          <p>チェックボックスで選択したTODOを一括削除します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+		  <h2 class="num-back13">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back14">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+		</td>
+		</tr>
+	    <tr>
+		<td>
+          <h2 class="num-back15">TODOタイトル</h2>
+          <p>TODO参照画面へ遷移します。</p>
+		</td>
+		<th>
+		  <h2 class="num-back16">TODO編集ボタン</h2>
+          <p>クリックしたTODOの編集画面に遷移します。</p>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back17">コメントボタン</h2>
+          <p>TODO参照画面に遷移し、コメント一覧を表示します。</p>
+		</th>
+		<td>
+          <h2 class="num-back18">回覧ボタン・ショートメールボタン</h2>
+          <p>回覧板・ショートメールの新規作成画面へ遷移します。<br>
+          メンバーのチェックボックスで選択しているユーザが回覧先・宛先に設定されます。マイプロジェクトの場合は表示されません</p>
+		</td>
+		</tr>
+	    <tr>
+		<td>
+          <h2 class="num-back19">メンバー ユーザ名</h2>
+          <p>ユーザ名リンクをクリックすると、詳細なユーザ情報をポップアップで表示します。マイプロジェクトの場合は表示されません。</p>
+		</td>
+        <th>
+          <h2 class="num-back20">メンバー設定</h2>
+          <p>プロジェクトメンバーID設定画面へ遷移します。マイプロジェクトの場合は表示されません。</p>
+        </th>
+		</tr>
+		</table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>進捗率</h2><p>プロジェクトの進捗率を表示します。</p>
+    <h2>期間</h2><p>期間を表示します。</p>
+    <h2>目標・目的</h2><p>目標・目的を表示します。</p>
+    <h2>内容</h2><p>内容を表示します。</p>
+   </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>
+

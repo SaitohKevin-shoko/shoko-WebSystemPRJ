@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 日報 目標設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_nippou_left_list.html');chengeHeaderText('[ 日報 目標設定 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="日報 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>日報を目標設定単位で参照する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_ntp240.gif" alt="日報目標設定 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">日報 リンク</h2>
+          <p>日報週間画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">案件 リンク</h2>
+          <p>案件一覧画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">分析 リンク</h2>
+          <p>分析画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">マスタメンテナンス リンク</h2>
+          <p>マスタメンテナンス一覧画面へ遷移します。<br>システム管理者・プラグイン管理者のみが表示されます。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">管理者設定ボタン</h2>
+          <p>管理者設定メニュー画面へ遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">個人設定ボタン</h2>
+          <p>個人設定メニュー画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">年・月コンボ</h2>
+          <p>表示する年・月を設定します。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">前月・今月・翌月ボタン</h2>
+          <p>現在表示している日付から、表示を切り替えます。
+          <br>前月：1月前へ移動
+          <br>今月：今月へ移動
+          <br>翌月：1月先へ移動
+		</th>
+		</tr>
+
+		<tr>
+		<th>
+          <h2 class="num-back09">表示グループコンボ</h2>
+          <p>選択できるグループの一覧が表示されます。<br>
+          システム管理者・グループ管理者のみ表示されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back10">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br>クリックしたグループが選択グループに表示されます。<br>
+          システム管理者・グループ管理者のみ表示されます。</p>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+          <h2 class="num-back11">ユーザコンボ</h2>
+          <p>目標設定をするユーザを選択します。選択したユーザの目標一覧が表示されます。<br>
+          システム管理者・グループ管理者のみ表示されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back12">目標名リンク</h2>
+          <p>今年度の目標の達成率確認ポップアップが表示されます。</p>
+		</th>
+		</tr>
+
+		<tr>
+		<th>
+          <h2 class="num-back13">変更ボタン</h2>
+          <p>指定した目標を編集できるようにします。</p>
+		</th>
+		<td>
+          <h2 class="num-back14">確定ボタン</h2>
+          <p>変更した目標を変更します。</p>
+		</td>
+		</tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back15">キャンセルボタン</h2>
+          <p>目標の変更をキャンセルします。</p>
+        </td>
+        </tr>
+
+		</table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>目標名</h2><p>目標名を表示します。</p>
+        <h2>達成度</h2><p>達成値と目標値を表示します。<br>
+        目標値が設定されていない場合は、一番最近設定された目標値が表示されます。<br>
+        目標値が一度も設定されていない場合は、管理者が設定した初期値が表示されます。</p>
+        <h2>単位</h2><p>目標の単位を表示します。</p>
+        </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

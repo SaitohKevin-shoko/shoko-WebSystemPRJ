@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] スケジュール 週間</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sch_left_list.html');chengeHeaderText('[ スケジュール 週間 ]');">
+<div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+    <input type="button" value="スケジュール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>スケジュールを週間単位で参照する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_sch010.gif" alt="スケジュール週間 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">再読込ボタン</h2>
+          <p>表示画面の再読込を行います。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">PDF出力ボタン</h2>
+          <p>表示画面のPDF出力を行います。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">インポートボタン</h2>
+          <p>スケジュールインポート画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">個人週間ボタン</h2>
+          <p>スケジュール 個人週間画面へ遷移します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">日間ボタン</h2>
+          <p>スケジュール 日間画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">週間ボタン</h2>
+          <p>スケジュール 週間画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">月間ボタン</h2>
+          <p>スケジュール 月間画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">一覧ボタン</h2>
+          <p>スケジュール一覧画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">前週・前日・今日・翌日・翌週移動ボタン</h2>
+          <p>現在表示している日付から、表示を切り替えます。
+          <br>前週：1週間前へ移動
+          <br>前日：1日前へ移動
+          <br>今日：本日へ移動
+          <br>翌日：1日先へ移動
+          <br>翌週：1週間先へ移動</p>
+        </th>
+        <td>
+          <h2 class="num-back10">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。<br>
+          カレンダー画面で日付をクリックすると、クリックした日付を表示開始日として画面を再表示します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back11">表示グループコンボ</h2>
+          <p>登録されているグループ・マイグループ（橙色）の一覧が表示されます。このコンボで選択されたグループに所属するユーザの情報がスケジュール一覧に表示されます。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br>クリックしたグループが選択グループに表示されます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">一括選択ボタン</h2>
+          <p>一括選択・検索・登録・簡易登録ボタンが消えて、一括登録・選択中確認・個別選択ボタン・選択チェックボックスが表示されます。<br>
+             登録したいユーザ・日付にチェックした状態で一括登録ボタンを押下すると一括登録画面に遷移します。<br>
+             また選択中確認ボタンで現在の選択状況の確認、個別選択で通常の登録モードに切り替わります。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">検索ボタン</h2>
+          <p>検索ボタンをクリックすると、入力したキーワードを元にスケジュールの検索を行い一覧画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back15">ユーザ名リンク</h2>
+          <p>ユーザ名リンクをクリックすると、詳細なユーザ情報をポップアップで表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">月間・一覧・ショートメールアイコンボタン</h2>
+          <p>各種処理のショートカットボタンです。
+          <br>月間：対象ユーザのスケジュール月間画面へ遷移します。
+          <br>一覧：対象ユーザのスケジュール一覧画面へ遷移します。
+          <br>ショートメール：ユーザにショートメールを送信します。ショートメール新規作成画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back17">不在・在席・その他コンボ</h2>
+          <p>不在・在席・その他：在席状況を切り替えます。</p>
+          
+        </th>
+        <td>
+          <h2 class="num-back18">スケジュール新規登録ボタン</h2>
+          <p>スケジュール登録画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back19">スケジュール簡易登録ボタン</h2>
+          <p>簡易登録ポップアップが開きます。スケジュールの簡易登録を行います。</p>
+        </td>
+        <th>
+          <h2 class="num-back20">スケジュールタイトルリンク</h2>
+          <p>登録されているスケジュールのタイトルが表示されます。クリックするとスケジュール編集画面へ遷移します。<br>「G」はグループスケジュール、「TODO」はプロジェクトTODO編集画面へ遷移します。</p>
+          
+        </th>
+        </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>検索キーワード</h2><p>検索するキーワードを入力します。</p>
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

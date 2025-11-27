@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 稟議新規作成確認</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議新規作成確認 ]');">
+<div id="container"><a name="top"></a>
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>共有テンプレートを使用して作成した稟議の確認を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng020kn1.gif" alt="稟議新規作成確認 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">申請ボタン</h2>
+      <p>入力内容を新規稟議申請として登録し、登録申請完了画面へ遷移します。内容に不備がある場合エラーメッセージが表示されます。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back03">ユーザ名</h2>
+      <p>クリックするとユーザ情報をポップアップで表示します。クリックするとユーザ情報をポップアップで表示します。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">添付ファイル名</h2>
+      <p>クリックすると添付ファイルのダウンロードができます。</p>
+    </td>
+    </tr>
+    </table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+             <h2>申請ID</h2>
+           <p>管理者設定で申請IDの使用を許可されている場合、稟議申請時に発行される予定の申請IDが表示されます。<br>
+          あくまで予定なので、他のユーザと同時に稟議を申請した場合は、この申請IDが変更される可能性があります。<br>
+          申請IDの使用許可は<a href="h_rng180.html"><span class="textLink">管理者設定 基本設定</span></a>より行うことができます。</p>
+          <h2>経路情報</h2>
+          <p>稟議の承認経路・最終確認が表示されます。各経路についての詳細な説明は<a href="h_rng2400.html"><span class="linkTitle">こちら</span></a>をご参照下さい。</p>
+        </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

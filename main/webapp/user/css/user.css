@@ -1,0 +1,94 @@
+.sort_select_area a:hover {
+  text-decoration: underline;
+}
+
+/** グループの階層表現 */
+/* 1階層 */
+.dep1 {
+  padding-left: 10px;
+}
+
+/* 2階層 */
+.dep2 {
+  padding-left: 40px;
+}
+
+/* 3階層 */
+.dep3 {
+  padding-left: 70px;
+}
+
+/* 4階層 */
+.dep4 {
+  padding-left: 100px;
+}
+
+/* 5階層 */
+.dep5 {
+
+  padding-left: 130px;
+}
+
+/* 6階層 */
+.dep6 {
+  padding-left: 160px;
+}
+
+/* 7階層 */
+.dep7 {
+  padding-left: 190px;
+}
+
+/* 8階層 */
+.dep8 {
+  padding-left: 220px;
+}
+
+/* 9階層 */
+.dep9 {
+  padding-left: 250px;
+}
+
+/* 10階層 */
+.dep10 {
+  padding-left: 280px;
+}
+
+.wp45 {
+  width: 45px!important;
+}
+
+.wp450 {
+  width: 450px!important;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.ml35 {
+  margin-left: 35px;
+}
+
+.ui-widget-overlay {
+  display: none;
+}
+
+/* usr011用 */
+.dialog_overlay .ui-widget-overlay {
+  display: block;
+}
+
+.fw_b {
+  font-weight: bold!important;
+}
+
+/* Iframeの枠線用 */
+.hp302 {
+  height: 302px;
+}
+
+/* Iframeの枠線用(usr040_sub2) */
+.hp152 {
+  height: 152px;
+}

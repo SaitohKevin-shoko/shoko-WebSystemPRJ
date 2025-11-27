@@ -1,0 +1,227 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] チャット</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=chat');chengeHeaderText('[ チャット ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="チャット画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_cht010.html"><img src="./images/scr_help_cht010.gif" alt="一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht010.html">一覧</a> ・ <a href="h_cht010_3.html">タイムライン</a> ・ <a href="h_cht010_2.html">グループ管理</a>
+          </strong>
+          <br><br>
+          メッセージの送受信と、チャットグループの作成・編集・削除を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht020.html"><img src="./images/scr_help_cht020.gif" alt="管理者設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht020.html">管理者設定</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht030.html"><img src="./images/scr_help_cht030.gif" alt="個人設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht030.html">個人設定</a>
+          </strong>
+          <br><br>
+          チャットの個人設定を行う機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht040.html"><img src="./images/scr_help_cht040.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht040.html">基本設定</a> ・ <a href="h_cht040kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+          ユーザ間チャット、グループ作成の制限設定や既読表示の管理を設定できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht050.html"><img src="./images/scr_help_cht050.gif" alt="自動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht050.html">自動データ削除設定</a> ・ <a href="h_cht050kn.html">自動データ削除確認</a>
+          </strong>
+          <br><br>
+          チャットグループ/ユーザ間チャットの全メッセージを自動で削除するための設定を行う画面です。削除は日次バッチ処理時に実行されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht060.html"><img src="./images/scr_help_cht060.gif" alt="手動データ削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht060.html">手動データ削除</a> ・ <a href="h_cht060kn.html">手動データ削除確認</a>
+          </strong>
+          <br><br>
+          チャットグループ/ユーザ間チャットの全メッセージを手動で削除するための設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht070.html"><img src="./images/scr_help_cht070.gif" alt="統計情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht070.html">統計情報</a>
+          </strong>
+          <br><br>
+          チャットのメッセージ数・送信者数の統計の確認ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht080.html"><img src="./images/scr_help_cht080.gif" alt="特例アクセス管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht080.html">特例アクセス管理</a>
+          </strong>
+          <br><br>
+          特例アクセスの管理を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht0900.html"><img src="./images/scr_help_cht090.gif" alt="特例アクセス登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht0900.html">特例アクセス登録</a> ・ <a href="h_cht0901.html">編集</a><br>
+          <a href="h_cht090kn0.html">特例アクセス登録確認</a> ・ <a href="h_cht090kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          特例アクセスの登録・編集を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht100.html"><img src="./images/scr_help_cht100.gif" alt="グループ管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht100.html">グループ管理</a>
+          </strong>
+          <br><br>
+          チャットグループの管理を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht1100.html"><img src="./images/scr_help_cht110.gif" alt="グループ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht1100.html">グループ登録</a> ・ <a href="h_cht1101.html">編集</a><br>
+          <a href="h_cht110kn0.html">グループ登録確認</a> ・ <a href="h_cht110kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          チャットグループの登録・編集を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht120.html"><img src="./images/scr_help_cht120.gif" alt="通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht120.html">基本設定</a>
+          </strong>
+          <br><br>
+          チャットに関する基本設定を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht130.html"><img src="./images/scr_help_cht130.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht130.html">表示設定</a>
+          </strong>
+          <br><br>
+          チャット一覧画面を開いた際のデフォルト設定を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht140.html"><img src="./images/scr_help_cht140.gif" alt="カテゴリ管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht140.html">カテゴリ管理</a>
+          </strong>
+          <br><br>
+          チャットグループに設定できるカテゴリの管理を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_cht1500.html"><img src="./images/scr_help_cht150.gif" alt="カテゴリ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_cht1500.html">カテゴリ登録</a> ・ <a href="h_cht1501.html">編集</a><br>
+          <a href="h_cht150kn0.html">カテゴリ登録確認</a> ・ <a href="h_cht150kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          カテゴリの登録・編集を行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+          <th><a href="h_cht160.html"><img src="./images/scr_help_cht160.gif" alt="スタンプ管理"></a></th>
+          <td>
+            <strong>
+            <a href="h_cht160.html">スタンプ管理</a>
+            </strong>
+            <br><br>
+            チャットで使用するスタンプの管理を行うことができます。
+          </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

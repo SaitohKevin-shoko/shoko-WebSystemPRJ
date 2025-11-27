@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 施設予約 施設予約編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rsv_left_list.html');chengeHeaderText('[ 施設予約 施設予約編集 ]');">
+  <div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+      <input type="button" value="施設予約 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>施設の予約編集をする画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_rsv1105_1.gif" alt="施設予約編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">承認ボタン</h2>
+              <p>承認待ちの施設予約を承認します。<br>※施設グループ管理者が承認待ちの予約情報を表示した場合のみ使用可能</p>
+            </th>
+            <td>
+              <h2 class="num-back02">却下ボタン</h2>
+              <p>承認待ちの施設予約を却下します。<br>※施設グループ管理者が承認待ちの予約情報を表示した場合のみ使用可能</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">変更ボタン</h2>
+              <p>施設予約を編集します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">複写登録ボタン</h2>
+              <p>施設予約登録画面へ遷移します。その際、現在入力している内容が各入力項目に設定されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">削除ボタン</h2>
+              <p>削除確認画面へ遷移します。削除確認画面でOKボタンをクリックすると施設予約データを削除します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">繰り返し登録ボタン</h2>
+              <p>施設予約繰り返し登録画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">PDF出力ボタン</h2>
+              <p>表示画面のPDF出力を行います。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">表示・非表示ボタン</h2>
+              <p>施設情報の表示・非表示を切り替えます。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">ユーザ名</h2>
+              <p>ユーザ情報ポップアップを表示します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">カレンダーボタン</h2>
+              <p>日付選択カレンダーを表示します。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">時計ボタン</h2>
+              <p>時間選択用の時計を表示します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">前日・今日・翌日ボタン</h2>
+              <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>後日：1日後を設定</p>
+            </th>
+            <td>
+              <h2 class="num-back14">時間マスタリンク</h2>
+              <p>設定した時間を入力します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back16">全て削除ボタン</h2>
+              <p>選択済エリアに表示されている全てのグループおよびユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back17">選択済グループ</h2>
+              <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back18">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back19">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを選択済エリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back20">未選択グループ</h2>
+              <p>グループ名をクリックすることで、グループを選択済エリアに追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back21">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back22">グループ名</h2>
+              <p>グループ名をクリックすることで、グループおよびグループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back23">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back24">全て削除ボタン</h2>
+              <p>対象ユーザエリアに表示されている全てのユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back25">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back26">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを対象ユーザエリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back27">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを対象ユーザエリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back28">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back29">空き状況ボタン</h2>
+              <p>ポップアップで施設予約日間画面が表示され、同時登録ユーザや施設の予約状況を確認することができます。</p>
+            </th>
+          </tr>
+        </table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>施設グループ</h2><p>施設が所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2><p>施設が所属している施設グループの施設区分が表示されます。</p>
+          <h2>施設名</h2><p>施設名が表示されます。</p>
+          <h2>資産管理番号</h2><p>資産管理番号が表示されます。</p>
+          <h2>重複登録</h2><p>重複登録の可、不可が表示されます。</p>
+          <h2>予約可能期限</h2><p>予約可能期限が表示されます。</p>
+          <h2>備考</h2><p>備考が表示されます。</p>
+
+          <h2>登録者</h2><p>予約者の名前が表示されます。</p>
+          <h2>利用目的</h2><p>利用目的を入力します（50文字以内）。</p>
+          <h2>期間</h2><p>予約開始日時・予約終了日時を選択します。</p>
+          <h2>内容</h2><p>内容を入力します（1,000文字以内）。</p>
+          <h2>編集権限</h2><p>編集権限を指定します。</p>
+          <h2>公開区分</h2><p>公開区分を指定します。</p>
+          <h2>公開対象</h2><p>公開区分が指定ユーザ・グループのみ公開の時、公開する対象のユーザ・グループを選択します。</p>
+          <h2>変更の反映</h2><p>変更の反映を選択します。</p>
+          <h2>スケジュール登録</h2><p>当施設予約と同時にスケジュール登録を行う場合にスケジュール登録者を選択します。</p>
+          <h2>空き状況確認</h2><p>ポップアップで施設予約日間画面が表示され、同時登録ユーザや施設の予約状況を確認することができます。</p>
+        </div>
+
+      </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

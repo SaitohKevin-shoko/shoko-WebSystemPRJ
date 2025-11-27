@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メイン 管理者設定 外部ページ表示制限設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_man_left_list.html');chengeHeaderText('[ メイン 管理者設定 外部ページ表示制限設定 ]');">
+<div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+    <input type="button" value="メイン トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+     <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>外部ページの表示制限を設定する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_man430.gif" alt="管理者設定 外部ページ表示制限設定"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <td>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>外部ページ表示制限設定確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+        </td>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+        </table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>外部ページ表示制限</h2><p>外部ページの表示を制限するための設定事項を表示します。</p>
+        </div>
+
+       <p class="help-right-func-p">外部ページ表示制限設定詳細</p>
+       <div class="help-detailed-explanation">
+       1. 外部ページ表示制限設定の項目で「制限する」を選択します。<br>
+       2. GroupSession上での表示を許可する外部ドメインを一つ50文字以内で指定します(複数指定可)。<br>
+       3. 下図の赤枠内(ドメイン)と、2.で指定したいずれかの外部ドメインが一致している場合、ページの表示を許可します。<br>
+       <img src="../images/example_domain.gif" alt="制限対象ドメイン例">
+       <br>
+       例   <br>
+       表示を許可する外部ドメインが「sample.com」の場合<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;ドメインが「sample.com」と一致する場合、ページを表示可能<br>
+       表示を許可する外部ドメインが「*.co.jp」の場合<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;ドメインの末尾が「co.jp」の場合、ページを表示可能(example.co.jpなど)<br>
+       表示を許可する外部ドメインが「sample*.com」の場合  <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;ドメインの先頭が「sample」かつ末尾が「.com」の場合、ページを表示可能(sample01.comなど)<br>
+       </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<Configuration>
+
+  <Appenders>
+
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%d %-5p %c: - %m%n%ex" />
+    </Console>
+
+    <RollingRandomAccessFile name="AP_FILE"
+      fileName="../log/convert.log"
+      filePattern="../log/convert.log%i">
+      <PatternLayout charset="UTF-8" pattern="%d %-5p %c: - %m%n%ex" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="2MB" />
+      </Policies>
+    </RollingRandomAccessFile>
+
+    <RollingRandomAccessFile name="AP_FILE_ERROR"
+      fileName="../log/error.log"
+      filePattern="../log/error.log%i">
+      <PatternLayout charset="UTF-8" pattern="%d %-5p %c: - %m%n%ex" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="2MB" />
+      </Policies>
+    </RollingRandomAccessFile>
+  </Appenders>
+
+
+  <!-- ================ -->
+  <!-- Limit categories -->
+  <!-- ================ -->
+
+  <Loggers>
+    <Logger name="jp.co.sjts" level="INFO"  additivity="false">
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="AP_FILE" />
+      <AppenderRef ref="AP_FILE_ERROR" level="ERROR" />
+    </Logger>
+
+    <Logger name="jp.groupsession" level="INFO" additivity="false">
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="AP_FILE" />
+      <AppenderRef ref="AP_FILE_ERROR" level="ERROR" />
+    </Logger>
+  </Loggers>
+
+</Configuration>

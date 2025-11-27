@@ -1,0 +1,353 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=reserve');chengeHeaderText('[ 施設予約 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="施設予約画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_rsv010.html"><img src="./images/scr_help_rsv010.gif" alt="施設予約一覧　週間 ・ 日間 ・ 月間"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv010.html">施設予約一覧　週間</a>
+          ・
+          <a href="h_rsv020.html">日間</a>
+          ・
+          <a href="h_rsv030.html">月間</a>
+          </strong>
+          <br><br>
+          施設予約のスケジュールを週間単位・日間単位・月間単位で参照できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv050.html"><img src="./images/scr_help_rsv050.gif" alt="施設グループ情報設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv050.html">施設グループ情報設定</a>
+          </strong>
+          <br><br>
+          登録した施設グループの一覧が表示されます。<br>
+          施設予約一覧画面で表示される際の並び順も変更することができます。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv0600.html"><img src="./images/scr_help_rsv0600.gif" alt="施設グループ登録 ・ 施設グループ登録確認  施設グループ編集 ・ 施設グループ編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv0600.html">施設グループ登録</a>
+          <br>
+          <a href="h_rsv0601.html">施設グループ編集</a>
+          </strong>
+          <br><br>
+          施設グループの登録・編集ができます。<br>
+          施設グループ毎に登録・編集の実行権限が設定可能です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv080.html"><img src="./images/scr_help_rsv080.gif" alt="施設情報設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv080.html">施設情報設定</a>
+          </strong>
+          <br><br>
+          登録した施設の一覧が表示されます。<br>
+          施設予約一覧画面で表示される際の並び順も変更することができます。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv0900.html"><img src="./images/scr_help_rsv0900.gif" alt="施設登録・施設登録確認  施設編集・施設編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv0900.html">施設登録</a>
+          <br>
+          <a href="h_rsv0901.html">施設編集</a>
+          </strong>
+          <br><br>
+          施設の登録・編集ができます。<br>
+          所属する施設グループの施設区分毎に入力可能な項目が違います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv180.html"><img src="./images/scr_help_rsv180.gif" alt="施設インポート・施設インポート確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv180.html">施設インポート</a>
+          ・
+          <a href="h_rsv180kn.html">施設インポート確認</a>
+          </strong>
+          <br><br>
+          csvファイルを指定し施設を一括で取込むことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv200.html"><img src="./images/scr_help_rsv200.gif" alt="施設一括設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv200.html">施設一括設定</a>
+          ・
+          <a href="h_rsv200kn.html">施設一括設定確認</a>
+          </strong>
+          <br><br>
+          複数の施設の設定を一括で設定することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv040.html"><img src="./images/scr_help_rsv040.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv040.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。<br>
+          施設予約基本設定、自動データ削除設定、手動データ削除の機能へ遷移できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv120.html"><img src="./images/scr_help_rsv120.gif" alt="自動データ削除設定・自動データ削除設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv120.html">自動データ削除設定</a>
+          ・
+          <a href="h_rsv120kn.html">自動データ削除設定確認</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみが使用可能です。<br>
+          バッチ処理で施設予約データの削除をおこなう期間が設定できます。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv130.html"><img src="./images/scr_help_rsv130.gif" alt="手動データ削除・手動データ削除確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv130.html">手動データ削除</a>
+          ・
+          <a href="h_rsv130kn.html">手動データ削除確認</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみが使用可能です。<br>
+          施設予約データの削除をおこなう期間が設定できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv250.html"><img src="./images/scr_help_rsv250.gif" alt="施設予約インポート・施設予約インポート確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv250.html">施設予約インポート</a>
+          ・
+          <a href="h_rsv250kn.html">施設予約インポート確認</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみが使用可能です。<br>
+          csvファイルを指定し施設予約を一括で取込むことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv280.html"><img src="./images/scr_help_rsv280.gif" alt="初期値設定・初期値設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv280.html">初期値設定</a>
+          ・
+          <a href="h_rsv280kn.html">初期値設定確認</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみが使用可能です。<br>
+          csvファイルを指定し施設予約を一括で取込むことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv320.html"><img src="./images/scr_help_rsv320.gif" alt="ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv320.html">ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみが使用可能です。<br>
+          ショートメール通知設定を管理者が一括で設定する事ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv140.html"><img src="./images/scr_help_rsv140.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv140.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+          施設予約に関する表示の設定をおこなう機能のメニュー画面です。<br>
+          初期値設定・表示設定・日間表示時間帯設定・施設利用状況照会一覧表示設定の機能へ遷移できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv150.html"><img src="./images/scr_help_rsv150.gif" alt="表示設定・表示設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv150.html">表示設定</a>
+          ・
+          <a href="h_rsv150kn.html">表示設定確認</a>
+          </strong>
+          <br><br>
+          施設予約一覧画面で表示するデフォルトの施設グループと予約データの表示項目の設定ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv100.html"><img src="./images/scr_help_rsv100.gif" alt="施設利用状況照会"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv100.html">施設利用状況照会</a>
+          </strong>
+          <br><br>
+          施設利用状況の検索と、csv形式でエクスポートができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv1101_0.html"><img src="./images/scr_help_rsv1101_0.gif" alt="施設予約登録・施設予約登録確認  施設予約編集・施設予約編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv1101_0.html">施設予約登録</a>
+          <br>
+          <a href="h_rsv1101_1.html">施設予約編集</a>
+          </strong>
+          <br><br>
+          施設の予約・編集ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv210.html"><img src="./images/scr_help_rsv210.gif" alt="施設予約一括登録・施設予約一括登録確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv210.html">施設予約一括登録</a>
+          </strong>
+          <br><br>
+          施設予約一括登録ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv220.html"><img src="./images/scr_help_rsv220.gif" alt="基本設定・基本設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv220.html">基本設定</a>
+          ・
+          <a href="h_rsv220kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+          施設予約基本設定ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv230.html"><img src="./images/scr_help_rsv230.gif" alt="初期値設定・初期値設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv230.html">施設予約初期値設定</a>
+          ・
+          <a href="h_rsv230kn.html">施設予約初期値設定確認</a>
+          </strong>
+          <br><br>
+          施設予約初期値設定ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv240.html"><img src="./images/scr_help_rsv240.gif" alt="施設予約メイン画面表示設定・施設予約メイン画面表示設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv240.html">施設予約メイン画面表示設定</a>
+          ・
+          <a href="h_rsv240kn.html">施設予約メイン画面表示設定確認</a>
+          </strong>
+          <br><br>
+          施設予約メイン画面表示設定ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv300.html"><img src="./images/scr_help_rsv300.gif" alt="施設予約ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv300.html">施設予約ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          施設予約ショートメール通知設定ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv270.html"><img src="./images/scr_help_rsv270.gif" alt="施設予約 グループ・施設一括出力"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv270.html">施設予約グループ・施設一括出力</a>
+          </strong>
+          <br><br>
+          施設予約のグループ・施設情報の一括エクスポートを行うことができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_rsv290.html"><img src="./images/scr_help_rsv290.gif" alt="施設予約一括登録・施設予約一括登録確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_rsv290.html">表示設定</a>
+          </strong>
+          <br><br>
+          施設予約一覧[日間]画面で表示する時間帯を設定できます。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

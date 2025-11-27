@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 掲示板 フォーラム登録・編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bbs_left_list.html');chengeHeaderText('[ 掲示板 フォーラム登録・編集 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="掲示板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+      <p>フォーラムを登録・編集する画面です。</p>
+      <!-- img要素のsrc,alt属性を編集 -->
+      <h1 class="help-right-func-img"><img src="images/scr_help_big_bbs030.gif" alt="掲示板 フォーラム登録・編集 機能詳細"></h1>
+      <p class="help-right-func-p">機能説明</p>
+      <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+      <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+          <th>
+            <h2 class="num-back01">ＯＫボタン</h2>
+            <p>フォーラム登録確認・編集確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+          </th>
+          <td>
+            <h2 class="num-back02">戻るボタン</h2>
+            <p>遷移元の画面へ遷移します。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="num-back03">全て削除ボタン</h2>
+            <p>追加・変更・削除エリアに表示されている全てのユーザを未選択状態にします。</p>
+          </td>
+          <th>
+            <h2 class="num-back04">選択済グループ</h2>
+            <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2 class="num-back05">選択済ユーザ</h2>
+            <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+          </th>
+          <td>
+            <h2 class="num-back06">追加・変更・削除エリア / 閲覧エリア</h2>
+            <p>追加・変更・削除エリアと閲覧エリアのいずれかをクリックし、追加先として選択します。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="num-back07">全て削除ボタン</h2>
+            <p>閲覧エリアに表示されている全てのユーザを未選択状態にします。</p>
+          </td>
+          <th>
+            <h2 class="num-back08">選択済グループ</h2>
+            <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2 class="num-back09">選択済ユーザ</h2>
+            <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+          </th>
+          <td>
+            <h2 class="num-back10">全て選択ボタン</h2>
+            <p>未選択エリアに表示されている全てのグループおよびユーザを選択したエリアに追加します。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="num-back11">未選択グループ</h2>
+            <p>グループ名をクリックすることで、グループを選択したエリアに追加します。</p>
+          </td>
+          <th>
+            <h2 class="num-back12">未選択ユーザ</h2>
+            <p>ユーザ名をクリックすることで、ユーザを選択したエリアに追加します。</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2 class="num-back13">全て削除ボタン</h2>
+            <p>選択済エリアに表示されている全てのユーザを未選択状態にします。</p>
+          </th>
+          <td>
+            <h2 class="num-back14">選択済ユーザ</h2>
+            <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="num-back15">全て選択ボタン</h2>
+            <p>未選択エリアに表示されている全てのユーザを選択済エリアに追加します。</p>
+          </td>
+          <th>
+            <h2 class="num-back16">未選択ユーザ</h2>
+            <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2 class="num-back17">グループ名</h2>
+            <p>グループ名をクリックすることで、グループおよびグループに所属するユーザが未選択エリアに表示されます。</p>
+          </th>
+          <td>
+            <h2 class="num-back18">添付ボタン</h2>
+            <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの上にファイル画像が表示されます。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="num-back19">削除ボタン</h2>
+            <p>設定中の添付画像を削除します。</p>
+          </td>
+          <th>
+            <h2 class="num-back20">HTML形式に変更・テキスト形式に変更ボタン</h2>
+            <p>テンプレートの入力形式をテキスト形式からHTML形式、またはHTML形式からテキスト形式に変更できます。</p>
+          </th>
+        </tr>
+      </table>
+      <!-- 項目の説明 -->
+      <p class="help-right-func-p">表示・入力項目説明</p>
+      <div class="help-right-func-item">
+        <h2>フォーラム名</h2><p>フォーラム名を入力します（70文字以内）。</p>
+        <h2>コメント</h2><p>コメントを入力します（1,000文字以内）。</p>
+        <h2>フォーラム階層設定</h2><p>階層における親に設定するフォーラムを選択します。</p>
+        <h2>メンバー</h2><p>フォーラムのメンバーとして設定するユーザを、ユーザリストから選択し追加します。<br>親フォーラムが設定されている場合、常に親フォーラムのメンバーに合わせるよう設定することができます。</p>
+        <h2>フォーラム管理者</h2><p>フォーラム管理者として設定するユーザを、ユーザリストから選択し追加します。</p>
+        <h2>アイコン</h2><p>アイコンを設定します。</p>
+        <h2>返信許可</h2><p>フォーラムのスレッドへの返信の可能/不可能を設定できます。</p>
+        <h2>新規ユーザスレッド閲覧状態</h2><p>新規ユーザが登録された場合の既存スレッドの未読・既読を設定できます。</p>
+        <h2>全て既読にする</h2><p>まだ閲覧していないスレッドを既読状態にできるする機能を許可するかを設定できます。</p>
+        <h2>ディスク容量</h2><p>ディスク容量を設定します。</p>
+        <h2>ディスク容量警告</h2><p>ディスク容量警告を設定します。</p>
+        <h2>スレッドテンプレート</h2><p>新規スレッド作成時や、返信時にテンプレートを使用するか設定できます。（10,000文字以内）</p>
+        <h2>掲示期間 無制限</h2><p>掲示期間の無制限の使用許可を設定できます。</p>
+        <h2>掲示期間 初期値</h2><p>掲示期間の初期値を設定します。</p>
+        <h2>時間単位</h2><p>掲示期間の時間単位を設定します。</p>
+        <h2>スレッド保存期間</h2><p>スレッド保存期間を設定します。</p>
+      </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 稟議内容確認</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議内容確認 ]');">
+<div id="container"><a name="top"></a>
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>稟議の承認・否認・却下の作業や、完了した内容の確認、進行中の稟議に対する後閲指示などを行うことができる画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng030.gif" alt="稟議内容確認 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+    <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">承認ボタン</h2>
+      <p>このボタンは、以下の場合に表示されます。<br>
+      1. 自分が承認経路に存在し、審議の順番が回ってきた場合<br>
+      2. 自分が後閲指示可能な稟議を閲覧している場合<br>
+      1. の場合にボタンをクリックすると、現在の経路における自分の審議を承認したものとします。<br>
+      2. の場合にボタンをクリックすると、自分が後閲指示を許可されている経路において稟議を承認したものとし、その間の経路に対して後閲指示を出します。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">却下ボタン</h2>
+      <p>このボタンは、以下の場合に表示されます。<br>
+      1. 自分が承認経路に存在し、審議の順番が回ってきた場合<br>
+      2. 自分が後閲指示可能な稟議を閲覧している場合<br>
+      1. の場合にボタンをクリックすると、閲覧している稟議を却下します。<br>
+      2. の場合にボタンをクリックすると、自分が後閲指示を許可されている経路において稟議を却下したものとし、その間の経路に対して後閲指示を出します。
+      </p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03">差し戻しボタン</h2>
+      <p>自分が承認経路に存在し、審議の順番が回ってきた場合に表示されます。クリックすると差し戻し場所選択ダイアログを表示し、指定のユーザまで稟議を差し戻します。</p>
+    </td>
+    <td>
+      <h2 class="num-back04">複写申請ボタン</h2>
+      <p>閲覧中の稟議の内容をコピーし、新たに稟議を作成します。ただし、制限中のテンプレートは複写できません。<br>
+      作成した共有テンプレートを使用して申請した稟議を複写する時、申請してから使用元のテンプレートの経路が更新されている場合は、経路状態がリセットされて複写されます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back05">戻るボタン</h2>
+      <p>遷移元の画面に遷移します。</p>
+    </td>
+    <td>
+      <h2 class="num-back06">PDF出力ボタン</h2>
+      <p>稟議内容をPDFファイルで出力します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">強制完了ボタン</h2>
+      <p>管理者が<a href="h_rng050.html"><span class="textLink">申請中案件管理画面</span></a>から遷移してきた場合に表示されます。審議の進行状況を無視して強制的に審議を完了します。</p>
+    </td>
+    <td>
+      <h2 class="num-back08">強制削除ボタン</h2>
+      <p>管理者が<a href="h_rng050.html"><span class="textLink">申請中案件管理画面</span></a>から遷移してきた場合に表示されます。審議の進行状況を無視して強制的に稟議を削除します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back09">スキップボタン</h2>
+      <p>管理者が<a href="h_rng050.html"><span class="textLink">申請中案件管理画面</span></a>から遷移してきて、現在審議中の承認者が承認経路の最後ではない場合に表示されます。強制的に次の経路へ審議を進行します。</p>
+    </td>
+    <td>
+      <h2 class="num-back10">完了ボタン</h2>
+      <p>申請者以外に稟議を差し戻された場合に表示されます。閲覧中の稟議の審議が完了したものとし、これ以上の審議は行わない状態にします。</p>
+    </td>
+    </tr>
+
+    <tr>
+     <td>
+      <h2 class="num-back11">確認ボタン</h2>
+      <p>自分が最終確認に存在し、経路の審議が全て承認された場合に表示されます。閲覧中の稟議を確認したものとします。</p>
+    </td>
+    <td>
+      <h2 class="num-back12">再申請ボタン</h2>
+      <p>自分が作成した稟議であり、承認経路の承認者から差し戻されてきた場合に表示されます。再び稟議を申請し、経路の初めから審議を開始します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back13">取り下げボタン</h2>
+      <p>自分が申請した稟議の場合に表示されます。稟議を一度完了し、その後申請者は取り下げた稟議を複写して新規作成することができます。</p>
+    </td>
+    <td>
+      <h2 class="num-back14">後閲指示</h2>
+      <p>後閲指示を出すことが可能な場合に表示されます。クリックすると後閲指示範囲選択ダイアログを表示し、指定した経路までをスキップします。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back15">経路に追加ボタン</h2>
+      <p>審議の順番が回ってきた場合に、「進行中の任意経路への経路追加(<a href="h_rng240_ninni.html"><span class="textLink">経路要素：任意設定</span></a>参照)」が許可された経路が、承認経路に存在する場合に表示されます。<br>
+      経路の追加を許可されており、なおかつ審議が行われていない承認経路の前後に、任意設定経路を追加することができます。</p>
+    </td>
+    <td>
+      <h2 class="num-back16">ファイル名</h2>
+      <p>ファイルをダウンロードします。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back17">プレビューアイコン</h2>
+      <p>添付ファイルをプレビュー表示します。</p>
+    </td>
+    <td>
+      <h2 class="num-back18">ユーザ名</h2>
+      <p>ユーザ情報ポップアップを表示します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back19">添付ボタン</h2>
+      <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+    </td>
+    <td>
+      <h2 class="num-back20">ファイル名</h2>
+      <p>ファイルをダウンロードします。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back21">削除アイコン</h2>
+      <p>ファイルを削除します。</p>
+    </td>
+    <td>
+      <h2 class="num-back22">ユーザ名</h2>
+      <p>審議者の名前・役職が表示されます。<br>
+      この経路に対して後閲指示が出された場合、その旨と後閲指示を出したユーザ名が表示されます。<br>
+      この経路の審議が代理人によって決裁された場合、その旨と決裁を行ったユーザ名が表示されます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back23">コメント/確認時添付</h2>
+      <p>審議者が付与したコメントおよび添付ファイルを表示します。稟議の閲覧者がこの審議者の場合は編集が可能です。</p>
+    </td>
+    <td>
+    </td>
+    </tr>
+
+    </table>
+
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>状態</h2>
+    <p>稟議の状態が表示されます。<br>
+    状態の種類には「申請中」「決裁」「却下」「草稿」「強制完了」「取り下げ」があります。
+    </p>
+    <h2>コメント</h2>
+    <p>承認作業時に表示されます。コメントを入力します（300文字以内）。</p>
+    <h2>確認時添付</h2>
+    <p>承認作業時に表示されます。添付ファイルを指定します。</p>
+    <h2>決裁後アクション</h2>
+    <p>稟議申請に使用した共有テンプレートに決裁後アクションが登録されている場合、決裁後アクションに登録されている表示コメントが表示されます。</p>
+    <h2>経路情報</h2>
+    <p>承認経路、最終確認の役職・ユーザ名・コメント・確認時添付・確認日時・状態が表示されます。<br>
+    また、単一グループを対象に指定されている場合はグループ名を、グループまたは複数ユーザが対象に選択されている場合は承認条件を表示します。</p>
+    <h2>承認条件</h2>
+    <p><p>この経路が承認として扱われ、審議が進行するための条件を指定します。<br>
+    ・全員の審議：全てのユーザが承認または却下を行った場合に審議を進行します。<br>
+    ・全員の承認：全てのユーザが承認を行った場合に審議を進行します。<br>
+    ・承認数：指定した数以上の承認があれば審議を進行します。<br>
+    ・承認割合：指定した割合以上の承認があれば審議を進行します。<br>
+    </p></p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

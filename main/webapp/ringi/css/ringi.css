@@ -1,0 +1,948 @@
+/*要素指定*/
+div[name="keiro_outcondition_threshold"] {
+  display:none;
+}
+
+div.formBlock > div.formContent > div.formTable > div.formRow ,
+div.formBlock > div.formContent > div > div.blocklist_header > div.formTable > div.formRow ,
+div.formBlock > div.formContent > div > div.blocklist_body > div.formTable > div.formRow ,
+div.formBlock > div.formContent > div > div.blocklist_footer > div.formTable > div.formRow {
+  border-right: 0px!important;
+}
+
+div.keiroTable.row {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+div.keiroTable.row.hidden {
+  display: none;
+}
+
+div.keiroTable.row > div.keiroTable.title {
+  flex-basis: 160px;
+  -webkit-flex-basis: 160px;
+  width: 160px;
+  min-width: 160px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+div.keiroTable.row > div {
+  width: 100%;
+}
+
+div.keiroTable.row > div > div.keiroChild > div.selectDsp > div {
+  flex-basis: auto;
+  -webkit-flex-basis: auto;
+}
+
+div.keiroTable.row > div > div.keiroChild > div.selectDsp > div > img.delButton {
+  flex-basis: 20px;
+  -webkit-flex-basis: 20px;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  margin-left: 2px;
+}
+
+div.keiroTable.row > div > div.keiroChild > div.selectDsp  {
+  display: -webkit-flex;
+  display: flex;
+  flex-basis:auto;
+  -webkit-flex-basis:auto;
+  flex-grow:1;
+  -webkit-flex-grow:1;
+}
+
+div.keiroTable.row > div > div.keiroChild+div.keiroChild:before {
+  content: '';
+  display: block;
+  left: 10%;
+  right: 10%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+
+
+#addKeiroPop div.keiroChild button.js_userSelect_btn,
+#addKeiroPop div.keiroChild button.js_groupSelect_btn {
+  display: none!important;
+}
+
+input[name="keiroKbn"] , input[name="keiroKbn"] + label {
+  display: none;
+}
+
+input#rng020IdPrefManual:checked ~ input[name="rng020ID"] {
+  display: inline-block;
+}
+
+input#rng020IdPrefManual:checked ~ #rng020PlanID {
+  display: none;
+}
+
+input[name="rng020ID"] {
+  display: none;
+}
+
+span.keiro_kakunin > div.keiroTable.row > div > div.keiroChild > div.selectDsp > div > div.keiro_moveButton {
+  display: none;
+}
+
+/*----------------------------*/
+/*BEM規約*/
+
+.atesakiRngLink:hover {
+    text-decoration: underline;
+}
+
+.boxTitleRng
+{
+  position: relative;
+  top:13px;
+  right: 0;
+  width: auto;
+  margin: 0px auto;
+  padding: 0.1em;
+  font-size: 0.9rem;
+  text-align:left;
+}
+
+.boxTitleRng+.keiroKakuninList_singi > dl > li {
+    padding-top: 10px;
+}
+
+.contentComment_temp-option > option{
+  margin-bottom: -5px;
+  margin-left: -5px;
+}
+
+.dandd_droptable .drop_guide {
+  border-style:dashed;
+  border-width:2px;
+  border-color:gray;
+  background-color: #EEEEEE;
+  flex-basis:40px;
+  min-height:40px;
+  box-sizing:border-box;
+  flex-grow:0;
+}
+
+.dandd_droptable > .drop_guide_row {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: stretch;
+    align-items:         stretch;
+    width:100%;
+    position: relative;
+}
+
+.dandd_droptable.addibleV:not(.addibleW) .dandd_dropArea.left,
+.dandd_droptable.addibleV:not(.addibleW) .dandd_dropArea.right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+}
+
+.dandd_droptable.addibleV:not(.addibleW) .dandd_dropArea.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0px;
+  height: 50%;
+}
+
+.dandd_droptable.addibleV:not(.addibleW) .dandd_dropArea.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+  height: 50%;
+}
+
+.dandd_droptable .contents.cell .delButton.classic {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: auto;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+.dandd_droptable .contents.cell .delButton.original {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: auto;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+.dandd_root .drop .ui-draggable:before {
+    content:none;
+}
+
+.dragArea {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.drag_content_parent {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.drag_moveContent {
+  cursor: move;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.drop_area-default {
+  padding: 10px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: gray;
+  min-height: 40px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.drop_area-default div {
+  margin: 30px 0;
+}
+
+/* rng030 経路ヘッダ */
+.fixed_header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/* 承認経路経路矢印 */
+.keiro_arrowBlock {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width:50px;
+}
+.keiro_arrowBlock img {
+    height:100%;
+    max-height:80px;
+    margin:auto;
+
+}
+.keiro_template ~ #keiro_maker .dandd_droptable .contents.cell,
+.kakunin #keiro_maker .dandd_droptable .contents.cell {
+  cursor: default;
+}
+
+.keiro_dialog .keiro_incondition .content > div.inCond .delButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.keiro_dialog  .delButton:active {
+  opacity:0.7;
+  filter:alpha(opacity=70);
+}
+
+.keiro_dialog div.content {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.keiro_dialog .content {
+  margin-left: 20px;
+}
+
+.keiro_dialog {
+  height: 520px;
+}
+
+.keiro_dialog .keiro_incondition .content > div.inCond:not([name="template"]) > select {
+  margin: 5px;
+}
+
+.keiro_dialog .keiro_incondition .content > div.inCond:not([name="template"]) {
+  border-top:0px;
+  border-left:1px;
+  border-right:1px;
+  border-bottom:1px;
+  border-style: solid;
+  position: relative;
+  margin-left: -5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.keiro_dialog .keiro_incondition .content > div.inCond:not([name="template"]):first-child {
+  border:1px;
+  border-style: solid;
+}
+
+
+.keiro_dialog .keiro_incondition .inCondGroup,
+.keiro_dialog .keiro_incondition .inCondPos {
+  height: 130px;
+  position: relative;
+}
+
+.keiro_dialog .keiro_incondition .inCondGroup > .inCondGroup_selector,
+.keiro_dialog .keiro_incondition .inCondPos > .inCondPos_selector {
+  position: absolute;
+  top: -30px;
+}
+.keiro_dialog .keiro_incondition .inCondKbn {
+  position: relative;
+  z-index: 10;
+}
+
+.keiro_dialog div[name="target_pos"] .content > div.target:not([name="template"]) {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.keiro_dialog .keiro_incondition div[name="template"] {
+  display:none;
+}
+
+.keiro_dialog .keiro_incondition .content div.inCondGroup {
+  display:none;
+}
+
+.keiro_dialog .keiro_incondition .content div.inCondPos {
+  display:none;
+}
+
+.keiro_dialog .keiro_incondition .content span.inCondForm {
+  display:none;
+}
+
+.keiro_dialog .keiro_incondition .content div span.selectval:not([value]) ~ div.inCondGroup {
+  display:block;
+}
+
+.keiro_dialog .keiro_incondition .content div span.selectval[value="0"] ~ div.inCondGroup {
+  display:block;
+}
+
+.keiro_dialog .keiro_incondition .content div span.selectval[value="1"] ~ div.inCondPos {
+  display:block;
+}
+
+.keiro_dialog .keiro_incondition .content div span.selectval[value="2"] ~ span.inCondForm {
+  display:inline-block;
+}
+
+.keiro_kbn-0:checked ~ div .select_free {
+  display:block;
+}
+
+.keiro_kbn-1:checked ~ div .target_user {
+  display:block;
+}
+
+.keiro_kbn-2:checked ~ div .target_pos {
+  display:block;
+}
+
+.keiro_kbn-3:checked ~ div .select_user {
+  display:block;
+}
+
+.keiro_kbn-4:checked ~ div .select_group {
+  display:block;
+}
+
+.keiro_kbn-5:checked ~ div .auto_boss {
+  display:block;
+}
+
+.keiro_dialog[data-multisel="0"] .keiro_outcondition {
+  display:none;
+}
+
+.keiro_dialog:not([data-multisel]) .keiro_outcondition {
+  display:none;
+}
+
+.keiro_dialog .target_pos div[name="template"] {
+  display:none;
+}
+
+.keiro_maker {
+  font-size: 80%;
+  table-layout: fixed;
+}
+
+.keiro_maker td {
+  border-right-style: solid;
+  border-right-width: 1px;
+  font-size: 0.9rem;
+}
+
+.keiro_maker .dandd_droptable .contents.cell {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 5px 5px 10px;
+}
+
+.keiro_maker .dandd_droptable .contents.row {
+  border-left-style: solid;
+  border-left-width: 1px;
+  position: relative;
+}
+
+.keiro_outcondition-2:checked ~ div[name="keiro_outcondition_threshold"] {
+  display:block;
+}
+
+.keiro_outcondition-3:checked ~ div[name="keiro_outcondition_threshold"] {
+  display:block;
+}
+
+.keiro_outcondition-2:checked ~ div[name="keiro_outcondition_threshold"] > .tanni_3 {
+  display:none;
+}
+
+.keiro_outcondition-3:checked ~ div[name="keiro_outcondition_threshold"] > .tanni_2 {
+  display:none;
+}
+
+.keiro_outcondition-3:checked ~ div[name="keiro_outcondition_threshold"] {
+  display:block;
+}
+
+/* 経路状況矢印アイコン */
+.keiro_status_ex img{
+  vertical-align: baseline;
+  margin-left: 20px;
+  margin-bottom: -1px;
+}
+
+.keiro_status img{
+  vertical-align: baseline;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: -1px;
+}
+
+
+.select_free,
+.target_user,
+.target_pos,
+.select_user,
+.select_group,
+.auto_boss {
+  display:none;
+}
+
+.keiroKakuninList {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  width: 100%;
+}
+.keiroKakuninList_header > th {
+  text-align: center;
+  font-weight: bold;
+}
+
+.keiroKakuninList dl {
+  align-items: stretch;
+  display:flex;
+  width:100%;
+  margin:0px;
+}
+.keiroKakuninList > dl {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.keiroKakuninList_header li {
+  text-align:center;
+}
+.keiroKakuninList_header li:not(:nth-child(1)):not(:nth-child(3)) {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.keiroKakuninList_header li:nth-child(5) {
+  width: auto;
+  flex-grow: 1;
+}
+
+.keiroKakuninList_keiroStep {
+  width:100%;
+  margin: 0px;
+}
+
+.keiroKakuninList_keiroStep:not(:first-child) {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+.keiroKakuninList_keiroStep > li:first-child {
+  align-self: center;
+}
+
+.keiroKakuninList_keiroStep > li:nth-child(2) {
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding: 0px 5px;
+  width:100%;
+}
+.keiroKakuninList_kakunin > li:nth-child(1),
+.keiroKakuninList_syounin > li:nth-child(1) {
+  align-self: center;
+}
+.keiroKakuninList_kakunin > li:nth-child(2),
+.keiroKakuninList_syounin > li:nth-child(2) {
+  border-left-width: 1px;
+  border-left-style: solid;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.keiroKakuninList_singi:last-child > dl > li {
+  margin-bottom: 5px;
+}
+
+.keiroKakuninList_singi:last-child > dl > li:not(:first-child) {
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  margin-bottom: 5px;
+}
+
+.keiroKakuninList_singi > dl > li:not(:first-child) {
+  border-top-width: 1px;
+  border-top-style: dashed;
+}
+
+.keiroKakuninList_singi > dl > li:first-child {
+  border-left-width: 1px;
+  border-left-style: dashed;
+}
+
+.keiroKakuninList_singi > dl > li:last-child {
+  border-right-width: 1px;
+  border-right-style: dashed;
+}
+
+.keiroKakuninList_singi > dl > li:nth-child(3) {
+  width: auto;
+  flex-grow: 1;
+}
+
+.keiroList_userName-minWidth {
+  min-width: 20%;
+}
+
+.keiroList_confDate-minWidth {
+  min-width: 130px;
+}
+
+.preview_content {
+  pointer-events: none;
+}
+
+.txt_comment {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 540px;
+}
+/*----------------------------*/
+/*HTML属性指定*/
+
+/*----------------------------*/
+
+#keirotemplateselect div[name="keirotemplate_person"] ,
+#keirotemplateselect div[name="keirotemplate_share"]
+{
+  width:456px;
+  height:259px;
+  max-height: 420px;
+  max-width: 768px;
+  overflow: auto;
+  display: none;
+}
+
+#keirotemplateselect > div.keiroTemplateDialog_tab {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items:         stretch;
+}
+
+#keirotemplateselect > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_space {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow:1;
+}
+
+#keirotemplateselect > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_share {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#keirotemplateselect > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_person {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#keirotemplateselect.keiroTemplateDialog_share > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_share {
+  border-bottom:none;
+  flex-grow:0;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+#keirotemplateselect.keiroTemplateDialog_share > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_person {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow:0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#keirotemplateselect.keiroTemplateDialog_person > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_share {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow:0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#keirotemplateselect.keiroTemplateDialog_person > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_person {
+  border-bottom:none;
+  flex-grow:0;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+#keirotemplateselect > div.keiroTemplateDialog_tabbody {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items:         stretch;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding: 15px;
+}
+
+#keirotemplateselect.keiroTemplateDialog_hiddenPersonal > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_person {
+    display: none;
+}
+
+#keirotemplateselect.keiroTemplateDialog_hiddenPersonal > div.keiroTemplateDialog_tabbody > div[name="keirotemplate_person"] {
+    display: none;
+}
+
+#keirotemplateselect.keiroTemplateDialog_hiddenShare > div.keiroTemplateDialog_tab > div.keiroTemplateDialog_share {
+    display: none;
+}
+
+#keirotemplateselect.keiroTemplateDialog_hiddenShare > div.keiroTemplateDialog_tabbody > div[name="keirotemplate_share"] {
+    display: none;
+}
+
+#keirotemplateselect.keiroTemplateDialog_share div[name="keirotemplate_share"] {
+    display: block;
+}
+
+#keirotemplateselect.keiroTemplateDialog_person div[name="keirotemplate_person"] {
+    display: block;
+}
+
+#useKeiroTemp_0:checked ~  *[name=rng090KeiroTemplateSelect] {
+    display: inline-block;
+}
+
+#useKeiroTemp_1:checked ~  *[name=rng090KeiroTemplateSelect] {
+    display: none;
+}
+.ui-widget-overlay {
+  position: fixed!important;
+}
+
+.apiconnectAddDialog .paramSelectMenu {
+  flex-basis: 200px;
+}
+.apiconnectAddDialog .paramSelectMenu_body:disabled .rngApiConnectConfParam > label,
+.apiconnectAddDialog select[name$="racListFsid"]:disabled {
+  cursor: default;
+}
+.apiconnectAddDialog .paramPane {
+  flex-basis: 800px;
+}
+.apiconnectAddDialog .paramPane > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.apiconnectAddDialog .paramPane > .paramPaneField + .paramPanelComment {
+    opacity: 0;
+}
+.apiconnectAddDialog .paramPane > .paramPaneField:empty + .paramPanelComment {
+    opacity: 0.5;
+}
+
+.apiconnectAddDialog .paramSelectMenu_body  .rngApiConnectConfParam-select > .rngApiConnectConfParam_background-select,
+.apiconnectAddDialog .paramSelectMenu_body:not(:disabled)  .rngApiConnectConfParam:not(.rngApiConnectConfParam-select):hover > .rngApiConnectConfParam_background-select {
+  opacity: 1;
+}
+.apiconnectAddDialog .paramSelectMenu  .rngApiConnectConfParam:not(.rngApiConnectConfParam-select) > .rngApiConnectConfParam_background-select {
+  opacity: 0;
+}
+
+.rng_apiResult-success,
+.rng_apiResult-failure {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center !important;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.rngApiConnectConfParam_background-select {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.apiconnectAddDialog .uselistform_idxs > *:first-child {
+    display: none;
+}
+
+.apiconnectAddDialog .targetUsr > table {
+    width: 500px;
+}
+
+.apiconnectAddDialog .targetGrp > table {
+    width: 500px;
+}
+
+.apiconnectAddDialog .uselistform_idxs > *:first-child {
+    display: none;
+}
+.apiconnectAddDialog .condList > .cond_subform:not(:first-child) .settingForm_separator {
+    display: block;
+}
+.apiconnectAddDialog .condList > .cond_subform:first-child .settingForm_separator {
+    display: none;
+}
+
+.renkeiApi {
+  border-style: solid;
+  border-radius: 0%;
+  border-width: 1px;
+  border-collapse:separate;
+  border-spacing: 3px;
+}
+
+.renkeiApiSortHandle,
+.actionParamSortHandle,
+.executeConditionHandle,
+.elementInfoHandle,
+.arrayElementHandle {
+  height: 100%;
+  width: 14px;
+  cursor: move;
+  padding: 3px;
+}
+
+.renkeiApiDeleteArea {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: none;
+}
+
+.renkeiApi:hover .renkeiApiDeleteArea {
+  display: inline!important;
+}
+
+.selectableApiConnect {
+  border-style: solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.underline {
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.renkeiApi:hover .sortIcon,
+.actionParam:hover .sortIcon,
+.actionParam:hover .copyDeleteIcon,
+.executeCondition:hover .sortIcon,
+.elementInfo:hover .sortIcon,
+.arrayElement:hover .arrayElementSortIcon {
+  display: inline!important;
+}
+
+.actionParamTable,
+.paramTable {
+  border-left: none!important;
+  border-right: none!important;
+}
+
+.paramTable th {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.actionParamTable th {
+  border: none!important;
+}
+
+.actionParam tr,
+.actionParam td,
+.paramTable tr,
+.paramTable td {
+  border-left: none!important;
+  border-right: none!important;
+}
+
+.executeConditionList,
+.executeConditionList td,
+.elementInfoTable,
+.elementInfoTable td {
+  border-left: none!important;
+  border-right: none!important;
+}
+
+.helpDialogTable,
+.helpDialogTable td {
+  border: none!important;
+}
+
+.arrayElementCard {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px 10px 5px;
+  margin-top: 3px;
+}
+
+.arrayElementSort .arrayElementCard {
+  outline-style: solid!important;
+  outline-width: 3px!important;
+}
+
+.pointer-events_auto {
+  pointer-events: auto!important;
+}
+
+.textArea_resize-none {
+  resize: none;
+}
+
+#executeConditionHelp {
+  z-index: 102!important;
+}
+
+.childElement {
+  margin-right: 0px!important;
+}
+
+.normalElement {
+  margin-right: 30px!important;
+}
+
+.existExecuteConditionCombo {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none!important;
+  background: transparent!important;
+  outline: 0;
+  width: 260px!important;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.settingValue {
+  border-radius: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.settingValueElement {
+  border-radius: 3px;
+  padding: 4px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.ws_break-spaces {
+  white-space: break-spaces;
+}

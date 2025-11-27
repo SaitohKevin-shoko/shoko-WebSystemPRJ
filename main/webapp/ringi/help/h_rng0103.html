@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 稟議一覧 草稿</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議一覧 草稿 ]');">
+<div id="container"><a name="top"></a>
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>作成した草稿の一覧を確認する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng0103.gif" alt="稟議一覧 草稿 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+     <tr>
+      <td>
+            <h2 class="num-back01">管理者設定ボタン</h2>
+        <p>管理者設定メニュー画面へ遷移します。<br>
+        管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+      </td>
+      <td>
+            <h2 class="num-back02">個人設定ボタン</h2>
+        <p>個人設定メニュー画面へ遷移します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back03">検索ボタン</h2>
+        <p>入力したキーワードを基に詳細検索画面へ遷移し、草稿へ保存した稟議の検索を行います。</p>
+      </td>
+      <td>
+        <h2 class="num-back04">詳細検索ボタン</h2>
+        <p>詳細検索画面へ遷移します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back05">新規申請ボタン</h2>
+        <p>稟議新規作成画面へ遷移します。</p>
+      </td>
+      <td>
+        <h2 class="num-back06">削除ボタン</h2>
+        <p>削除対象選択チェックボックスで選択した稟議を削除します。</p>
+      </td>
+      </tr>
+
+      <tr>
+       <td>
+        <h2 class="num-back07">ページコンボ・前頁・次頁</h2>
+        <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+      </td>
+       <td>
+        <h2 class="num-back08">削除対象選択チェックボックス</h2>
+        <p>削除する稟議を選択します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back09">ヘッダタイトル</h2>
+        <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+      </td>
+      <td>
+       <h2 class="num-back10">草稿稟議内容</h2>
+        <p>草稿稟議のタイトルおよび作成日時を表示します。タイトルをクリックすると稟議新規作成画面へ遷移し、内容の編集を行うことが可能です。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back11">アカウント詳細切り替え</h2>
+        <p>クリックする度に、アカウント選択欄の表示・非表示を切り替えます。</p>
+      </td>
+      <td>
+        <h2 class="num-back12">代理人アカウント</h2>
+        <p>ログインしているユーザが代理人となっているアカウントを表示します。<br>
+      コンボボックスから選択、もしくはユーザ名をクリックすると、そのアカウントの受信稟議一覧画面へ遷移します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back13">フォルダ詳細切り替え</h2>
+        <p>クリックする度に、稟議フォルダ選択欄の表示・非表示を切り替えます。</p>
+      </td>
+      <td>
+        <h2 class="num-back14"><a href="h_rng0100.html"><span class="linkTitle">受信フォルダ</span></a></h2>
+        <p>受信した稟議の一覧を表示します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back15"><a href="h_rng0101.html"><span class="linkTitle">進行中フォルダ</span></a></h2>
+        <p>表示アカウントが申請した、または審議を行った稟議の内、現在進行中の稟議の一覧を表示します。</p>
+      </td>
+      <td>
+        <h2 class="num-back16"><a href="h_rng0102.html"><span class="linkTitle">完了フォルダ</span></a></h2>
+        <p>表示アカウントが申請した、または審議を行った稟議の内、審議が完了した稟議の一覧を表示します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back17"><a href="h_rng0103.html"><span class="linkTitle">草稿フォルダ</span></a></h2>
+        <p>草稿へ保存された稟議の一覧を表示します。</p>
+      </td>
+      <td>
+        <h2 class="num-back18"><a href="h_rng0104.html"><span class="linkTitle">後閲フォルダ</span></a></h2>
+        <p>後閲指示を許可された稟議の一覧を表示します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back19">共有テンプレート詳細切り替え</h2>
+        <p>クリックする度に、共有テンプレート選択欄の表示・非表示を切り替えます。</p>
+      </td>
+      <td>
+        <h2 class="num-back20">共有テンプレート編集ボタン</h2>
+        <p>管理者設定 共有テンプレート選択画面へ遷移します。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back21">共有テンプレート</h2>
+        <p>選択したカテゴリに属する共有テンプレートを表示します。クリックすると、その共有テンプレートを使用した稟議新規作成画面へ遷移します。</p>
+      </td>
+      <td>
+        <h2 class="num-back22">個人テンプレート詳細切り替え</h2>
+        <p>クリックする度に、個人テンプレート選択欄の表示・非表示を切り替えます。</p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <h2 class="num-back23">個人テンプレート</h2>
+        <p>選択したカテゴリに属する個人テンプレートを表示します。クリックすると、その個人テンプレートを使用した稟議新規作成画面へ遷移します。</p>
+      </td>
+      </tr>
+    </table>
+
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>検索キーワード</h2><p>検索するキーワードを入力します。</p>
+    </div>
+
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

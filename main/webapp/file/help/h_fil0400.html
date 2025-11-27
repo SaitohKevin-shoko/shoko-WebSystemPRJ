@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] フォルダ情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 フォルダ情報 ]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>フォルダ情報を表示する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_fil0400.gif" alt="ファイル管理 フォルダ情報 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">キャビネット一覧ボタン</h2>
+          <p>キャビネット一覧画面へ遷移します。<br>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>1つ上の階層のフォルダ情報画面へ遷移します。<br>
+		     キャビネット直下にあるフォルダの場合はキャビネット一覧画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">ロックボタン</h2>
+		  <p>選択しているファイルをロックします。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">ロック解除ボタン</h2>
+		  <p>選択しているファイルのロックを解除します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">フォルダ作成ボタン</h2>
+		  <p>フォルダ作成画面へ遷移します。<br>
+             フォルダ作成権限の無いユーザの場合、ボタンは表示されません。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">ファイル追加ボタン</h2>
+		  <p>ファイル追加画面へ遷移します。<br>
+             ファイルの追加・変更・削除の権限の無いユーザの場合、ボタンは表示されません。</p>
+		</td>
+		</tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">移動ボタン</h2>
+　　　　　<p>チェックボックスで選択したファイル・フォルダを移動対象にし、ファイル・フォルダ一括移動画面へ遷移します。<br>
+             ファイルの追加・変更・削除の権限の無いユーザの場合、ボタンは表示されません。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">削除ボタン</h2>
+　　　　　<p>チェックボックスで選択したファイル・フォルダを削除対象にし、削除確認画面へ遷移します。<br>
+             ファイルの追加・変更・削除の権限の無いユーザの場合、ボタンは表示されません。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back09">閉じるボタン</h2>
+		  <p>フォルダ一覧を非表示にします。</p>
+		</td>
+		<td>
+          <h2 class="num-back10">キャビネットコンボ</h2>
+		  <p>選択したキャビネットのフォルダ情報画面に遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back11">全て開く・全て閉じる</h2>
+		  <p>全て開く：フォルダ階層を全て開いて表示します。<br>
+             全て閉じる：フォルダ階層を全て閉じて表示します。</p>
+		</td>
+		<th>
+          <h2 class="num-back12">フォルダ階層</h2>
+		  <p>フォルダ名：ディレクトリ情報画面へ遷移します。<br>
+             +ボタン：フォルダの下の階層を表示します。<br>
+             -ボタン：フォルダの下の階層の表示を閉じます。 </p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back13">フォルダ階層</h2>
+		  <p>クリックしたディレクトリ情報画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back14">検索ボタン</h2>
+		  <p>検索画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back15">ヘッダチェックボックス</h2>
+		  <p>チェックをつけると全てのチェックボックスにチェックが付きます。チェックを外すと、全てのチェックボックスのチェックが外れます。</p>
+		</td>
+		<th>
+          <h2 class="num-back16">ヘッダタイトル</h2>
+		  <p>クリックによって一覧のソート条件の切り替えを行います。<br>
+             現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back17">フォルダ名</h2>
+		  <p>ディレクトリ情報画面へ遷移します。</p>
+		</th>
+		<td>
+		  <h2 class="num-back18">ファイルプレビューボタン</h2>
+		  <p>ファイルのプレビューをポップアップで表示します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		  <h2 class="num-back19">ファイル名</h2>
+		  <p>ファイルをダウンロードします。</p>
+		</td>
+		<th>
+		  <h2 class="num-back20">ロックを解除</h2>
+		  <p>編集中のファイルのロックを解除します。</p>
+		</th>
+		</tr>
+		<tr>
+        <th>
+          <h2 class="num-back21">メニューボタン</h2>
+          <p>詳細ボタン，移動ボタンを表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back22">詳細ボタン</h2>
+          <p>フォルダ・ファイル詳細画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back23">移動ボタン</h2>
+          <p>フォルダ・ファイル移動画面へ遷移します。</p>
+        </td>
+        </tr>
+		</table>
+		<!-- 項目の説明 -->
+	    <p class="help-right-func-p">表示・入力項目説明</p>
+	    <div class="help-right-func-item">
+	    <h2>検索キーワード</h2><p>検索するキーワードを入力します。(50文字以内)</p>
+	    <h2>URL</h2><p>表示している画面のURLを表示します。</p>
+	    </div>
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.atesakiSelPop_selector{
+  height: 310px;
+}
+
+.dialog_msgbody {
+    max-height:300px;
+    overflow-y: auto;
+    width:100%;
+}
+
+.sendAtesakiList-scr {
+    max-height:75px;
+    overflow-y: auto;
+}
+
+/* float初期化 */
+.clear_both {
+  clear:both;
+}
+
+/*エラーメッセージ*/
+.errorMsgStr {
+  font-size:0.9rem;
+  font-weight:bold;
+}
+
+/*宛先写真表示*/
+.photoList {
+  padding: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+/*ディスク使用量 */
+.smlDiskUse {
+  font-size:0.83rem;
+  line-height:28px;
+  font-weight:bold;
+  background-repeat:no-repeat;
+  margin-left: 10px;
+}
+/*ユーザ一覧 一行単位*/
+.syain_checkbox_area {
+    min-height: 30px
+}
+
+.tabHeader_tab-off,
+.tabHeader_tab-on {
+    min-width: 60px;
+    text-align: center;
+}
+
+/* 位置を維持して非表示*/
+.visible_hide {
+  visibility: hidden;
+}
+
+#cmn120SelectHeaderRow .userGroup_title {
+    height:53px;
+
+}
+
+label img{
+    pointer-events: none;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 日報 案件検索</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_nippou_left_list.html');chengeHeaderText('[ 日報 案件検索 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="日報 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>案件検索を行う画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_ntp060.gif" alt="日報案件検索 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">日報 リンク</h2>
+          <p>日報週間画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">目標 リンク</h2>
+          <p>目標設定画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">分析 リンク</h2>
+          <p>分析画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">マスタメンテナンス リンク</h2>
+          <p>マスタメンテナンス一覧画面へ遷移します。<br>システム管理者・プラグイン管理者のみが表示されます。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">管理者設定ボタン</h2>
+          <p>管理者設定メニュー画面へ遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">個人設定ボタン</h2>
+          <p>個人設定メニュー画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">並び順コンボ・昇順降順</h2>
+          <p>案件の並び順と昇順・降順を変更します。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">案件登録ボタン</h2>
+          <p>案件登録画面へ遷移します。</p>
+		</th>
+		</tr>
+
+		<tr>
+		<th>
+          <h2 class="num-back09">ページングコンボ・前頁・次頁</h2>
+          <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back10">案件名リンク</h2>
+          <p>案件編集画面へ遷移します。</p>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+          <h2 class="num-back11">検索ボタン</h2>
+          <p>入力した情報で案件を検索します。</p>
+		</td>
+        <th>
+          <h2 class="num-back12">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。カレンダー画面で日付をクリックすると、クリックした日付がセットされます。</p>
+        </th>
+		</tr>
+
+		</table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>案件コード</h2><p>検索する案件コードを入力します。</p>
+        <h2>案件名</h2><p>検索する案件名を入力します。</p>
+        <h2>企業コード</h2><p>検索する企業コードを入力します。</p>
+        <h2>会社名</h2><p>検索する会社名を入力します。</p>
+        <h2>会社名カナ</h2><p>検索する会社名カナを入力します。</p>
+        <h2>拠点名</h2><p>検索する拠点名を入力します。</p>
+        <h2>商品</h2><p>検索する商品を入力します。</p>
+        <h2>案件登録日</h2><p>検索する案件登録日を入力します。</p>
+        <h2>業種</h2><p>検索する業種を選択します。</p>
+        <h2>プロセス</h2><p>検索するプロセスを選択します。</p>
+        <h2>見込み度</h2><p>検索する見込み度を選択します。</p>
+        <h2>見積もり金額</h2><p>検索する見積もり金額を入力します。</p>
+        <h2>受注金額</h2><p>検索する受注金額を入力します。</p>
+        <h2>商談結果</h2><p>検索する商談結果を入力します。</p>
+        <h2>顧客源泉</h2><p>検索する顧客を入力します。</p>
+        </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

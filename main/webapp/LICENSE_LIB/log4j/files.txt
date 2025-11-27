@@ -1,0 +1,5 @@
+log4j-api
+log4j-core
+log4j-jcl
+log4j-slf4j-impl
+log4j-web

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] タイムカード 一覧</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_tcd_left_list.html');chengeHeaderText('[ タイムカード 一覧 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="タイムカード トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>打刻状況をタイムカードカレンダーとして一覧表示する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_tcd010.gif" alt="タイムカード 一覧 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">勤怠集計ボタン</h2>
+      <p>勤怠集計画面へ遷移します。全ユーザから条件検索、エクスポートを行います。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">有休日数一覧</h2>
+      <p>有休日数一覧画面へ遷移します。ユーザ単位で有休日数の設定を行います。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back03">グループコンボ</h2>
+      <p>選択したグループに所属するユーザがユーザコンボに表示されます。<br>
+      管理者グループに所属していないユーザの場合、グループコンボは表示されません。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back05">ユーザコンボ</h2>
+          <p>選択したユーザのタイムカード情報が表示されます。<br>
+          管理者グループに所属していないユーザの場合、ユーザコンボは表示されません。</p>
+    </td>
+    <td>
+          <h2 class="num-back06">複数編集ボタン</h2>
+          <p>タイムカード編集画面へ遷移します。一覧でチェックを付けた日付のタイムカードを一括で編集できます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back07">削除ボタン</h2>
+          <p>削除確認画面へ遷移します。一覧でチェックを付けた日付のタイムカードを削除します。</p>
+    </td>
+    <td>
+          <h2 class="num-back08">勤務表出力ボタン</h2>
+          <p>勤務表をXLS形式のファイルでダウンロードします。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back09">エクスポートボタン</h2>
+          <p>タイムカード情報をCSV形式のファイルでダウンロードします。</p>
+    </td>
+    <td>
+          <h2 class="num-back10">インポートボタン</h2>
+          <p>タイムカードインポート画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back11">今月ボタン・前月移動ボタン・翌月移動ボタン</h2>
+          <p>今月ボタンで今月へ、前月移動ボタンで前月へ、翌月移動ボタンで翌月へそれぞれ遷移します。</p>
+    </td>
+    <td>
+          <h2 class="num-back12">ヘッダチェックボックス</h2>
+          <p>チェックをつけると、全てのチェックボックスにチェックが付きます。チェックを外すと、全てのチェックボックスのチェックが外れます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back13">変更ボタン</h2>
+          <p>タイムカード編集画面へ遷移します。</p>
+    </td>
+    </tr>
+    </table>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=smail');chengeHeaderText('[ ショートメール ]');">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="ショートメール画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_sml0100.html"><img src="./images/scr_help_sml0100.gif" alt="ショートメール一覧　受信・送信・草稿・ゴミ箱・ラベル"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0100.html">ショートメール一覧　受信</a>
+          ・
+          <a href="h_sml0101.html">送信</a>
+          ・
+          <a href="h_sml0102.html">草稿</a>
+          ・
+          <a href="h_sml0104.html">ゴミ箱</a>
+          ・
+          <a href="h_sml0105.html">ラベル</a>
+          </strong>
+          <br><br>
+          ショートメールを一覧表示します。<br>
+          受信タブ、送信タブ、草稿タブ、ゴミ箱、ラベルタブでそれぞれの表示切り替えができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml120.html"><img src="./images/scr_help_sml120.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml120.html">個人設定</a>
+          </strong>
+          <br><br>
+          ショートメール個人設定のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml040.html"><img src="./images/scr_help_sml040.gif" alt="個人設定 表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml040.html">個人設定 表示設定</a>
+          </strong>
+          <br><br>
+          ショートメール一覧（受信・送信・草稿・ゴミ箱・ラベル）に表示する明細数の設定、自動リロード時間、写真の表示・非表示に関する設定をユーザ単位で行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml130.html"><img src="./images/scr_help_sml130.gif" alt="ショートメール自動削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml130.html">ショートメール自動削除設定</a>
+          ・
+          <a href="h_sml130kn.html">確認（個人ショートメールデータ）</a>
+          </strong>
+          <br><br>
+          ショートメール個人データの自動削除の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml140.html"><img src="./images/scr_help_sml140.gif" alt="ショートメール手動削除"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml140.html">ショートメール手動削除</a>
+          ・
+          <a href="h_sml140kn.html">確認（個人ショートメールデータ）</a>
+          </strong>
+          <br><br>
+          各ユーザのショートメールデータの手動削除を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0106.html"><img src="./images/scr_help_sml0106.gif" alt="ショートメール新規作成・確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0106.html">ショートメール新規作成</a>
+          ・
+          <a href="h_sml0106kn.html">確認</a>
+          </strong>
+          <br><br>
+          ショートメールを作成します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0500.html"><img src="./images/scr_help_sml050.gif" alt="ひな形一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0500.html">ひな形一覧</a>
+          </strong>
+          <br><br>
+          作成したひな形の一覧が表示されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0600.html"><img src="./images/scr_help_sml0600.gif" alt="ひな形追加・ひな形編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0600.html">ひな形追加</a>
+          ・
+          <a href="h_sml0601.html">ひな形編集</a>
+          </strong>
+          <br><br>
+          よく使用するフォーマットのショートメール（電話連絡等）をひな形として追加・編集します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0108.html"><img src="./images/scr_help_sml0108.gif" alt="受信内容確認・送信内容確認・受信内容確認（ゴミ箱）・送信内容確認（ゴミ箱）・草稿内容確認（ゴミ箱）"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0108.html">受信内容確認</a>
+          ・
+          <a href="h_sml0109.html">送信内容確認</a>
+          ・<br>
+          <a href="h_sml01010.html">受信内容確認（ゴミ箱）</a>
+          ・
+          <a href="h_sml01011.html">送信内容確認（ゴミ箱）</a>
+          ・
+          <a href="h_sml01012.html">草稿内容確認（ゴミ箱）</a>
+          </strong>
+          <br><br>
+          受信・送信したショートメールと、ゴミ箱に移動したショートメールの内容を確認できます。<br>
+          送信メールの場合は送信先のユーザの開封日を確認することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0107.html"><img src="./images/scr_help_sml0107.gif" alt="詳細検索"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0107.html">詳細検索</a>
+          </strong>
+          <br><br>
+          ショートメール（受信・送信・草稿・ゴミ箱・ラベル）に詳細な条件を指定して検索を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml100.html"><img src="./images/scr_help_sml100.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml100.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml110.html"><img src="./images/scr_help_sml110.gif" alt="ショートメール 転送設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml110.html">ショートメール 転送設定</a>
+          </strong>
+          <br><br>
+          ショートメールの転送機能の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml150.html"><img src="./images/scr_help_sml150.gif" alt="ショートメール自動削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml150.html">ショートメール自動削除設定</a>
+          ・
+          <a href="h_sml150kn.html">確認</a>
+          </strong>
+          <br><br>
+          全ユーザのショートメールデータの自動削除設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml160.html"><img src="./images/scr_help_sml160.gif" alt="ショートメール手動削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml160.html">ショートメール手動削除設定</a>
+          ・
+          <a href="h_sml160kn.html">確認</a>
+          </strong>
+          <br><br>
+          全ユーザのショートメールデータの手動削除を行います。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_sml0501.html"><img src="./images/scr_help_sml051.gif" alt="ひな形一覧(共通)"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0501.html">ひな形一覧(共通)</a>
+          </strong>
+          <br><br>
+          全ユーザ共通のひな形の一覧が表示されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml0610.html"><img src="./images/scr_help_sml0610.gif" alt="ひな形追加・ひな形編集(共通)"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml0610.html">ひな形追加(共通)</a>
+          ・
+          <a href="h_sml0611.html">ひな形編集(共通)</a>
+          </strong>
+          <br><br>
+          よく使用するフォーマットのショートメール（電話連絡等）をひな形として追加・編集します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml380.html"><img src="./images/scr_help_sml380.gif" alt="送信制限設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml380.html">送信制限設定</a>
+          </strong>
+          <br><br>
+          送信制限設定の一覧が表示されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml3900.html"><img src="./images/scr_help_sml3900.gif" alt="送信制限設定　登録・登録確認・編集・編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml3900.html">送信制限設定　登録</a>
+          ・
+          <a href="h_sml390kn0.html">登録確認</a>
+          ・
+          <a href="h_sml3901.html">編集</a>
+          ・
+          <a href="h_sml390kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          送信制限設定を追加・編集します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml370.html"><img src="./images/scr_help_sml370.gif" alt="管理者設定 統計情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml370.html">管理者設定 統計情報</a>
+          </strong>
+          <br><br>
+          ショートメールの統計情報を確認することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml240.html"><img src="./images/scr_help_sml240.gif" alt="管理者設定 アカウントマネージャー"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml240.html">アカウントマネージャー</a>
+          </strong>
+          <br><br>
+          登録されているアカウントを閲覧することができます。また、アカウントを検索することもできます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml250.html"><img src="./images/scr_help_sml250.gif" alt="管理者設定 アカウント登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml250.html">管理者設定 アカウント登録　基本設定</a>
+          ・
+          <a href="h_sml2500.html">自動削除</a>
+          ・
+          <a href="h_sml2501.html">転送設定</a>
+          ・
+          <a href="h_sml2502.html">その他</a>
+          </strong>
+          <br><br>
+          管理者設定 アカウントの登録・編集を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml2503.html"><img src="./images/scr_help_sml2503.gif" alt="個人設定 アカウント登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml2503.html">個人設定 アカウント登録　基本設定</a>
+          ・
+          <a href="h_sml2504.html">自動削除</a>
+          ・
+          <a href="h_sml2505.html">その他</a>
+          </strong>
+          <br><br>
+          個人設定 アカウントの登録・編集を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml250kn.html"><img src="./images/scr_help_sml250kn.gif" alt="管理者設定 アカウント登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml250kn.html">管理者設定 アカウント登録確認　基本設定</a>
+          ・
+          <a href="h_sml250kn0.html">自動削除</a>
+          ・
+          <a href="h_sml250kn1.html">転送設定</a>
+          ・
+          <a href="h_sml250kn2.html">その他</a>
+          </strong>
+          <br><br>
+          管理者設定 アカウントの登録・編集の確認をすることが出来ます  。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml250kn3.html"><img src="./images/scr_help_sml250kn3.gif" alt="個人設定 アカウント登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml250kn3.html">個人設定 アカウント登録確認　基本設定</a>
+          ・
+          <a href="h_sml250kn4.html">自動削除</a>
+          ・
+          <a href="h_sml250kn5.html">その他</a>
+          </strong>
+          <br><br>
+          個人設定 アカウントの登録・編集の確認をすることが出来ます  。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml260.html"><img src="./images/scr_help_sml260.gif" alt="管理者設定 アカウントインポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml260.html">アカウントインポート</a>
+          ・
+          <a href="h_sml260kn.html">アカウントインポート確認</a>
+          </strong>
+          <br><br>
+          アカウントのインポートを行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml270.html"><img src="./images/scr_help_sml270.gif" alt="個人設定 アカウント管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml270.html">アカウントの管理</a>
+          </strong>
+          <br><br>
+          登録されているアカウントを閲覧することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml280.html"><img src="./images/scr_help_sml280.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml280.html">基本設定</a>
+          ・
+          <a href="h_sml280kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+          基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml400.html"><img src="./images/scr_help_sml400.gif" alt="管理者設定 表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml400.html">管理者設定 表示設定</a>
+          ・
+          <a href="h_sml400kn.html">管理者設定 表示設定確認</a>
+          </strong>
+          <br><br>
+          ショートメール一覧（受信・送信・草稿・ゴミ箱・ラベル）に表示する明細数の設定、自動リロード時間、写真の表示・非表示に関する設定を管理者により行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml330.html"><img src="./images/scr_help_sml330.gif" alt="管理者設定 フィルタ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml330.html">管理者設定 フィルタ設定</a>
+          </strong>
+          <br><br>
+          フィルタの基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml340.html"><img src="./images/scr_help_sml340.gif" alt="管理者設定 フィルタ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml340.html">管理者設定 フィルタ登録</a>
+          ・
+          <a href="h_sml340kn.html">フィルタ登録確認</a>
+          </strong>
+          <br><br>
+          フィルタの登録を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml350.html"><img src="./images/scr_help_sml350.gif" alt="個人設定 フィルタ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml350.html">個人設定 フィルタ設定</a>
+          </strong>
+          <br><br>
+          フィルタの基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sml360.html"><img src="./images/scr_help_sml360.gif" alt="個人設定 フィルタ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sml360.html">個人設定 フィルタ登録</a>
+          ・
+          <a href="h_sml360kn.html">フィルタ登録確認</a>
+          </strong>
+          <br><br>
+          フィルタの登録を行います。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

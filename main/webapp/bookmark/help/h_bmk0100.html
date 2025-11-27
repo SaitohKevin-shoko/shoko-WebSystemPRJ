@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ブックマーク一覧 個人ブックマーク</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<link rel=stylesheet href="../css/bookmark.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bmk_left_list.html');chengeHeaderText('[ ブックマーク一覧 個人ブックマーク]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="ブックマーク トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>個人のブックマークを一覧表示する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_bmk0100.gif" alt="ブックマーク一覧 個人ブックマーク画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">管理者設定ボタン</h2>
+		  <p>管理者設定画面へ遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">個人設定ボタン</h2>
+		  <p>個人設定画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">新規登録ボタン</h2>
+		  <p>ブックマーク登録-URL入力画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">削除ボタン</h2>
+		  <p>ブックマーク削除確認画面へ遷移します。一覧でチェックを付けたブックマークを削除します。</p>
+		</th>
+		</tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">ランキングボタン</h2>
+		  <p>ブックマーク登録ランキング画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">表示グループコンボ</h2>
+          <p>登録されているグループの一覧が表示されます。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">表示ユーザコンボ</h2>
+          <p>グループコンボで選択されたグループに所属するユーザの一覧が表示されます。コンボで選択されたユーザが登録しているブックマーク一覧を表示します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back09"><a href="h_bmk0100.html">個人タブ</a></h2>
+          <p>個人ブックマークの一覧を表示します。</p>
+		</th>
+		<td>
+          <h2 class="num-back10"><a href="h_bmk0101.html">グループタブ</a></h2>
+          <p>グループブックマークの一覧を表示します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back11"><a href="h_bmk0102.html">共有タブ</a></h2>
+          <p>共有ブックマークの一覧を表示します。</p>
+		</td>
+		<th>
+          <h2 class="num-back12">ページングコンボ・前頁・次頁</h2>
+          <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+		</th>
+		</tr>
+		<tr>
+        <th>
+          <h2 class="num-back13">条件クリア</h2>
+          <p>ブックマーク検索のラベル抽出条件をクリアします。</p>
+		</th>
+		<td>
+          <h2 class="num-back14">ソート条件</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう1度クリックすると「昇順」「降順」が切り替わります。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back15">ブックマークリンク</h2>
+          <p>　ブックマークのページ先が別ウィンドウで開きます。</p>
+		</td>
+		<th>
+          <h2 class="num-back16">登録人数</h2>
+          <p>コメント・評価画面へ遷移します。</p>
+		</th>
+		</tr>
+		<tr>
+        <th>
+          <h2 class="num-back17">追加／変更ボタン</h2>
+          <p>ブックマーク登録-URL入力／ブックマーク編集画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back18">続きを表示／閉じる</h2>
+          <p>コメントの続きを表示します。もう一度クリックするとコメントの続きを非表示にします。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back19">ラベル</h2>
+          <p>クリックするとブックマーク検索のラベル抽出条件に設定されます。</p>
+		</td>
+		<th>
+          <h2 class="num-back20">ラベル設定ボタン</h2>
+          <p>ラベル設定画面へ遷移します。</p>
+		</th>
+		</tr>
+		<tr>
+        <th>
+          <h2 class="num-back21">ラベル</h2>
+          <p>クリックするとブックマーク検索のラベル抽出条件に設定されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back22">ウェブ検索リンク</h2>
+          <p>「ウェブ検索」リンククリックでラベルのウェブ検索を行います。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back23">新着ブックマーク一覧ボタン</h2>
+          <p>新着ブックマーク一覧画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back24">新着ブックマークリンク</h2>
+          <p>ブックマークのページ先が別ウィンドウで開きます。</p>
+		</th>
+		</tr>
+	    <tr>
+        <th>
+          <h2 class="num-back25">新着ブックマーク登録人数リンク</h2>
+          <p>コメント・評価画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back26">新着ブックマーク追加ボタン</h2>
+          <p>ブックマーク登録-URL入力画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back27">登録数ランキングブックマークリンク</h2>
+          <p>ブックマークのページ先が別ウィンドウで開きます。</p>
+		</td>
+        <th>
+          <h2 class="num-back28">登録数ランキング登録人数リンク</h2>
+          <p>コメント・評価画面へ遷移します。</p>
+        </th>
+		</tr>
+	    <tr>
+        <th>
+          <h2 class="num-back29">登録数ランキングブックマーク追加ボタン</h2>
+          <p>ブックマーク登録-URL入力登録画面へ遷移します。</p>
+		</th>
+		<td>
+		</td>
+		</tr>
+		</table>
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

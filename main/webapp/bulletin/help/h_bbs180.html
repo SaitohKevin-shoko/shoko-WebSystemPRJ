@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 掲示板 統計情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_bbs_left_list.html');chengeHeaderText('[ 掲示板 統計情報 ]');">
+<div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="掲示板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>掲示板の統計情報を一覧表示する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_bbs180.gif" alt="掲示板 統計情報 機能詳細"></h1>
+            <h1 class="help-right-func-img"><span class="webmail_mhead">月別統計情報</span><br><img src="images/scr_help_big_bbs1800.gif" alt="月別統計情報"></h1>
+            <h1 class="help-right-func-img"><span class="webmail_mhead">週別統計情報</span><br><img src="images/scr_help_big_bbs1801.gif" alt="週別統計情報"></h1>
+            <h1 class="help-right-func-img"><span class="webmail_mhead">日別統計情報</span><br><img src="images/scr_help_big_bbs1802.gif" alt="日別統計情報"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">管理者設定へ戻るボタン</h2>
+          <p>メイン画面レイアウト設定確認 画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">ログイン履歴統計情報画面遷移ボタン</h2>
+          <p>ログイン履歴の統計情報画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">WEBメール統計情報画面遷移ボタン</h2>
+          <p>WEBメールの統計情報画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">ショートメール統計情報画面遷移ボタン</h2>
+          <p>ショートメールの統計情報画面へ遷移します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">回覧板管理統計情報画面遷移ボタン</h2>
+          <p>回覧板の統計情報画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">ファイル管理統計情報画面遷移ボタン</h2>
+          <p>ファイル管理の統計情報画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+		<td>
+		  <h2 class="num-back07">指定開始日付</h2>
+		  <p>表示する日付の開始日を選択します。</p>
+		</td>
+		<th>
+		  <h2 class="num-back08">指定終了日付</h2>
+		  <p>表示する日付の終了日を選択します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+		  <h2 class="num-back09">表示件数コンボ</h2>
+		  <p>表示件数を選択します。</p>
+		</th>
+		<td>
+		  <h2 class="num-back10">月別&nbsp;/&nbsp;週別&nbsp;/&nbsp;日別ラジオボタン</h2>
+		  <p>表示する統計情報の単位を選択します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back11">表示情報選択ボタン</h2>
+          <p>表示する統計情報を選択します。</p>
+		</td>
+        <th>
+          <h2 class="num-back12">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </th>
+		</tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示項目説明</p>
+        <div class="help-right-func-item">
+        <h2>全投稿件数</h2>
+        <p>全スレッドの投稿数を表示します。</p>
+        <h2>全スレッド件数</h2>
+        <p>掲示板に投稿されたスレッドの件数を表示します。</p>
+        <h2>日付</h2>
+        <p>日付範囲で指定された日付が表示されます。</p>
+        <h2>閲覧数</h2>
+        <p>掲示板の閲覧数を表示します。</p>
+        <h2>投稿数</h2>
+        <p>掲示板の投稿数を表示します。</p>
+        <h2>平均</h2>
+        <p>掲示板の閲覧数・投稿数それぞれの平均を表示します。</p>
+        <h2>合計</h2>
+        <p>掲示板の閲覧数・投稿数それぞれの合計を表示します。</p>
+        </div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

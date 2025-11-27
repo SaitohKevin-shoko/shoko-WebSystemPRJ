@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] スケジュール 表示設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sch_left_list.html');chengeHeaderText('[ スケジュール 表示設定 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="スケジュール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>スケジュールの表示に関する設定を行う画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_sch092.gif" alt="スケジュールデータ 表示設定 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>確認画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。グループ選択画面でグループをクリックすると、クリックしたグループが選択グループに表示されます。</p>
+        </td>
+        </tr>
+        </table>
+
+        <br>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>日間表示時間帯</h2><p>スケジュール 日間画面の入力画面の表示開始・終了時刻を設定します。</p>
+        <h2>メンバー表示順</h2><p>グループメンバーの表示順を管理者で一括強制にするか各ユーザで設定するか選択し、第1キー、第2キーをそれぞれ昇順・降順で設定します。</p>
+        <h2>デフォルト表示グループ</h2><p>表示グループのデフォルトをデフォルトグループに強制設定するか各ユーザで設定するかを設定します。</p>
+        <h2>グループスケジュール</h2><p>グループスケジュール表示の有無を設定します。</p>
+        <h2>表示件数</h2><p>スケジュール一覧画面で、1ページに表示する件数を選択します。</p>
+        <h2>自動リロード設定</h2><p>一覧で自動リロードを行う時間間隔を設定します。</p>
+        <h2>表示開始曜日設定</h2><p>スケジュール一覧で先頭に表示される曜日を設定します。</p>
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>
+

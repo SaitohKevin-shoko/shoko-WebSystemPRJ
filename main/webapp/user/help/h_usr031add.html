@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メイン 管理者設定 ユーザマネージャー（追加）</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../../main/help_ajax/ajax_man_left_list.html');chengeHeaderText('[ メイン 管理者設定 ユーザマネージャー（追加） ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="メイン TOPへ" class="btn_base0" onClick="commonHelpLocationChange('../../main/help/index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>ユーザの追加･編集を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_usr031add.gif" alt="機能詳細 管理者設定 ユーザマネージャー（追加）"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">OKボタン</h2>
+      <p>修正確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back03">削除ボタン</h2>
+      <p>現在設定されている写真を破棄します。</p>
+    </td>
+    <th>
+      <h2 class="num-back04">添付ボタン</h2>
+      <p>写真を添付できます。写真はパソコン内から選択しアップロードします。</p>
+
+    </th>
+    </tr>
+    <tr>
+    <th>
+      <h2 class="num-back05">役職追加ボタン</h2>
+      <p>役職を追加する場合に使用します。</p>
+    </th>
+    <td>
+      <h2 class="num-back06">公開区分一括設定ボタン</h2>
+      <p>ユーザ情報の公開区分を一括で設定します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">履歴ボタン</h2>
+      <p>個体識別番号の入力履歴をポップアップ画面で表示します。[個体識別番号でログインを制御する]にチェックが付いている場合のみ使用できます。</p>
+    </td>
+    <th>
+      <h2 class="num-back08">ラベル選択ボタン</h2>
+      <p>ラベル選択ポップアップが表示されます。ユーザにラベルを設定できます。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back09">選択を全て解除ボタン</h2>
+      <p>所属グループを何も選択されていない状態にします。グループを誤って選択しすぎた場合など、リセットするために使います。</p>
+    </th>
+    <td>
+      <h2 class="num-back10">上位へ全て選択ボタン</h2>
+      <p>下位のグループが所属している上位のグループを全て選択します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back11">下位へ全て選択ボタン</h2>
+      <p>グループに所属している下位のグループを全て選択します。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>ユーザID</h2><p>ユーザIDを入力します（2文字以上256文字以内）。</p>
+    <h2>パスワード</h2><p>パスワードを入力します（パスワードルール設定により2～8文字以上256文字以内）。</p>
+    <h2>社員/職員番号</h2><p>社員/職員番号を入力します（20文字以内）。</p>
+    <h2>写真</h2><p>写真を設定します。添付ボタンを押すと設定する写真を選択できます。</p>
+    <h2>氏名</h2><p>性、名を入力します（それぞれ30文字以内）。</p>
+    <h2>氏名カナ</h2><p>性カナ、名カナを入力します（それぞれ60文字以内）。</p>
+    <h2>所属</h2><p>所属を入力します（60文字以内）。</p>
+    <h2>役職</h2><p>役職を選択します。</p>
+    <h2>性別</h2><p>性別をを選択します。</p>
+    <h2>生年月日(西暦)</h2><p>生年月日(西暦)を入力します。</p>
+    <h2>メールアドレス1</h2><p>メールアドレスを入力します（256文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>メールアドレス2</h2><p>メールアドレスを入力します（256文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>メールアドレス3</h2><p>メールアドレスを入力します（256文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>郵便番号</h2><p>郵便番号を入力します。</p>
+    <h2>都道府県</h2><p>都道府県を選択します。</p>
+    <h2>住所1</h2><p>住所を入力します（100文字以内）。</p>
+    <h2>住所2</h2><p>住所を入力します（100文字以内）。</p>
+    <h2>電話番号1</h2><p>電話番号を入力します（20文字以内）。内線番号を入力します（10文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>電話番号2</h2><p>電話番号を入力します（20文字以内）。内線番号を入力します（10文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>電話番号3</h2><p>電話番号を入力します（20文字以内）。内線番号を入力します（10文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>ＦＡＸ1</h2><p>ＦＡＸ番号を入力します（20文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>ＦＡＸ2</h2><p>ＦＡＸ番号を入力します（20文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>ＦＡＸ3</h2><p>ＦＡＸ番号を入力します（20文字以内）。コメントが入力できます（10文字以内）。</p>
+    <h2>モバイル使用</h2><p>モバイルプラグインに関する設定を行います。<br>※スマートフォンはアプリのみ対応です。<br>個体識別番号でのログイン制御、初回ログイン時に個体識別番号を自動登録するかを選択します。<br>個体識別番号1～3を入力します(50文字以内)</p>
+    <h2>ソートキー</h2><p>任意のソートキーを設定する事が出来ます。同じ役職でも並び順を設定したい時などに設定します。</p>
+    <h2>備考</h2><p>備考を入力します（1,000文字以内）。</p>
+    <h2>所属グループ</h2><p>所属するグループを選択します。グループは複数所属することができます。グループには階層があり、上位階層を選択すると、その下位階層も選択されます。</p>
+    <h2>デフォルトグループ</h2><p>所属するデフォルトグループを選択します。選択したデフォルトグループは各プラグイン機能での初期表示などに使われます。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

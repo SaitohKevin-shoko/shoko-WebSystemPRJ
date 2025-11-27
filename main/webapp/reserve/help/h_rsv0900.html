@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 施設予約 施設登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rsv_left_list.html');chengeHeaderText('[ 施設予約 施設登録 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="施設予約 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>施設を登録する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_rsv0900.gif" alt="施設登録 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">OKボタン</h2>
+		  <p>施設登録確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>遷移元の画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">入力項目</h2>
+		  <p>施設区分毎に入力可能な項目が変わります。詳しくは下記を参照してください。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">週間・日間表示区分</h2>
+		  <p>週間・日間画面に表示する項目を設定します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">添付ボタン</h2>
+		  <p>施設/設備画像添付設定画面へ遷移します。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">添付ボタン</h2>
+		  <p>場所/地図画像添付設定画面へ遷移します。</p>
+		</td>
+		</tr>
+		</table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <span class="reserve_mhead">施設区分 [部屋] の場合</span>
+          <h2>所属グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設名</h2>
+          <p>施設名を入力します（100文字以内）。</p>
+          <h2>資産管理番号</h2>
+          <p>資産管理番号を入力します（20文字以内）。</p>
+          <h2>座席数</h2>
+          <p>座席数を入力します（10文字以内）。</p>
+          <h2>喫煙</h2>
+          <p>喫煙の可、不可を選択します。</p>
+          <h2>重複登録</h2>
+          <p>重複登録の可、不可を選択します。</p>
+          <h2>施設予約の承認</h2>
+          <p>施設予約の承認を行う、行わないを選択します。</p>
+          <h2>予約可能期限</h2>
+          <p>予約可能期限を指定します。</p>
+          <h2>備考</h2>
+          <p>備考を入力します（1,000文字以内）。</p>
+
+          <br><br>
+
+          <span class="reserve_mhead">施設区分 [物品] の場合</span>
+          <h2>所属グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設名</h2>
+          <p>施設名を入力します（100文字以内）。</p>
+          <h2>資産管理番号</h2>
+          <p>資産管理番号を入力します（20文字以内）。</p>
+          <h2>個数</h2>
+          <p>個数を入力します（10文字以内）。</p>
+          <h2>社外持出し</h2>
+          <p>社外持出しの可、不可を選択します。</p>
+          <h2>重複登録</h2>
+          <p>重複登録の可、不可を選択します。</p>
+          <h2>施設予約の承認</h2>
+          <p>施設予約の承認を行う、行わないを選択します。</p>
+          <h2>予約可能期限</h2>
+          <p>予約可能期限を指定します。</p>
+          <h2>備考</h2>
+          <p>備考を入力します（1,000文字以内）。</p>
+
+          <br><br>
+
+          <span class="reserve_mhead">施設区分 [車] の場合</span>
+          <h2>所属グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設名</h2>
+          <p>施設名を入力します（100文字以内）。</p>
+          <h2>資産管理番号</h2>
+          <p>資産管理番号を入力します（20文字以内）。</p>
+          <h2>ナンバー</h2>
+          <p>ナンバーを入力します（20文字以内）。</p>
+          <h2>乗員数</h2>
+          <p>乗員数を入力します（10文字以内）。</p>
+          <h2>喫煙</h2>
+          <p>喫煙の可、不可を選択します。</p>
+          <h2>重複登録</h2>
+          <p>重複登録の可、不可を選択します。</p>
+          <h2>施設予約の承認</h2>
+          <p>施設予約の承認を行う、行わないを選択します。</p>
+          <h2>予約可能期限</h2>
+          <p>予約可能期限を指定します。</p>
+          <h2>備考</h2>
+          <p>備考を入力します（1,000文字以内）。</p>
+
+          <br><br>
+
+          <span class="reserve_mhead">施設区分 [書籍] の場合</span>
+          <h2>所属グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設名</h2>
+          <p>施設名を入力します（100文字以内）。</p>
+          <h2>資産管理番号</h2>
+          <p>資産管理番号を入力します（20文字以内）。</p>
+          <h2>ISBN</h2>
+          <p>ISBNを入力します（17文字以内）。</p>
+          <h2>冊数</h2>
+          <p>冊数を入力します（10文字以内）。</p>
+          <h2>社外持出し</h2>
+          <p>社外持出しの可、不可を選択します。</p>
+          <h2>重複登録</h2>
+          <p>重複登録の可、不可を選択します。</p>
+          <h2>施設予約の承認</h2>
+          <p>施設予約の承認を行う、行わないを選択します。</p>
+          <h2>予約可能期限</h2>
+          <p>予約可能期限を指定します。</p>
+          <h2>備考</h2>
+          <p>備考を入力します（1,000文字以内）。</p>
+
+          <br><br>
+
+          <span class="reserve_mhead">施設区分 [その他] の場合</span>
+          <h2>所属グループ</h2>
+          <p>所属している施設グループ名が表示されます。</p>
+          <h2>施設区分</h2>
+          <p>施設区分が表示されます。</p>
+          <h2>施設名</h2>
+          <p>施設名を入力します（100文字以内）。</p>
+          <h2>資産管理番号</h2>
+          <p>資産管理番号を入力します（20文字以内）。</p>
+          <h2>重複登録</h2>
+          <p>重複登録の可、不可を選択します。</p>
+          <h2>施設予約の承認</h2>
+          <p>施設予約の承認を行う、行わないを選択します。</p>
+          <h2>予約可能期限</h2>
+          <p>予約可能期限を指定します。</p>
+          <h2>備考</h2>
+          <p>備考を入力します（1,000文字以内）。</p>
+
+        </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

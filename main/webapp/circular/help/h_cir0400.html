@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 回覧板 新規作成</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_cir_left_list.html');chengeHeaderText('[ 回覧板 新規作成 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="回覧板 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>回覧板を作成する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_cir0400.gif" alt="回覧板 新規作成画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">ＯＫボタン</h2>
+              <p>指定した内容で回覧板を新規作成します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">発信者コンボ</h2>
+              <p>発信者を選択します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">宛先選択ボタン</h2>
+              <p>宛先選択ポップアップを表示します。（回覧板を送信した宛先全員に確認されるとショートメールで通知が届きます）。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">削除ボタン</h2>
+              <p>ユーザを宛先から削除します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">日付リンク</h2>
+              <p>現在の日付から計算して、リンク名分進めた日付をセットします。(デフォルトは一週間です)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">カレンダーボタン</h2>
+              <p>日付選択カレンダーを表示します。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">前日・今日・翌日ボタン</h2>
+              <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>後日：1日後を設定</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">削除アイコン</h2>
+              <p>ファイルを削除します。</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>発信者</h2><p>回覧板の発信者を選択します。</p>
+          <h2>回覧先</h2><p>宛先選択ポップアップで選択したユーザ名が表示されます。</p>
+          <h2>タイトル</h2><p>タイトルを入力します（70文字以内）。</p>
+          <h2>内容</h2><p>内容を入力します（2,000文字以内）。</p>
+          <h2>メモ欄の修正</h2><p>確認後のメモ欄の修正を可・不可に設定することができます。。</p>
+          <h2>添付</h2><p>添付するファイルを選択します。</p>
+          <h2>回覧先確認状況</h2><p>回覧先確認状況の公開/非公開を選択します。</p>
+        </div>
+
+        </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

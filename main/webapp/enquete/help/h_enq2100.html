@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] アンケート 新規登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script type="text/javascript" src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_enq_left_list.html');chengeHeaderText('[ アンケート 新規登録 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="アンケート トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+           <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>アンケート新規登録画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_enq2100.gif" alt="アンケート 新規登録画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+               <h2 class="num-back01">草稿に保存ボタン</h2>
+               <p>作成中のアンケートを草稿に登録し、登録完了画面へ遷移します。入力内容に不備がある場合、エラーメッセージが表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">発信ボタン</h2>
+              <p>アンケート新規作成確認画面へ遷移します。入力内容に不備がある場合、エラーメッセージが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">テンプレートボタン</h2>
+              <p>ポップアップでテンプレート選択画面が開きます。テンプレートを選択すると、テンプレートの内容が適用されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">プレビューボタン</h2>
+              <p>プレビュー画面に遷移します。作成中のアンケートが、回答画面でどのように表示されるかを確認します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">ファイル名</h2>
+              <p>ファイルがダウンロードされます。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">削除アイコン</h2>
+              <p>添付ファイルを削除します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">カレンダーボタン</h2>
+              <p>日付選択カレンダーを表示します。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">前日・今日・翌日ボタン</h2>
+              <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>翌日：1日後を設定</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">全て削除ボタン</h2>
+              <p>選択済エリアに表示されている全てのグループおよびユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">選択済グループ</h2>
+              <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのグループおよびユーザを選択済エリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back16">未選択グループ</h2>
+              <p>グループ名をクリックすることで、グループを選択済エリアに追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back17">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back18">グループ名</h2>
+              <p>グループ名をクリックすることで、グループおよびグループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back19">設問追加 単一選択リンク</h2>
+              <p>設問種類[単一選択]の追加画面に遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back20">設問追加 複数選択リンク</h2>
+              <p>設問種類[複数選択]の追加画面に遷移します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back21">設問追加 テキスト入力リンク</h2>
+              <p>設問種類[テキスト入力]の追加画面に遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back22">設問追加 テキスト入力(複数行)リンク</h2>
+              <p>設問種類[テキスト入力(複数行)]の追加画面に遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back23">設問追加 数値入力リンク</h2>
+              <p>設問種類[数値入力]の追加画面に遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back24">設問追加 日付入力リンク</h2>
+              <p>設問種類[日付入力]の追加画面に遷移します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back25">設問追加 コメントリンク</h2>
+              <p>設問種類[コメント]の追加画面に遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back26">上へボタン</h2>
+              <p>ラジオボタンで選択されている設問を、一つ上へ移動します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back27">下へボタン</h2>
+              <p>ラジオボタンで選択されている設問を、一つ下へ移動します。</p>
+            </td>
+            <th>
+              <h2 class="num-back28">設問 編集ボタン</h2>
+              <p>アンケート設問の編集画面へ遷移します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back29">設問 削除ボタン</h2>
+              <p>アンケートの設問を削除します。</p>
+            </th>
+          </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>重要度</h2><p>アンケートの重要度を選択します。</p>
+          <h2>種類</h2><p>アンケートの種類名を選択します。</p>
+          <h2>発信者</h2><p>アンケートの発信者を選択します。</p>
+          <h2>タイトル</h2><p>アンケートのタイトルを入力します。</p>
+          <h2>説明文</h2><p>アンケートの説明文を入力します。</p>
+          <h2>添付</h2><p>添付したファイル名を表示します。</p>
+          <h2>位置</h2><p>追加した添付ファイルの位置を選択します。「上」を選択すると説明文の上部に、「下」を選択すると説明文の下部に表示します。添付ファイルが存在するときだけ設定できます。</p>
+          <h2>公開開始日</h2><p>アンケートの公開開始日を選択します。公開開始日を迎えていないアンケートは、受信者には表示されません。</p>
+          <h2>回答期限</h2><p>アンケートの回答期限を選択します。回答期限の過ぎたアンケートは、回答することができなくなります。</p>
+          <h2>結果公開</h2><p>アンケートの結果公開開始日、結果公開終了日を選択します。結果公開期間外のアンケートは、結果公開アンケートであっても、受信者は結果確認の閲覧ができなくなります。</p>
+          <h2>ショートメール通知</h2><p>ショートメール通知区分を選択します。選択した状態でアンケートを発信すると、回答者にショートメールを通知します。</p>
+          <h2>匿名</h2><p>アンケートの匿名を選択します。匿名アンケートの場合、結果確認で回答データのみ閲覧することができ、回答者名は非表示となります。</p>
+          <h2>対象者</h2><p>アンケートの対象者を、ユーザーリストから選択し追加します。</p>
+          <h2>設問番号</h2><p>アンケートの設問番号設定区分を選択します。「手動」を選択すると、設問追加・編集画面で任意の番号を入力することができます。</p>
+        </div>
+
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

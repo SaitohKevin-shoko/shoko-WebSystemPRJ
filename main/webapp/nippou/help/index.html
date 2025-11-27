@@ -1,0 +1,586 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=nippou');chengeHeaderText('[ 日報 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="日報画面一覧" cellpadding="0" cellspacing="0">
+
+        <tr>
+        <th><a href="h_ntp010.html"><img src="./images/scr_help_ntp010.gif" alt="日報週間"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp010.html">日報　週間</a>
+          </strong>
+          <br><br>
+          週間表示で日報を表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp020.html"><img src="./images/scr_help_ntp020.gif" alt="日報月間"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp020.html">日報　月間</a>
+          </strong>
+          <br><br>
+          月間表示で日報を表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp030.html"><img src="./images/scr_help_ntp030.gif" alt="タイムライン日間"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp030.html">日報　タイムライン</a>
+          </strong>
+          <br><br>
+          日間表示で日報を表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp100.html"><img src="./images/scr_help_ntp100.gif" alt="日報一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp100.html">日報一覧</a>
+          </strong>
+          <br><br>
+          詳細な検索条件を入力し日報の一覧を表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp0400add.html"><img src="./images/scr_help_ntp0400add.gif" alt="日報新規登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp0400add.html">日報　新規登録</a>
+          ・
+          <a href="h_ntp0400edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          日報の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp0400add.html"><img src="./images/scr_help_ntp060.gif" alt="案件検索"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp060.html">案件検索</a>
+
+          </strong>
+          <br><br>
+          案件検索を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp061add.html"><img src="./images/scr_help_ntp061add.gif" alt="案件登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp061add.html">案件　新規登録</a>
+          ・
+          <a href="h_ntp061edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          日報の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp062.html"><img src="./images/scr_help_ntp062.gif" alt="案件インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp062.html">案件インポート</a>
+          ・
+          <a href="h_ntp062kn.html">確認</a>
+
+          </strong>
+          <br><br>
+          案件のインポートを行います。<br>
+        </td>
+        </tr>
+
+       <tr>
+        <th><a href="h_ntp240.html"><img src="./images/scr_help_ntp240.gif" alt="目標設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp240.html">目標設定</a>
+
+          </strong>
+          <br><br>
+          目標設定を行います。<br>
+        </td>
+        </tr>
+
+       <tr>
+        <th><a href="h_ntp220kojin.html"><img src="./images/scr_help_ntp220kojin.gif" alt="分析"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp220kojin.html">分析</a>
+
+          </strong>
+          <br><br>
+          分析<br>
+        </td>
+        </tr>
+
+       <tr>
+        <th><a href="h_ntp120.html"><img src="./images/scr_help_ntp120.gif" alt="マスタメンテナンス"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp120.html">マスタメンテナンス</a>
+
+          </strong>
+          <br><br>
+          マスタメンテナンス<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp130.html"><img src="./images/scr_help_ntp130.gif" alt="商品一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp130.html">商品一覧</a>
+          </strong>
+          <br><br>
+          商品一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp131add.html"><img src="./images/scr_help_ntp131add.gif" alt="商品登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp131add.html">商品　新規登録</a>
+          ・
+          <a href="h_ntp131edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          商品の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp132.html"><img src="./images/scr_help_ntp132.gif" alt="商品インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp132.html">商品インポート</a>
+          ・
+          <a href="h_ntp132kn.html">確認</a>
+          </strong>
+          <br><br>
+         商品のインポートを行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp140.html"><img src="./images/scr_help_ntp140.gif" alt="業種一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp140.html">業種一覧</a>
+          </strong>
+          <br><br>
+          業種一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp141add.html"><img src="./images/scr_help_ntp141add.gif" alt="業種登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp141add.html">業種　新規登録</a>
+          ・
+          <a href="h_ntp141edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          業種の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp150.html"><img src="./images/scr_help_ntp150.gif" alt="プロセス一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp150.html">プロセス一覧</a>
+          </strong>
+          <br><br>
+          プロセス一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp151add.html"><img src="./images/scr_help_ntp151add.gif" alt="プロセス登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp151add.html">プロセス　新規登録</a>
+          ・
+          <a href="h_ntp151edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          プロセスの登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp170.html"><img src="./images/scr_help_ntp170.gif" alt="活動分類一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp170.html">活動分類一覧</a>
+          </strong>
+          <br><br>
+          活動分類一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp171add.html"><img src="./images/scr_help_ntp171add.gif" alt="活動分類登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp171add.html">活動分類　新規登録</a>
+          ・
+          <a href="h_ntp171edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          活動分類の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp180.html"><img src="./images/scr_help_ntp180.gif" alt="活動方法一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp180.html">活動方法一覧</a>
+          </strong>
+          <br><br>
+          活動方法一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp181add.html"><img src="./images/scr_help_ntp181add.gif" alt="活動方法登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp181add.html">活動方法　新規登録</a>
+          ・
+          <a href="h_ntp181edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          活動方法の登録を行います。<br>
+        </td>
+        </tr>
+
+
+        <tr>
+        <th><a href="h_ntp190.html"><img src="./images/scr_help_ntp190.gif" alt="顧客源泉一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp190.html">顧客源泉一覧</a>
+          </strong>
+          <br><br>
+          顧客源泉一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp191add.html"><img src="./images/scr_help_ntp191add.gif" alt="顧客源泉登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp191add.html">顧客源泉　新規登録</a>
+          ・
+          <a href="h_ntp191edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          顧客源泉の登録を行います。<br>
+        </td>
+        </tr>
+
+
+        <tr>
+        <th><a href="h_ntp230.html"><img src="./images/scr_help_ntp230.gif" alt="目標一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp230.html">目標一覧</a>
+          </strong>
+          <br><br>
+          目標一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp231add.html"><img src="./images/scr_help_ntp231add.gif" alt="目標登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp231add.html">目標　新規登録</a>
+          ・
+          <a href="h_ntp231edit.html">確認・編集</a>
+
+          </strong>
+          <br><br>
+          目標の登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp080.html"><img src="./images/scr_help_ntp080.gif" alt="管理者設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp080.html">管理者設定</a>
+          </strong>
+          <br><br>
+          日報機能に関する管理者設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp081.html"><img src="./images/scr_help_ntp081.gif" alt="日報 基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp081.html">日報 基本設定</a>
+          </strong>
+          <br><br>
+          日報機能に関する基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp086.html"><img src="./images/scr_help_ntp086.gif" alt="日報テンプレート一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp086.html">日報テンプレート一覧</a>
+          </strong>
+          <br><br>
+          日報テンプレートの一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp087add.html"><img src="./images/scr_help_ntp087add.gif" alt="日報テンプレート登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp082.html">日報テンプレート登録</a>
+          </strong>
+          <br><br>
+          日報テンプレートの登録画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp087edit.html"><img src="./images/scr_help_ntp087edit.gif" alt="日報テンプレート編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp087edit.html">日報テンプレート編集</a>
+          </strong>
+          <br><br>
+          日報テンプレートの編集画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp088.html"><img src="./images/scr_help_ntp088.gif" alt="特例アクセス管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp088.html">特例アクセス管理</a>
+          </strong>
+          <br><br>
+          特例アクセス管理画面です。
+        </td>
+        </tr>
+
+         <tr>
+        <th><a href="h_ntp0890.html"><img src="./images/scr_help_ntp0890.gif" alt="特例アクセス登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp0890.html">特例アクセス登録</a>
+          </strong>
+          <br><br>
+          特例アクセス登録画面です。
+        </td>
+        </tr>
+
+         <tr>
+        <th><a href="h_ntp0891.html"><img src="./images/scr_help_ntp0891.gif" alt="特例アクセス編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp0891.html">特例アクセス編集</a>
+          </strong>
+          <br><br>
+          特例アクセス編集画面です。
+        </td>
+        </tr>
+
+          <tr>
+        <th><a href="h_ntp089kn0.html"><img src="./images/scr_help_ntp089kn0.gif" alt="特例アクセス登録確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp089kn0.html">特例アクセス登録確認</a>
+          </strong>
+          <br><br>
+          特例アクセス登録確認画面です。
+        </td>
+        </tr>
+
+         <tr>
+        <th><a href="h_ntp089kn1.html"><img src="./images/scr_help_ntp089kn1.gif" alt="特例アクセス編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp089kn1.html">特例アクセス編集確認</a>
+          </strong>
+          <br><br>
+          特例アクセス編集確認画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp085.html"><img src="./images/scr_help_ntp085.gif" alt="日報ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp085.html">日報ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          日報通知設定画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp084.html"><img src="./images/scr_help_ntp084.gif" alt="日報インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp084.html">日報インポート</a>
+          ・
+          <a href="h_ntp084kn.html">確認（管理者設定）</a>
+          </strong>
+          <br><br>
+         ユーザ単位、または、グループ単位の日報のインポートを行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp082.html"><img src="./images/scr_help_ntp082.gif" alt="自動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp082.html">自動データ削除設定</a>
+          </strong>
+          <br><br>
+          指定期間が経過した古い日報データを自動で削除する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp083.html"><img src="./images/scr_help_ntp083.gif" alt="手動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp083.html">手動データ削除設定</a>
+          </strong>
+          <br><br>
+          手動で、日報終了日時から指定した年月が経過した日報データを削除します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp090.html"><img src="./images/scr_help_ntp090.gif" alt="個人設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp090.html">個人設定</a>
+          </strong>
+          <br><br>
+          日報機能に関する個人設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp091.html"><img src="./images/scr_help_ntp091.gif" alt="初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp091.html">初期値設定</a>
+          </strong>
+          <br><br>
+          日報機能に関する初期値設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp094.html"><img src="./images/scr_help_ntp094.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp094.html">表示設定</a>
+          </strong>
+          <br><br>
+          日報の表示件数の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp095.html"><img src="./images/scr_help_ntp095.gif" alt="日報 ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp095.html">ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          日報登録時のショートメール通知の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_ntp110.html"><img src="./images/scr_help_ntp110.gif" alt="日報インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_ntp110.html">日報インポート</a>
+          ・
+          <a href="h_ntp110kn.html">確認</a>
+          </strong>
+          <br><br>
+         ユーザ単位の日報のインポートを行います。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

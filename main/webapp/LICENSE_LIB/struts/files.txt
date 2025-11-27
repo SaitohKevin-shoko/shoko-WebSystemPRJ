@@ -1,0 +1,3 @@
+struts-core
+struts-taglib
+struts-tiles

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 稟議新規作成</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議新規作成 ]');">
+  <div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+      <input type="button" value="稟議  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>個人テンプレート、または汎用稟議テンプレートを使用して稟議を作成する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_rng0200.gif" alt="稟議新規作成 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">草稿に保存ボタン</h2>
+              <p>入力内容を草稿として保存し、保存完了画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">OKボタン</h2>
+              <p>稟議新規作成確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">テンプレート使用ボタン</h2>
+              <p>個人経路テンプレート選択ダイアログを表示します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">全て削除ボタン</h2>
+              <p>選択済エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを選択したエリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">経路追加ボタン</h2>
+              <p>経路を一行追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">経路削除ボタン</h2>
+              <p>経路の削除を行います。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">任意経路設定並び替えボタン</h2>
+              <p>任意経路設定内の経路順を変更します。</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>タイトル</h2>
+          <p>タイトルを入力します（100文字以内）。</p>
+          <h2>申請ID</h2>
+          <p>管理者設定で申請IDの使用を許可されている場合、稟議申請時に発行される予定の申請IDが表示されます。<br>
+          あくまで予定なので、他のユーザと同時に稟議を申請した場合は、この申請IDが変更される可能性があります。<br>
+          申請IDの使用許可は<a href="h_rng180.html"><span class="textLink">管理者設定 基本設定</span></a>より行うことができます。</p>
+          <h2>内容</h2>
+          <p>内容を入力します（1,000文字以内）。</p>
+          <h2>添付</h2>
+          <p>添付するファイルを選択します。<br>個人テンプレートから稟議の内容をセットした場合、テンプレートに設定されている添付ファイルのリンクが表示されます。</p>
+        </div>
+
+        </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

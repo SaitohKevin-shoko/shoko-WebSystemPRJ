@@ -1,0 +1,297 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] タイムカード</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=timecard');chengeHeaderText('[ タイムカード ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="タイムカード画面一覧" cellpadding="0" cellspacing="0">
+
+        <tr>
+        <th><a href="h_tcd010.html"><img src="./images/scr_help_tcd010.gif" alt="タイムカード一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd010.html">タイムカード一覧</a>
+          </strong>
+          <br><br>
+          打刻状況をタイムカードカレンダーとして一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd020.html"><img src="./images/scr_help_tcd020.gif" alt="タイムカード編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd020.html">タイムカード編集</a>
+          </strong>
+          <br><br>
+          タイムカード情報を編集します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd030.html"><img src="./images/scr_help_tcd030.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd030.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd040.html"><img src="./images/scr_help_tcd040.gif" alt="勤怠集計"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd040.html">勤怠集計</a>
+          </strong>
+          <br><br>
+          各ユーザを検索し打刻状況を集計表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd050.html"><img src="./images/scr_help_tcd050.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd050.html">基本設定</a>
+          ・
+          <a href="h_tcd050kn.html">設定確認</a>
+          </strong>
+          <br><br>
+          タイムカードを運用する上で基本となる設定を登録します。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd060.html"><img src="./images/scr_help_tcd060.gif" alt="時間帯設定登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd060.html">時間帯設定登録</a>
+          </strong>
+          <br><br>
+          通常、残業、深夜、休憩のそれぞれの時間帯を登録・編集します。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd080.html"><img src="./images/scr_help_tcd080.gif" alt="個人設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd080.html">基本設定</a>
+          </strong>
+          <br><br>
+          タイムカードの個人設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd090.html"><img src="./images/scr_help_tcd090.gif" alt="編集権限設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd090.html">編集権限設定</a>
+          ・
+          <a href="h_tcd090kn.html">編集権限設定確認</a>
+          </strong>
+          <br><br>
+          タイムカードの編集権限設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd100.html"><img src="./images/scr_help_tcd100.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd100.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+          タイムカードの個人設定を行う機能のメニュー画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd110.html"><img src="./images/scr_help_tcd110.gif" alt="勤務表一括出力"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd110.html">勤務表一括出力</a>
+          </strong>
+          <br><br>
+          勤務表ファイルの一括ダウンロードを行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd120.html"><img src="./images/scr_help_tcd120.gif" alt="時間帯設定一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd120.html">時間帯設定一覧</a>
+          </strong>
+          <br><br>
+          時間帯設定の管理画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd130.html"><img src="./images/scr_help_tcd130.gif" alt="ユーザ別使用時間帯設定一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd130.html">ユーザ別使用時間帯設定一覧</a>
+          </strong>
+          <br><br>
+          ユーザ別使用時間帯設定の一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd140.html"><img src="./images/scr_help_tcd140.gif" alt="ユーザ別使用時間帯設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd140.html">ユーザ別使用時間帯設定</a>
+          </strong>
+          <br><br>
+          ユーザ別使用時間帯・デフォルト時間帯の設定画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd150.html"><img src="./images/scr_help_tcd150.gif" alt="インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd150.html">インポート</a>
+          ・
+          <a href="h_tcd150kn.html">インポート確認</a>
+          </strong>
+          <br><br>
+          タイムカードのインポートを行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd160.html"><img src="./images/scr_help_tcd160.gif" alt="休日区分設定一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd160.html">休日区分設定一覧</a>
+          </strong>
+          <br><br>
+          休日区分設定の一覧画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd1700.html"><img src="./images/scr_help_tcd1700.gif" alt="休日区分登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd1700.html">休日区分登録</a>
+          ・
+          <a href="h_tcd1701.html">休日区分編集</a>
+          ・
+          <a href="h_tcd170kn.html">休日区分登録確認</a>
+          </strong>
+          <br><br>
+          勤務時間を集計する上で必要となる休日区分を設定する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd180.html"><img src="./images/scr_help_tcd180.gif" alt="休日区分登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd180.html">勤務表フォーマット設定</a>
+          ・
+          <a href="h_tcd180kn.html">勤務表フォーマット設定確認</a>
+          </strong>
+          <br><br>
+          勤務表をExcel形式で出力する際に使用されるフォーマットを設定する画面です。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd190.html"><img src="./images/scr_help_tcd190.gif" alt="有休日数一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd190.html">有休日数一覧</a>
+          </strong>
+          <br><br>
+          全ユーザの有休日数の一覧画面です。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_tcd2000.html"><img src="./images/scr_help_tcd2000.gif" alt="有休日数登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd2000.html">有休日数登録</a>
+          ・
+          <a href="h_tcd2001.html">有休日数編集</a>
+          ・
+          <a href="h_tcd200kn.html">有休日数登録確認</a>
+          </strong>
+          <br><br>
+          有休日数を設定する画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_tcd210.html"><img src="./images/scr_help_tcd210.gif" alt="有休日数インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd210.html">有休日数インポート</a>
+          ・
+          <a href="h_tcd210kn.html">有休日数インポート確認</a>
+          </strong>
+          <br><br>
+          有休日数のインポートを行います。
+        </td>
+        </tr>
+        
+        <tr>
+        <th><a href="h_tcd220.html"><img src="./images/scr_help_tcd220.gif" alt="有休警告"></a></th>
+        <td>
+          <strong>
+          <a href="h_tcd220.html">有休警告設定</a>
+          </strong>
+          <br><br>
+          有休警告を表示する設定を行います。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+.clear {
+  clear: both;
+}
+
+.column {
+  padding-bottom: 100px;
+}
+
+.rss_submenu {
+  display:none;
+  float: right;
+  height: auto;
+  position: relative;
+  width: 20%;
+}

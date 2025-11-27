@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] アンケート 草稿(詳細検索)</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script type="text/javascript" src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_enq_left_list.html');chengeHeaderText('[ アンケート 草稿(詳細検索) ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="アンケート トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div>
+      </div>
+  </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>アンケート[草稿](詳細検索)画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_enq010201.gif" alt="アンケート[草稿](詳細検索)画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">管理者設定ボタン</h2>
+          <p>管理者設定画面へ遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">個人設定</h2>
+          <p>個人設定画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back03">アンケートフォルダ詳細切り替え</h2>
+          <p>クリックすると、アンケートフォルダの詳細が開閉します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">発信フォルダ</h2>
+          <p>発信したアンケートの一覧を表示します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">発信フォルダ 未回答</h2>
+          <p>発信したアンケートの中で、未回答アンケートの一覧を表示します。括弧内の数字は、未回答のアンケート数です。ただし回答期限が過ぎたアンケートは含まれていません。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">発信フォルダ 回答済</h2>
+          <p>発信したアンケートの中で、回答済アンケートの一覧を表示します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">発信フォルダ</h2>
+          <p>発信したアンケートの一覧を表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">発信フォルダ 未公開</h2>
+          <p>発信したアンケートの中で、未公開アンケートの一覧を表示します。括弧内の数字は、未公開アンケート数です。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">発信フォルダ 公開</h2>
+          <p>発信したアンケートの中で、公開中のアンケート一覧を表示します。括弧内の数字は、現在公開中のアンケート数です。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">発信フォルダ 回答完了</h2>
+          <p>発信したアンケートの中で、回答期限が過ぎて、かつ公開期間内のアンケート一覧を表示します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back11">発信フォルダ 公開完了</h2>
+          <p>発信したアンケートの中で、公開期間が過ぎたアンケートの一覧を表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">草稿フォルダ</h2>
+          <p>草稿に保存しているアンケートの一覧を表示します。括弧内の数字は、現在草稿保存しているアンケート数です。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">共有テンプレート詳細切り替え</h2>
+          <p>クリックすると、共有テンプレートの一覧が開閉します。管理者またはアンケート発信対象者のみ利用可能です。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">共有テンプレート 設定ボタン</h2>
+          <p>共有テンプレートの一覧画面へ遷移します。管理者またはアンケート発信対象者のみ利用可能です。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back15">共有テンプレート 一覧</h2>
+          <p>共有テンプレートの一覧を表示します。タイトルが長い場合は省略して表示します。マウスカーソルをタイトルに合わせると、該当テンプレートの種類名とタイトルの全文が表示されます。管理者またはアンケート発信対象者のみ利用可能です。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">詳細検索ボタン</h2>
+          <p>クリックすると、詳細検索入力欄を表示します。もう一度クリックすると、入力欄を閉じます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back17">新規追加ボタン</h2>
+          <p>アンケートを新規で発信します。アンケート作成画面へ遷移します。</p>
+       </th>
+        <td>
+          <h2 class="num-back18">削除ボタン</h2>
+          <p>選択した草稿アンケートを削除します。草稿アンケート削除確認画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back19">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。カレンダー画面で日付をクリックすると、クリックした日付がセットされます。</p>
+        </td>
+        <th>
+          <h2 class="num-back20">検索ボタン</h2>
+          <p>入力された検索条件を元に、アンケートの詳細検索を行います。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back21">ページコンボ 前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back22">ヘッダチェックボックス</h2>
+          <p>チェックをつけると、1ページ分の全てのチェックボックスにチェックが付きます。チェックを外すと、1ページ分の全てのチェックボックスのチェックが外れます。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back23">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう1度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        <th>
+          <h2 class="num-back24">草稿アンケート内容</h2>
+          <p>草稿アンケートの重要度、発信者、作成日、種類名、タイトル、回答期限、公開期限を表示します。</p>
+        </th>
+        </th>
+
+        <tr>
+        <th>
+          <h2 class="num-back25">草稿アンケート編集ボタン</h2>
+          <p>発信アンケートを編集します。アンケート編集画面へ遷移します。</p>
+        </th>
+        <td>
+        </td>
+        </tr>
+
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>キーワード</h2><p>検索するキーワードを入力します。</p>
+        <h2>種類</h2><p>検索する種類名を選択します。</p>
+        <h2>キーワード(詳細検索)</h2><p>検索するタイトル名を入力します。</p>
+        <h2>検索対象</h2><p>キーワード検索の範囲を選択します。</p>
+        <h2>グループ</h2><p>検索するグループを選択します。</p>
+        <h2>ユーザ</h2><p>検索するユーザーを選択します。選択したグループに所属するユーザーが表示されます。</p>
+        <h2>発信者</h2><p>検索するグループ・ユーザー名を入力します。</p>
+        <h2>作成日 指定フラグ</h2><p>作成日検索の指定フラグを選択します。指定するを選択すると、作成日の年月日選択欄が表示されます。</p>
+        <h2>作成日</h2><p>検索する作成日の年月日を選択します。</p>
+        <h2>公開期間 指定フラグ</h2><p>公開期間検索の指定フラグを選択します。指定するを選択すると、公開期間の年月日選択欄が表示されます。</p>
+        <h2>公開期間</h2><p>検索する公開期間の年月日を選択します。</p>
+        <h2>回答期限 指定フラグ</h2><p>回答期限検索の指定フラグを選択します。指定するを選択すると、回答期限の年月日選択欄が表示されます。</p>
+        <h2>回答期限</h2><p>検索する回答期限の年月日を選択します。</p>
+        <h2>重要度</h2><p>検索する重要度を選択します。</p>
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

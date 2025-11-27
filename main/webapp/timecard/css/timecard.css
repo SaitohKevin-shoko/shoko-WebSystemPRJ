@@ -1,0 +1,40 @@
+.hp60 {
+  height: 60px!important;
+}
+
+.holidayName {
+  word-break : break-all;
+}
+
+.mwp5{
+  min-width: 5%!important;
+}
+
+.plr3{
+  padding-left: 3px!important;
+  padding-right: 3px!important;
+}
+
+.side_left-basis {
+  flex-basis: 340px!important;
+}
+
+.timcard_list_right {
+  width: calc(100% - 340px);
+}
+
+.warn-area{
+  display: flex;
+  align-items: center;
+}
+
+.warn-message{
+  flex: 1;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow-wrap : break-word;
+}
+
+.wp75 {
+  width: 75px;
+}

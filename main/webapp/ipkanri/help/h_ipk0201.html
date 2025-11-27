@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ネットワーク編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_ipk_left_list.html');chengeHeaderText('[ ネットワーク編集 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="IP管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>ネットワークを編集する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_ipk0201.gif" alt="ネットワーク編集画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">編集ボタン</h2>
+              <p>ネットワーク編集確認画面へ遷移します。<br>
+              入力内容に不備がある場合エラーメッセージが表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">削除ボタン</h2>
+              <p>ネットワーク削除確認画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">戻るボタン</h2>
+              <p>遷移元画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">削除アイコン</h2>
+              <p>ファイルを削除します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">削除アイコン</h2>
+              <p>ファイルを削除します。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">全て削除ボタン</h2>
+              <p>選択済エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを選択済エリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>名前</h2><p>ネットワーク名を入力します（50文字以内）。</p>
+          <h2>ネットワークアドレス</h2><p>ネットワークアドレスを入力します（255以下の数字）。</p>
+          <h2>サブネットマスク</h2><p>サブネットマスクを入力します（255以下の数字）。</p>
+          <h2>公開/非公開</h2><p>ネットワークの公開・非公開を選択ます。</p>
+          <h2>表示順</h2><p>ネットワーク一覧画面での表示順を入力します（3文字以内）</p>
+          <h2>コメント</h2><p>コメントを入力します（1000文字以内）。</p>
+          <h2>添付(公開)</h2><p>添付するファイルを選択します（全ユーザが閲覧可能な添付です）。</p>
+          <h2>添付(非公開)</h2><p>添付するファイルを選択します（ネットワーク管理者以上の権限がないユーザは閲覧できません）。</p>
+          <h2>ネットワーク管理者</h2><p>ネットワークの管理者として設定するユーザを選択します。</p>
+        </div>
+
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

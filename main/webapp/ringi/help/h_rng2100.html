@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 申請ID登録設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 申請ID登録 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>稟議を申請した際に、自動で割り振られる申請IDのフォーマット登録を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng2100.gif" alt="稟議 管理者設定 申請ID登録"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">OKボタン</h2>
+      <p>申請ID登録確認画面へ遷移します。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03">フォーマットパターン</h2>
+      <p>申請IDとして使用する値の種類を選択します。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">追加ボタン</h2>
+      <p>申請IDのフォーマットパターンを追加します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back05">削除ボタン</h2>
+      <p>該当するフォーマットパターンを削除します。</p>
+    </td>
+    <td>
+          <h2 class="num-back06">編集ボタン</h2>
+      <p>現在の連番値の編集を行います(10桁以内)。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+        <h2>タイトル</h2>
+        <p>タイトルを入力します。（50文字以内）</p>
+        <h2>フォーマット</h2>
+        <p>申請IDを発行する際の形式を設定します。</p>
+        <h2>フォーマットパターン：年4桁</h2>
+        <p>現在の年(西暦)を使用します。</p>
+        <h2>フォーマットパターン：月</h2>
+        <p>現在の月を使用します。</p>
+        <h2>フォーマットパターン：日</h2>
+        <p>現在の日を使用します。</p>
+        <h2>フォーマットパターン：年2桁</h2>
+        <p>現在の年(西暦)の下2桁を使用します。</p>
+        <h2>フォーマットパターン：連番値</h2>
+        <p>現在の連番値に0埋めを行った数字を使用します。</p>
+        <h2>フォーマットパターン：文字入力</h2>
+        <p>任意の文字列を使用します(10文字以内)。</p>
+        <h2>パターン</h2>
+        <p>現在のフォーマットを表示します。表記方法は以下の通りです。<br>
+        年4桁：YYYY<br>
+        月：MM<br>
+        日：DD<br>
+        年2桁：YY<br>
+        連番値：No<br>
+        文字入力：入力した文字列
+        </p>
+        <h2>例</h2>
+        <p>現在のフォーマットに従って発行される申請IDを表示します。</p>
+        <h2>0埋め桁数</h2>
+        <p>連番値の桁数が入力した桁数以下だった場合、先頭に0を挿入します。入力可能な桁数は1～10桁です。</p>
+        <h2>現在の連番値</h2>
+        <p>この申請IDに対して設定されている連番値です。<br>
+        申請IDが自動発行される度に更新されます。</p>
+        <h2>リセット期間</h2>
+        <p>選択した期間単位で連番値のリセットを行います。</p>
+        <h2>手入力変更</h2>
+        <p>手入力変更を許可する場合、稟議申請時に手動で申請IDを入力することが可能です。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

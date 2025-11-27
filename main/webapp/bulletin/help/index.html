@@ -1,0 +1,308 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 掲示板</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=bulletin');chengeHeaderText('[ 掲示板 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="掲示板画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_bbs010.html"><img src="./images/scr_help_bbs010.gif" alt="フォーラム一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs010.html">フォーラム一覧</a>
+          </strong>
+          <br><br>
+          フォーラムを一覧表示します。<br>
+		  新着情報や最新書込み時間を把握することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs0600.html"><img src="./images/scr_help_bbs0600.gif" alt="スレッド一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs0600.html">スレッド一覧</a>
+          </strong>
+          <br><br>
+          フォーラム内のスレッドを一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs0601.html"><img src="./images/scr_help_bbs0601.gif" alt="投稿一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs0601.html">投稿一覧</a>
+          </strong>
+          <br><br>
+          スレッド内の投稿を一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs070.html"><img src="./images/scr_help_bbs070.gif" alt="スレッド新規作成 編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs070.html">スレッド新規作成・編集</a>
+          <br>
+          <a href="h_bbs070kn.html">スレッド新規作成確認・編集確認</a>
+          </strong>
+          <br><br>
+          フォーラムにスレッドを作成・編集します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs090.html"><img src="./images/scr_help_bbs090.gif" alt="新規投稿 投稿編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs090.html">新規投稿・投稿編集</a>
+          <br>
+          <a href="h_bbs090kn.html">新規投稿確認・投稿編集確認</a>
+          </strong>
+          <br><br>
+          スレッドに投稿を作成・編集します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs090.html"><img src="./images/scr_help_bbs220.gif" alt="草稿一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs220.html">草稿一覧</a>
+          </strong>
+          <br><br>
+          草稿を一覧表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs040.html"><img src="./images/scr_help_bbs040.gif" alt="詳細検索"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs040.html">詳細検索</a>
+          </strong>
+          <br><br>
+          掲示板データを検索します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs041.html"><img src="./images/scr_help_bbs041.gif" alt="検索結果一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs041.html">検索結果一覧</a>
+          </strong>
+          <br><br>
+          検索結果を表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs170.html"><img src="./images/scr_help_bbs170.gif" alt="掲示予定一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs170.html">掲示予定一覧</a>
+          </strong>
+          <br><br>
+          掲示予定のスレッドの一覧を表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs100.html"><img src="./images/scr_help_bbs100.gif" alt="フォーラムメンバー一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs100.html">フォーラムメンバー一覧</a>
+          </strong>
+          <br><br>
+          フォーラムに所属するユーザの一覧を表示します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs110.html"><img src="./images/scr_help_bbs110.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs110.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能な機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs020.html"><img src="./images/scr_help_bbs020.gif" alt="フォーラム管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs020.html">フォーラム管理</a>
+          </strong>
+          <br><br>
+          フォーラムの管理を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs030.html"><img src="./images/scr_help_bbs030.gif" alt="フォーラム登録 編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs030.html">フォーラム登録・編集</a>
+          <br>
+          <a href="h_bbs030kn.html">フォーラム登録確認・編集確認</a>
+          </strong>
+          <br><br>
+          フォーラムを追加・編集します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs200.html"><img src="./images/scr_help_bbs200.gif" alt="管理者設定 初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs200.html">管理者設定 初期値設定</a>
+          </strong>
+          <br><br>
+          掲示板に関する初期値の設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs160.html"><img src="./images/scr_help_bbs160.gif" alt="管理者設定 ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs160.html">管理者設定 ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          掲示板に関するショートメール通知設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs120.html"><img src="./images/scr_help_bbs120.gif" alt="自動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs120.html">自動データ削除設定</a>
+          </strong>
+          <br><br>
+          期間を設定し過去の掲示板データを自動削除するように設定することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs150.html"><img src="./images/scr_help_bbs150.gif" alt="手動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs150.html">手動データ削除設定</a>
+          </strong>
+          <br><br>
+          期間を設定し過去の掲示板データを手動削除するように設定することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs180.html"><img src="./images/scr_help_bbs180.gif" alt="統計情報"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs180.html">統計情報</a>
+          </strong>
+          <br><br>
+          掲示板の統計情報を確認することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs130.html"><img src="./images/scr_help_bbs130.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs130.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+          掲示板に関する個人設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs210.html"><img src="./images/scr_help_bbs210.gif" alt="個人設定 初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs210.html">個人設定 初期値設定</a>
+          </strong>
+          <br><br>
+          ユーザごとの掲示板に関する初期値の設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs050.html"><img src="./images/scr_help_bbs050.gif" alt="個人設定 表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs050.html">個人設定 表示設定</a>
+          </strong>
+          <br><br>
+          掲示板に関する表示設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs051.html"><img src="./images/scr_help_bbs051.gif" alt="個人設定 メイン表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs051.html">個人設定 メイン表示設定</a>
+          </strong>
+          <br><br>
+          掲示板に関するメイン表示設定をすることができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_bbs052.html"><img src="./images/scr_help_bbs052.gif" alt="個人設定 ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_bbs052.html">個人設定 ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          掲示板に関するショートメール通知設定をすることができます。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+dsn
+javax.mail
+pop3
+smtp

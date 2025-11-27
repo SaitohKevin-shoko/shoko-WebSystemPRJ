@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 共有テンプレート編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 共有テンプレート編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>ユーザ全員で共有する稟議テンプレートを編集する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng09011.gif" alt="稟議 共有テンプレート編集　機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+    <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+      <h2 class="num-back01">プレビューボタン</h2>
+      <p>プレビュー画面をポップアップで表示します。表示される画面は、この共有テンプレートを稟議申請時に使用した場合の画面となります。</p>
+    </td>
+    <td>
+      <h2 class="num-back02">OKボタン</h2>
+      <p>共有テンプレート登録確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back03">削除ボタン</h2>
+      <p>共有テンプレート削除確認画面へ遷移します。</p>
+    </td>
+    <td>
+      <h2 class="num-back04">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back05">複写登録ボタン</h2>
+      <p>この共有テンプレートをコピーして新規作成を行います。</p>
+    </td>
+    <td>
+      <h2 class="num-back06">カテゴリコンボ</h2>
+      <p>テンプレートを登録するカテゴリを選択できます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">申請ID選択ボタン</h2>
+      <p>申請IDの使用方法が「テンプレート毎に設定する」の場合に表示します。<br>
+      クリックすると申請ID一覧がダイアログに表示され、選択した申請IDを使用します。<br>
+      申請ID使用方法の設定は<a href="h_rng180.html"><span class="textLink">管理者設定 基本設定</span></a>より行うことができます。</p>
+    </td>
+    <td>
+      <h2 class="num-back08">連携API並び替えアイコン</h2>
+      <p>ドラッグ&ドロップで連携APIを並び替えます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back09">連携API名</h2>
+      <p>連携API編集画面に遷移します。</p>
+    </td>
+    <td>
+      <h2 class="num-back10">使用トグル</h2>
+      <p>連携APIの使用する/しないを設定します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back11">削除アイコン</h2>
+      <p>連携APIを削除します。</p>
+    </td>
+    <td>
+      <h2 class="num-back12">追加ボタン</h2>
+      <p>連携API追加ダイアログを表示します。ダイアログ内で連携API名をクリックすると、連携API追加画面に遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back13">実行テストボタン</h2>
+      <p><a href="h_rng330.html"><span class="textLink">実行テスト画面</span></a>を別ウィンドウで表示します。</p>
+    </td>
+    <td>
+      <h2 class="num-back14">申請内容</h2>
+      <p>申請内容追加枠へ要素をドラッグ&ドロップすることで、稟議申請時に入力する内容を設定します。<br>
+      それぞれの申請内容にはフォームIDを設定することができます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back15">経路設定方法選択ラジオボタン</h2>
+      <p>このテンプレートで経路を設定するか、共有経路テンプレートを使用するかを選択します。<br>
+      共有経路テンプレートを使用する場合、ラジオボタンの右に経路選択ボタンが表示され、クリックすると経路テンプレート選択ダイアログが表示されます。</p>
+    </td>
+    <td>
+      <h2 class="num-back16">経路要素</h2>
+      <p>このテンプレートに直接経路を指定します。経路についての説明は<a href="h_rng2400.html"><span class="textLink">共有経路テンプレート登録</span></a>のページをご参照下さい。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+     <div class="help-right-func-item">
+    <h2>テンプレート名</h2>
+    <p>テンプレート名を入力します（100文字以内）。</p>
+    <h2>タイトル</h2>
+    <p>タイトルを入力します（100文字以内）。</p>
+    <h2>備考</h2>
+    <p>備考を入力します（1000文字以内）。</p>
+    <h2>決裁後アクション 表示コメント</h2>
+    <p>表示コメントを入力します（100文字以内）。</p>
+    <h2>申請内容：<a href="h_rng_comment.html"><span class="textLink">コメント</span></a></h2>
+    <p>申請内容登録時にテキストを入力し、その内容を稟議に表示します。申請時にテキストの変更はできません。</p>
+    <h2>申請内容：<a href="h_rng_text.html"><span class="textLink">テキスト入力</span></a></h2>
+    <p>テキストを入力します(100文字以内)。</p>
+    <h2>申請内容：<a href="h_rng_text_multi.html"><span class="textLink">テキスト入力(複数行)</span></a></h2>
+    <p>テキストを入力します(1000文字以内)。</p>
+    <h2>申請内容：<a href="h_rng_date.html"><span class="textLink">日付入力</span></a></h2>
+    <p>日付を選択して入力します。日付の選択はカレンダーから行います。</p>
+    <h2>申請内容：<a href="h_rng_time.html"><span class="textLink">時間入力</span></a></h2>
+    <p>時間を選択して入力します。時間の選択はピッカーから行います。</p>
+    <h2>申請内容：<a href="h_rng_number.html"><span class="textLink">数値入力</span></a></h2>
+    <p>半角数字のみ入力可能です(9文字以内)。</p>
+    <h2>申請内容：<a href="h_rng_radio.html"><span class="textLink">ラジオボタン</span></a></h2>
+    <p>選択したラジオボタンの値を申請内容とします。</p>
+    <h2>申請内容：<a href="h_rng_check.html"><span class="textLink">チェックボックス</span></a></h2>
+    <p>選択したチェックボックスの値を申請内容とします(複数選択可)。</p>
+    <h2>申請内容：<a href="h_rng_sum.html"><span class="textLink">自動計算(合計)</span></a></h2>
+    <p>対象の申請内容に入力された数値や任意の定数を合計した数値を算出します。</p>
+    <h2>申請内容：<a href="h_rng_calc.html"><span class="textLink">自動計算(その他)</span></a></h2>
+    <p>対象の申請内容に入力された数値や任意の定数を用いた四則演算を行い、その計算結果を算出します。</p>
+    <h2>申請内容：<a href="h_rng_Uselect.html"><span class="textLink">ユーザ選択</span></a></h2>
+    <p>選択したユーザの名前を申請内容とします。</p>
+    <h2>申請内容：<a href="h_rng_Gselect.html"><span class="textLink">グループ選択</span></a></h2>
+    <p>選択したグループの名前を申請内容とします。</p>
+    <h2>申請内容：<a href="h_rng_block.html"><span class="textLink">ブロック</span></a></h2>
+    <p>申請内容追加枠を表示します。その中に追加された申請内容をまとめて、一行分の申請内容とします。</p>
+    <h2>申請内容：<a href="h_rng_table.html"><span class="textLink">表</span></a></h2>
+    <p>申請内容追加枠を上部・中部・下部に分けて表示します。<br>
+    それぞれの枠に申請内容を追加可能で、上部および下部の枠数は一つのみですが、中部の枠数はテンプレート登録時および稟議申請時に変更可能です。</p>
+    <h2>申請内容：<a href="h_rng_file.html"><span class="textLink">添付</span></a></h2>
+    <p>稟議作成時にダウンロード可能なファイルを添付します。申請時にこのファイルが稟議に添付されることはありません。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

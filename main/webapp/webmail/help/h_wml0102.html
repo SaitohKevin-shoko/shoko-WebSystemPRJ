@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] WEBメール受信 メール新規作成</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_wml_left_list.html');chengeHeaderText('[ WEBメール　受信 メール新規作成 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="WEBメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>WEBメールの新規作成画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_wml0102.gif" alt="WEBメール 受信 メール新規作成 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">メールを検索ボタン</h2>
+          <p>入力された検索条件で検索を行い結果を表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02"><a href="h_wml0101.html">詳細ボタン</a></h2>
+          <p>詳細検索画面を表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">アカウント管理ボタン</h2>
+          <p>アカウント管理画面に遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">管理者設定ボタン</h2>
+          <p>管理者設定画面に遷移します。<br>
+          管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">個人設定ボタン</h2>
+          <p>個人設定メニュー画面に遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">WEBメールを別画面で開くリンク</h2>
+          <p>WEBメール受信画面を別画面で開きます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">アカウント詳細切り替え</h2>
+          <p>クリックするとアカウント詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">アカウントコンボ</h2>
+          <p>選択したアカウントに切り替えます。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back09">アカウント一覧</h2>
+          <p>クリックしたアカウントに切り替えます。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">新着メールを確認ボタン</h2>
+          <p>新着メールが存在するか確認を行い、存在すればメールの受信を行い、受信一覧に表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back11">ディレクトリ</h2>
+          <p>指定したディレクトリにあるメールを一覧表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">ゴミ箱を空にするリンク</h2>
+          <p>ゴミ箱に入っているメールを削除します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back13">ユーザ情報詳細切り替え</h2>
+          <p>クリックするとユーザ情報詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">グループコンボ</h2>
+          <p>選択したグループのユーザ情報一覧を表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back15">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">ユーザ情報</h2>
+          <p>クリックしたユーザのアドレスを宛先に設定してメール作成画面に遷移します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back17">アドレス帳詳細切り替え</h2>
+          <p>クリックするとアドレス帳詳細が表示されます。<br>
+             もう一度クリックすると元に戻ります。</p>
+        </th>
+        <td>
+          <h2 class="num-back18">アドレス帳検索ボタン</h2>
+          <p>入力された検索条件でアドレス帳検索を行い検索結果を表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back19">アドレス一覧</h2>
+          <p>クリックしたアドレスを宛先に設定してメール作成画面に遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back20">送信先リスト詳細切り替え</h2>
+          <p>クリックすると送信先リスト詳細が表示されます。<br>
+            もう一度クリックするともとに戻ります。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back21">送信先リスト一覧</h2>
+          <p>クリックすると選択した送信先リストの選択画面がポップアップで表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back22">タブ</h2>
+          <p>クリックされたタブに応じた項目を画面に表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back23">送信ボタン</h2>
+          <p>作成したメールを指定した宛先へ送信します。</p>
+        </td>
+        <th>
+          <h2 class="num-back24">添付ボタン</h2>
+          <p>添付ファイルを指定します。<br>
+             添付ファイル登録画面を表示します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back25">草稿に保存ボタン</h2>
+          <p>作成したメールを草稿に保存します。</p>
+        </th>
+        <td>
+          <h2 class="num-back26">テンプレート</h2>
+          <p>登録したメールテンプレートを選択します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back27">差出人</h2>
+          <p>差出人のアカウントを選択します。</p>
+        </td>
+        <th>
+          <h2 class="num-back28">アドレス・ユーザ情報・送信先リスト</h2>
+          <p>クリックするとポップアップでアドレス帳・ユーザ情報、送信先リスト一覧画面が表示されます。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back29">署名</h2>
+          <p>登録した署名を選択します。</p>
+        </th>
+        <td>
+          <h2 class="num-back30">設定</h2>
+          <p>クリックすると選択した署名を反映します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back31">メール形式</h2>
+          <p>メールの形式を選択します。</p>
+        </td>
+        <th>
+          <h2 class="num-back32">フォントスタイル</h2>
+          <p>選択した文字のフォントスタイルを指定します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back33">文字位置</h2>
+          <p>選択した文章の位置を変更します。</p>
+        </th>
+        <td>
+          <h2 class="num-back34">フォントサイズ</h2>
+          <p>選択した文字のフォントサイズを指定します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back35">リスト</h2>
+          <p>選択した文章をリスト化します。</p>
+        </td>
+        <th>
+          <h2 class="num-back36">上に戻るリンク</h2>
+          <p>画面の最上部を表示します。</p>
+        </th>
+        </tr>
+        </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>メール検索キーワード</h2><p>メール検索キーワードを入力します(100文字以内)。</p>
+    <h2>アドレス帳検索キーワード</h2><p>アドレス帳検索キーワードを入力します。</p>
+    <h2>差出人</h2><p>差出人を選択します。</p>
+    <h2>宛先</h2><p>宛先を入力します。</p>
+    <h2>CC</h2><p>CCを入力します。</p>
+    <h2>BCC</h2><p>BCCを入力します。</p>
+    <h2>件名</h2><p>件名を入力します。</p>
+    <h2>予約送信</h2><p>メールの送信予定日時を入力します。</p>
+    <h2>添付ファイルの自動圧縮を行う</h2><p>添付ファイルの自動圧縮を行うかを選択します。</p>
+    <h2>メール本文</h2><p>メール本文を入力します。</p>
+    </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

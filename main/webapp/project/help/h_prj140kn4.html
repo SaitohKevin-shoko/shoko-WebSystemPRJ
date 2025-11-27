@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] テンプレート選択</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_prj_left_list.html');chengeHeaderText('[ テンプレート選択 ]');">
+<div id="container"><a name="top"></a>
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="プロジェクト管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+    <p>テンプレート情報を確認する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_prj140kn4.gif" alt="テンプレート選択画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">選択ボタン</h2>
+		  <p>プロジェクト登録画面へ遷移します。テンプレートの内容がプロジェクト登録の各項目に設定されます。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">戻るボタン</h2>
+		  <p>遷移元画面へ遷移します。</p>
+		</td>
+		</tr>
+		</table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>テンプレート名称</h2><p>テンプレート名称を表示します。</p>
+    <h2>プロジェクトID</h2><p>プロジェクトIDを表示します。</p>
+    <h2>プロジェクト名称</h2><p>プロジェクト名称を表示します。</p>
+    <h2>プロジェクト略称</h2><p>プロジェクト略称を表示します。</p>
+    <h2>予算</h2><p>予算を表示します。</p>
+    <h2>公開・非公開</h2><p>公開・非公開を表示します。</p>
+    <h2>開始</h2><p>開始を表示します。</p>
+    <h2>終了</h2><p>終了を表示します。</p>
+    <h2>状態</h2><p>状態を表示します。</p>
+    <h2>目標・目的</h2><p>目標・目的を表示します。</p>
+    <h2>内容</h2><p>内容を表示します。</p>
+    <h2>所属メンバー</h2><p>所属メンバーを表示します。</p>
+    <h2>プロジェクト管理者</h2><p>プロジェクト管理者を表示します。</p>
+    <h2>ラベル</h2><p>ラベルを表示します。</p>
+    <h2>状態</h2><p>TODO状態を表示します。</p>
+    <h2>編集権限</h2><p>編集権限を表示します。</p>
+    <h2>ショートメール通知先</h2><p>ショートメール通知先を表示します。</p>
+    </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>
+

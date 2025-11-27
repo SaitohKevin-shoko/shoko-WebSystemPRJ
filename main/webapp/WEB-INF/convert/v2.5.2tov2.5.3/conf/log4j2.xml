@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<configuration>
+
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%d %-5p %c: - %m%n%ex" />
+    </Console>
+
+  <appenders>
+    <RollingRandomAccessFile name="AP_FILE"
+      fileName="../log/convert252to253.log"
+      filePattern="../log/convert252to253.log-%i">
+      <PatternLayout charset="UTF-8" pattern="%d %-5p %c: - %m%n%ex" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="2MB" />
+      </Policies>
+    </RollingRandomAccessFile>
+    </appenders>
+
+  <!-- ================ -->
+  <!-- Limit categories -->
+  <!-- ================ -->
+
+  <loggers>
+    <logger name="jp.co.sjts" level="INFO"  additivity="false">
+      <appender-ref ref="Console" />
+      <appender-ref ref="AP_FILE" />
+    </logger>
+
+    <logger name="jp.groupsession" level="INFO" additivity="false">
+      <appender-ref ref="Console" />
+      <appender-ref ref="AP_FILE" />
+    </logger>
+  </loggers>
+
+</configuration>

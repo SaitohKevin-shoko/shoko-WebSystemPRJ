@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メイン 管理者設定 ユーザマネージャー</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../../main/help_ajax/ajax_man_left_list.html');chengeHeaderText('[ メイン 管理者設定 ユーザマネージャー ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="メイン トップへ" class="btn_base0" onClick="commonHelpLocationChange('../../main/help/index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>ユーザの管理を行う画面です。ユーザの追加、修正、削除が行えます。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_usr0300.gif" alt="機能詳細 管理者設定 ユーザマネージャー "></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">グループマネージャーボタン</h2>
+      <p>グループマネージャー画面に遷移します。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">管理者設定へ戻るボタン</h2>
+      <p>管理者設定画面へ遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03"><a href="h_usr0300.html"><span class="linkTitle">氏名タブ</span></a></h2>
+      <p>氏名でユーザを検索し一覧を表示する画面へ遷移します。</p>
+    </td>
+    <th>
+      <h2 class="num-back04"><a href="h_usr0301.html"><span class="linkTitle">詳細タブ</span></a></h2>
+      <p>ユーザID、所属グループ、社員/職員番号等の条件でユーザを検索し一覧を表示する画面へ遷移します。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back05">50音カナ表</h2>
+      <p>ユーザが存在する場合は青色の文字になります。クリックすると選択したカナのユーザ一覧がユーザリストに表示されます。<br>ユーザのいないカナはクリックできません。</p>
+    </th>
+    <td>
+      <h2 class="num-back06">追加ボタン</h2>
+      <p>ユーザマネージャー（追加）画面に遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back07">修正ボタン</h2>
+      <p>ユーザマネージャー（修正）画面へ遷移します。ユーザリストで選択されたユーザの編集を行います。ユーザが選択されていない場合は遷移しません。</p>
+    </td>
+    <th>
+      <h2 class="num-back08">削除ボタン</h2>
+      <p>ユーザマネージャー削除確認画面へ遷移します。ユーザリストで選択されたユーザの削除を行います。ユーザが選択されていない場合は遷移しません。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back09">一括削除はこちらリンク</h2>
+      <p>ユーザ一括削除画面へ遷移します。</p>
+    </th>
+    <td>
+    <h2 class="num-back10">ログイン有効化ボタン</h2>
+      <p>ユーザマネージャーログイン有効化確認画面へ遷移します。ユーザリストで選択されたユーザのログインが停止されている場合、ログインを有効にします。<br>ユーザが選択されていない場合は遷移しません。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+    <h2 class="num-back11">ログイン停止ボタン</h2>
+      <p>ユーザマネージャーログイン停止確認画面へ遷移します。ユーザリストで選択されたユーザのログインを停止します。<br>
+      ログインが停止されたユーザは、システムへのログインを行うことが出来なくなります。また、そのユーザのシステム上での表示がログイン可能なユーザと異なります
+      (ユーザ名の色を薄くするなど)。<br>
+      ユーザが選択されていない場合は遷移しません。
+      </p>
+    </td>
+    <th>
+      <h2 class="num-back12">インポートボタン</h2>
+      <p>ユーザインポート画面へ遷移します。</p>
+    </th>
+    </tr>
+
+    <tr>
+    <th>
+      <h2 class="num-back13">エクスポートボタン</h2>
+      <p>ユーザのエクスポートを行います。エクスポートはcsvファイルで行われます。</p>
+    </th>
+    </tr>
+    </table>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

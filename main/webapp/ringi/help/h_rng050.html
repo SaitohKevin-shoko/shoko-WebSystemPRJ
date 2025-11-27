@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 申請中案件管理</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 申請中案件管理 ]');">
+<div id="container"><a name="top"></a>
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>申請中の稟議を検索できる画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng050.gif" alt="申請中案件管理 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+       <h2 class="num-back01">管理者設定へ戻るボタン</h2>
+       <p>遷移元の画面へ遷移します。</p>
+    </td>
+    <td>
+      <h2 class="num-back02">グループコンボ</h2>
+      <p>登録されている施設グループの一覧が表示されます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+          <h2 class="num-back03">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。グループ選択画面でグループをクリックすると、クリックしたグループが選択グループに表示されます。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">検索ボタン</h2>
+          <p>入力した条件を元に稟議を検索します。該当する稟議が存在しなければエラーメッセージが表示されます。</p>
+    </td>
+    </tr>
+
+    <tr>
+     <td>
+          <h2 class="num-back05">PDF出力ボタン・エクスポートボタン</h2>
+          <p>表示中の案件をPDF出力・エクスポートします。<br>
+          PDF出力を行うと、表示中の案件を1件ずつPDF形式で出力し、全てのファイルをzip形式で圧縮したデータをダウンロードできます。<br>
+          エクスポートを行うと、表示中の案件をcsv形式でダウンロードできます。<br>
+          エクスポートファイルには、「稟議タイトル」「申請者」「申請日」「稟議状態」「最終処理日時」「申請内容」「経路」「各経路の審議状況」が出力されます。</p>
+    </td>
+    <td>
+          <h2 class="num-back06">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+          <h2 class="num-back07">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう１度クリックすると「昇順」「降順」が切り替わります。</p>
+    </td>
+    <td>
+       <h2 class="num-back08">件名</h2>
+       <p>稟議内容確認画面へ遷移します。</p>
+    </td>
+    </tr>
+    </table>
+
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>キーワード</h2>
+          <p>キーワードを入力します（100文字以内）。</p>
+          <h2>経路状況</h2>
+          <p>承認経路および審議状況を表示します。左端のユーザは申請者です。<br>
+          グループを指定している経路は「[G]グループ名」、複数のユーザが指定されている経路は「複数ユーザ経路」と表示されます。</p>
+        </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

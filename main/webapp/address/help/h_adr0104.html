@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] アドレス帳 アドレス一覧 詳細検索</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_adr_left_list.html');chengeHeaderText('[ アドレス帳 アドレス一覧 詳細検索 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="アドレス帳  トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>会社情報・氏名・担当者情報などの条件でアドレス帳を検索し一覧を確認する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_adr0104.gif" alt="アドレス一覧 詳細検索 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">管理者設定ボタン</h2>
+		  <p>管理者設定メニュー画面へ遷移します。<br>
+		  管理者グループに所属していないユーザの場合、ボタンは表示されません。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">個人設定ボタン</h2>
+		  <p>個人設定メニュー画面へ遷移します。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">新規登録ボタン</h2>
+		  <p>アドレス登録画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">インポートボタン</h2>
+		  <p>アドレスインポート画面へ遷移します。</p>
+        </th>
+		</tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">役職情報ボタン</h2>
+          <p>役職一覧画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">業種情報ボタン</h2>
+          <p>業種一覧画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">会社情報ボタン</h2>
+          <p>会社一覧画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、<br></>クリックしたグループが選択グループに表示されます。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back09">検索ボタン</h2>
+          <p>入力した条件でアドレス帳の検索を行います。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back10"><a href="h_adr0100.html"><span class="linkTitle">会社検索</span></a></h2>
+          <p>会社情報でアドレス帳を検索し一覧を確認する画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back11"><a href="h_adr0101.html"><span class="linkTitle">氏名検索</span></a></h2>
+          <p>氏名でアドレス帳を検索し一覧を確認する画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12"><a href="h_adr0102.html"><span class="linkTitle">担当者検索</span></a></h2>
+          <p>担当者情報でアドレス帳を検索し一覧を確認する画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13"><a href="h_adr0103.html"><span class="linkTitle">プロジェクト検索</span></a></h2>
+          <p>プロジェクト情報でアドレス帳を検索し一覧を確認する画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back14"><a href="h_adr0104.html"><span class="linkTitle">詳細検索検索</span></a></h2>
+          <p>会社情報・氏名・担当者情報などの条件でアドレス帳を検索し一覧を確認する画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back15"><a href="h_adr0105.html"><span class="linkTitle">コンタクト履歴検索</span></a></h2>
+          <p>コンタクト履歴の一覧を確認する画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">削除ボタン</h2>
+          <p>選択したアドレスを一括削除します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back17">ラベル追加ボタン</h2>
+          <p>ラベル選択ポップアップ画面が表示されます。表示したポップアップでOKボタンをクリックすると選択したラベルをアドレス情報に設定できます。</p>
+        </th>
+        <td>
+          <h2 class="num-back18">エクスポートボタン</h2>
+          <p>検索した表示結果をCSVファイル形式でエクスポートします。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back19">ページコンボ・前頁・次頁</h2>
+          <p>ページコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back20">ラベルボタン</h2>
+          <p>カテゴリ設定画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back21">ラベル検索</h2>
+          <p>選択したラベルの検索結果が表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back22">ヘッダタイトル</h2>
+          <p>クリックによって一覧のソート条件の切り替えを行います。現在ソート条件になっている項目をもう1度クリックすると「昇順」「降順」が切り替わります。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back23">検索結果内容（氏名/役職/ラベル）</h2>
+          <p>氏名をクリックするとアドレス編集画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back24">検索結果内容（会社名/拠点）</h2>
+          <p>会社名をクリックすると会社情報確認画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back25">検索結果内容（E-MAIL）</h2>
+          <p>メールアドレスをクリックするとメールソフトが起動します。</p>
+        </th>
+        <td>
+          <h2 class="num-back26">コンタクト履歴ボタン</h2>
+          <p>コンタクト履歴一覧画面へ遷移します。</p>
+        </td>
+        </tr>
+		</table>
+
+    <br>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>氏名</h2><p>氏名を入力します。<br>姓(30文字以内)<br>名(30文字以内)</p>
+    <h2>氏名カナ</h2><p>氏名カナを入力します。<br>姓カナ(60文字以内)<br>名カナ(60文字以内)</p>
+    <h2>会社名</h2><p>検索する会社名を入力します(50文字以内)。</p>
+    <h2>役職</h2><p>検索する役職を選択します。</p>
+    <h2>E-MAIL</h2><p>E-MAILを入力します(50文字以内)。</p>
+    <h2>担当者</h2><p>グループと担当者を選択します。</p>
+    <h2>業種</h2><p>業種を選択します。</p>
+    </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

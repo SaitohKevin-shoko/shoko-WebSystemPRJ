@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] WEBメール基本設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_wml_left_list.html');chengeHeaderText('[ WEBメール　基本設定 ]');">
+<div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="WEBメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>WEBメールの基本設定画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_wml150.gif" alt="WEBメール 基本設定 機能詳細"></h1>
+        <p>タブを切り替えることによって、設定項目を切り替えることができます。<br>
+           設定項目の表示の違いは下記を参照してください。</p>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">基本設定の場合</span><br><img src="images/scr_help_big_wml1501.gif" alt="基本設定（基本設定）"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">詳細設定の場合</span><br><img src="images/scr_help_big_wml1502.gif" alt="基本設定（詳細設定）"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>基本設定確認画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">基本設定タブ</h2>
+          <p>基本設定画面を表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">詳細設定タブ</h2>
+          <p>詳細設定画面を表示します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">メール転送制限ラジオボタン</h2>
+          <p>・"転送制限あり"を選択すると[転送先アドレス制限文字]の入力欄が表示されます。
+          <br>・"転送禁止"を選択すると"全ての登録済みフィルター転送設定を削除する"チェックボックスが表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">不正なフィルターをチェックするボタン</h2>
+          <p>[転送先アドレス制限文字]が含まれない転送先メールアドレスを設定しているフィルターの一覧を表示します。</p>
+        </td>
+        </tr>
+        </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h1><span class="webmail_mhead">基本設定の場合</span></h1>
+    <h2>アカウントの作成</h2><p>アカウントの作成制限を設定します。</p>
+    <h2>送信メール形式</h2><p>送信メール形式の制限を設定します。</p>
+    <h2>送受信ログの登録</h2><p>送受信ログの登録を行うか設定します。</p>
+    <h2>メール受信サーバ</h2><p>メール受信サーバのデフォルト値を設定します。</p>
+    <h2>メール送信サーバ</h2><p>メール送信サーバのデフォルト値を設定します。</p>
+    <h2>送信メールサイズ制限</h2><p>送信メールのメールサイズ制限を設定します。</p>
+    <h2>BCC強制変換</h2>
+    <p>"強制変換"を選択した場合、送信メールの[宛先]と[CC]のメールアドレスの合計件数が「閾値」を超えると、[宛先]と[CC]に入力されていたメールアドレスが全て[BCC]へ追加されます。その際、[宛先]には代わりに送信アカウントのメールアドレスが設定され、[CC]は削除されます。</p>
+    <h2>代理人</h2><p>代理人を使用するか設定します。</p>
+    <h2>メール転送制限</h2><p>受信メールのフィルタリング処理でメール転送が行われる場合の制限を設定します。</p>
+    <h2>リンク制限</h2><p>メール本文内にある外部サイトへのURLリンクの制限を設定します。</p>
+
+    <h1><span class="webmail_mhead">詳細設定の場合</span></h1>
+    <h2>権限選択</h2><p>権限を設定します。</p>
+    <h2>ディスク容量</h2><p>ディスク容量の制限を設定します。</p>
+    <h2>ディスク容量警告</h2><p>ディスク容量警告の設定をします。</p>
+    <h2>受信時削除</h2><p>受信時の削除設定を行います。</p>
+    <h2>自動受信</h2><p>自動受信を設定します。</p>
+    <h2>自動受信間隔</h2><p>自動受信を実行する間隔を設定します。</p>
+    <h2>宛先の確認</h2><p>メール送信時に送信先を確認するか否か設定します。</p>
+    <h2>添付ファイルの確認</h2><p>メール送信時に添付ファイルを確認するか否か設定します。</p>
+    <h2>添付ファイル自動圧縮</h2><p>メール送信時に添付ファイルを圧縮するか否か設定します。
+    <br>"圧縮する"を選択した場合、添付ファイルは    zip圧縮(パスワード付)された状態で送信されます。
+    <br>また、添付ファイルの解凍パスワードを記載したメールが送信メールとは別に送信されます。</p>
+    <h2>添付ファイル自動圧縮 初期値</h2><p>※添付ファイル自動圧縮に"作成時に選択"を設定した場合のみ。<br>メール作成時に指定する「添付ファイルの自動圧縮」の初期値を設定します。</p>
+    <h2>時間差送信</h2><p>メールの送信を即時行うか、もしくは一定時間後に送信するかを設定します。</p>
+    <h2>時間差送信 初期値</h2><p>※時間差送信に"作成時に選択"を設定した場合のみ。<br>メール作成時に指定する「時間差送信」の初期値を設定します。</p>
+    </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>
+

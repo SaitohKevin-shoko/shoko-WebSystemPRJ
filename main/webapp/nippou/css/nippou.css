@@ -1,0 +1,326 @@
+.table-top .topFrame_btnGroup {
+  border-right-width: 0px;
+  text-align: left;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.calendar_dayHeader {
+  position: relative;
+}
+
+.calendar_weekHeader td {
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.cal_table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px;
+}
+
+.cal_table td{
+  border-right: 0px;
+}
+
+.ntp_checkContent {
+  border-left-style: solid;
+  bordre-left-width: 2px;
+  padding-left: 2px;
+  padding-right: 1px;
+}
+
+.ntp_dayLine:before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  margin-right: .4em;
+}
+
+.ntp_dayLine:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+  margin-left: .4em;
+}
+
+.ntp_dayLine {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.ntp_labelArea {
+  position: absolute;
+  left: 2px;
+  top: 0px;
+}
+
+.textfield {
+  position: relative;
+}
+
+.ui-widget-overlay {
+  position: fixed!important;
+}
+
+.goodAddUsrArea {
+  position: absolute;
+  border: 1px solid;
+  width: 40%;
+  height: 255px;
+  left: 30%;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+}
+
+.timeLine {
+  align-self: start;
+}
+
+.timeLine_jump {
+  z-index: 1;
+}
+
+.timeLine_jumpContent {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+.ntp_titlecolor-block {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 19px;
+    padding-left: 2px;
+}
+
+.ntp_mainContent {
+  width: 100%;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.ntp_ankenMikomiStatus {
+  height: 50px;
+  width: 50px;
+  padding-top: 20%;
+}
+
+.ntp_itmArea {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.ntp_itmSelArea {
+  position: absolute;
+  bprder-radius: 10px;
+  width: 80%;
+  height: auto;
+  top: 2%;
+  left: 10%;
+}
+
+.graph-btn-active {
+  width: 60px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-width: 0px;
+  font-size: 0.83rem!important;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  cursor: pointer;
+}
+
+.graph-btn-unactive {
+  width: 60px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-width: 0px;
+  font-size: 0.83rem!important;
+  padding-top: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.graph_top {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-width: 0px;
+}
+
+.graph_bottom {
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.ntp_graphArea {
+  z-index: 200;
+  width: 650px;
+  height: 200px;
+}
+
+.ntp_defAnkenGraph {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.ntp_AnkenGraph {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tooltip_back {
+    font-size: 12px;
+    padding: 2px;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.ntp_searchResultArea {
+  padding-top: 220px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.jqplot-table-legend > tbody > tr,
+.jqplot-table-legend > tbody > tr > td {
+  border: none!important;
+}
+
+.textfield2 label {
+  position: absolute;
+  font-size: 0.83rem;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+.ntp_labelMitsumori,
+.ntp_labelJutyu {
+  width: 10px;
+  height: 10px;
+  margin: 3px 3px 5px 3px;
+  background-color: #eaa228;
+}
+
+.ui-dialog-buttonset > .ui-button-text-only > .ui-button-text {
+  padding: 0px!important;
+}
+
+#anken_kadou_val_table > tbody > tr > td,
+#anken_val_table > tbody > tr > td,
+#kigyou_kadou_val_table > tbody > tr > td,
+#kbunrui_kadou_val_table > tbody > tr > td,
+#khouhou_kadou_val_table > tbody > tr > td {
+  white-space: normal;
+}
+
+.jqplot-yaxis {
+  margin-right: 10px;
+}
+
+.jqplot-xaxis {
+  margin-top: 10px;
+}
+
+.jqplot-highlighter-tooltip {
+    font-size: 12px;
+    padding: 2px;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
+
+
+.titleColor_radioBack-size {
+  height: 22px;
+  padding-left: 4px;
+  padding-top: 1px;
+  width: 20px;
+}
+
+/* 六曜表示用.css */
+@media screen and (min-width: 1180px) {
+  /* 1180px以上に適用されるCSS */
+  .senshou::after, .tomobiki::after, .senbu::after,
+  .butsumetsu::after, .taian::after, .shakkou::after {
+    position: absolute;
+    margin-left: 3px;
+  }
+}
+.senshou::after {
+  content: "先勝";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.tomobiki::after {
+  content: "友引";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.senbu::after {
+  content: "先負";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.butsumetsu::after {
+  content: "仏滅";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.taian::after {
+  content: "大安";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.shakkou::after {
+  content: "赤口";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] タイムカード 編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_tcd_left_list.html');chengeHeaderText('[ タイムカード 編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="タイムカード トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>タイムカード情報を編集する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_tcd020.gif" alt="タイムカード 編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">確定ボタン</h2>
+      <p>タイムカードを登録し、登録完了画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+    </td>
+    <td>
+          <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+          <h2 class="num-back03">打刻時間クリアボタン</h2>
+      <p>選択した打刻時間をクリアします。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">始業・終業時間クリアボタン</h2>
+      <p>選択した始業時間、終業時間をクリアします。</p>
+    </td>
+    </tr>
+        <tr>
+    <td>
+          <h2 class="num-back05">休日区分</h2>
+      <p>「指定無し」を選択すると休日日数が入力不可になり、「指定無し」以外を選択すると休日日数が入力可になります。<br>
+      休日区分登録で休日内容区分を使用可にしている休日区分を選択すると休日内容区分テキストが入力可になり、<br>
+      休日区分登録で休日内容区分を使用不可にしている休日区分を選択するとその他テキストが入力不可になります。</p>
+    </td>
+    <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>名前</h2>
+    <p>ユーザ名が表示されます。</p>
+    <h2>日付</h2>
+    <p>日付が表示されます。</p>
+    <h2>打刻時間</h2>
+    <p>打刻時間を選択します。</p>
+    <h2>始業時間</h2>
+    <p>始業時間を選択します。</p>
+    <h2>終業時間</h2>
+    <p>終業時間を選択します。</p>
+    <h2>備考</h2>
+    <p>備考を入力します（100文字以内）。</p>
+    <h2>遅刻・早退区分</h2>
+    <p>遅刻・早退区分を選択します。</p>
+    <h2>休日区分</h2>
+    <p>休日入力時のみ選択してください（通常は指定無し）。「指定無し」以外の場合は休日日数を入力します（5文字以内）。「その他」の場合はその他テキストを入力します（10文字以内）。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

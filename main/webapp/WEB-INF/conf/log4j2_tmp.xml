@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<configuration status="OFF">
+  <appenders>
+    <RollingRandomAccessFile name="AP_FILE"
+      fileName="${sys:gs.log.path}GroupSession.log"
+      filePattern="${sys:gs.log.path}GroupSession.log.%i">
+      <PatternLayout charset="UTF-8" pattern="%d %-5p %t %c: - %m%n%ex" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="2MB" />
+      </Policies>
+      <DefaultRolloverStrategy fileIndex="min" max="10" />
+    </RollingRandomAccessFile>
+
+    <RollingRandomAccessFile name="AP_FILE_ERROR"
+      fileName="${sys:gs.log.path}error.log"
+      filePattern="${sys:gs.log.path}error.log.%i">
+      <PatternLayout charset="UTF-8" pattern="%d %-5p %t %c: - %m%n%ex" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="2MB" />
+      </Policies>
+      <DefaultRolloverStrategy fileIndex="min" max="10" />
+    </RollingRandomAccessFile>
+  </appenders>
+
+
+  <!-- ================ -->
+  <!-- Limit categories -->
+  <!-- ================ -->
+
+  <loggers>
+    <logger name="jp.co.sjts" level="WARN" additivity="false">
+      <appender-ref ref="AP_FILE" />
+      <appender-ref ref="AP_FILE_ERROR" level="ERROR" />
+    </logger>
+
+    <logger name="jp.groupsession" level="WARN" additivity="false">
+      <appender-ref ref="AP_FILE" />
+      <appender-ref ref="AP_FILE_ERROR" level="ERROR" />
+    </logger>
+  </loggers>
+
+</configuration>

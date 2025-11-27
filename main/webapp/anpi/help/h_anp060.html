@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メッセージ配信</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_anp_left_list.html');chengeHeaderText('[ メッセージ配信 ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="安否確認 トップへ" class="btn_base0" onClick="commonHelpLocationChange('../../anpi/help/index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>各ユーザへ配信する安否確認の内容を入力する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_anp060.gif" alt="メッセージ配信"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">OKボタン</h2>
+      <p>メッセージ配信確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back03">定型メッセージ選択ボタン</h2>
+      <p>定型メッセージコンボにて選択されたメールテンプレートの内容を件名、本文に表示します。</p>
+    </td>
+    <th>
+      <h2 class="num-back04">全グループから選択ボタン</h2>
+      <p>ポップアップで全グループから選択画面が開きます。<br>全グループから選択画面でユーザを選択し、適用ボタンを押すと、
+      <br>クリックしたユーザが選択ユーザに表示されます。</p>
+    </th>
+    </tr>
+    <tr>
+    <th>
+      <h2 class="num-back05">グループコンボ</h2>
+      <p>選択したグループに所属するユーザがユーザリストに表示されます（既に送信先に追加されているユーザは表示されません）。</p>
+    </th>
+    <td>
+      <h2 class="num-back06">グループボタン</h2>
+      <p>ポップアップでグループ選択画面が開きます。<br>グループ選択画面でグループをクリックすると、クリックしたグループが選択グループに表示されます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back07">ユーザ追加ボタン</h2>
+      <p>ユーザリストで選択されているユーザを、送信先リストに追加します。</p>
+    </td>
+    <th>
+      <h2 class="num-back08">ユーザ削除ボタン</h2>
+      <p>送信先リストで選択されているユーザを、送信先リストから除外します。</p>
+    </th>
+    </tr>
+    <tr>
+    <th>
+      <h2 class="num-back09">テスト送信ボタン</h2>
+      <p>入力された件名・本文の内容を、基本設定にて登録されている送信サーバよりテスト送信ができます。</p>
+    </th>
+    <td>
+    </td>
+    </tr>
+    </table>
+
+    <br>
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+      <h2>訓練モード</h2>
+      <p>訓練モードとして配信するかを選択します。</p>
+      <h2>メイン表示</h2>
+      <p>メイン画面に表示する対象を選択します。</p>
+      <h2>定型メッセージ選択</h2>
+      <p>メールテンプレートを選択します。</p>
+      <h2>件名</h2>
+      <p>メール件名を入力します（20文字以内）。</p>
+      <h2>本文</h2>
+      <p>メール本文を入力します（それぞれ1000文字以内）。</p>
+      <h2>送信先</h2>
+      <p>送信ユーザをユーザリストから選択し追加します。</p>
+      <h2>テスト送信</h2>
+      <p>テスト送信の送信先メールアドレスを入力します（256文字以内）。</p>
+      <h2>配信者</h2>
+      <p>この安否確認を配信する送信するユーザが表示されます。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

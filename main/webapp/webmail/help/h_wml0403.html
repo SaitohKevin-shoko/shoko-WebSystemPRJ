@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] WEBメール  管理者設定　アカウント編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_wml_left_list.html');chengeHeaderText('[ WEBメール  管理者設定　アカウント編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="WEBメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>WEBメールの管理者設定アカウント編集画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><span class="webmail_mhead">基本認証の場合</span><br><img src="images/scr_help_big_wml0403.gif" alt="WEBメール　管理者設定　アカウント編集 機能詳細"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">Oauth認証の場合</span><br><img src="images/scr_help_big_wml0403_oauth.gif" alt="WEBメール　管理者設定　アカウント編集 機能詳細"></h1>
+        <p>タブを切り替えることによって、設定項目を切り替えることができます。<br>
+           設定項目の表示の違いは下記を参照してください。</p>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">基本設定の場合</span><br><img src="images/scr_help_wml0403_1.gif" alt="アカウント登録（基本設定）"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">署名設定の場合</span><br><img src="images/scr_help_wml0403_2.gif" alt="アカウント登録（署名設定）"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">送受信設定の場合</span><br><img src="images/scr_help_wml0403_3.gif" alt="アカウント登録（送受信設定）"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">その他の場合</span><br><img src="images/scr_help_wml0403_4.gif" alt="アカウント登録（その他）"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>アカウント編集確認画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">削除ボタン</h2>
+          <p>削除確認画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">基本設定タブ</h2>
+          <p>基本設定画面を表示します。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">署名設定タブ</h2>
+          <p>署名設定画面を表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">送受信設定タブ</h2>
+          <p>送受信設定画面を表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">その他タブ</h2>
+          <p>その他画面を表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">全グループから選択ボタン</h2>
+          <p>ポップアップで全グループから選択画面が開きます。<br>全グループから選択画面でユーザを選択し、適用ボタンを押すと、<br></>クリックしたユーザが選択ユーザに表示されます。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back09">グループコンボ</h2>
+          <p>選択したグループに所属するユーザがユーザリストに表示されます（既にメンバーに追加されているユーザは表示されません）。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。<br>
+            グループ選択画面でグループをクリックすると、<br>
+            クリックしたグループが選択グループに表示されます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back11">追加ボタン</h2>
+          <p>ユーザリストで選択されているユーザを、メンバーリストに追加します。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">認証ボタン</h2>
+          <p>Google, Exchangeの各認証画面が開きます。認証が完了すると認証済になります。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">全グループから選択ボタン</h2>
+          <p>ポップアップで全グループから選択画面が開きます。<br>全グループから選択画面でユーザを選択し、適用ボタンを押すと、<br>クリックしたユーザが選択ユーザに表示されます。</p>
+        </th>
+        </tr>
+        </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h1><span class="webmail_mhead">基本設定の場合</span></h1>
+    <h2>アカウントID</h2><p>アカウントIDを入力します(100文字以内)。</p>
+    <h2>アカウント名</h2><p>アカウント名を入力します(100文字以内)。</p>
+    <h2>メールアドレス</h2><p>メールアドレスを入力します(256文字以内)。</p>
+    <h2>認証</h2><p>認証情報を選択します。</p>
+    <h2>プロバイダ</h2><p>プロバイダを選択します。</p>
+    <h2>メール受信サーバ名</h2><p>メール受信サーバ名を入力します(100文字以内)。</p>
+    <h2>メール受信サーバ名 ポート番号</h2><p>メール受信サーバポート番号を入力します(5文字以内)。</p>
+    <h2>受信サーバ ユーザ名</h2><p>受信サーバ ユーザ名を入力します(100文字以内)。</p>
+    <h2>受信サーバ パスワード</h2><p>受信サーバ パスワードを入力します(100文字以内)。</p>
+    <h2>メール送信サーバ</h2><p>メール送信サーバ名を入力します(100文字以内)。</p>
+    <h2>メール送信サーバ名 ポート番号</h2><p>メール送信サーバポート番号を入力します(5文字以内)。</p>
+    <h2>SMTP認証ON/OFF</h2><p>SMTP認証のON/OFFを設定します。</p>
+    <h2>メール送信サーバ ユーザ名</h2><p>メール送信サーバ ユーザ名を入力します(100文字以内)。</p>
+    <h2>メール送信サーバ パスワード</h2><p>メール送信サーバ パスワードを入力します(100文字以内)。</p>
+    <h2>ディスク容量</h2><p>ディスク容量の最大値を入力します(6文字以内)。</p>
+    <h2>備考</h2><p>備考を入力します(1000文字以内)。</p>
+    <h2>使用者</h2><p>アカウントの使用者をグループ・ユーザ別に設定します。</p>
+
+    <h1><span class="webmail_mhead">署名設定の場合</span></h1>
+    <h2>組織名</h2><p>組織名を入力します(100文字以内)。</p>
+    <h2>署名</h2><p>署名登録ポップアップから署名を設定します。</p>
+    <h2>署名自動挿入</h2><p>署名自動挿入を設定します。</p>
+    <h2>返信時署名位置</h2><p>返信時署名位置を設定します。</p>
+    <h2>返信時署名表示</h2><p>返信時署名表示の切り替えを設定します。</p>
+
+    <h1><span class="webmail_mhead">送受信設定の場合</span></h1>
+    <h2>自動TO</h2><p>自動TOを入力します(256文字以内)。</p>
+    <h2>自動CC</h2><p>自動CCを入力します(256文字以内)。</p>
+    <h2>自動BCC</h2><p>自動BCCを入力します(256文字以内)。</p>
+    <h2>受信時削除</h2><p>受信時の削除設定を行います。</p>
+    <h2>受信済みでも受信</h2><p>受信済みでも受信を行うか設定します。</p>
+    <h2>APOPのON/OFF</h2><p>APOPのON/OFFを設定します。</p>
+    <h2>TOPコマンドの有効/無効</h2><p>TOPコマンドを使用して受信するか設定します。</p>
+    <h2>送信前POP認証</h2><p>送信前のPOP認証を設定します。</p>
+    <h2>送信文字コード</h2><p>送信文字コードを設定します。</p>
+    <h2>自動受信</h2><p>自動受信を設定します。</p>
+    <h2>自動受信間隔</h2><p>自動受信間隔を設定します。</p>
+    <h2>送信メール形式</h2><p>送信メール形式を設定します。</p>
+    <h2>宛先の確認</h2><p>メール送信時に送信先を確認するか否か設定します。</p>
+    <h2>添付ファイルの確認</h2><p>メール送信時に添付ファイルを確認するか否か設定します。</p>
+    <h2>添付ファイル自動圧縮</h2><p>メール送信時に添付ファイルを圧縮するか否か設定します。
+    <br>"圧縮する"を選択した場合、添付ファイルは    zip圧縮(パスワード付)された状態で送信されます。
+    <br>また、添付ファイルの解凍パスワードを記載したメールが送信メールとは別に送信されます。</p>
+    <h2>添付ファイル自動圧縮 初期値</h2><p>※添付ファイル自動圧縮に"作成時に選択"を設定した場合のみ。<br>メール作成時に指定する「添付ファイルの自動圧縮」の初期値を設定します。</p>
+    <h2>時間差送信</h2><p>メールの送信を即時行うか、もしくは一定時間後に送信するかを設定します。</p>
+    <h2>時間差送信 初期値</h2><p>※時間差送信に"作成時に選択"を設定した場合のみ。<br>メール作成時に指定する「時間差送信」の初期値を設定します。</p>
+
+    <h1><span class="webmail_mhead">その他の場合</span></h1>
+    <h2>テーマ</h2><p>アカウントのテーマを設定します。</p>
+    <h2>引用符</h2><p>アカウントの引用符を設定します。</p>
+    <h2>自動保存</h2><p>アカウントの自動保存を設定します。</p>
+    </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

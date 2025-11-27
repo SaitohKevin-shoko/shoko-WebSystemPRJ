@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ファイル管理基本設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 ファイル管理基本設定 ]');">
+  <div id="container"><a name="top"></a>
+  
+    <div align="right" class="help-align-right">
+      <input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>ファイル管理の基本設定を行う画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_fil210.gif" alt="ファイル管理 ファイル管理基本設定 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">ＯＫボタン</h2>
+              <p>基本設定確認画面へ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">全て削除ボタン</h2>
+              <p>作成可能エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを作成可能エリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを作成可能エリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </th>
+          </tr>
+        </table>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>キャビネット作成権限</h2><p>キャビネット作成権限を設定します。</p>
+          <h2>ファイルのサイズ制限</h2><p>ファイルのサイズ制限を設定します。</p>
+          <h2>削除したファイルを保存する期間</h2><p>削除したファイルを保存する期間を設定します。</p>
+          <h2>ロック機能</h2><p>ロック機能を設定します。</p>
+          <h2>バージョン管理機能</h2><p>バージョン管理機能を設定します。</p>
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+      
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* グラフの色 */
+/* 淡青 */
+.kanryo {
+  background-color: #0c5bc7;
+}
+
+/* 淡紫 */
+.sinkotyu {
+  background-color: #d6d4fe;
+}
+
+/* 鼠色 */
+.mikanryo {
+  background-color: #828282;
+}
+
+#legend {
+  text-align: left;
+  list-style: none;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+#legend li {
+  height: 1.2em;
+  padding-left: 15px;
+  margin-bottom: 4px;
+  list-style: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 90%;
+}
+
+.categoryName {
+  display: block;
+  padding-left: 4px;
+}
+
+/* 詳細検索画面・検索ボタン */
+.searchBtn{
+  justify-content: center;
+}
+
+/* 詳細検索画面・エクスポート */
+.searchExportBtn{
+  right: 0px;
+  margin-top: 2px;
+}
+
+/* Todo参照画面・コメントの下線*/
+.borderLine {
+  border-bottom: 1px dotted;
+}

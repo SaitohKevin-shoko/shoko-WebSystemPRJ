@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+button:focus,
+input:focus:not([type=radio]),
+select:focus,
+textarea:focus,
+.inputcomponent:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255,255,255, 0.6);
+}
+a:focus {
+  outline-color: rgba(255,255,255, 0.6);
+}
+
+button:active,
+select:active {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255, 0.6);
+}
+
+
+/* 背景カラー指定-----------------------------------------------------------------------------------------------------*/
+/* ①   ヘッダ1 表要素ヘッダ メイン画面インフォメーションヘッダ、スケジュール表示グループヘッダ等 */
+.bgC_header1
+ {
+/*ダーク        */background-color: #34363c!important;
+ }
+.mainTable_title,
+.table_title-color,
+.table-top > tbody > tr > th,
+.table-top > thead > tr > th,
+.ui-dialog .ui-dialog-titlebar,
+.side_header,
+.cht_sideHeader
+ {
+/*ダーク      */background-color: #34363c;
+ }
+
+/** 吹き出し枠線色 色指定変数*/
+:root {
+  --bubble-border-color:#34363c;
+}
+
+.easyRegister-bubble,
+.cht_selectTab,
+.helpBubbleBtn > .helpBubble,
+.multiselector_filter  {
+  border-color: #34363c;
+}
+
+.bubble-leftBottom:after,
+.bubble-rightBottom:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topcenter:before {
+  border-top: 26px solid #34363c!important;
+}
+
+.bubble-leftTop:after,
+.bubble-rightTop:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomcenter:before {
+  border-bottom: 26px solid #34363c!important;
+}
+
+/* ポータルホバー 表示枠線色 */
+.portalTabList ul .portalTabList_tab-nonforcus a:hover {
+    border: 3px solid #919191!important;
+}
+
+/* 掲示板 フォーラム一覧 */
+.main_bbsList-header {
+  color: #fff;
+  background-color: #34363c;
+}
+
+/* インフォメーション */
+.information_top {
+  background-color: #4e5055;
+}
+
+.information_top,
+.information_middle,
+.information_bottom {
+  border-color: #4e5055;
+}
+
+/* 共通 ユーザ選択UI */
+.multiselector_filter-focus,
+.multiselector_filterContent {
+  background-color: #4e5055;
+}
+
+.selectoutline {
+  outline: 2px solid #4e5055!important;
+}
+.list_content-selected {
+  background-color: #3c3e44;
+  border-bottom: 1px solid #4e5055;
+  border-top: 1px solid #4e5055;
+}
+
+/* ②   ヘッダ2    スケジュール日付背景色、ショートメールタブ背景色、稟議表要素ヘッダ背景色、各設定画面左ヘッダ */
+.bgC_header2
+ {
+/*ダーク      */background-color: #3c3e44!important;
+ }
+.cal_header,
+.table-left > tbody > tr > th,
+.table_common2 > tbody > tr > th,
+.mainTable_th,
+.ui-dialog,
+.main_zskSchedule,
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.form_title,
+#form_builder .contents.cell div.title,
+.ug_tit,
+.userGroup_title
+ {
+  /*ダーク      */background-color: #3c3e44;
+ }
+
+#information_top {
+     background-image: linear-gradient(to bottom, #989898, #3c3e44);
+}
+.information_middle_div {
+    border-color: #3c3e44;
+}
+#information_bottom {
+    border-color: #3c3e44;
+}
+
+/* ③   表セル 各プラグイン表要素のセル背景色(偶数行) */
+.bgC_tableCellEvn, .cht010CenterPane {
+/*ダーク      */background-color: #292c2c!important;
+}
+.table-top > tbody > tr:nth-child(odd),
+.table_col-even > tbody > tr:nth-child(even) {
+/*ダーク      */background-color: #292c2c;
+}
+
+.wrapper > .settingList dl:hover{
+    background-color:#3a3b3c!important;
+}
+
+/* ④   サイドヘッダ  稟議サイドメニューヘッダ、ショートメールサイドメニューヘッダ、掲示板サイドメニューヘッダ */
+.bgC_header3
+ {
+/*ダーク      */background-color: #454b50!important;
+ }
+
+/* ⑤   設定項目ヘッダ 管理者設定、個人設定の項目ヘッダ */
+.bgC_settingDt {
+/*ダーク      */background-image: linear-gradient(to bottom, #404140, #242525);
+}
+
+.settingList_title {
+/*ダーク      */background-image: linear-gradient(to bottom, #404140, #242525);
+}
+
+/* ⑧   プラグインアイコン背景 プラグインアイコン背景 */
+/*
+.menu_ico_base {
+   background-image: url(images/bg_plugin_icon.png);
+}
+
+.pageTitle li:first-child {
+   background-image: url(./images/bg_plugin_icon46.png);
+}
+
+/* ⑨   ポータル背景  ポータル背景 */
+.bgC_portalTab {
+/*ダーク      */background-color: #3c3e44!important;
+}
+
+.portalTabList {
+/*ダーク      */background-color: #3c3e44;
+}
+
+/* ⑩   cmn003ヘッダ 完了ボタン */
+.bgC_menuHead {
+/*ダーク      */background-color: #0a0a0a!important;
+}
+.menu_header {
+/*ダーク      */background-color: #1c1c1d;
+}
+.compBtn {
+  background-color: #1c1c1d;
+  border-color: #5b5c61;
+  border-style: solid!important;
+  border-width: 1px!important;
+}
+.compBtn:hover {
+/*ダーク      */background-color: #34363c;
+}
+
+/** 選択要素 選択時ホバー時背景色*/
+.bgC_selected {
+  background-color:#898989!important;
+}
+.bgC_selectable:hover {
+  background-color:#898989!important;
+}
+
+/* ⑪   プラグイン開閉線     */
+.bgC_menuFoot {
+/*ダーク      */background-color: #0a0a0a!important;
+}
+
+.menu_close_base {
+/*ダーク      */border-top:solid 2px #2b2c2d; background: linear-gradient(180deg, #2b2c2d 2px, rgba(255,255,255,0) 50%);
+}
+
+/* ⑫   プラグイン開閉タブ    */
+.bgc_menuClose {
+/*ダーク      */background-color: #919191!important;
+}
+.menu_close_btn {
+  color: #fff;
+  background:
+  linear-gradient(70deg, rgba(255,255,255,0), rgba(255,255,255,0) 10%, #919191 12% ) no-repeat top left/51% 100%,
+  linear-gradient(110deg, #919191,#919191 90%, rgba(255,255,255,0) 92%) no-repeat top right/51% 100%;
+}
+
+.menu_lockBtn {
+  color: #919191;
+}
+
+.cl_multiselector {
+  color: #919191!important;
+}
+
+/* ⑬チャット ホバーカラー */
+.cht_onePost:not(.cht_button-lock):hover,
+.media_selected {
+  background-color: #3c3e44;
+  border-color:#898989!important;
+}
+
+.cht_onePost:not(.cht_button-lock):hover {
+  border-color:#898989!important;
+}
+
+.cht_reaction:hover {
+  border-color:#898989!important;
+}
+
+.cht_title {
+  background-color: #34363c!important;
+}
+
+.media_selectedColor, .cht_reaction-selected {
+  border-color: #898989;
+  background-color: #3c3e44!important;
+}
+
+.inputcomponent:focus-within,
+.cht_inputArea:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255,255,255, 0.6);
+}
+
+.cht_tempFile:hover, .cht_tempFile:has(~ .cht_deleteIcon:hover) {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255,255,255, 0.6);
+}
+
+.media_mine:hover .edit_deleteArea {
+  border-bottom-color:#898989!important;
+  border-left-color:#898989!important;
+  border-right-color:#898989!important;
+  background-color: #3c3e44;
+}
+
+.cht_grpConfSelectGroup:hover,
+.cht_grpConfSelectedGroup,
+.rngApiConnectConfParam_background-select {
+  background:#3c3e44;
+  border-color: #898989!important;
+}
+
+.cht_grpConfAddGroup:hover,
+.cht_grpConfSelectedAddGroup {
+  background:#3c3e44;
+  outline:solid 2px #898989;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* ホバー時色*/
+.menu_btn:hover {
+  background-color: #4c4c50;
+}
+
+/* メイン タブ選択色*/
+.portalTabList_tab-forcus {
+  background-color: #4c4c50;
+}
+
+.memo_hover_color {
+  background-color: #2b2c2d!important;
+}
+
+.side_folder-focus:hover,
+.td-hoverChange:hover,
+.content-hoverChange:hover,
+.content-hoverChangeSelected {
+  background-color:#3c3e44!important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table-top > tbody > tr .list_content-on,
+.mainTable > tbody > tr .list_content-on {
+  border-bottom:1px solid #898989!important;
+  border-top:1px solid #898989!important;
+}
+
+.bgC_contetHover:hover {
+  background-color:#3c3e44!important;
+}
+
+.table-top > tbody > tr .list_content-topBorder,
+.mainTable > tbody > tr .list_content-topBorder  {
+  border-bottom: 1px solid #898989!important;
+}
+
+/* 日報 選択メニュー */
+.ntp_sideMenu-select,
+.cmnSetting_sideMenu-select {
+  border-right-color: #2b2c2d;
+}
+/* スクロールバー(ホバー時に表示され、リストの上に被せるタイプ) */
+.scrollInList1::-webkit-scrollbar{
+  background-color: #2b2c2d;
+}
+/* スクロールバー(常に表示され、リストの上に被せるタイプ) */
+.scrollInList2::-webkit-scrollbar{
+  background-color: #2b2c2d;
+}
+.scrollInList2::-webkit-scrollbar-thumb{
+  background-color: #2b2c2d;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+
+/* DatePiker用CSS-----------------------------------------------------------------------------------------------------*/
+.ui-datepicker,
+.ui-datepicker-header {
+  background-color: #2b2c2d!important;
+  color: #fff!important;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-widget-header {
+  background-color: #2b2c2d!important;
+  color: #fff!important;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-state-default {
+  color: #e3e3e3!important;
+  background-image: linear-gradient(to bottom, #34363c, #1d1d1f)!important;
+  border-color: #5b5c61!important;
+}
+
+.ui-datepicker-header {
+   background: none;
+}
+
+.ui-state-hover,
+.ui-widget-header .ui-state-hover
+ {
+  background: #2b2c2d!important;
+  border: 1px solid #fff!important;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+
+/* tinyMCE用CSS-------------------------------------------------------------------------------------------------------*/
+.mce-panel,
+.mce-container-body,
+.mce-tabs {
+  background-color: #2b2c2d!important;
+  border-color: #5b5c61!important;
+}
+
+.mce-tab {
+  background-color: #2b2c2d!important;
+  border-color: #5b5c61!important;
+  color: #fff!important;
+}
+
+.mce-btn,
+.mce-menubtn button {
+  background-image: linear-gradient(to bottom, #2b2c2d, #2b2c2d)!important;
+  border-color: #333333!important;
+  color: #fff!important;
+}
+
+.mce-textbox {
+  background-color: #34363c!important;
+  border-color: #5b5c61!important;
+  border-radius: 3px!important;
+  color: #e3e3e3!important;
+}
+/* -------------------------------------------------------------------------------------------------------------------*/

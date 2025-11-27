@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=zaiseki');chengeHeaderText('[ 在席管理 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="在席管理画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_zsk010.html"><img src="./images/scr_help_zsk010.gif" alt="在席状況"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk010.html">在席状況</a>
+          </strong>
+          <br><br>
+          ユーザの在席状況や施設の利用状況の確認ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk020.html"><img src="./images/scr_help_zsk020.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk020.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能なメニュー画面です。<br>
+          座席表設定の機能へ遷移できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk030.html"><img src="./images/scr_help_zsk030.gif" alt="座席表設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk030.html">座席表設定</a>
+          </strong>
+          <br><br>
+          登録済みの座席表を一覧表示します。<br>
+          座席表登録の機能又は、座席表編集の機能へ遷移できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk040.html"><img src="./images/scr_help_zsk040.gif" alt="座席表設定 登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk040.html">座席表登録</a>
+          </strong>
+          <br><br>
+          座席表の元になる画像を登録することができます。<br>
+          座席表へのユーザや施設の配置は座席表編集の機能で行うができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk040kn.html"><img src="./images/scr_help_zsk040kn.gif" alt="座席表設定 登録確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk040kn.html">座席表登録確認</a>
+          </strong>
+          <br><br>
+          座席表の登録確認ができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk110.html"><img src="./images/scr_help_zsk110.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk110.html">基本設定</a>
+          </strong>
+          <br><br>
+          在席管理の基本設定を行います。。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk110kn.html"><img src="./images/scr_help_zsk110kn.gif" alt="基本設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk110kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+          基本設定確認を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk050.html"><img src="./images/scr_help_zsk050.gif" alt="座席表編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk050.html">座席表編集</a>
+          </strong>
+          <br><br>
+          ドラッグ&ドロップで座席表にユーザや施設を自由に配置することができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk050kn.html"><img src="./images/scr_help_zsk050kn.gif" alt="座席表編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk050kn.html">座席表編集確認</a>
+          </strong>
+          <br><br>
+          座席表編集確認し座席表を登録、編集します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk070.html"><img src="./images/scr_help_zsk070.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk070.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+          在席管理の個人設定を行う機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk080.html"><img src="./images/scr_help_zsk080.gif" alt="初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk080.html">初期値設定</a>
+          </strong>
+          <br><br>
+          在席管理の初期値設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk080kn.html"><img src="./images/scr_help_zsk080kn.gif" alt="初期値設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk080.html">初期値設定確認</a>
+          </strong>
+          <br><br>
+          初期値設定確認を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk090.html"><img src="./images/scr_help_zsk090.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk090.html">基本設定</a>
+          </strong>
+          <br><br>
+          在席管理の基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk090kn.html"><img src="./images/scr_help_zsk090kn.gif" alt="基本設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk090kn.html">基本設定確認</a>
+          </strong>
+          <br><br>
+          基本設定確認を行います。
+        </td>
+        </tr>
+
+
+        <tr>
+        <th><a href="h_zsk130.html"><img src="./images/scr_help_zsk130.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk130.html">表示設定</a>
+          </strong>
+          <br><br>
+          表示設定に関する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_zsk130kn.html"><img src="./images/scr_help_zsk130kn.gif" alt="表示設定確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_zsk130kn.html">表示設定確認</a>
+          </strong>
+          <br><br>
+          表示設定に関する設定の確認を行います。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

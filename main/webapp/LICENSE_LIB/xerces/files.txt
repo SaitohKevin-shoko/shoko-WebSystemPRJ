@@ -1,0 +1,4 @@
+resolver
+serializer
+xercesImpl
+xml-apis

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 日報 日報編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_nippou_left_list.html');chengeHeaderText('[ 日報 日報編集 ]');">
+  <div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+      <input type="button" value="日報 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+          <p>日報を確認・編集する画面です。</p>
+          <!-- img要素のsrc,alt属性を編集 -->
+          <h1 class="help-right-func-img"><img src="images/scr_help_big_ntp0400edit.gif" alt="日報編集 機能詳細"></h1>
+          <p class="help-right-func-p">機能説明</p>
+          <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+          <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+            <tr>
+              <th>
+                <h2 class="num-back01">PDF出力ボタン</h2>
+                <p>日報をPDFで出力します。</p>
+              </th>
+              <td>
+                <h2 class="num-back02">戻るボタン</h2>
+                <p>遷移元の画面に移動します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back03">変更ボタン</h2>
+                <p>目標を変更できる状態にします。</p>
+              </td>
+              <th>
+                <h2 class="num-back04">確定ボタン</h2>
+                <p>目標の変更を確定します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back05">キャンセルボタン</h2>
+                <p>目標の変更をキャンセルします。</p>
+              </th>
+              <td>
+                <h2 class="num-back06">前日ボタン</h2>
+                <p>前日の日報確認画面へ遷移ます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back07">今日ボタン</h2>
+                <p>今日の日報確認画面へ遷移ます。</p>
+              </td>
+              <th>
+                <h2 class="num-back08">翌日ボタン</h2>
+                <p>翌日の日報確認画面へ遷移ます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back09">複写して登録ボタン</h2>
+                <p>日報を複写し、新規登録画面に遷移します。</p>
+              </th>
+              <td>
+                <h2 class="num-back10">編集ボタン</h2>
+                <p>日報を編集できる状態にします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back11">削除ボタン</h2>
+                <p>選択した日報を削除します。</p>
+              </td>
+              <th>
+                <h2 class="num-back12">案件名</h2>
+                <p>選択している案件のポップアップ画面を開きます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back13">企業・顧客名</h2>
+                <p>選択している企業・顧客情報のポップアップ画面を開きます。</p>
+              </th>
+              <td>
+                <h2 class="num-back14">ファイル名</h2>
+                <p>ファイルをダウンロードします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back15">いいね!ボタン</h2>
+                <p>日報にいいね!します。</p>
+              </td>
+              <th>
+                <h2 class="num-back16">削除ボタン</h2>
+                <p>コメントを削除します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back17">投稿ボタン</h2>
+                <p>コメント覧に入力したコメントが投稿されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back18">確定ボタン</h2>
+                <p>編集した内容を日報に登録します。エラーがある場合はポップアップでエラーが表示されます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back19">キャンセルボタン</h2>
+                <p>編集をキャンセルします。</p>
+              </td>
+              <th>
+                <h2 class="num-back20">カレンダーボタン</h2>
+                <p>日付選択カレンダーを表示します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back21">前日・今日・翌日ボタン</h2>
+                <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>後日：1日後を設定</p>
+              </th>
+              <td>
+                <h2 class="num-back22">時計ボタン</h2>
+                <p>時間選択用の時計を表示します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back23">案件検索ボタン</h2>
+                <p>ポップアップで案件検索画面を開きます。</p>
+              </td>
+              <th>
+                <h2 class="num-back24">履歴ボタン</h2>
+                <p>過去3ヶ月間の日報に登録されている案件をポップアップで表示します。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back25">案件名</h2>
+                <p>選択している案件のポップアップ画面を開きます。</p>
+              </th>
+              <td>
+                <h2 class="num-back26">案件削除ボタン</h2>
+                <p>選択している案件を削除します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back27">アドレス帳ボタン</h2>
+                <p>選択している案件のポップアップ画面を開きます。</p>
+              </td>
+              <th>
+                <h2 class="num-back28">履歴ボタン</h2>
+                <p>過去3ヶ月間の日報に登録されている企業・顧客をポップアップで表示されます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back29">企業・顧客名</h2>
+                <p>選択している企業・顧客情報のポップアップ画面を開きます。</p>
+              </th>
+              <td>
+                <h2 class="num-back30">企業・顧客削除ボタン</h2>
+                <p>選択している企業・顧客を削除します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back31">基準ボタン</h2>
+                <p>見込み度の基準を登録している場合、見込み度の基準をポップアップ表示します。</p>
+              </td>
+              <th>
+                <h2 class="num-back32">添付ボタン</h2>
+                <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back33">ファイル名</h2>
+                <p>ファイルをダウンロードします。</p>
+              </th>
+              <td>
+                <h2 class="num-back34">削除アイコン</h2>
+                <p>ファイルを削除します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2 class="num-back35">カレンダーボタン</h2>
+                <p>日付選択カレンダーを表示します。</p>
+              </td>
+              <th>
+                <h2 class="num-back36">前日・今日・翌日ボタン</h2>
+                <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>後日：1日後を設定</p>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <h2 class="num-back37">いいね!件数リンク</h2>
+                <p>日報にいいね!しているユーザの一覧がポップアップで表示されます。</p>
+              </th>
+              <td>
+                <h2 class="num-back38">行追加ボタン</h2>
+                <p>日報登録用の行を追加します。</p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="help-right-func-p">表示・入力項目説明</p>
+          <div class="help-right-func-item">
+            <h2>目標</h2><p>選択したユーザの目標を表示します。</p>
+            <h2>タイトル</h2><p>日報のタイトルを表示します。ラジオボタンでタイトル色を選択します。</p>
+            <h2>報告日付</h2><p>検索する日報の報告日付を範囲指定で指定します。</p>
+            <h2>時間</h2><p>日報の時間を選択します。</p>
+            <h2>案件</h2><p>検索する日報の案件を指定します。</p>
+            <h2>企業・顧客</h2><p>検索する日報の企業・顧客を指定します。</p>
+            <h2>内容</h2><p>日報の内容を表示します。</p>
+            <h2>活動分類/方法</h2><p>検索する日報の活動分類・方法を指定します。</p>
+            <h2>見込み度</h2><p>日報の見込み度を指定します。</p>
+            <h2>添付</h2><p>日報に登録された添付ファイルを表示します。</p>
+            <h2>次のアクション</h2><p>次のアクションを入力します。(1000文字以内)</p>
+            <h2>登録者</h2><p>登録者を表示します。</p>
+          </div>
+
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

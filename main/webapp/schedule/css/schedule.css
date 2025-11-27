@@ -1,0 +1,264 @@
+.addScheduleDialog  {
+  box-shadow:0 8px 10px 1px rgba(0,0,0,0.1),0 3px 14px 2px rgba(0,0,0,0.1),0 5px 5px -3px rgba(0,0,0,0.1)
+}
+
+.attendConfirm_overflow {
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cal_periodCell {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding: 0!important;
+  text-align: center!important;
+}
+
+.cal_periodCell-less {
+  border-top-width: 0!important;
+  border-bottom-width: 0!important;
+}
+
+.cal_titlecolor-block {
+  display: inline-block;
+  text-align:center;
+  width:21px;
+  height:20px;
+  padding-left:1px;
+  padding-top: 1px;
+}
+
+.cal_todoSpace {
+  line-height: 130%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.cal_table  {
+  table-layout: fixed;
+}
+
+.cal_table td {
+  border-style: solid;
+  border-width: 1px;
+  font-size: 0.9rem;
+  margin: 5px 5px 5px 5px;
+  padding: 3px;
+}
+
+.cal_table td a {
+  font-weight: normal!important;
+}
+
+.calendar_dayHeader {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.calendar_weekHeader td {
+  text-align: center;
+}
+
+.group_header {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.easyRegister-bubble {
+  width:500px;
+  height:350px;
+  position:absolute;
+  border-width:5px;
+  border-style:solid;
+  z-index: 98;
+  padding: 15px;
+  border-radius: 3px;
+}
+.easyRegister-textarea {
+  resize: none;
+}
+
+.fc-agenda-days .fc-first .fc-agenda-axis, .fc-agenda-allday .fc-agenda-axis{
+  width: 56px!important;
+}
+
+.dsp_weekHeader {
+  position: fixed;
+  left: 8px;
+  margin-right: 8px;
+  z-index: 4;
+  border-spacing: 0px;
+}
+
+.mr17 {
+  margin-right: 17px!important;
+}
+
+.hp32 {
+  height: 32px;
+}
+
+.sch_timeScale {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  height: 4px!important;
+}
+
+.smlPopup-frame {
+  height: 560px;
+  width: 1050px;
+}
+
+.table-top .topFrame_btnGroup {
+  border-right-width: 0px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.rokuyou {
+  font-size: 0.75rem;
+}
+
+.topFrame-fixed {
+  left: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: fixed !important;
+  _position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.hp32 {
+  height: 32px;
+}
+
+.sch_timeScale {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  height: 4px!important;
+}
+
+.smlPopup-frame {
+  height: 560px;
+  width: 1050px;
+}
+
+.ikkatsuFrame-fixed {
+  right: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: fixed !important;
+  _position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.topFrame-fixed {
+  left: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: fixed !important;
+  _position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.sch_timeScale {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  height: 4px!important;
+}
+
+.userSelect_from-twoContent{
+  height:502px;
+}
+
+.wrapper_space {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+button.ui-dialog-titlebar-close{
+  display: none;
+}
+
+/* 六曜表示用.css */
+@media screen and (min-width: 920px) {
+  /* 920px以上に適用されるCSS */
+  .header_rokuyou-senshou::after, .header_rokuyou-tomobiki::after, .header_rokuyou-senbu::after,
+  .header_rokuyou-butsumetsu::after, .header_rokuyou-taian::after, .header_rokuyou-shakkou::after {
+    position: absolute;
+    margin-left: 3px;
+  }
+}
+.header_rokuyou-senshou::after {
+  content: "先勝";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.header_rokuyou-tomobiki::after {
+  content: "友引";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.header_rokuyou-senbu::after {
+  content: "先負";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.header_rokuyou-butsumetsu::after {
+  content: "仏滅";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.header_rokuyou-taian::after {
+  content: "大安";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.header_rokuyou-shakkou::after {
+  content: "赤口";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+/* 個人週間用 */
+.kojinHeader_rokuyou-senshou::after {
+  content: "先勝";
+  font-size: 0.75rem;
+}
+.kojinHeader_rokuyou-tomobiki::after {
+  content: "友引";
+  font-size: 0.75rem;
+}
+.kojinHeader_rokuyou-senbu::after {
+  content: "先負";
+  font-size: 0.75rem;
+}
+.kojinHeader_rokuyou-butsumetsu::after {
+  content: "仏滅";
+  font-size: 0.75rem;
+}
+.kojinHeader_rokuyou-taian::after {
+  content: "大安";
+  font-size: 0.75rem;
+}
+.kojinHeader_rokuyou-shakkou::after {
+  content: "赤口";
+  font-size: 0.75rem;
+}
+
+button.ui-dialog-titlebar-close{
+  display: none;
+}
+
+/* ツールチップ */
+form[name='sch010Form'] #ttp, form[name='sch020Form'] #ttp , form[name='sch030Form'] #ttp {
+  z-index: 1;
+}

@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* 背景カラー指定-----------------------------------------------------------------------------------------------------*/
+/* ①   ヘッダ1 表要素ヘッダ メイン画面インフォメーションヘッダ、スケジュール表示グループヘッダ等 */
+.bgC_header1
+ {
+/* 黄色 */background-image: linear-gradient(to bottom, #f5f092, #ede370)!important;
+ }
+.mainTable_title,
+.table_title-color
+ {
+/* 黄色 */background-image: linear-gradient(to bottom, #f5f092, #ede370)!important;
+ }
+
+/* ポータルホバー 表示枠線色 */
+.portalTabList ul .portalTabList_tab-nonforcus a:hover {
+    outline-color: #e1e1e1;
+}
+.compBtn
+ {
+   background-image: linear-gradient(to bottom, #f5f092, #ede370)!important;
+   border-style: solid!important;
+   border-width: 1px!important;
+   border-color: #cdcdcd;
+ }
+
+/* ②   ヘッダ2    スケジュール日付背景色、ショートメールタブ背景色、稟議表要素ヘッダ背景色、各設定画面左ヘッダ */
+.bgC_header2
+ {
+/* 黄色 */background-color: #fdf5ad!important;
+ }
+.table-top > tbody > tr > th,
+.table-top > thead > tr > th,
+.table-left > tbody > tr > th,
+.table_common2 > tbody > tr > th,
+.mainTable_th,
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.form_title,
+#form_builder .contents.cell div.title,
+.ug_tit,
+.userGroup_title,
+.cht_sideHeader
+ {
+/* 黄色 */background-color: #fdf5ad!important;
+ }
+
+/** 吹き出し枠線色 色指定変数*/
+:root {
+  --bubble-border-color: #fdf5ad;
+}
+
+.easyRegister-bubble,
+.cht_selectTab,
+.helpBubbleBtn > .helpBubble  {
+  border-color: #fdf5ad;
+}
+
+.bubble-leftBottom:after,
+.bubble-rightBottom:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topcenter:before {
+  border-top: 26px solid #fdf5ad!important;
+}
+
+.bubble-leftTop:after,
+.bubble-rightTop:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomcenter:before {
+  border-bottom: 26px solid #fdf5ad!important;
+}
+
+#information_top {
+/* 黄色 */background-color: #fdf5ad!important;
+}
+.information_middle_div {
+/* 黄色 */background-color: #fdf5ad!important;
+}
+#information_bottom {
+/* 黄色 */background-color: #fdf5ad!important;
+}
+
+/* ③   表セル 各プラグイン表要素のセル背景色(偶数行) */
+.bgC_tableCellEvn {
+/* 黄色 */background-color: #fffff1!important;
+}
+.table-top > tbody > tr:nth-child(odd),
+.table_col-even > tbody > tr:nth-child(even) {
+/* 黄色 */background-color: #fffff1;
+}
+/* ④   サイドヘッダ  稟議サイドメニューヘッダ、ショートメールサイドメニューヘッダ、掲示板サイドメニューヘッダ */
+.bgC_header3
+ {
+/* 黄色 */background-color: #fbf6c9!important;
+ }
+.side_header
+{
+/* 黄色 */background-image: linear-gradient(to bottom, #fafae6, #fdfcb1)!important;
+ }
+
+/* ⑤   設定項目ヘッダ 管理者設定、個人設定の項目ヘッダ */
+.bgC_settingDt {
+/* 黄色 */background-image: linear-gradient(to bottom, #fbf6d0, #fbf2dc)!important;
+
+}
+
+.settingList dt {
+/* 黄色 */background-image: linear-gradient(to bottom, #fbf6d0, #fbf2dc)!important;
+}
+
+/* ⑦メインメニュー背景 */
+.bgC_menu {
+/* 黄色 */background-image: linear-gradient(to bottom, #f6f29c, #f6ca3a, #a59b2a)!important;
+}
+
+/* ⑨   ポータル背景  ポータル背景 */
+.bgC_portalTab {
+/* 黄色 */background-image: linear-gradient(to bottom, #ffffff, #ececec)!important;
+}
+
+.portalTabList {
+/* 黄色 */background-image: linear-gradient(to bottom, #ffffff, #ececec)!important;
+}
+
+/** 選択要素 選択時ホバー時背景色*/
+.bgC_selected {
+  background-color:#fff3f3!important;
+}
+.bgC_selectable:hover {
+  background-color:#fff3f3!important;
+}
+
+/* メイン画面 ポータル 未選択 */
+.portalTabList_tab-nonforcus {
+  background-color: #e3c141!important;
+}
+
+/* ダイアログ 背景色 */
+.ui-dialog {
+  background-image: linear-gradient(to bottom, #f0af00, #f0af00)!important;
+}
+
+
+/* ⑫インフォメーションカラー */
+.information_top {
+  background-color: #f0af00!important;
+}
+
+.information_top,
+.information_middle,
+.information_bottom {
+  border-color: #f0af00!important;
+}
+
+/* ⑬チャット ホバーカラー */
+.cht_onePost:not(.cht_button-lock):hover,
+.media_selected {
+  background-color: #fffff1;
+  border-color:#aaa331!important;
+}
+
+.cht_onePost:not(.cht_button-lock):hover {
+  border-color:#aaa331!important;
+}
+
+.cht_reaction:hover {
+  border-color:#e3c141!important;
+}
+
+.cht_title {
+  background-color: #fdf5ad!important;
+}
+
+.media_selectedColor, .cht_reaction-selected {
+  border-color: #e3c141;
+  background-color: #fffff1!important;
+}
+
+
+
+.media_selectedColor {
+  border-color: #f486aa;
+  background-color: #fffff1!important;
+}
+
+.memo_hover_color {
+  background-color: #fbfbf4!important;
+}
+
+.media_mine:hover .edit_deleteArea {
+  border-bottom-color:#f486aa!important;
+  border-left-color:#f486aa!important;
+  border-right-color:#f486aa!important;
+  background-color: #fffff1;
+}
+
+.cht_grpConfSelectGroup:hover,
+.cht_grpConfSelectedGroup,
+.rngApiConnectConfParam_background-select {
+  background:#fffff1;
+  border-color: #f486aa!important;
+}
+
+/* 共通 ユーザ選択UI */
+.multiselector_filter-focus,
+.multiselector_filterContent {
+  background-color: #fffff1;
+}
+
+.cht_grpConfAddGroup:hover,
+.cht_grpConfSelectedAddGroup {
+  background:#fffff1;
+  outline:solid 2px #f486aa;
+}
+
+.cl_fontArrow {
+  color: #e3c141!important;
+}
+.selectoutline {
+  outline: 2px solid #e3c141!important;
+}
+.list_content-selected {
+  background-color: #fff3f3;
+  border-bottom: 1px solid #e3c141;
+  border-top: 1px solid #e3c141;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+.side_folder-focus:hover,
+.content-hoverChange:hover,
+.content-hoverChangeSelected {
+  background-color: #fff3f3!important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.side_header:hover {
+  background-image: linear-gradient(to bottom, #fffff1, #fffff1)!important;
+  transition: 0.2s;
+}
+
+/* ホバー時色*/
+.table-top > tbody > tr .list_content-on,
+.mainTable > tbody > tr .list_content-on {
+  background-color:#fbfbf4!important;
+  border-bottom:1px solid #aaa331!important;
+  border-top:1px solid #aaa331!important;
+  transition: 0.2s;
+}
+
+.bgC_contetHover:hover {
+  background-color:#fbfbf4!important;
+  transition: 0.2s;
+}
+
+.table-top > tbody > tr .list_content-topBorder,
+.mainTable > tbody > tr .list_content-topBorder {
+  border-bottom: 1px solid #aaa331!important;
+  transition: 0.2s;
+}
+
+
+
+

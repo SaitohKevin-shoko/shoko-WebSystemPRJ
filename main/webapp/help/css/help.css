@@ -1,0 +1,561 @@
+/**************************************************** FIRST SET */
+/** resetting all visual effects at browser, by CSS */
+* {margin: 0;padding: 0;}
+img{border:0;}
+body {margin: 5px;}
+ul,ol,li,dl,dt,dd {list-style: none;}
+/**************************************************** LAYOUT */
+#container {width: 100%;}
+/**************************************************** PLUGIN LIST PAGE */
+/** left navi box */
+
+.pb5 {
+  padding-bottom: 5px!important;
+}
+
+.pr15 {
+  padding-right: 15px!important;
+}
+
+.pt5 {
+  padding-top: 5px!important;
+}
+
+.pt8 {
+  padding-top: 8px!important;
+}
+
+.txt_c {
+  text-align: center;
+}
+
+.txt_r {
+  text-align: right;
+}
+
+.fs_80 {
+  font-size: 80%;
+}
+
+.fs_100 {
+  font-size: 14.4px!important;
+}
+
+.fs_20 {
+  font-size: 20px!important;
+}
+
+.fs_16 {
+  font-size: 16px!important;
+}
+
+.hp32 {
+  height: 32px!important
+}
+
+.hp40 {
+  height: 40px!important
+}
+
+.v_align-top {
+  vertical-align: top;
+}
+
+.line_height-normal {
+  line-height: normal!important;
+}
+
+#help-left {
+  float: left;
+  width: 200px;
+}
+  /* left plugin list */
+.menu_bg_help {
+  width:100px;
+  height:30px;
+  background: url(../../help/images/menu_icon_base.gif) no-repeat 0 0;
+}
+
+.fs_18 {
+  font-size: 18px;
+}
+
+.menu_bg_help2 {
+  width:100px;
+  height:30px;
+  background: url(../../help/images/menu_icon_base.gif) no-repeat 0 0;
+}
+
+.menu_bg_help.menu_hover {
+  cursor: pointer;
+  background-position: -104px 0;
+}
+
+  #help-left ul {
+    list-style-type: none;
+  }
+
+  .help-li {
+    line-height:0;
+    padding:0px!important;
+    margin:10px!important;
+  }
+
+  .help-li a {
+    line-height:normal;
+  }
+
+.menu_img_help {
+  margin-top:2px;
+  margin-left:2px!important;
+  margin-right:2px!important;
+}
+
+/*1����*/
+.menu_text_position1_help {
+    font-size:14px!important;
+    padding-left:20px!important;
+}
+
+/*2����*/
+.menu_text_position2_help {
+    font-size:14px!important;
+    padding-left:17px!important;
+}
+/*3����*/
+.menu_text_position3_help {
+    font-size:12px!important;
+    padding-left:12px!important;
+}
+
+/*4����*/
+.menu_text_position4_help {
+    font-size:12px!important;
+    padding-left:6px!important;
+}
+
+/*5����*/
+.menu_text_position5_help {
+    font-size:12px!important;
+    padding-left:1px!important;
+}
+/*6����*/
+.menu_text_position6_help {
+    font-size:11px!important;
+    padding-left:0px!important;
+}
+/*7����*/
+.menu_text_position7_help {
+    font-size:12px!important;
+    padding-left:0px!important;
+    line-height:11px!important;
+    text-align:center!important;
+    padding-top:2px!important;
+    margin:0px!important;
+    height:27px!important;
+}
+.str_7width {
+    width:8px;
+}
+
+/*8�����ȏ�*/
+.menu_text_position8_help {
+    font-size:12px!important;
+    padding-left:7px!important;
+    line-height:12px!important;
+}
+
+.menu_text_help * td {
+    vertical-align: middle!important;
+  }
+
+.menu_text_help * td {
+    vertical-align: middle!important;
+  }
+
+.menu_text_help * td {
+    vertical-align: middle!important;
+  }
+
+  /* plugin list top */
+
+/** right content's box */
+.help-right {margin-left: 200px;}
+
+  #help-right ul {
+    list-style-type: none;
+  }
+  #help-right ul li {
+    line-height:0;
+    padding:0px;
+    margin:10px;
+  }
+
+  #help-right ul li a {
+    line-height:normal;
+  }
+
+/** content's middle div */
+.help-content-ml {
+}
+  /* content's middle th */
+  .help-content-ml * th {
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+  }
+  /* content's middle td */
+  .help-content-ml * td {
+    vertical-align: top;
+    text-align: left;
+  }
+  /* help content's middle table th */
+  .help-content-ml table.help-content-m-table th {
+    background: url(../images/help_content_box_lt.gif) no-repeat left top;
+    padding: 15px;
+    border-right: 1px dashed #aaaaaa;
+  }
+  /* help content's middle table td */
+  .help-content-ml table.help-content-m-table td {
+    padding: 15px;
+    font-size: 90%;
+    border-bottom: 1px dashed #aaaaaa;
+  }
+
+  /* help content's middle table strong */
+  .help-content-ml table.help-content-m-table td strong,
+  .help-content-ml table.help-content-m-table th strong {font-weight:bold;}
+  .help-content-tl {text-align: center; height:30px;}
+  .help-content-center {
+    text-align: -webkit-center!important;
+    height:30px;
+  }
+
+  /* topright topleft middleright middleleft bottomright bottomleft */
+  .help-content-tr {background: url(../images/help_content_tr.gif) no-repeat right top transparent;}
+  .help-content-tl {background: url(../images/help_content_tl.gif) no-repeat left top transparent;}
+  .help-content-mr {background: url(../images/help_content_mr.gif) repeat-y right transparent;}
+  .help-content-ml {background: url(../images/help_content_ml.gif) repeat-y left transparent;}
+  .help-content-br {background: url(../images/help_content_br.gif) no-repeat right bottom transparent;}
+  .help-content-bl {height:15px; background: url(../images/help_content_bl.gif) no-repeat left bottom transparent;}
+
+  .help-content-tl-td {
+    vertical-align:bottom!important;
+    text-align:center!important;
+    height:30px!important;
+  }
+
+/**************************************************** HELP FUNCTION MORE */
+/** left block */
+#help-left-func {
+  float: left;
+  width: 200px;
+}
+  /* left block, help function list, innner AJAX */
+  #help-left-func #help-left-func-in {
+    height: 600px;
+    overflow: auto;
+    margin: 0px 12px 0px 12px;
+  }
+  /* left block, help function list, p */
+  #help-left-func #help-left-func-in p {font-size: 110%; padding: 5px 0 10px 0;}
+  /* thumbnail img �iimg size auto adjustment�j */
+  #help-left-func #help-left-func-in p img {width: 150px; height: auto;}
+
+/** right block */
+#help-right-func {margin-left: 200px; width: auto;}
+  /* right block, h1 */
+  #help-right-func h1.help-right-func-img {
+    text-align: center;
+    padding: 20px;
+  }
+    #help-right-func table.help-right-func-more {
+    width: 100%;
+  }
+  /* right block, more text, table th (back-color white) */
+  #help-right-func table.help-right-func-more th {
+    background-color: #eeeeee;
+    padding: 15px;
+    width: 50%;
+  }
+  /* right block, more text, table th (back-color white) */
+  #help-right-func table.help-right-func-more th p {
+  }
+  /* right block, more text, table td (back-color gray) */
+  #help-right-func table.help-right-func-more td {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 50%;
+  }
+  /* right block, more text, table td (back-color gray) */
+  #help-right-func table.help-right-func-more td p {
+  }
+
+  /*�����I�ɁA�V���ȕ��@�ŋ@�\������CSS���w�肷��B*/
+    /* right block, more text, table td */
+    #help-right-func table.help-right-func-more_new {
+    width: 100%;
+   }
+#help-right-func table.help-right-func-more_new td {
+    padding: 15px;
+    width: 50%;
+   }
+   /* right block, more text, table td  */
+#help-right-func table.help-right-func-more_new td p {
+    font-size: 90%;
+  }
+  /* tr����Ԗڂ���td����Ԗڂ̎��A�w�i�F���O���[�ɕύX */
+#help-right-func table.help-right-func-more_new tr:nth-child(odd) td:nth-of-type(odd) {
+    background: #eeeeee;
+}
+/* tr�������Ԗڂ���td�������Ԗڂ̎��A�w�i�F���O���[�ɕύX */
+#help-right-func table.help-right-func-more_new tr:nth-child(even) td:nth-of-type(even) {
+    background: #eeeeee;
+}
+
+  /* right block, h2 !don't touch HEIGHT! */
+  #help-right-func h2 {
+    height: 40px;
+    padding: 10px 0 0 50px;
+  }
+  #help-right-func p {
+    margin: 10px;
+    font-size: 120%;
+    line-height: 120%;
+  }
+  #help-right-func h2 a {color: #0000ff;text-decoration:underline;}
+
+  /* right block, h2 ,num img */
+  #help-right-func h2.num-back01 {background: url(../images/help_num01.gif) no-repeat left top;}
+  #help-right-func h2.num-back02 {background: url(../images/help_num02.gif) no-repeat left top;}
+  #help-right-func h2.num-back03 {background: url(../images/help_num03.gif) no-repeat left top;}
+  #help-right-func h2.num-back04 {background: url(../images/help_num04.gif) no-repeat left top;}
+  #help-right-func h2.num-back05 {background: url(../images/help_num05.gif) no-repeat left top;}
+  #help-right-func h2.num-back06 {background: url(../images/help_num06.gif) no-repeat left top;}
+  #help-right-func h2.num-back07 {background: url(../images/help_num07.gif) no-repeat left top;}
+  #help-right-func h2.num-back08 {background: url(../images/help_num08.gif) no-repeat left top;}
+  #help-right-func h2.num-back09 {background: url(../images/help_num09.gif) no-repeat left top;}
+  #help-right-func h2.num-back10 {background: url(../images/help_num10.gif) no-repeat left top;}
+  #help-right-func h2.num-back11 {background: url(../images/help_num11.gif) no-repeat left top;}
+  #help-right-func h2.num-back12 {background: url(../images/help_num12.gif) no-repeat left top;}
+  #help-right-func h2.num-back13 {background: url(../images/help_num13.gif) no-repeat left top;}
+  #help-right-func h2.num-back14 {background: url(../images/help_num14.gif) no-repeat left top;}
+  #help-right-func h2.num-back15 {background: url(../images/help_num15.gif) no-repeat left top;}
+  #help-right-func h2.num-back16 {background: url(../images/help_num16.gif) no-repeat left top;}
+  #help-right-func h2.num-back17 {background: url(../images/help_num17.gif) no-repeat left top;}
+  #help-right-func h2.num-back18 {background: url(../images/help_num18.gif) no-repeat left top;}
+  #help-right-func h2.num-back19 {background: url(../images/help_num19.gif) no-repeat left top;}
+  #help-right-func h2.num-back20 {background: url(../images/help_num20.gif) no-repeat left top;}
+  #help-right-func h2.num-back21 {background: url(../images/help_num21.gif) no-repeat left top;}
+  #help-right-func h2.num-back22 {background: url(../images/help_num22.gif) no-repeat left top;}
+  #help-right-func h2.num-back23 {background: url(../images/help_num23.gif) no-repeat left top;}
+  #help-right-func h2.num-back24 {background: url(../images/help_num24.gif) no-repeat left top;}
+  #help-right-func h2.num-back25 {background: url(../images/help_num25.gif) no-repeat left top;}
+  #help-right-func h2.num-back26 {background: url(../images/help_num26.gif) no-repeat left top;}
+  #help-right-func h2.num-back27 {background: url(../images/help_num27.gif) no-repeat left top;}
+  #help-right-func h2.num-back28 {background: url(../images/help_num28.gif) no-repeat left top;}
+  #help-right-func h2.num-back29 {background: url(../images/help_num29.gif) no-repeat left top;}
+  #help-right-func h2.num-back30 {background: url(../images/help_num30.gif) no-repeat left top;}
+  #help-right-func h2.num-back31 {background: url(../images/help_num31.gif) no-repeat left top;}
+  #help-right-func h2.num-back32 {background: url(../images/help_num32.gif) no-repeat left top;}
+  #help-right-func h2.num-back33 {background: url(../images/help_num33.gif) no-repeat left top;}
+  #help-right-func h2.num-back34 {background: url(../images/help_num34.gif) no-repeat left top;}
+  #help-right-func h2.num-back35 {background: url(../images/help_num35.gif) no-repeat left top;}
+  #help-right-func h2.num-back36 {background: url(../images/help_num36.gif) no-repeat left top;}
+  #help-right-func h2.num-back37 {background: url(../images/help_num37.gif) no-repeat left top;}
+  #help-right-func h2.num-back38 {background: url(../images/help_num38.gif) no-repeat left top;}
+  #help-right-func h2.num-back39 {background: url(../images/help_num39.gif) no-repeat left top;}
+  #help-right-func h2.num-back40 {background: url(../images/help_num40.gif) no-repeat left top;}
+  #help-right-func h2.num-back41 {background: url(../images/help_num41.gif) no-repeat left top;}
+  #help-right-func h2.num-back42 {background: url(../images/help_num42.gif) no-repeat left top;}
+  #help-right-func h2.num-back43 {background: url(../images/help_num43.gif) no-repeat left top;}
+  #help-right-func h2.num-back44 {background: url(../images/help_num44.gif) no-repeat left top;}
+  #help-right-func h2.num-back45 {background: url(../images/help_num45.gif) no-repeat left top;}
+  #help-right-func h2.num-back46 {background: url(../images/help_num46.gif) no-repeat left top;}
+  #help-right-func h2.num-back47 {background: url(../images/help_num47.gif) no-repeat left top;}
+  #help-right-func h2.num-back48 {background: url(../images/help_num48.gif) no-repeat left top;}
+  #help-right-func h2.num-back49 {background: url(../images/help_num49.gif) no-repeat left top;}
+  #help-right-func h2.num-back50 {background: url(../images/help_num50.gif) no-repeat left top;}
+
+  #help-right-func .help-right-func-p {
+    padding-top: 5px;
+    font-size: 110%;
+    font-weight: bold;
+  }
+  /* right block, item description */
+  #help-right-func div.help-right-func-item {
+  margin: 20px 0 10px 0;
+  }
+  #help-right-func div.help-right-func-item h2 {
+  font-size: 130%                !important;
+  font-weight: normal            !important;
+  background-color: #eeeeee      !important;
+  color: #000000                 !important;
+  width: 14em;
+  padding: 3px              !important;
+  height: auto              !important;
+  margin: 0                 !important;
+  }
+  #help-right-func div.help-right-func-item p {
+  font-size: 120%             !important;
+  font-weight: normal        !important;
+  color: #000000             !important;
+  line-height: 120%          !important;
+  position: relative        !important;
+  top: -25px                !important;
+  padding: 4px 0 0 0;
+  margin: 0 0 0 16.5em        !important;
+  }
+
+   #help-detailed-explanation {
+  font-size: 120%             !important;
+  font-weight: normal        !important;
+  color: #000000             !important;
+  }
+
+/**************************************************** SEARCH RESULT */
+/** search result */
+#help-search-result {
+  margin: 10px;
+  width: 60%;
+  float: left;
+  position: relative;
+}
+  /* font reset */
+  #help-search-result * {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+  }
+  /* search result text */
+  #help-search-result h1 {
+    font-size: 120%;
+    color: #000099;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+  }
+
+  .help-header-text {
+    color: #000099;
+    font-weight: bold;
+  }
+
+  .help-header-text2 {
+    color: #000099;
+    font-weight: bold;
+  }
+
+    /* search result count etc... */
+    #help-search-result h1 span {
+      font-size: 80%;
+      color: #666666;
+    }
+  /* search result list */
+  #help-search-result ol li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 0 0 15px 0;
+  }
+    /* search result list, page title link */
+    #help-search-result ol li h2 a {
+      color: #0000ff;
+      text-decoration: underline;
+    }
+  /* search result list, page description */
+    #help-search-result ol li p {
+      margin: 5px 0 5px 0;
+      font-size: 90%;
+    }
+    /* search result list, page description, hit word strong */
+      #help-search-result ol li p strong {
+        font-weight: bold;
+        font-size: 100%;
+      }
+  /* search result list, file name */
+    #help-search-result ol li div {text-align: left;}
+    /* search result list, file name strong */
+      #help-search-result ol li div em {
+        font-style: normal;
+        font-size: 90%;
+        color: #009900;
+      }
+/** sub navi (right box) */
+#help-search-navi {
+  float: right;
+  width:200px;
+}
+  /* sub navi, plugin list */
+  #help-search-navi #help-search-plugin {
+    padding: 3px;
+}
+
+/**************************************************** OTHER */
+/* move to top */
+div.help-align-right {text-align:right;font-size:120%;padding:5px;}
+/* padding */
+.pad {padding: 20px 30px 10px 30px;}
+.help-clear {clear: both;}
+
+/**************************************************** COPY IN WEB SEARCH CSS */
+.pageLinkBox {
+    border-style:solid;
+    border-width:1px;
+    border-color:#333333;
+    padding:3px;
+    margin-left:1px;
+    margin-right:1px;
+    font-weight:bold;
+
+}
+.pageLinkBox a {color: #0000FF;}
+.pageLinkBoxDispPage {
+    border-style:solid;
+    border-width:1px;
+    border-color:#333333;
+    padding:3px;
+    margin-left:1px;
+    margin-right:1px;
+    font-weight:bold;
+    background-color:#e7e7e7;
+}
+
+/**************************************************** RESERVE */
+
+.reserve_mhead {
+    font-size: 100%;
+    color: #000099;
+    font-weight: bold;
+    margin-bottom:10px;
+  }
+
+
+.btn_base0
+{
+  font-size: 100%!important;
+}
+
+/**************************************************** WEBMAIL */
+
+.webmail_mhead {
+    font-size: 100%;
+    color: #000099;
+    font-weight: bold;
+    margin-bottom:10px;
+  }
+
+.emphasis {
+  color:red;
+}
+
+.explain table, .explain th, .explain td {
+  border: 1px #000000 solid;
+}
+
+.explain th {
+  text-align:center;
+  background-color:#deefff;
+}
+
+.explain td {
+  padding-right:15px;
+}

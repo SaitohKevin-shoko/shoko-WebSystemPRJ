@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 個人テンプレート編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 個人テンプレート編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>個人で使用する稟議テンプレートを編集する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng09021.gif" alt="稟議　個人テンプレート編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+      <tr>
+       <td>
+        <h2 class="num-back01">プレビューボタン</h2>
+        <p>プレビュー画面をポップアップで表示します。表示される画面は、この個人テンプレートを稟議申請時に使用した場合の画面となります。</p>
+       </td>
+       <td>
+        <h2 class="num-back02">OKボタン</h2>
+        <p>個人テンプレート編集確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <h2 class="num-back03">複写して新規作成ボタン</h2>
+        <p>個人テンプレート登録画面に遷移します。その際、現在入力されている内容がそのまま各項目に反映されます。</p>
+       </td>
+       <td>
+        <h2 class="num-back04">削除ボタン</h2>
+        <p>個人テンプレートの削除確認画面へ遷移します。</p>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <h2 class="num-back05">戻るボタン</h2>
+        <p>遷移元の画面へ遷移します。</p>
+       </td>
+       <td>
+        <h2 class="num-back06">カテゴリコンボ</h2>
+        <p>テンプレートの所属先カテゴリを選択します。</p>
+       </td>
+      </tr>
+      <tr>
+      <td>
+       <h2 class="num-back07">削除ボタン</h2>
+       <p>添付のリストで選択中の添付ファイルを削除します。</p>
+       </td>
+       <td>
+        <h2 class="num-back08">添付ボタン</h2>
+        <p>添付ファイル選択画面をポップアップで表示します。ファイルを選択し、確定すると添付のリストに選択したファイル名が追加されます。</p>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <h2 class="num-back09">経路要素</h2>
+        <p>経路要素を承認経路、最終確認にドラッグ＆ドロップすることで、このテンプレートを使用した場合に稟議が進行する経路を設定します。<br>
+        ただし、個人テンプレートで使用できる経路要素は任意設定のみです。<br>
+        経路についての説明は<a href="h_rng2400.html"><span class="textLink">共有経路テンプレート登録</span></a>のページをご参照下さい。</p>
+       </td>
+      </tr>
+
+     </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>テンプレート名</h2>
+    <p>テンプレート名を入力します（100文字以内）。</p>
+    <h2>タイトル</h2>
+    <p>タイトルを入力します（100文字以内）。</p>
+    <h2>フォーマット</h2>
+    <p>フォーマットを入力します（1000文字以内）。</p>
+    <h2>添付</h2>
+    <p>ここで添付したファイルは、稟議作成時にダウンロードが可能です。<br>
+    申請時にこのファイルが稟議に添付されることはありません。</p>
+    <h2>備考</h2>
+    <p>備考を入力します（1000文字以内）。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] TODO編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_prj_left_list.html');chengeHeaderText('[ TODO編集 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="プロジェクト管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>TODOを編集する画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_prj0501.gif" alt="TODO編集画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">OKボタン</h2>
+              <p>指定した内容でTODOを編集します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">削除ボタン</h2>
+              <p>TODO削除確認画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">戻るボタン</h2>
+              <p>遷移元画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">簡易・詳細入力切り替え</h2>
+              <p>簡易入力か詳細入力かを切り替えます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">プロジェクトコンボ</h2>
+              <p>TODOを登録するプロジェクトを選択します。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">カレンダーボタン</h2>
+              <p>日付選択カレンダーを表示します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">前日・今日・翌日ボタン</h2>
+              <p>日付を設定します。<br>前日：1日前を設定<br>今日：本日を設定<br>後日：1日後を設定</p>
+            </td>
+            <th>
+              <h2 class="num-back08">クリアボタン</h2>
+              <p>日付を未設定状態にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">全て削除ボタン</h2>
+              <p>選択済エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのユーザを選択済エリアに追加します。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択済エリアに追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">ユーザ指定</h2>
+              <p>クリックすることで、プロジェクトに所属する全てのユーザが未選択エリアに表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">グループ名</h2>
+              <p>グループ名をクリックすることで、グループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">警告開始コンボ</h2>
+              <p>警告を開始する日を設定します。</p>
+            </td>
+            <th>
+              <h2 class="num-back16">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back17">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </th>
+            <td>
+              <h2 class="num-back18">削除アイコン</h2>
+              <p>ファイルを削除します。</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>プロジェクト</h2><p>プロジェクトを選択します。</p>
+          <h2>管理番号</h2><p>管理番号を表示します。</p>
+          <h2>登録者</h2><p>登録者を表示します。</p>
+          <h2>タイトル</h2><p>タイトルを入力します(100文字以内)。</p>
+          <h2>ラベル</h2><p>ラベルを選択します。</p>
+          <h2>予定</h2><p>開始・終了・工数を入力します(正数部3桁小数部1桁以内)。</p>
+          <h2>実績</h2><p>開始・終了・工数を入力します(正数部3桁小数部1桁以内)。</p>
+          <h2>内容</h2><p>内容を入力します(1000文字以内)。</p>
+          <h2>担当</h2><p>担当として設定するユーザを、メンバーリストから選択し追加します。マイプロジェクトへのTODO登録の場合は表示されません。</p>
+          <h2>重要度</h2><p>重要度を選択します。</p>
+          <h2>警告開始</h2><p>警告を開始する日を選択します。</p>
+          <h2>状態</h2><p>状態を選択します。</p>
+          <h2>状態変更理由</h2><p>状態変更理由を入力します(500文字以内)。</p>
+          <h2>ショートメール通知</h2><p>ショートメール通知を選択します。マイプロジェクトへのTODO登録の場合は表示されません。</p>
+          <h2>添付</h2><p>添付するファイルを選択します。</p>
+        </div>
+
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ファイル編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 ファイル編集 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>共有キャビネットのファイルの編集画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_fil0801.gif" alt="ファイル管理 ファイル編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">編集ボタン</h2>
+              <p>指定した内容でファイルを編集します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">削除ボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">更新者コンボ</h2>
+              <p>登録されている更新者を選択します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">ファイル名</h2>
+              <p>ファイルをダウンロードします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">削除アイコン</h2>
+              <p>ファイルを削除します。</p>
+            </td>
+            <th>
+              <h2 class="num-back08">全体表示ボタン</h2>
+              <p>親アクセス権限に設定しているユーザ、グループ名一覧を全体表示します。<br>
+              全体表示状態の時は、一部表示ボタンになります。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">詳細検索ボタン</h2>
+              <p>ユーザ選択ポップアップが表示されます。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">全て削除ボタン</h2>
+              <p>追加・変更・削除エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back12">追加・変更・削除エリア / 閲覧エリア</h2>
+              <p>追加・変更・削除エリアと閲覧エリアのいずれかをクリックし、追加先として選択します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back13">全て削除ボタン</h2>
+              <p>閲覧エリアに表示されている全てのユーザを未選択状態にします。</p>
+            </th>
+            <td>
+              <h2 class="num-back14">選択済グループ</h2>
+              <p>グループ名をクリックすることで、グループを未選択状態にします。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back15">選択済ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを未選択状態にします。</p>
+            </td>
+            <th>
+              <h2 class="num-back16">全て選択ボタン</h2>
+              <p>未選択エリアに表示されている全てのグループおよびユーザを選択したエリアに追加します。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back17">未選択グループ</h2>
+              <p>グループ名をクリックすることで、グループを選択したエリアに追加します。</p>
+            </th>
+            <td>
+              <h2 class="num-back18">未選択ユーザ</h2>
+              <p>ユーザ名をクリックすることで、ユーザを選択したエリアに追加します。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back19">グループ名</h2>
+              <p>グループ名をクリックすることで、グループおよびグループに所属するユーザが未選択エリアに表示されます。</p>
+            </td>
+            <th>
+              <h2 class="num-back20">バージョン管理コンボ</h2>
+              <p>バージョン管理一覧が表示されます。</p>
+            </th>
+          </tr>
+        </table>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>更新者</h2><p>更新者を選択します。</p>
+          <h2>フォルダ名</h2><p>ファイルを追加する先のパスが表示されます。</p>
+          <h2>ファイル</h2><p>ファイルを設定します。</p>
+          <h2>親アクセス権限</h2><p>親になっているキャビネットのアクセス権限を表示します。</p>
+          <h2>個別制限設定</h2><p>フォルダのアクセス権限を制限するか設定します。</p>
+          <h2>アクセス権限</h2><p>フォルダのアクセス権限を設定します。</p>
+          <h2>バージョン管理</h2><p>バージョン管理選択コンボを表示します。キャビネットで設定している場合はバージョン管理を表示します。</p>
+          <h2>備考</h2><p>ファイルの備考を入力します。(1000文字以内)</p>
+          <h2>操作コメント</h2><p>操作コメントを入力します。(1000文字以内)</p>
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

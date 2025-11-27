@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議基本設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 稟議基本設定 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>稟議の基本設定を行う画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_rng180.gif" alt="稟議 稟議基本設定 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0" width="80%">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <td width="50%">
+          <h2 class="num-back01">ＯＫボタン</h2>
+          <p>基本設定確認画面へ遷移します。</p>
+        </td>
+        <td width="50%">
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+        </table>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>削除</h2>
+        <p>削除を許可されたユーザは、自分が申請を行った稟議の内、完了状態となっているものを削除することができます。</p>
+        <h2>汎用稟議テンプレート</h2>
+        <p>汎用稟議テンプレートの使用を許可しない場合は、個人テンプレートも使用することができなくなります。<br>
+        また、既に汎用稟議テンプレートを使用して草稿へ保存した稟議は申請できなくなります。</p>
+        <h2>個人テンプレート</h2>
+        <p>汎用稟議テンプレート「使用する」が選択されている場合のみ表示されます。<br>
+        汎用稟議テンプレートの使用を許可しない場合は、既に個人テンプレートを使用して草稿へ保存した稟議は申請できなくなります。</p>
+        <h2>個人経路テンプレート</h2>
+        <p>汎用稟議テンプレートを使用して作成した稟議で個人経路テンプレートを使用し、それを草稿へ保存した場合、個人経路テンプレートの使用が許可されていない場合でもその稟議は申請可能です。</p>
+        <h2>申請ID</h2>
+        <p>申請IDを使用するか選択します。</p>
+        <h2>申請ID使用方法</h2>
+        <p>申請IDを使用する場合に、どの申請IDを使用するかの設定を、各テンプレートで設定するか全ての稟議で統一するのか選択します。</p>
+        <h2>重複ID</h2>
+        <p>申請IDを発行する際、既存の申請IDとの重複を許可するかどうかを選択します。</p>
+        </div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

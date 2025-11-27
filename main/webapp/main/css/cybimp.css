@@ -1,0 +1,33 @@
+.attention_textbox {
+	background:#ffeeee;
+	border: 2px solid #FF0000;
+	padding: 4px;
+}
+
+.attention_title {
+	color:#ff0000;
+	text-align:center;
+	font-weight:bold;
+}
+
+.attention_textbox li {
+	color:#ff0000;
+}
+
+.step_list_table {
+    width:100%;
+}
+
+.step_list_table > td.table_bg_A5B4E1 {
+    width:15%;
+    valign:middle;
+    text-align:left;
+}
+
+.step2_text_list {
+    margin:10px;
+}
+
+.step2_text_list > td {
+    padding:4px;
+}

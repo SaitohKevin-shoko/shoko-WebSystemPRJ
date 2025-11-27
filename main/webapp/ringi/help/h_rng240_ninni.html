@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 経路要素：任意設定</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 経路要素：任意設定 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>任意設定経路を登録するダイアログです。<br>
+        この経路では、稟議申請時に承認経路・最終確認へ任意のユーザ・グループを設定することが出来ます。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng240_ninni.gif" alt="稟議 経路要素：任意設定"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+          <h2 class="num-back01">条件を追加</h2>
+      <p>この経路を利用するための条件を追加します。</p>
+    </td>
+   <td>
+          <h2 class="num-back02">追加ボタン</h2>
+          <p>ユーザ・グループリストで選択されているユーザ・グループを選択済みリストへ追加します。</p>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+          <h2 class="num-back03">削除ボタン</h2>
+          <p>選択済みリストで選択されているユーザ・グループをリストから除外します。</p>
+    </td>
+    <td>
+          <h2 class="num-back04">グループコンボ</h2>
+          <p>選択したグループに所属するユーザ、または全グループの一覧がユーザ・グループリストに表示されます（既に選択済みリストに追加されているユーザ・グループは表示されません）。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+          <h2 class="num-back05">OKボタン</h2>
+          <p>経路の設定を完了し、このダイアログを閉じます。</p>
+    </td>
+    <td>
+          <h2 class="num-back06">キャンセルボタン</h2>
+          <p>経路の設定を行わずに、このダイアログを閉じます。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <span class="emphasis">※が付いた項目は、承認経路へ追加した場合のみ表示されます。</span>
+    <h2>初期選択</h2>
+    <p>稟議作成時にあらかじめ経路に設定しておくユーザ・グループを選択します。</p>
+    <h2>経路コメント</h2>
+    <p>経路にコメントを付与できます。</p>
+    <h2><span class="emphasis">※</span>該当ユーザが存在しない場合</h2>
+    審議を行う時、この経路に設定されていたユーザが存在しなくなった場合の審議の進行を設定します。<br>
+    経路の進行を許可する場合、この経路を承認扱いにして審議を進行させます。許可しない場合はそこで審議が止まります。</p>
+    <h2><span class="emphasis">※</span>後閲指示によるこの経路のスキップ</h2>
+    <p>この経路に対して後閲指示を出すことができるかどうかを設定します。</p>
+    <h2><span class="emphasis">※</span>進行中の任意経路への経路追加</h2>
+    <p>この経路で審議を行う場合、新たに経路を追加することができるかどうかを設定します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

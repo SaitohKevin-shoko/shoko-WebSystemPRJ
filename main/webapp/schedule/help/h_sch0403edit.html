@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] スケジュール スケジュール編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sch_left_list.html');chengeHeaderText('[ スケジュール スケジュール編集 ]');">
+<div id="container"><a name="top"></a>
+    <div align="right" class="help-align-right">
+    <input type="button" value="スケジュール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>スケジュールを編集する画面です。（出欠確認を依頼されている場合）</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_sch0403edit.gif" alt="スケジュール編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">変更ボタン</h2>
+          <p>入力された内容でスケジュールを登録し、完了画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">複写登録ボタン</h2>
+          <p>スケジュール登録画面へ遷移します。その際、現在入力している内容が各入力項目に設定されます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">PDF出力ボタン</h2>
+          <p>表示画面のPDF出力を行います。</p>
+        </th>
+        </tr>
+        <tr>
+        <th>
+          <h2 class="num-back05">確定ボタン</h2>
+          <p>入力されたコメントを登録します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">キャンセルボタン</h2>
+          <p>入力テキストボックス，確定ボタン，キャンセルボタンを非表示にし、編集ボタンを表示します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back07">添付ファイル</h2>
+          <p>添付ファイル名をクリックすると、添付ファイルをダウンロードすることができます。</p>
+        </td>
+        </tr>
+
+        </table>
+
+
+        <br>
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>出欠確認</h2>
+          <p>出欠確認への回答を選択します。また、同時登録されているユーザの出欠確認への回答が表示されます。</p>
+          <h2>名前</h2>
+          <p>当スケジュールの対象者の名前が表示されます。</p>
+          <h2>期間</h2>
+          <p>当スケジュールの開始～終了日時が表示されます。</p>
+          <h2>タイトル</h2>
+          <p>当スケジュールのタイトルが表示されます。</p>
+          <h2>タイトル色</h2>
+          <p>当スケジュールのタイトル色が表示されます。</p>
+          <h2>内容</h2>
+          <p>当スケジュールの内容が表示されます。</p>
+          <h2>添付</h2>
+          <p>当スケジュールに添付されているファイルが表示されます。</p>
+          <h2>備考</h2>
+          <p>当スケジュールの備考が表示されます。</p>
+          <h2>編集権限</h2>
+          <p>当スケジュールの編集権限が表示されます。</p>
+          <h2>リマインダー通知</h2>
+          <p>当スケジュールのリマインダー通知時間を選択します。</p>
+          <h2>公開</h2>
+          <p>当スケジュールの公開状態が表示されます。<br>公開：共有範囲内の全社員が閲覧することができます。<br>非公開：登録者のみが閲覧可能です。<br>予定有り：タイトルに"予定あり"と表示され、詳細は非表示になります。<br>タイトルのみ公開：タイトルのみ表示され、詳細は非表示になります。<br>所属グループのみ公開：スケジュール登録ユーザと同じグループに所属しているユーザのみスケジュールを表示可能になります。<br>指定グループ・ユーザにのみ公開：指定したグループ・ユーザのみスケジュールを表示可能になります。<br>登録者は閲覧可能です。共有範囲内の全社員には「予定あり」のみ表示されます。</p>
+          <h2>公開対象</h2>
+          <p>当スケジュールの公開対象ユーザ・グループを表示します。公開に「指定したユーザ・グループにのみ公開」が選択されている場合のみ表示されます。</p>
+          <h2>同時登録</h2>
+          <p>当スケジュールが同時登録された他のユーザが表示されます。</p>
+          <h2>施設予約</h2>
+          <p>当スケジュールから施設予約が行われた施設が表示されます。</p>
+          <h2>登録者</h2>
+          <p>当スケジュールの登録者の名前が表示されます。</p>
+
+
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

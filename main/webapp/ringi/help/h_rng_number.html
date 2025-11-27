@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 申請内容：数値入力</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 申請内容：数値入力 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>申請内容としてテキストボックスを登録するダイアログです。<br>
+        数値の入力のみを許可します。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/rng_number.gif" alt="稟議 申請内容：数値入力 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+      <h2 class="num-back01">入力必須チェックボックス</h2>
+      <p>チェックを入れて登録すると、この申請内容の入力が必須になります。</p>
+    </td>
+    <td>
+      <h2 class="num-back02">OKボタン</h2>
+      <p>申請内容の設定を完了し、このダイアログを閉じます。</p>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+      <h2 class="num-back03">キャンセルボタン</h2>
+      <p>申請内容の設定を行わずに、このダイアログを閉じます。</p>
+    </td>
+    </tr>
+
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>タイトル</h2>
+    <p>申請内容のタイトルを入力します(20文字以内)。</p>
+    <h2>フォームID</h2>
+    <p>この申請内容固有のIDを設定します（20文字以内）。</p>
+    <h2>初期値</h2>
+    <p>稟議作成時にあらかじめ入力しておく数値を設定します。入力可能な文字数は、「桁数(文字数)」で設定された数までです。</p>
+    <h2>桁数(文字数)</h2>
+    <p>テキストボックスに入力できる数値の桁数の上限を設定します。最大値は「9」です。</p>
+    <h2>単位</h2>
+    <p>入力した数値に付与する単位を設定します(100文字以内)。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

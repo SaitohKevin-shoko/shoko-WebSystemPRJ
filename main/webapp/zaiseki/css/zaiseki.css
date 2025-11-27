@@ -1,0 +1,72 @@
+.zsk_label-sonota {
+  cursor:pointer;
+  position:absolute;
+  margin:  1px;
+  border: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  white-space:nowrap;
+}
+
+.zsk_label-zaiseki {
+  cursor:pointer;
+  position:absolute;
+  margin:  1px;
+  border: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  white-space:nowrap;
+}
+
+.zsk_label-huzai {
+  cursor:pointer;
+  position:absolute;
+  margin:  1px;
+  border: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  white-space:nowrap;
+}
+
+.zsk_rsvLabel-unused {
+  cursor:pointer;
+  position:absolute;
+  white-space:nowrap;
+  margin:  1px;
+  border: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.zsk_rsvLabel-used {
+  cursor:pointer;
+  position:absolute;
+  white-space:nowrap;
+  margin:  1px;
+  border: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.zskMsg_text {
+  position:absolute;
+  white-space:nowrap;
+}
+
+.z_index-10 {
+  z-index:10;
+}
+
+.z_index-20 {
+  z-index:20;
+}

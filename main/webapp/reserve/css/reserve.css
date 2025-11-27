@@ -1,0 +1,156 @@
+input:disabled,
+button:disabled,
+a:disabled,
+select:not([multiple]):disabled {
+    cursor: default;
+}
+
+.calendar_weekHeader-fixed {
+  position: fixed;
+  left: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+  z-index: 5;
+}
+
+.calendar_weekHeader td {
+  text-align: center;
+}
+
+.flo_clear {
+  clear: both;
+}
+
+.rsvlistHead_buttonBlock-mt2 {
+    margin-top: 2px;
+}
+
+.rsvIkkatuTorokuHiddenList_rsvGrp:not(:last-child) > div:last-child {
+  margin-bottom: 5px;
+}
+
+.sch_timeScale {
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  height: 4px!important;
+}
+
+.table-top .topFrame_btnGroup {
+  border-right-width: 0px;
+  text-align: left;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.topFrame-fixed {
+  left: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  position: fixed !important;
+  _position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+
+.userSelect_from-twoContent{
+  height:290px;
+}
+
+.underFrame > div  {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.rsv110_table {
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.rsv110_table th {
+  border-left-style: solid;
+  border-left-width:1px;
+  border-top-style: solid;
+  border-top-width:1px;
+
+}
+
+.rsv110_table td {
+  border-right-style: solid;
+  border-right-width:1px;
+  border-top-style: solid;
+  border-top-width:1px;
+}
+
+.rsvListHead_noshrink {
+  flex-shrink: 0;
+}
+
+.rsvListHead_nogrow {
+  flex-grow: 0;
+}
+
+.rsvListHead_select {
+  max-width: 100%;
+}
+
+.ui-widget-overlay {
+  position: fixed!important;
+}
+
+.hyde {
+  visibility: hidden;
+}
+
+/* 六曜表示用.css */
+@media screen and (min-width: 920px) {
+  /* 920px以上に適用されるCSS */
+  .senshou::after, .tomobiki::after, .senbu::after,
+  .butsumetsu::after, .taian::after, .shakkou::after {
+    position: absolute;
+    margin-left: 3px;
+  }
+}
+.senshou::after {
+  content: "先勝";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.tomobiki::after {
+  content: "友引";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.senbu::after {
+  content: "先負";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.butsumetsu::after {
+  content: "仏滅";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.taian::after {
+  content: "大安";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.shakkou::after {
+  content: "赤口";
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.rsv_ikkatutoroku_area-fixed {
+  position: fixed;
+  right: 8px;
+  z-index: 6;
+}
+
+/* ツールチップ */
+form[name='rsv010Form'] #ttp, form[name='rsv020Form'] #ttp , form[name='rsv030Form'] #ttp {
+  z-index: 1;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 取引情報登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_fil_left_list.html');chengeHeaderText('[ ファイル管理 取引情報登録 ]');">
+  <div id="container"><a name="top"></a>
+
+    <div align="right" class="help-align-right">
+      <input type="button" value="ファイル管理 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-func-in">
+          <!-- ここにajax_xxx_left_list.htmlが入ります -->
+        </div>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>仮登録ファイルの一括登録を行います。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_fil3001.gif" alt="ファイル管理 取引情報登録 一括登録"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+          <tr>
+            <th>
+              <h2 class="num-back01">戻るボタン</h2>
+              <p>遷移元の画面へ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back02">単体登録・一括登録・一括削除タブ</h2>
+              <p>タブをクリックすることで単体登録・一括登録・一括削除が切り替わります。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back03">すべて開く・すべて閉じるボタン</h2>
+              <p>すべて開く：フォルダ階層を全て開いて表示します。<br>
+              すべて閉じる：フォルダ階層を全て閉じて表示します。</p>
+            </td>
+            <th>
+              <h2 class="num-back04">フォルダ階層</h2>
+              <p>フォルダ名：フォルダの下の階層のファイルをファイル情報欄に表示します。<br>
+              +ボタン：フォルダの下の階層を表示します。<br>
+              -ボタン：フォルダの下の階層を非表示にします。</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back05">ダウンロードボタン</h2>
+              <p>取込み用のファイルをダウンロードします。</p>
+            </th>
+            <td>
+              <h2 class="num-back06">ヘルプボタン</h2>
+              <p>ヘルプポップアップが表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back07">ファイル名</h2>
+              <p>ファイルのプレビューをポップアップで表示します</p>
+            </td>
+            <th>
+              <h2 class="num-back08">ファイルプレビューボタン</h2>
+              <p>ファイルのプレビューをポップアップで表示します</p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <h2 class="num-back09">ページングコンボ・前頁・次頁</h2>
+              <p>ページングコンボで任意のページへ、前頁アイコンクリックで前のページへ、次頁アイコンクリックで次のページへそれぞれ遷移します。</p>
+            </th>
+            <td>
+              <h2 class="num-back10">添付ボタン</h2>
+              <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="num-back11">取込み開始ボタン</h2>
+              <p>取引情報の取込みを開始します。</p>
+            </td>
+          </tr>
+        </table>
+      </div></div>
+      <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+      <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+  </div>
+</body>
+</html>

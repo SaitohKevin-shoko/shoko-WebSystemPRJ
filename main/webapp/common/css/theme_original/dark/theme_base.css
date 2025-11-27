@@ -1,0 +1,1560 @@
+@charset "utf-8";
+
+/*配色指定------------------------------------------------------------------------------------------------------------*/
+
+.bgC_none {
+  background-color: rgba(0, 0, 0, 0)!important;
+  background-image: none!important;
+}
+
+.bgI_none {
+  background-image: none!important;
+}
+
+/* ⑥   背景  画面背景 */
+.bgC_body {
+  background-color: #2b2c2d!important;
+}
+
+body,
+.tabHeader_tab-on,
+.tabBody,
+.toukei_plugin-select,
+.toukei_option:not(.toukei_option-select):hover,
+.toukei_option-select,
+.topFrame-fixed,
+.jqplot-highlighter-tooltip {
+  background-color: #2d2c2d;
+}
+
+/*テーブル内のセル背景*/
+.bgC_tableCell,
+.bgC_tableCell_Sunday,
+.bgC_tableCell_Saturday,
+.table_col-even > tbody > tr:nth-child(odd) {
+  background-color: #292c2c!important;
+}
+
+/** 吹き出し背景色 色指定変数*/
+:root {
+  --bubble-background-color: #292c2c;
+}
+
+.cal_colHeader,
+.easyRegister-bubble,
+.helpBubbleBtn > .helpBubble,
+.table-top,
+.table-left,
+.borderBlock-white,
+.searchMenu_title-select,
+.ntp_sideMenu:hover,
+.cmnSetting_sideMenu:hover,
+.toukei_plugin:hover,
+.toukei_selectedPlugin-space,
+.toukei_optionClose:hover,
+.zsk_label-zaiseki,
+.zsk_label-huzai,
+.zsk_label-sonota,
+.zsk_rsvLabel-unused,
+.zsk_rsvLabel-used,
+#calendar .fc-event-skin.fc-event-head,
+#calendar .fc-event-vert > .fc-event-inner > .fc-event-bg {
+  background-color: #292c2c;
+}
+
+/*基本背景色（他１）グループスケジュール、ユーザ情報（無効ユーザ）テーブル内セル背景 */
+.bgC_other1 {
+  background-color: #222325!important;
+}
+
+/* ⑦   メインメニュー背景   cmn003の背景 */
+.menu_base {
+  background-color: #353638;
+}
+
+/* 選択背景色 */
+.bgC_select {
+  background-color: #424129!important;
+}
+
+/* カレンダー選択背景色 */
+.bgC_cal_select {
+  background-color: #112f11!important;
+}
+
+/* サイボウズLive取込 警告背景色 */
+.bgC_cybozuAlert {
+    background-color: #603542!important;
+}
+
+/* カレンダー日曜日背景色 */
+.bgC_calSunday {
+    background-color: #603542!important;
+}
+
+tbody td:first-child a.ui-state-default{
+    background: #603542!important;
+}
+
+/* カレンダー土曜日背景色 */
+.bgC_calSaturday {
+    background-color: #2a434e!important;
+}
+
+/* チャットメンション */
+.bgC_chtMention {
+  background-color: #2e4739!important;
+}
+.bgC_chtMention-select {
+  background-color: #494828!important;
+}
+
+tbody td:last-child a.ui-state-default{
+    background: #2a434e!important;
+}
+
+/* 在籍管理状態（在籍）背景色 */
+.bgC_zaiseki {
+    background-color: #d7781e!important;
+}
+
+.main_zskLadio-zaiseki,
+.zskBtn-zaiseki,
+.zsk_listStatus-zaiseki {
+    background-image: linear-gradient(to bottom, #d7781e, #d7781e);
+}
+.baseLabel {
+  background-color: #50427c;
+  color: #fff;
+}
+.labelNew {
+  background-color: #d83d36;
+}
+
+.cal_colHeader-zaiseki {
+    background:linear-gradient(90deg, #d7781e 0px, #d7781e 10px, #292c2c 10px);
+}
+
+.zai_header-zaiseki {
+    background:linear-gradient(90deg, #d7781e 0px, #d7781e 10px, #ffffff 10px);
+    color: #333;
+}
+
+.zsk_label-zaiseki {
+  background: linear-gradient(90deg,#d7781e 0px,#d7781e 4px,#ffffff 4px);
+  color: #333;
+}
+
+/* 在籍管理状態（不在）背景色 */
+.bgC_huzai,
+.bgC_progress {
+    background-color: #4e61a0!important;
+}
+
+/* 最終ログイン */
+.bgC_lastLoginToday {
+  background-color: #292c2c!important;
+}
+.bgC_lastLoginYesterday {
+  background-color: #3c3c3c!important;
+}
+.bgC_lastLogin2 {
+  background-color: #2a434e!important;
+}
+.bgC_lastLogin3 {
+  background-color: #273d31!important;
+}
+.bgC_lastLogin4 {
+  background-color: #424129!important;
+}
+.bgC_lastLogin5 {
+  background-color: #584a48!important;
+}
+.bgC_lastLogin10 {
+  background-color: #603542!important;
+}
+.bgC_lastLogin20 {
+  background-color: #3d3d3d!important;
+}
+
+.main_zskLadio-huzai,
+.zskBtn-huzai,
+.zsk_listStatus-huzai {
+    background-image: linear-gradient(to bottom, #4e61a0, #4e61a0);
+}
+
+/* 日報 未読カラー */
+.ntp_midokuContent {
+  background-color: #2a434e!important;
+}
+
+.main_bmkCount,
+.bmkCount
+.rssCount {
+  font-size: 10px;
+  padding: 2px 5px;
+  color: #ffffff;
+  background-color: #667887;
+  border-radius: 5px;
+}
+
+.cal_colHeader-huzai {
+    background:linear-gradient(90deg,#4e61a0 0px,#4e61a0 10px,#292c2c 10px);
+}
+
+.zai_header-huzai {
+    background:linear-gradient(90deg,#4e61a0 0px,#4e61a0 10px,#ffffff 10px);
+    color: #333;
+}
+
+.zsk_label-huzai {
+  background: linear-gradient(90deg,#4e61a0 0px,#4e61a0 4px,#ffffff 4px);
+  color: #333;
+}
+
+/* 在籍管理状態（その他）背景色 */
+.bgC_zskOther {
+    background-color: #2e9083!important;
+}
+
+.main_zskLadio-sonota,
+.zskBtn-sonota,
+.zsk_listStatus-sonota {
+    background-image: linear-gradient(to bottom, #2e9083, #2e9083);
+}
+
+.cal_colHeader-sonota {
+    background:linear-gradient(90deg,#2e9083 0px,#2e9083 10px,#292c2c 10px);
+}
+
+.zai_header-sonota {
+    background:linear-gradient(90deg,#2e9083 0px,#2e9083 10px,#ffffff 10px);
+    color: #333;
+}
+
+.cal_periodCell-less {
+    background-color: #3c3c3c;
+}
+
+.zsk_label-sonota {
+  background: linear-gradient(90deg,#2e9083 0px,#2e9083 4px,#ffffff 4px);
+  color: #333;
+}
+
+/* その他背景色２ スケジュール時間指定なし背景*/
+.bgC_other2 {
+  background-color: #273d31!important;
+}
+.cal_periodCell {
+    background-color: #273d31;
+}
+
+.cal_userName > span /* スケジュール表示 ユーザ名 */ {
+  background-color: #47575d;
+}
+
+/* セレクトボックスドロップダウン背景*/
+.bgC_dropMenu {
+    background-color: #34363c!important;
+}
+
+input[type="text"],
+input[type="password"],
+option,
+select,
+textarea,
+.inputcomponent  {
+  background-color: #34363c ;
+}
+
+
+/** 薄いグレー背景 選択テーブルの不選択要素など*/
+.bgC_lightGray {
+  background-color: #333!important;
+}
+
+/* 日報 日付線 */
+.ntp_dayLine:before,
+.ntp_dayLine:after {
+  background-color: #838383!important;
+}
+
+/* チャット 日付線 */
+.cht_dayLine:before,
+.cht_dayLine:after {
+  background-color: #838383!important;
+}
+
+.cht_inputArea {
+  background-color: #34363c;
+  border-color: #5b5c61;
+}
+
+.cht_newLine:before,
+.cht_newLine:after {
+  background-color: #529ebd!important;
+}
+
+/* スクロールバー（カスタマイズ） */
+.customScrollBar::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 日報 案件達成率 */
+.bgC_ntpParcent {
+  background: radial-gradient(farthest-side circle at center top, #7076da, #0108aa);
+}
+.bgC_ntpParcentComp {
+  background: radial-gradient(farthest-side circle at center top, #d67364, #b01a00);
+}
+
+/* 日報 案件達成率(バー) */
+.bgC_ntpBarParcent {
+  background: linear-gradient(#3b6fff, #0e02fd);
+}
+.bgC_ntpBarParcentComp {
+  background: linear-gradient(#f36565, #eb0101);
+}
+
+/* チャット 未読バッジ */
+.timelineBach.midokuBach-on {
+  border: 1px solid #ffffff;
+  background: #fa453c;
+}
+
+.nippou_menuArea,
+.cmnSetting_menuArea,
+.searchMenu_title,
+.tabHeader_tab-off:hover,
+.ntp_sideMenu,
+.ntp_sideMenuArea,
+.cmnSetting_sideMenu,
+.cmnSetting_sideMenuArea
+.toukei_plugin,
+.toukei_pluginArea,
+.toukei_option:not(.toukei_option-select),
+.toukei_optionClose,
+#ttp {
+  background-color: #333333;
+}
+
+/* formbuilder */
+.dandd_droptable .dandd_dropArea.default.over {
+  background-color: #333333;
+}
+
+.tooltip_body {
+  background-color: #333333!important;
+}
+
+/** グレー背景 フッターなど*/
+.bgC_gray {
+  background-color: #1a1919!important;
+}
+footer,
+.tabHeader_tab-off:hover
+ {
+  background-color: #1a1919;
+}
+
+/** 濃いグレー背景 */
+.bgC_darkGray {
+  background-color: #838383!important;
+}
+.toukei_optionClose:hover {
+  background-color: #838383;
+}
+.cht_pinMessage:hover .pinMessageSortHandle {
+  background-color: #838383;
+}
+
+/* ピンク背景 */
+.bgC_warn {
+  background-color: #584a48!important;
+}
+
+/* メイン 在籍コメント背景色 */
+.main_zskComment {
+    background-color: #584a48;
+}
+
+.main_zskComment:before {
+    border-color:transparent;
+    border-bottom-color:#584a48;
+}
+
+.ui-dialog .ui-dialog-content,
+.ui-dialog .ui-dialog-buttonpane {
+  background: #2b2c2d!important;
+  color: #fff!important;
+}
+
+/* 企業ロゴ 背景用 */
+.logo_background {
+  background-color: #ffffff
+}
+
+/* 罫線色（濃） */
+.borC_deep {
+  border-color: #5b5c61!important;
+}
+.outC_deep {
+  outline-color: #5b5c61!important;
+}
+
+/* 罫線色（薄） */
+.borC_light {
+  border-color: #5b5c61!important;
+}
+
+/* チャット ホバー時罫線 */
+.cht_onePost,
+.cht_grpConfSelectGroup {
+  border-color: rgba(0,0,0,0.0);
+}
+.cht_reaction {
+  background-color: #222325;
+}
+
+/* チャット 検索アイコン */
+.searchIcon-submit::before {
+  box-shadow: 0 0 0 2px #5b5c61;
+}
+.searchIcon-submit::after {
+  border-top: solid 2px #5b5c61;
+}
+
+/* 絵文字選択パレット */
+emoji-picker {
+  --themeBase: dark;
+}
+
+/* 日報 選択メニュー */
+.ntp_sideMenu,
+.ntp_sideMenuArea,
+.cmnSetting_sideMenu,
+.cmnSetting_sideMenuArea {
+  border-right-color: #5b5c61;
+}
+
+/* 日報 ツールチップ */
+.jqplot-highlighter-tooltip {
+  border-color: #5b5c61;
+  color: #e3e3e3;
+}
+
+.ntp_sideMenu-select,
+.cmnSetting_sideMenu-select {
+  border-top-color: #5b5c61;
+  border-bottom-color: #5b5c61;
+}
+
+/* ユーザ選択コンボ 項目タイトル */
+.userGroup_title {
+  border-color: #5b5c61;
+}
+
+div,
+table,
+th,
+td,
+ul,
+li,
+dl,
+::before,
+::after {
+  border-color: #5b5c61;
+}
+
+/* 罫線色（極薄） */
+.borC_weak {
+  border-color: #3b3c41!important;
+}
+
+/* 簡易登録ダイアログ */
+.bubble-leftBottom:before,
+.bubble-rightBottom:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topright:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topleft:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topcenter:after {
+  border-top: 20px solid #292c2c!important;
+}
+
+.bubble-leftTop:before,
+.bubble-rightTop:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomright:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomleft:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomcenter:after {
+  border-bottom: 20px solid #292c2c!important;
+}
+
+/* 在席管理 施設予約ラベル */
+.zsk_rsvLabel-unused,
+.zsk_rsvLabel-used,
+.zsk_headerLabel-unused,
+.zsk_headerLabel-used {
+  border-color: #5b5c61!important;
+}
+
+/* 文字色（黒） */
+.cl_fontBody {
+  color: #e3e3e3!important;
+}
+
+/* 文字色（白） */
+.cl_white {
+  color: #e3e3e3!important
+}
+
+body,
+.cal_time,
+.dialog_changeSel-select,
+.mainSchData div,
+.menu_btn,
+.menu_btn:hover,
+.selectForm,
+.side_headerTitle,
+.mainTable_title-sub a,
+.text_pickUp-small,
+.portalTabList ul .portalTabList_tab-nonforcus a,
+.jqplot-xaxis-tick,
+.jqplot-yaxis-tick,
+.kojinHeader_rokuyou::after,
+#calendar .fc-event-time,
+#ttp {
+  color: #e3e3e3;
+}
+
+/* トップヘッダー内文字色（白）背景が濃い画面用白抜き文字 */
+.cl_fontOutline,
+.cl_fontOutlineLink,
+.main_pluginTitle,
+.main_pluginTitle:hover {
+  color: #e3e3e3!important;
+}
+
+/* 文字色（白） */
+footer a,footer a:hover,footer a:visited,footer a:link,
+.cal_label-todo,
+.cal_label-action,
+.clock_year,
+.clock_time,
+.dialog_changeSel,
+.kanriPageTitle,
+.mainTable_title,
+.mainTable_title a,
+.labelNew,
+.main_zskLadio-zaiseki,
+.main_zskLadio-huzai,
+.main_zskLadio-sonota,
+.zskBtn-zaiseki,
+.zskBtn-huzai,
+.zskBtn-sonota,
+.zsk_listStatus-zaiseki,
+.zsk_listStatus-huzai,
+.zsk_listStatus-sonota,
+.settingList dt,
+.settingList dt a,
+.settingList dt a:hover,
+.settingList dt a:visited,
+.settingList dt a:link,
+.table_title-color,
+.table-top th,
+.table-top th a,
+.ui-dialog .ui-dialog-title,
+.information_top,
+.cht_sideHeader,
+.zskStatus-color,
+.rng_apiResult-success,
+.rng_apiResult-failure {
+  color: #e3e3e3;
+}
+
+/* 警告表示文字色（赤） */
+.cl_fontWarn {
+  color:#ef4545!important;
+}
+
+/* 警告表示枠線色（赤） */
+.borColor-Warn {
+  border-color:#ef4545!important;
+}
+
+.formCounter_over,
+.hikokai_text,
+.textError,
+.cht_timeline_mute {
+  color: #ef4545;
+}
+
+/* 警告表示文字色（黄土） */
+/* ランキング */
+.cl_fontWeekWarn,
+.cl_ranking {
+  color: #d8962a!important;
+}
+
+/* 安全文字色（緑） */
+.cl_fontSafe {
+  color: #9bbd52!important;
+}
+
+/* 1段階薄目文字色（濃いグレー） */
+.cl_fontMiddle {
+  color:#a1a2a6!important;
+}
+
+
+/* 2段階薄目文字色（グレー） */
+.cl_fontWeek {
+  color:#a2a3a7!important;
+}
+
+.side_accountName {
+  color:#a2a3a7;
+}
+
+/* 休日表現文字色 */
+.cl_fontSunday,
+.ui-datepicker > .ui-datepicker-calendar .cl_fontSunday > .ui-state-default,
+thead .ui-datepicker-week-end:first-child {
+    color: #d83d36!important;
+}
+
+/* 土曜表現文字色 */
+.cl_fontSaturday {
+    color: #7396ff!important;
+}
+
+thead .ui-datepicker-week-end:last-child {
+    color: #7396ff!important;
+}
+
+/*基本リンク色*/
+.cl_linkDef {
+  color: #529ebd!important;
+}
+
+a,
+.table-top td a,
+.table-left td a,
+.textLink {
+  color: #529ebd;
+}
+
+/*既読リンク色*/
+.cl_linkVisit {
+  color: #6c838c!important;
+}
+.cl_linkVisit-content a:visited {
+  color: #6c838c!important;
+}
+
+/*ホバーリンク色(Important)*/
+a.cl_fontOutlineLink:hover,
+.cl_linkVisit-content a:hover,
+.cl_linkHoverChange:hover {
+  color: #ff5252!important;
+}
+
+.cl_linkHover,
+.cl_webIcon:hover,
+.webIconBtn:hover,
+.text_title_midoku:hover,
+.text_title_kidoku:hover,
+.forumList_title-unread:hover,
+.forumList_title-read:hover,
+.treeview .hitarea:hover,
+.treeview .expandable-hitarea:hover {
+  color: #ff5252;
+}
+
+a:hover,
+a.cl_fontOutlineLink:hover,
+.table-top td a:hover,
+.table-left td a:hover,
+.textLink:hover,
+.mainTable_title .todayBtn:hover {
+  color: #ff5252;
+}
+
+.toggle-button {
+  background-color: #555555;
+}
+
+.toggle-button:has(:checked) {
+  background-color: #4bd865;
+}
+
+.toggle-button:has(:disabled) {
+  background-color: #b5b5b5;
+}
+
+.toggle-button::after {
+  background-color: #fff;
+}
+
+.todayBtn:hover,
+.cl_linkSelected {
+  color: #ff5252!important;
+}
+
+/* タイムカード通常色*/
+.bgc_timecard-normal {
+  background-color: #9a883c!important;
+}
+
+/* タイムカード残業色*/
+.bgc_timecard-zangyo {
+  background-color: #44778f!important;
+}
+
+/* タイムカード深夜残業色*/
+.bgc_timecard-sinya {
+  background-color: #465378!important;
+}
+
+/* タイムカード休憩色*/
+.anp_kunren,
+.bgc_timecard-kyuukei {
+  background-color: #d07377!important;
+}
+
+/* スケジュールタイトル設定用背景色（青） */
+.bgc_fontSchTitleBlue {
+  background-color: #4f7ef4!important;
+}
+/*fullcalendar.js スケジュールヘッダー色（未指定）*/
+#calendar .fc-event-skin.fc-event-vert {
+  background-color: #4f7ef4;
+}
+
+
+/* スケジュールタイトル設定用背景色（赤 */
+.bgc_fontSchTitleRed {
+  background-color: #e9654e!important;
+}
+
+/* スケジュールタイトル設定用背景色（緑 */
+.bgc_fontSchTitleGreen {
+  background-color: #49975b!important;
+}
+
+/* スケジュールタイトル設定用背景色（黄 */
+.bgc_fontSchTitleYellow {
+  background-color: #ebbe5e!important;
+}
+
+/* スケジュールタイトル設定用背景色（黒 */
+.bgc_fontSchTitleBlack {
+  background-color: #e3e3e3!important;
+}
+
+/* スケジュールタイトル設定用背景色（紺 */
+.bgc_fontSchTitleNavy {
+  background-color: #8088dd!important;
+}
+
+/* スケジュールタイトル設定用背景色（赤紫 */
+.bgc_fontSchTitleWine {
+  background-color: #a951b1!important;
+}
+
+/* スケジュールタイトル設定用背景色（シアン */
+.bgc_fontSchTitleCien {
+  background-color: #50b8bf!important;
+}
+
+/* スケジュールタイトル設定用背景色（グレー */
+.bgc_fontSchTitleGray {
+  background-color: #8e8e8e!important;
+}
+
+/* スケジュールタイトル設定用背景色（水色 */
+.bgc_fontSchTitleMarine {
+  background-color: #67afd5!important;
+}
+
+/* スケジュールタイトル色（青） */
+.cl_fontSchTitleBlue,
+.cl_fontNtpTitleBlue,
+.cl_fontWmlTitleBlue {
+  color: #4f7ef4!important;
+}
+
+/* スケジュールタイトル色（赤 */
+.cl_fontSchTitleRed,
+.cl_fontNtpTitleRed,
+.cl_fontWmlTitleRed {
+  color: #e9654e!important;
+}
+
+/* スケジュールタイトル色（緑 */
+.cl_fontSchTitleGreen,
+.cl_fontNtpTitleGreen,
+.cl_fontWmlTitleGreen {
+  color: #49975b!important;
+}
+
+/* スケジュールタイトル色（黄 */
+.cl_fontSchTitleYellow,
+.cl_fontNtpTitleYellow,
+.cl_fontWmlTitleYellow {
+  color: #ebbe5e!important;
+}
+
+/* スケジュールタイトル色（黒 */
+.cl_fontSchTitleBlack,
+.cl_fontNtpTitleBlack,
+.cl_fontWmlTitleBlack {
+  color: #e3e3e3!important;
+}
+
+/* スケジュールタイトル色（紺 */
+.cl_fontSchTitleNavy,
+.cl_fontWmlTitleNavy {
+    color: #8088dd!important;
+}
+
+/* スケジュールタイトル色（赤紫 */
+.cl_fontSchTitleWine,
+.cl_fontWmlTitleWine {
+    color: #a951b1!important;
+}
+
+/* スケジュールタイトル色（シアン */
+.cl_fontSchTitleCien,
+.cl_fontWmlTitleCien {
+    color: #50b8bf!important;
+}
+
+/* スケジュールタイトル色（グレー */
+.cl_fontSchTitleGray,
+.cl_fontWmlTitleGray {
+    color: #8e8e8e!important;
+}
+
+/* スケジュールタイトル色（水色 */
+.cl_fontSchTitleMarine,
+.cl_fontWmlTitleMarine {
+    color: #67afd5!important;
+}
+
+/* 添付ファイル用 文字色 */
+.selectForm > option {
+  color: #e3e3e3;
+}
+
+/* 管理者設定用ページタイトルkanriPageTitle */
+.kanriPageTitle {
+  background-color: #384c5a;
+  border-color: #1f3340;
+}
+
+/* メイン画面 インフォメーション プラグイン名 */
+.info_pluginName {
+    background-color: #715f9c;
+    color: #fff;
+}
+
+/* 在席管理 施設予約ラベル */
+.zsk_rsvLabel-used {
+  background: linear-gradient(90deg,#ffa093 0px,#ffa093 4px,#ffffff 4px);
+}
+
+.zsk_headerLabel-used {
+  background: linear-gradient(90deg,#ffa093 0px,#ffa093 10px,#ffffff 10px);
+    color: #333;
+}
+
+.zsk_rsvLabel-unused {
+  background: linear-gradient(90deg,#ffffff 0px,#ffffff 4px,#5b5c61 4px,#5b5c61 5px,#ffffff 5px);
+}
+
+.zsk_headerLabel-unused {
+  background: linear-gradient(90deg,#ffffff 0px,#ffffff 9px,#5b5c61 9px,#5b5c61 10px,#ffffff 10px);
+    color: #333;
+}
+
+.cl_fontArrow {
+  color: #e3e3e3!important;
+}
+
+/* スクロールバー(ホバー時に表示され、リストの上に被せるタイプ) */
+.scrollInList1::-webkit-scrollbar-thumb{
+  background-color: #aaa;
+}
+/* スクロールバー(常に表示され、リストの上に被せるタイプ) */
+.scrollInList2:hover::-webkit-scrollbar-thumb{
+  background-color: #aaa!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*要素指定クラスclass------------------------------------------------------------------------------------------------*/
+/* footer */
+footer {
+  border: none;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select,
+.inputcomponent  {
+  border-color: #5b5c61 ;
+  border-radius: 3px;
+  color: #e3e3e3;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+textarea:disabled,
+.inputcomponent:disabled  {
+  background-color: #b5b5b5;
+  border-color: #d4d4d4;
+  border-radius: 3px;
+}
+
+select:not([multiple])  {
+  background: url(../../../images/original/select_arrow_dark.png), linear-gradient(to bottom, #34363c 0%,#34363c 100%);
+  background-position: right 4px top 6px, top;
+  background-repeat: no-repeat, repeat;
+  background-size: 8px 9px,100%;
+  border-color: #5b5c61 ;
+  border-radius: 3px;
+  color: #e3e3e3;
+}
+
+select:disabled:not([multiple]) {
+  background: url(../../../images/original/select_arrow_dark.png), linear-gradient(to bottom, #b5b5b5 0%,#b5b5b5 100%);
+  background-position: right 4px top 6px, top;
+  background-repeat: no-repeat, repeat;
+  background-size: 8px 9px,100%;
+  border-color: #d4d4d4;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+tr.border_none > td.userSelect_fromTo > select {
+  background: linear-gradient(to bottom, #34363c 0%,#34363c 100%)!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*BEMにのっとったclass------------------------------------------------------------------------------------------------*/
+
+.baseBtn,
+.labelBtn,
+.mailMenu_button,
+.ntp_goodButton,
+.mainConfigBtn,
+.mainBtn,
+.ui-dialog-buttonpane .ui-dialog-buttonset button{
+  color: #e3e3e3!important;
+  background-image: linear-gradient(to bottom, #34363c, #1d1d1f)!important;
+  border-color: #5b5c61!important;
+}
+
+@media all and (-ms-high-contrast: none) { /* IE10,11用 */
+    .baseBtn i,
+    .mailMenu_button i,
+    .webIconBtn i {
+        background: none!important;
+    }
+}
+
+.calendar_today {
+  background-color: #424129;
+  color: #e3e3e3;
+}
+
+.cal_label-todo,
+.cal_label-action {
+    background-color:#c58c69;
+}
+
+.clock_year, .clock_time {
+  color: #fff;
+}
+
+input[type="text"].clockpicker + .picker-acs,
+input[type="text"].datepicker + .picker-acs
+ {
+  background-color: #e9ecef;
+  border-color: #aaa;
+  color: #495057;
+
+}
+
+.dialog_changeSel {
+  background-color: #eeeeee;
+}
+
+.dialog_changeSel.dialog_changeSel-hover {
+  background-color: #908f8f;
+}
+
+.dialog_changeSel-select {
+  background-color: #ffffff;
+}
+
+.forum_button {
+  background: #B5B5B5;
+  border-color: #B5B5B5;
+  color:#333;
+  border-radius:50%;
+}
+
+.forumList_title-read {
+  color: #6c838c;
+}
+
+.forumList_title-unread {
+  color: #529ebd;
+}
+
+.helpBubble {
+    color:#e3e3e3;
+}
+
+.hikokai_photo-l {
+  BACKGROUND-IMAGE: url(../../../../images/classic/photo.png);
+  background-repeat: no-repeat;
+  color: #363636;
+}
+
+.hikokai_photo-m {
+  BACKGROUND-IMAGE: url(../../../images/original/photo_hikoukai_bg.png   );
+  background-repeat: no-repeat;
+  background-size:contain;
+  color: #363636;
+}
+
+.hikokai_photo-s {
+  /* border: solid 1px; */
+  BACKGROUND-IMAGE: url(../../../images/original/photo_hikoukai_bg.png   );
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #363636;
+}
+
+.iconBtn-border {
+  background-image: linear-gradient(to bottom, #34363c, #1d1d1f);
+  border-color: #5b5c61;
+  color: #e3e3e3;
+}
+
+.iconBtn-noBorder {
+  background-color: transparent;
+}
+
+.kanriPageTitle .baseBtn i {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+}
+
+.baseBtn i, .mailMenu_button i {
+  color: #e3e3e3!important;
+}
+
+.loader-ball > * {
+  background-color: #fff;
+}
+
+.mainTable_header-evt,
+.side_header-folding,
+.table_header-evt,
+.searchMenu_title,
+.searchMenu_top,
+.searchMenu_title-select {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.mainTable_header-evt:hover,
+.side_header-folding:hover,
+.table_header-evt:hover,
+.toukei_plugin:hover,
+.toukei_option:not(.toukei_option-select):hover,
+.toukei_optionClose:hover,
+.searchMenu_title:hover,
+.searchMenu_top:hover,
+.searchMenu_title-select:hover {
+  opacity: 0.75;
+  transition: 0.2s;
+}
+
+.mainTable_title-sub {
+  background-color: #4f5860!important;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* meneロゴ ホバー時発光エフェクト */
+.menu_logo:hover:after {
+  background: rgba(255,255,255,0.3);
+}
+
+/** リンク他 無効ユーザ */
+.mukoUser {
+  opacity: 0.6;
+  filter: alpha(opacity=60);        /* ie lt 8 */
+  -ms-filter: "alpha(opacity=60)";  /* ie 8 */
+  -moz-opacity: 0.6;                 /* FF lt 1.5, Netscape */
+  -khtml-opacity: 0.6;              /* Safari 1.x */
+  zoom: 1;
+}
+
+/* オプション 無効ユーザ */
+.mukoUserOption {
+  color: #999;
+}
+
+/** 選択UI 無効化カラー*/
+.multiselector_searchBtn-teisi::after,
+.multiselector_selectTbl-teisi::after,
+.multiselector_selection-teisi::after,
+fieldset:disabled .multiselector_searchBtn::after,
+fieldset:disabled .multiselector_selectTbl::after,
+fieldset:disabled .multiselector_selection::after {
+  background-color: #1a1919;
+}
+
+/* 日報 未チェック */
+.ntp_checkContent {
+  border-color: #4f7ef4!important;
+}
+
+/* 日報 分析 ラベルカラー */
+.ntp_labelJutyu {
+  background-color: #eaa228;
+}
+.ntp_labelMitsumori {
+  background-color: #4bb2c5;
+}
+
+.pageTitle
+{
+  border-color: #5b5c61;
+  background-color: #34363c;
+}
+
+.rng_apiResult-success {
+  background-color: #308122;
+}
+
+.rng_apiResult-failure {
+  background-color: #9d2121;
+}
+
+/*セレクトボックス マイグループ */
+.select_mygroup-bgc {
+  background: #d7781e!important;
+}
+
+/*セレクトボックス 表示リスト */
+.select_myschedule-bgc {
+  background: #529ebd!important;
+}
+
+
+/*セレクトボックス 代表アカウント */
+.select_daihyo-bgc {
+  background: #4e61a0!important;
+}
+
+.side_accountName-hover {
+  color: #ff5252!important;
+  text-decoration: underline;
+}
+
+.side_bbs-left .side_header,
+.main_bbsList-header{
+  border-bottom-color: #5b5c61;
+}
+
+.side_confGear:hover,
+.cl_helpIcon-hover:hover {
+  color: #ff5252;
+  transition: 0.2s;
+}
+
+.sml_noRead {
+  background-color:#1976d2;
+}
+
+
+/* ショートメール 宛先選択ダイアログ*/
+.sml_dialogTab-select {
+  background-repeat: repeat-x;
+  text-align:center;
+  padding:3px;
+  border-top:1px #999999 solid;
+  border-right:1px #999999 solid;
+  border-bottom:0px;
+  cursor:pointer;
+}
+
+.sml_dialogTabGroup {
+  border-left:1px solid #999999!important;
+}
+
+.sml_dialogTab {
+  background:none!important;
+  background-color:#888888!important;
+  border-bottom:1px solid #999999!important;
+}
+
+.sml_dialogTab span {
+  color:#ffffff!important;
+}
+
+.sml_dialogTab-hover {
+  background-color:#999999!important;
+}
+
+.sml_dialogTabSpace {
+  border-bottom:1px solid #999999!important;
+}
+
+.sml_dialogContent-border {
+  border-top:0px;
+  border-bottom:1px solid #999999;
+  border-left:1px solid #999999;
+  border-right:1px solid #999999;
+}
+
+.table_header_icon_search {
+    background-color: #b5b5b5;
+    border:1px #aaa solid;
+}
+
+/* タブ表示 */
+.tab_list {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+
+.tabHeader_tab-off {
+  background-color: #454b50;
+}
+
+.todayBtn,
+.table-left td .todayBtn,
+.table-top td .todayBtn {
+  color: #e3e3e3;
+}
+
+.mail_btn_on {
+  background-color: #777777!important;
+  color: #ffffff!important;
+}
+
+/* カレンダーダイアログ*/
+.ui-datepicker {
+  background: none;
+}
+
+.ui-datepicker-calendar, .cht_reply {
+  background-color: #2b2c2d;
+}
+
+#ui-datepicker-div {
+  background-color: #2b2c2d!important;
+}
+
+.ui-datepicker-month {
+  color: #e3e3e3;
+}
+
+.ui-datepicker-year {
+  color: #e3e3e3;
+}
+
+.ui-datepicker-title {
+  color: #e3e3e3;
+}
+
+.ui-datepicker  .ui-datepicker-today .ui-state-default {
+  background: #ff8040!important;
+}
+
+.ui-datepicker .ui-widget-header{
+  background-color: #5b5c61!important;
+  color: #fff!important;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-state-default:hover,
+.ui-datepicker  .ui-datepicker-today .ui-state-default:hover,
+.clpClear_button:hover {
+  background: #679afa!important;
+}
+
+.ui-datepicker .ui-state-default,
+.clpClear_button {
+  background: linear-gradient(to bottom, #fff, #d9dae7)!important;
+  border-radius: 3px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.clpClear_button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  color:#fff!important;
+}
+
+.ui-datepicker .ui-widget-header .ui-icon {
+  background-color: #fff!important;
+}
+
+/* 時計ダイアログ クリアボタン*/
+.clpClear_area {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ebebeb;
+    border-radius: 0 0 5px 5px
+}
+
+.clpClear_button {
+  background: #2b2c2d!important;
+}
+
+/* 時計ダイアログ*/
+.clockpicker-canvas-bg {
+  fill: #679afa;
+}
+
+.clockpicker-tick {
+  color: #fff;
+}
+
+.clockpicker-plate {
+  background-color: #2b2c2d!important;
+}
+
+.clockpicker-popover .popover-title,
+.clockpicker-popover .clpClear_area  {
+  background-color: #333333!important;
+  color: #e3e3e3;
+}
+
+.clockpicker-popover .popover-content {
+  background-color: #2b2c2d!important;
+}
+.text-primary {
+  color: #679afa;
+}
+
+.popover {
+  border: 1px solid #fff;
+  padding: 0px;
+
+}
+
+.popover.bottom>.arrow {
+  border-bottom-color: #fff;
+}
+
+.popover.bottom>.arrow:after {
+  border-bottom-color: #333333;
+}
+
+/* ユーザ非公開画像*/
+.userImg-hikokai {
+  background-image: url(../../../images/original/photo_hikoukai_bg.png);
+  background-repeat: no-repeat;
+  color: #363636;
+}
+
+.webIconBtn {
+  background-color: transparent;
+  color: #e3e3e3;
+}
+
+.zaiseki_select-zaiseki {
+  background: url("../../../images/original/select_arrow_dark.png"),linear-gradient(to bottom, #d7781e 0%, #d7781e 100%)!important;
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #fff;
+}
+
+.zaiseki_select-huzai {
+  background: url("../../../images/original/select_arrow_dark.png"),linear-gradient(to bottom, #4e61a0 0%, #4e61a0 100%)!important;
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #fff;
+}
+
+.zaiseki_select-sonota {
+  background: url("../../../images/original/select_arrow_dark.png"),linear-gradient(to bottom, #2e9083 0%, #2e9083 100%)!important;
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #fff;
+}
+
+.zskBtn-huzai,
+.zskBtn-sonota,
+.zskBtn-zaiseki{
+  border: none;
+}
+
+/* Auto Complete */
+.ui-autocomplete {
+  background-color: #34363c!important;
+}
+.ui-widget-content a {
+  color: #e3e3e3!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* HTML属性指定 */
+#glayer {
+  background-color: #1F1F1F;
+}
+
+#clock div{
+    background-color: #667888!important;
+    color: #fff;
+}
+
+#calendar .fc-event-skin.fc-event-hori .fc-event-title {
+    color: #333;
+}
+
+
+.information_body {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.information_top {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+}
+
+.information_middle {
+    padding-top: 10px;
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+}
+
+.information_messageArea {
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+  width: 85%;
+}
+
+.information_bottom {
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-width: 7px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 20px;
+}
+
+.fileDropArea-drag {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fileDropArea-label {
+  color: #ffffff;
+  background-color: rgba(28, 28, 28, 0.8);
+}
+
+.fileUpload-loading {
+  color: #ffffff;
+  border: 1px solid #c5c5c5;
+/*
+  background-color: rgba(28, 28, 28, 0.8);
+*/
+  background-color: rgba(60, 62, 68, 0.8);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.fileUpload-loading-content {
+  background-color: #362b36;
+  border-radius: 10px;
+}
+
+/* tinyMCE用CSS-------------------------------------------------------------------------------------------------------*/
+
+.mce-btn:hover {
+  border: solid 1px #fff!important;
+}
+
+.mce-caret {
+  border-top: 4px solid #fff!important;
+}
+
+.mce-ico,
+.mce-caret,
+.mce-menubtn button i {
+  color: #fff!important;
+}
+
+.mce-text,
+.mce-txt,
+.mce-title,
+.mce-label {
+  color: #fff!important;
+}
+
+.mce-btn .mce-active,
+.mce-btn.mce-active:hover {
+  color: #fff!important;
+}
+
+.mce-btn.mce-abs-layout-item.mce-first,
+.mce-btn.mce-abs-layout-item.mce-last {
+  border: solid 1px #fff!important;
+}
+
+.mce-menu-item.mce-disabled .mce-text,
+.mce-menu-item.mce-disabled .mce-ico {
+  color: #adadad!important;
+}
+
+.mce-textbox {
+  background-color: #34363c!important;
+  border-color: #5b5c61!important;
+  border-radius: 3px!important;
+  color: #e3e3e3!important;
+}
+
+.mce-i-checkbox {
+  color: #000000!important;
+}
+/* -------------------------------------------------------------------------------------------------------------------*/

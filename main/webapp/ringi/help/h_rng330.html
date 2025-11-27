@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 実行テスト</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 実行テスト ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>決裁後アクションの実行テストを行います。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_rng330.gif" alt="稟議 実行テスト"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+    <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+      <h2 class="num-back01">再計算ボタン</h2>
+      <p>フォーム情報を再計算します。</p>
+    </td>
+    <td>
+      <h2 class="num-back02">閉じるボタン</h2>
+      <p>ウィンドウを閉じます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back03">グループ選択コンボ</h2>
+      <p>グループを選択します。</p>
+    </td>
+    <td>
+      <h2 class="num-back04">グループ選択アイコン</h2>
+      <p>グループ選択ウィンドウを表示します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back05">ユーザ選択コンボ</h2>
+      <p>ユーザを選択します。</p>
+    </td>
+      <td>
+      <h2 class="num-back06">カレンダーボタン</h2>
+      <p>日付選択カレンダーを表示します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back07">時計ボタン</h2>
+      <p>時間選択用の時計を表示します。</p>
+    </td>
+      <td>
+      <h2 class="num-back08">添付ボタン</h2>
+      <p>フォルダウィンドウが開きます。フォルダウィンドウでファイルを選択すると、添付ボタンの下にファイル名が表示されます。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back09">ファイル名</h2>
+      <p>ファイルをダウンロードします。</p>
+    </td>
+      <td>
+      <h2 class="num-back10">削除アイコン</h2>
+      <p>ファイルを削除します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back11">連携API選択コンボ</h2>
+      <p>実行テストを行う連携APIを選択します。</p>
+    </td>
+      <td>
+      <h2 class="num-back12">リクエスト情報を作成ボタン</h2>
+      <p>フォーム情報、経路情報、オプションに入力された内容と連携API情報から作成されたリクエスト情報を表示します。</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <h2 class="num-back13">繰り返し実行対象選択コンボ</h2>
+      <p>繰り返し実行の何回目を実行テストするかを選択します。</p>
+    </td>
+      <td>
+      <h2 class="num-back14">実行ボタン</h2>
+      <p>テストを実行します。実行結果がレスポンス欄に表示されます。</p>
+    </td>
+    </tr>
+    </table>
+
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+      <h2>フォーム情報</h2>
+      <p>共有テンプレートに登録されているフォーム情報にテスト用の値を入力します。</p>
+      <h2>経路情報</h2>
+      <p>経路情報にテスト用の値を入力します。</p>
+      <h2>オプション</h2>
+      <p>申請者、申請日時にテスト用の値を入力します。</p>
+      <h2>連携API</h2>
+      <p>テストする連携APIを選択し、実行します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

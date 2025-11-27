@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+.caption {
+  overflow: hidden;
+  padding: 3px;
+}
+
+.caption li:last-child {
+  margin-left: auto;
+}
+
+.caption ul {
+  align-items: flex-start;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.change_memo-area {
+  width: calc(100% - 377px);
+}
+
+.delete_button-pos {
+  top: 0px;
+  right: 0px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.hp12{
+  height: 12px!important;
+}
+
+.hp422{
+  height: 422px!important;
+}
+
+.list_checkbox {
+  pointer-events: none!important;
+}
+
+.list_label-margin {
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+
+.list_label-padding {
+  padding-bottom: 0px!important;
+  padding-left: 3px!important;
+  padding-right: 3px!important;
+  padding-top: 0px!important;
+}
+
+.mb1 {
+  margin-bottom: 1px!important;
+}
+
+.mb40 {
+  margin-bottom: 40px!important;
+}
+
+.mt1 {
+  margin-top: 1px!important;
+}
+
+.mt2 {
+  margin-top: 2px!important;
+}
+
+.mt3 {
+  margin-top: 3px!important;
+}
+
+.main-list {
+  display: none;
+}
+
+.memo_count {
+  line-height: 20px!important;
+  padding: 0px 5px;
+}
+
+.memo_edate {
+  margin-left: auto!important;
+  margin-right: 0px!important;
+}
+
+.memo_hover_color {
+  z-index:99;
+}
+
+.memo_list-bottom:last-child .list_content-on {
+  border-bottom: none!important;
+}
+
+.memo_option {
+  margin: 5px 0px;
+}
+
+.memo_textarea {
+  border-radius: 0!important;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  resize: none;
+}
+
+.memo_textarea:focus {
+  box-shadow: none!important;
+  outline: none !important;
+}
+
+.select_none {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.side_multileft-memo {
+  font-size: 0.9rem;
+  margin-right: 10px;
+  width: 50%;
+  max-width: 372px;
+}
+
+.table-top {
+  border: none;
+}
+
+.table-top tbody tr:first-child .list_content-on {
+  border-top: none!important;
+}
+
+.table-top tbody tr:last-child td {
+  border-bottom-style: none;
+}
+
+.table-top tbody tr .pos_rel {
+  background-clip: padding-box;
+}
+
+.text-title {
+  overflow: hidden!important;
+  text-overflow: ellipsis;
+  white-space: nowrap!important;
+}
+
+.vw100 {
+  width: 100vw;
+}
+
+.wp65 {
+  width: 65px!important;
+}
+
+.wp85 {
+  width: 85px!important;
+}
+
+.wp90{
+ width: 90px!important; 
+}

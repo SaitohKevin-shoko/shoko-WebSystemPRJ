@@ -1,0 +1,376 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=address');chengeHeaderText('[ アドレス帳 ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="アドレス帳画面一覧" cellpadding="0" cellspacing="0">
+        <tr>
+        <th><a href="h_adr0100.html"><img src="./images/scr_help_adr0100.gif" alt="アドレス一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr0100.html">アドレス一覧 会社</a>
+          ・
+          <a href="h_adr0101.html">氏名</a>
+          ・
+          <a href="h_adr0102.html">担当者</a>
+          ・
+          <a href="h_adr0103.html">プロジェクト</a>
+                    ・
+          <a href="h_adr0104.html">詳細検索</a>
+                    ・
+          <a href="h_adr0105.html">コンタクト履歴</a>
+          </strong>
+          <br><br>
+          アドレス帳を一覧表示します。会社検索、氏名検索、担当者検索、プロジェクト検索、詳細検索検索、コンタクト履歴検索でそれぞれの表示切り替えができます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr0200.html"><img src="./images/scr_help_adr020.gif" alt="アドレス登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr0200.html">アドレス登録</a>
+          ・
+          <a href="h_adr0201.html">編集</a>
+          ・
+          <a href="h_adr020kn.html">確認</a>
+          </strong>
+          <br><br>
+          アドレスの登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr030.html"><img src="./images/scr_help_adr030.gif" alt="管理者設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr030.html">管理者設定メニュー</a>
+          </strong>
+          <br><br>
+          管理者グループに所属するユーザのみ使用可能なメニュー画面です。<br>
+          初期値設定、権限設定の機能へ遷移できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr320.html"><img src="./images/scr_help_adr320.gif" alt="アドレス帳登録者制限設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr320.html">アドレス帳登録者制限設定</a>
+          </strong>
+          <br><br>
+          アドレス登録可能なユーザを設定できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr300.html"><img src="./images/scr_help_adr300.gif" alt="初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr300.html">初期値設定</a>
+          </strong>
+          <br><br>
+          アドレス登録の初期値を設定できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr040.html"><img src="./images/scr_help_adr040.gif" alt="権限設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr040.html">権限設定</a>
+          ・
+          <a href="h_adr040kn.html">確認</a>
+          </strong>
+          <br><br>
+          役職編集権限、業種編集権限、会社編集権限、ラベル編集権限、エクスポート権限を設定できます。
+        </td>
+        </tr>
+        <tr>
+        <th><a href="h_adr330.html"><img src="./images/scr_help_adr330.gif" alt="アドレス管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr330.html">アドレス管理</a>
+          </strong>
+          <br><br>
+          アドレスを管理できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr050.html"><img src="./images/scr_help_adr050.gif" alt="個人設定メニュー"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr050.html">個人設定メニュー</a>
+          </strong>
+          <br><br>
+          アドレス帳の個人設定を行う機能のメニュー画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr310.html"><img src="./images/scr_help_adr310.gif" alt="初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr310.html">初期値設定</a>
+          </strong>
+          <br><br>
+          アドレス登録の初期値を設定できます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr060.html"><img src="./images/scr_help_adr060.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr060.html">表示設定</a>
+          </strong>
+          <br><br>
+          アドレス帳や会社一覧に表示する件数の設定を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr070.html"><img src="./images/scr_help_adr0700.gif" alt="アドレスインポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr0700.html">アドレスインポート(会社指定)</a>
+          ・
+          <a href="h_adr0701.html">(アドレス・会社情報同時)</a>
+          <br>
+          <a href="h_adr070kn0.html">(会社指定)確認</a>
+          ・
+          <a href="h_adr070kn1.html">(アドレス・会社情報同時)確認</a>
+          </strong>
+          <br><br>
+          アドレスのインポートを行う画面です。<br>
+          アドレス情報をCSV形式のファイルでアップロードします。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr210.html"><img src="./images/scr_help_adr210.gif" alt="役職一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr210.html">役職一覧</a>
+          </strong>
+          <br><br>
+          役職の管理を行う画面です。役職の追加、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr2200.html"><img src="./images/scr_help_adr2200.gif" alt="役職登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr2200.html">役職登録</a>
+          ・
+          <a href="h_adr2201.html">編集</a>
+          </strong>
+          <br><br>
+          役職の登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr080.html"><img src="./images/scr_help_adr080.gif" alt="業種一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr080.html">業種一覧</a>
+          </strong>
+          <br><br>
+          業種の管理を行う画面です。業種の追加、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr0900.html"><img src="./images/scr_help_adr0900.gif" alt="業種登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr0900.html">業種登録</a>
+          ・
+          <a href="h_adr0901.html">編集</a>
+          </strong>
+          <br><br>
+          業種の登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr100.html"><img src="./images/scr_help_adr101.gif" alt="会社一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr100.html">会社一覧</a>
+          </strong>
+          <br><br>
+          会社の管理を行う画面です。会社の追加、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr1100.html"><img src="./images/scr_help_adr1100.gif" alt="会社登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr1100.html">会社登録</a>
+          ・
+          <a href="h_adr1101.html">編集</a>
+          ・
+          <a href="h_adr110kn.html">確認</a>
+          </strong>
+          <br><br>
+          会社の登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr111.html"><img src="./images/scr_help_adr111.gif" alt="拠点登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr111.html">拠点登録</a>
+          </strong>
+          <br><br>
+          拠点の登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr120.html"><img src="./images/scr_help_adr120.gif" alt="会社インポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr120.html">会社インポート</a>
+          ・
+          <a href="h_adr120kn.html">確認</a>
+          </strong>
+          <br><br>
+          会社のインポートを行う画面です。<br>
+          会社情報をCSV形式のファイルでアップロードします。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr280.html"><img src="./images/scr_help_adr280.gif" alt="カテゴリ設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr280.html">カテゴリ設定</a>
+          </strong>
+          <br><br>
+          ラベルカテゴリの管理を行う画面です。カテゴリの追加、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr2900.html"><img src="./images/scr_help_adr2900.gif" alt="カテゴリ登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr2900.html">カテゴリ登録</a>
+          ・
+          <a href="h_adr2901.html">編集</a>
+          </strong>
+          <br><br>
+          カテゴリの登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr130.html"><img src="./images/scr_help_adr130.gif" alt="ラベル一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr130.html">ラベル一覧</a>
+          </strong>
+          <br><br>
+          ラベルの管理を行う画面です。ラベルの追加、並び替えなどが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr1400.html"><img src="./images/scr_help_adr1400.gif" alt="ラベル登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr1400.html">ラベル登録</a>
+          ・
+          <a href="h_adr1401.html">編集</a>
+          </strong>
+          <br><br>
+          ラベルの登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr160.html"><img src="./images/scr_help_adr160.gif" alt="コンタクト履歴一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr160.html">コンタクト履歴一覧</a>
+          </strong>
+          <br><br>
+          アドレス帳に登録されている相手とのコンタクト履歴を一覧表示します。<br>
+          コンタクト履歴の追加・エクスポートが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr161.html"><img src="./images/scr_help_adr161.gif" alt="コンタクト履歴"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr161.html">コンタクト履歴</a>
+          </strong>
+          <br><br>
+          相手とのコンタクト履歴を表示します。<br>
+          コンタクト履歴の追加、編集などが出来ます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_adr1700.html"><img src="./images/scr_help_adr1700.gif" alt="コンタクト履歴登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_adr1700.html">コンタクト履歴登録</a>
+          ・
+          <a href="h_adr1701.html">コンタクト履歴編集</a>
+          </strong>
+          <br><br>
+          コンタクト履歴の登録・修正を行う画面です。
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

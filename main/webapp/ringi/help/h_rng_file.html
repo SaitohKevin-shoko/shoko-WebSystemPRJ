@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 稟議 申請内容：添付</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_rng_left_list.html');chengeHeaderText('[ 稟議 申請内容：添付 ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="稟議 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>申請内容として数値を登録するダイアログです。<br>
+        対象の申請内容および設定した定数値の合計を表示します。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/rng_file.gif" alt="稟議 申請内容：添付 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more_new" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <td>
+      <h2 class="num-back01">添付ボタン</h2>
+      <p>添付ファイル選択画面をポップアップで表示します。ファイルを選択し、確定すると添付のリストに選択したファイル名が追加されます。</p>
+    </td>
+    <td>
+      <h2 class="num-back02">削除ボタン</h2>
+      <p>添付のリストで選択中の添付ファイルを削除します。</p>
+    </td>
+    </tr>
+
+    <tr>
+     <td>
+      <h2 class="num-back03">OKボタン</h2>
+      <p>申請内容の設定を完了し、このダイアログを閉じます。</p>
+     </td>
+     <td>
+      <h2 class="num-back04">キャンセルボタン</h2>
+      <p>申請内容の設定を行わずに、このダイアログを閉じます。</p>
+     </td>
+    </tr>
+
+
+    </table>
+
+    <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>タイトル</h2>
+    <p>申請内容のタイトルを入力します(20文字以内)。</p>
+    <h2>フォームID</h2>
+    <p>この申請内容固有のIDを設定します（20文字以内）。</p>
+    <h2>対象フォームID</h2>
+    <p>計算対象とする申請内容のフォームIDおよび任意の定数を選択します。</p>
+    <h2>単位</h2>
+    <p>計算結果に付与する単位を入力します。</p>
+    <h2>小数点以下桁</h2>
+    <p>計算結果が小数となった場合、小数第何位まで求めるかを入力します。</p>
+    <h2>丸めこみ</h2>
+    <p>計算結果が小数となった場合、指定した小数点以下桁に丸めこむための方法を選択します。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

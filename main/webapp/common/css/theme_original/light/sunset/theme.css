@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+/* 背景カラー指定-----------------------------------------------------------------------------------------------------*/
+/* ①   ヘッダ1 表要素ヘッダ メイン画面インフォメーションヘッダ、スケジュール表示グループヘッダ等 */
+.bgC_header1
+ {
+/*オレンジ        */background-color: #fcab49!important;
+ }
+.mainTable_title,
+.portalTabList_tab-forcus,
+.table_title-color,
+.table-top > tbody > tr > th,
+.table-top > thead > tr > th,
+.ui-dialog,
+.ui-dialog .ui-dialog-titlebar,
+.side_header,
+.cht_sideHeader
+ {
+/*オレンジ      */background-color: #fcab49;
+ }
+
+/** 吹き出し枠線色 色指定変数*/
+:root {
+  --bubble-border-color:#fcab49;
+}
+.easyRegister-bubble,
+.cht_selectTab,
+.helpBubbleBtn > .helpBubble,
+.multiselector_filter {
+  border-color: #fcab49;
+}
+
+.bubble-leftBottom:after,
+.bubble-rightBottom:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topcenter:before {
+  border-top: 26px solid #fcab49!important;
+}
+
+.bubble-leftTop:after,
+.bubble-rightTop:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomright:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomleft:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomcenter:before {
+  border-bottom: 26px solid #fcab49!important;
+}
+
+/* ポータルホバー 表示枠線色 */
+.portalTabList ul .portalTabList_tab-nonforcus a:hover {
+    border: 3px solid #fcab49!important;
+}
+
+/* 掲示板 フォーラム一覧 */
+.main_bbsList-header {
+  color: #fff;
+  background-color: #fcab49;
+}
+
+.menu_lockBtn {
+  color: #fcab49;
+}
+
+/* インフォメーション */
+.information_top {
+  background-color: #fcab49;
+}
+
+.information_top,
+.information_middle,
+.information_bottom {
+  border-color: #fcab49;
+}
+
+/* 共通 ユーザ選択UI */
+.multiselector_filter-focus,
+.multiselector_filterContent {
+  background-color: #fcab49;
+}
+
+.cl_multiselector {
+  color: #fcab49!important;
+}
+
+.cl_fontArrow {
+  color: #fcab49!important;
+}
+.selectoutline {
+  outline: 2px solid #fcab49!important;
+}
+.list_content-selected {
+  background-color: #ffeabd;
+  border-bottom: 1px solid #fcab49;
+  border-top: 1px solid #fcab49;
+}
+
+/* ②   ヘッダ2    スケジュール日付背景色、ショートメールタブ背景色、稟議表要素ヘッダ背景色、各設定画面左ヘッダ */
+.bgC_header2
+ {
+/*オレンジ      */background-color: #ffd587!important;
+ }
+
+.cal_header,
+.sml_list_head_menu,
+.table-left > tbody > tr > th,
+.table_common2 > tbody > tr > th,
+.mainTable_th,
+.main_zskSchedule,
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.form_title,
+#form_builder .contents.cell div.title,
+.ug_tit,
+.userGroup_title
+ {
+  /*オレンジ      */background-color: #ffd587;
+ }
+
+#information_top {
+     background-image: linear-gradient(to bottom, #ffd587, #fcab49);
+}
+.information_middle_div {
+    border-color: #fcab49;
+}
+#information_bottom {
+    border-color: #fcab49;
+}
+
+.menu_header button:focus,
+.menu_header input:focus,
+.menu_header select:focus,
+.menu_header textarea:focus,
+.menu_header .inputcomponent:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 1px #ffd587;
+}
+
+.menu_header a:focus {
+  outline-color: #ffd587;
+}
+
+.menu_header button:active,
+.menu_header select:active {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffd587;
+}
+
+/* ③   表セル 各プラグイン表要素のセル背景色(偶数行) */
+.bgC_tableCellEvn {
+/*オレンジ      */background-color: #fff7e9!important;
+}
+.table-top > tbody > tr:nth-child(odd),
+.table_col-even > tbody > tr:nth-child(even) {
+/*オレンジ      */background-color: #fff7e9;
+}
+/* ④   サイドヘッダ  稟議サイドメニューヘッダ、ショートメールサイドメニューヘッダ、掲示板サイドメニューヘッダ */
+.bgC_header3
+ {
+/*オレンジ      */background-color: #ffca71!important;
+ }
+
+/* ⑤   設定項目ヘッダ 管理者設定、個人設定の項目ヘッダ */
+.bgC_settingDt {
+/*オレンジ     */background-image: linear-gradient(to bottom, #fcab49, #ff6600);
+}
+
+.wrapper > .settingList dl:hover{
+   background-color:#ffeabd!important;
+}
+
+.settingList_title {
+/*オレンジ      */background-image: linear-gradient(to bottom, #fcab49, #ff6600);
+}
+
+/* ⑧   プラグインアイコン背景 プラグインアイコン背景 */
+/*
+.menu_ico_base {
+}
+
+.pageTitle li:first-child {
+}
+*/
+/* ⑨   ポータル背景  ポータル背景 */
+.bgC_portalTab {
+/*グレー      */background-color: #ffd587!important;
+}
+
+.portalTabList {
+/*グレー      */background-color: #ffd587;
+}
+
+/* ⑩   cmn003ヘッダ 完了ボタン */
+.bgC_menuHead {
+/*グレー      */background-color: #ef6c00!important;
+}
+
+.menu_header,
+.compBtn {
+/*グレー      */background-color: #f68a25;
+}
+.compBtn:hover {
+/*グレー      */background-color: #fcab49;
+}
+
+button:focus,
+input:focus:not([type=radio]),
+select:focus,
+textarea:focus,
+.inputcomponent:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(239,108,0, 0.6);
+}
+
+a:focus {
+  outline-color: rgba(239,108,0, 0.6);
+}
+
+button:active,
+select:active {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(239,108,0, 0.6);
+}
+
+/** 選択要素 選択時ホバー時背景色*/
+.bgC_selected {
+  background-color:#ffeabd!important;
+}
+.bgC_selectable:hover {
+  background-color:#ffeabd!important;
+}
+
+/* ⑪   プラグイン開閉線     */
+.bgC_menuFoot {
+/*グレー      */background-color: #ef6c00!important;
+}
+
+.menu_close_base {
+/*グレー      */border-top:solid 1px #ef6c00; background: linear-gradient(180deg, #e7e7e7 2px, rgba(255,255,255,0) 50%);
+}
+
+/* ⑫   プラグイン開閉タブ    */
+.bgc_menuClose {
+/*グレー      */background-color: #919191!important;
+}
+.menu_close_btn {
+  color: #fff;
+  background:
+  linear-gradient(70deg, rgba(255,255,255,0), rgba(255,255,255,0) 10%, #919191 12% ) no-repeat top left/51% 100%,
+  linear-gradient(110deg, #919191,#919191 90%, rgba(255,255,255,0) 92%) no-repeat top right/51% 100%;
+}
+
+/* ⑬チャット ホバーカラー */
+.cht_onePost:not(.cht_button-lock):hover,
+.media_selected {
+  background-color: #ffeabd;
+  border-color:#ffd587!important;
+}
+
+.cht_onePost:not(.cht_button-lock):hover {
+  border-color:#ffd587!important;
+}
+
+.cht_reaction:hover {
+  border-color:#fcab49!important;
+}
+
+.cht_title {
+  background-color: #fcab49!important;
+}
+
+.media_selectedColor, .cht_reaction-selected {
+  border-color: #fcab49;
+  background-color: #ffeabd!important;
+}
+
+.cht_grpConfSelectGroup:hover,
+.cht_grpConfSelectedGroup,
+.rngApiConnectConfParam_background-select {
+  background:#ffeabd;
+  border-color: #ffd587!important;
+}
+
+.cht_grpConfAddGroup:hover,
+.cht_grpConfSelectedAddGroup {
+  background:#ffeabd;
+  outline:solid 2px #ffd587;
+}
+
+.inputcomponent:focus-within,
+.cht_inputArea:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(239,108,0, 0.6);
+}
+
+.cht_tempFile:hover, .cht_tempFile:has(~ .cht_deleteIcon:hover) {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(239,108,0, 0.6);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* ホバー時色*/
+
+.menu_btn:hover {
+  background-color: #ffd587;
+}
+
+.memo_hover_color {
+  background-color: #ffeabd!important;
+}
+
+.side_folder-focus:hover,
+.td-hoverChange:hover,
+.content-hoverChange:hover,
+.content-hoverChangeSelected {
+  background-color:#ffeabd!important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table-top > tbody > tr .list_content-on,
+.mainTable > tbody > tr .list_content-on {
+  background-color:#ffeabd!important;
+  border-bottom:1px solid #ffd587!important;
+  border-top:1px solid #ffd587!important;
+}
+
+.bgC_contetHover:hover {
+  background-color:#ffeabd!important;
+}
+
+.table-top > tbody > tr .list_content-topBorder,
+.mainTable > tbody > tr .list_content-topBorder {
+  border-bottom: 1px solid #ffd587!important;
+}

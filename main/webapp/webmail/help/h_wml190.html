@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] WEBメール　個人設定 アカウント編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_wml_left_list.html');chengeHeaderText('[ WEBメール　個人設定　アカウント編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+    <div align="right" class="help-align-right">
+    <input type="button" value="WEBメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+    </div>
+
+    <!-- ナビゲーション -->
+    <div id="help-left-func">
+      <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+          <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+          </div>
+      </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <p>WEBメールの個人設定アカウント編集画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><span class="webmail_mhead">基本認証の場合</span><br><img src="images/scr_help_big_wml190.gif" alt="WEBメール　個人設定 アカウント編集 機能詳細"></h1>
+        <h1 class="help-right-func-img"><span class="webmail_mhead">Oauth認証の場合</span><br><img src="images/scr_help_big_wml190_oauth.gif" alt="WEBメール　個人設定　アカウント編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>アカウント編集確認画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back03">上へボタン</h2>
+          <p>ラジオボタンで選択されている署名の表示順を1つ上げます。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">下へボタン</h2>
+          <p>ラジオボタンで選択されている署名の表示順を1つ下げます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">追加ボタン</h2>
+          <p>ポップアップで署名登録画面が開きます。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">削除ボタン</h2>
+          <p>ラジオボタンで選択されている署名を削除します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">署名リンク</h2>
+          <p>ポップアップで署名登録画面が開きます。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">テーマコンボ</h2>
+          <p>テーマカラーが表示されます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">引用符コンボ</h2>
+          <p>引用符が表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">自動保存コンボ</h2>
+          <p>自動保存コンボが表示されます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back11">全グループから選択ボタン</h2>
+          <p>ポップアップで全グループから選択画面が開きます。<br>
+            全グループから選択画面でユーザを選択し、適用ボタンを押すと、<br>
+            クリックしたユーザが選択ユーザに表示されます。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">グループコンボ</h2>
+          <p>選択したグループに所属するユーザがユーザリストに表示されます（既にメンバーに追加されているユーザは表示されません）。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">グループボタン</h2>
+          <p>ポップアップでグループ選択画面が開きます。 グループ選択画面でグループをクリックすると、 クリックしたグループが選択グループに表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">追加ボタン</h2>
+          <p>ユーザリストで選択されているユーザを、メンバーリストに追加します。</p> 
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back15">削除ボタン</h2>
+          <p>メンバーリストで選択されているユーザを、メンバーリストから除外します。</p>
+        </td>
+        <th>
+          <h2 class="num-back16">認証ボタン</h2>
+          <p>Google, Exchangeの各認証画面が開きます。認証が完了すると認証済になります。</p>
+        </th>
+        </tr>
+        </table>
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>アカウント名</h2><p>アカウント名を表示します。</p>
+    <h2>Oauth認証</h2><p>認証状態を表示します。</p>
+    <h2>署名</h2><p>署名を表示します。</p>
+    <h2>署名自動挿入</h2><p>署名自動挿入を入力します。</p>
+    <h2>自動TO</h2><p>自動TOを入力します。</p>
+    <h2>自動CC</h2><p>自動CCを入力します。</p>
+    <h2>自動BCC</h2><p>自動BCCを入力します。</p>
+    <h2>テーマ</h2><p>テーマを選択します。</p>
+    <h2>引用符</h2><p>引用符を選択します。</p>
+    <h2>自動保存</h2><p>自動保存を選択します。</p>
+    <h2>代理人</h2><p>代理人を選択します。</p>
+    </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

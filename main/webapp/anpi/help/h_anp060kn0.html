@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] メッセージ配信確認</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_anp_left_list.html');chengeHeaderText('[ メッセージ配信確認 ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="安否確認 トップへ" class="btn_base0" onClick="commonHelpLocationChange('../../anpi/help/index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>各ユーザへ配信する安否確認の内容を登録し、送信先ユーザへメールを送信する画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_anp060kn0.gif" alt="メッセージ配信確認"></h1>
+    <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+    <tr>
+    <th>
+      <h2 class="num-back01">配信ボタン</h2>
+      <p>入力された内容で安否確認内容を登録し、送信先ユーザへメールを送信後、完了画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+    </th>
+    <td>
+      <h2 class="num-back02">戻るボタン</h2>
+      <p>遷移元の画面へ遷移します。</p>
+    </td>
+    </tr>
+    </table>
+
+    <br>
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+      <h2>訓練モード</h2>
+      <p>訓練モードとして配信するかが表示されます。</p>
+      <h2>メイン表示</h2>
+      <p>メイン画面に表示する対象が表示されます。</p>
+      <h2>件名</h2>
+      <p>メール件名が表示されます。</p>
+      <h2>本文</h2>
+      <p>メール本文が表示されます。</p>
+      <h2>送信先</h2>
+      <p>送信ユーザが表示されます。<br>緊急連絡先が未設定のユーザにはメールが送信されません。</p>
+      <h2>配信者</h2>
+      <p>このメールを送信するユーザ名が表示されます。</p>
+    </div>
+
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+  <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+</body>
+</html>

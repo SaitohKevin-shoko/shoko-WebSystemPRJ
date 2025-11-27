@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ショートメール 受信内容確認</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_sml_left_list.html');chengeHeaderText('[ ショートメール 受信内容確認 ]');">
+<div id="container"><a name="top"></a>
+	<div align="right" class="help-align-right">
+	<input type="button" value="ショートメール トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>受信したショートメールの内容を確認する画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_sml0300.gif" alt="ショートメール受信内容確認 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+		<tr>
+		<th>
+          <h2 class="num-back01">前へボタン</h2>
+		  <p>1件前の受信メールを表示します。1件前の受信メールが無い場合はボタンの文字色が灰色になりクリックできなくなります。</p>
+		</th>
+		<td>
+          <h2 class="num-back02">次へボタン</h2>
+		  <p>1件次の受信メールを表示します。1件次の受信メールが無い場合はボタンの文字色が灰色になりクリックできなくなります。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back03">戻るボタン</h2>
+		  <p>遷移元の画面へ遷移します。</p>
+		</td>
+		<th>
+          <h2 class="num-back04">PDFボタン</h2>
+		  <p>メール内容をPDF出力します。</p>
+		</th>
+		</tr>
+		<tr>
+		<th>
+          <h2 class="num-back05">返信ボタン</h2>
+          <p>ショートメール新規作成画面へ遷移します。ショートメール新規作成画面では、
+             このショートメールの差出人を宛先として、件名、マーク、本文を引用した内容が入力済みの状態になっています。</p>
+		</th>
+		<td>
+          <h2 class="num-back06">全返信ボタン</h2>
+          <p>ショートメール新規作成画面へ遷移します。ショートメール新規作成画面では、
+             このショートメールの差出人と宛先の全員を宛先として、件名、マーク、本文を引用した内容が入力済みの状態になっています。</p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+          <h2 class="num-back07">転送ボタン</h2>
+          <p>ショートメール新規作成画面へ遷移します。ショートメール新規作成画面では、
+             件名、マーク、本文、添付を引用した内容が入力済みの状態になっています。</p>
+		</td>
+		<th>
+          <h2 class="num-back08">削除ボタン</h2>
+          <p>削除確認画面へ遷移します。削除確認画面でOKボタンをクリックすると、受信メールをゴミ箱へ移動します。</p>
+		</th>
+		</tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">添付ファイル名</h2>
+          <p>クリックすると添付ファイルのダウンロードができます。</p>
+        </th>
+        </tr>
+		</table>
+
+        <!-- 項目の説明// -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+          <h2>差出人</h2><p>差出人が表示されます。</p>
+          <h2>日時</h2><p>送信日時が表示されます。</p>
+          <h2>宛先・CC・BCC</h2><p>宛先・CC・BCCが表示されます。</p>
+          <h2>マーク</h2><p>マークが表示されます。</p>
+          <h2>本文</h2><p>本文が表示されます。</p>
+          <h2>添付</h2><p>添付ファイル名が表示されます。</p>
+        </div>
+        <!-- //項目の説明 -->
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

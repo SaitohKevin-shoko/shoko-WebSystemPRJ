@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] 案件編集</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_nippou_left_list.html');chengeHeaderText('[ 日報 案件編集 ]');">
+<div id="container"><a name="top"></a>
+
+
+	<div align="right" class="help-align-right">
+	<input type="button" value="日報 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+	</div>
+    <!-- ナビゲーション -->
+	<div id="help-left-func">
+	  <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+		  <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+		  </div>
+	  </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+		<div class="help-content-mr"><div class="help-content-ml pad">
+        <p>日報の案件編集を行う画面です。</p>
+		<!-- img要素のsrc,alt属性を編集 -->
+		<h1 class="help-right-func-img"><img src="images/scr_help_big_ntp061edit.gif" alt="案件編集 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">複写して登録ボタン</h2>
+          <p>表示している案件の内容を複写した状態で案件新規登録画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">登録ボタン</h2>
+          <p>案件登録確認画面へ遷移します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <h2 class="num-back03">削除ボタン</h2>
+          <p>案件削除確認画面へ遷移します。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">戻るボタン</h2>
+          <p>案件検索画面へ遷移します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">全グループから選択ボタン</h2>
+          <p>ユーザ選択ポップアップを表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">グループコンボ</h2>
+          <p>表示するユーザのグループを選択します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">グループボタン</h2>
+          <p>グループ選択ポップアップを表示します。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">追加ボタン</h2>
+          <p>担当者に選択ユーザを追加します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">削除ボタン</h2>
+          <p>選択している担当ユーザを削除します。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">アドレス帳ボタン</h2>
+          <p>アドレス帳ポップアップを表示します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back11">追加ボタン</h2>
+          <p>商品検索ポップアップを表示します。ポップアップ画面で選択した商品が下のリストに入ります。</p>
+        </td>
+        <th>
+          <h2 class="num-back12">削除ボタン</h2>
+          <p>選択した商品を削除します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back13">カレンダーボタン</h2>
+          <p>ポップアップでカレンダー画面が開きます。カレンダー画面で日付をクリックすると、クリックした日付がセットされます。</p>
+        </th>
+        <td>
+          <h2 class="num-back14">前日・今日・翌日移動ボタン</h2>
+          <p>現在表示している日付から、表示を切り替えます。
+          <br>前日：1日前へ移動
+          <br>今日：本日へ移動
+          <br>翌日：1日先へ移動</p>
+        </td>
+        </tr>
+
+        </table>
+
+        <br>
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>登録者</h2><p>登録者名を表示します。</p>
+        <h2>登録日付</h2><p>登録日付を表示します。</p>
+        <h2>案件コード</h2><p>案件コードを入力します。デフォルトで任意の値が設定されます。</p>
+        <h2>案件名</h2><p>案件名を入力します。</p>
+        <h2>案件詳細</h2><p>案件詳細を入力します。</p>
+        <h2>担当者</h2><p>案件の担当者を選択します。</p>
+        <h2>企業(顧客)</h2><p>企業(顧客)を選択します。</p>
+        <h2>商品</h2><p>商品を選択します。</p>
+        <h2>業種/プロセス</h2><p>業種/プロセスを選択します。</p>
+        <h2>見込み度</h2><p>見込み度を選択します。</p>
+        <h2>見積金額</h2><p>見積金額を入力します。</p>
+        <h2>受注金額</h2><p>受注金額を入力します。</p>
+        <h2>商談結果</h2><p>商談結果を選択します。</p>
+        <h2>顧客源泉</h2><p>顧客を選択します。</p>
+    </div>
+
+		</div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+
+	<div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+	</div>
+</div>
+</body>
+</html>

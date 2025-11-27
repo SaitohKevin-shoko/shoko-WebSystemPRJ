@@ -1,0 +1,22 @@
+/**
+ * fullcalendar.css利用画面での
+ * jquery_themeによる罫線色、背景色設定の打ち消し
+ *
+ *
+ **/
+
+ .fc-agenda-slots > tbody > tr > .ui-widget-content {
+    border:inherit;
+    border-width: 1px 0 0;
+    border-style: solid;
+}
+
+.fc-agenda-slots > tbody,
+.fc-agenda-slots > tbody > tr,
+.fc-agenda-days > tbody,
+.fc-agenda-days > tbody > tr,
+.fc-agenda-days > tbody > tr > th,
+.fc-agenda-days > tbody > tr > td{
+    border:inherit;
+}
+

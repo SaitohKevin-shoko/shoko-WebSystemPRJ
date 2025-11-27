@@ -1,0 +1,162 @@
+.ml3{
+  margin-left: 3px;
+}
+
+.main_rss-left {
+  width: 50%;
+  padding: 0px 5px 0px 0px!important;
+  border: none!important;
+  vertical-align: top;
+}
+
+.main_rss-right {
+  width: 50%;
+  padding: 0px 0px 0px 5px!important;
+  border: none!important;
+  vertical-align: top;
+}
+
+.info_pluginName {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px;
+}
+
+.pluginSetting_iconSize {
+  align-items: center;
+  background-position: 50% 50%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.pluginList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pluginSetting_iconSize > img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.schedule_date {
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.wp85 {
+  width: 85px!important;
+}
+
+/* ニュース */
+.main_iflameNews {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:300px;
+    display:inline!important;
+}
+
+/* 天気 */
+.main_iflameWeather {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    display:inline!important;
+    height:210px;
+}
+/* 今日は何の日 */
+.main_iflame_anniversary {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:140px;
+    display:inline!important;
+}
+
+/* スケジュール */
+.mainSchData p {
+    margin-bottom: 7px;
+    line-height: 100%;
+}
+
+/* 在席管理 */
+.main_zsk_status {
+  padding: 2px;
+  margin-right: 5px;
+  border: 1px #333333 solid;
+}
+
+.main_listbox-l {
+  width: 49%;
+}
+.main_listbox-r {
+  width: 49%;
+  margin-left: 2%;
+}
+
+.main_headerSpace {
+  height: 44px;
+}
+
+.main_rssArrowIcon {
+  width: 16px;
+}
+
+/** データ使用量合計 */
+.main_dataSum {
+    font-size:2rem;
+}
+
+/** データ使用量一覧 */
+.main_grid_pane {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.main_grid_pane > dl {
+    font-size:1rem;
+    line-height:1;
+
+}
+.main_grid_pane > dl:hover {
+    opacity: 0.75;
+    transition: 0.2s;
+}
+.main_grid_pane > dl > dt {
+    font-size:1rem;
+    line-height:1;
+}
+.main_grid_pane > dl > dd {
+    font-size:2rem;
+    line-height:2;
+    display: grid;
+}
+.main_grid_pane > dl > dd > table {
+    margin:10px;
+    font-size:1rem;
+    line-height:1;
+}
+.main_grid_pane > dl > dd > table th {
+    font-weight:bold;
+    line-height:1;
+}
+
+.main_pluginList {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}

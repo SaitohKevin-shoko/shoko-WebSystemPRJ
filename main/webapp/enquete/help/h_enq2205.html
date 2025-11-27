@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] アンケート 設問詳細追加・編集(数値入力)</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script type="text/javascript" src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_enq_left_list.html');chengeHeaderText('[ アンケート 設問詳細追加・編集(数値入力) ]');">
+<div id="container"><a name="top"></a>
+
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="アンケート トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+    <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div>
+      </div>
+  </div>
+
+    <!-- コンテンツ -->
+    <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>アンケート 設問詳細追加・編集(数値入力)画面です。</p>
+        <!-- img要素のsrc,alt属性を編集 -->
+        <h1 class="help-right-func-img"><img src="images/scr_help_big_enq2205.gif" alt="アンケート 設問詳細追加・編集(数値入力)画面 機能詳細"></h1>
+    <p class="help-right-func-p">機能説明</p>
+        <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+        <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>入力された内容を保存し、アンケート作成画面へ遷移します。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back03">詳細/閉じるボタン</h2>
+          <p>詳細ボタンクリックで、アンケートの重要度・発信者・アンケート内容・回答期限・結果回答期限・注意事項を表示します。閉じるボタンクリックで、詳細表示欄を閉じます。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">添付ファイル</h2>
+          <p>添付ファイル名をクリックすると、添付ファイルをダウンロードすることができます。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">添付ボタン</h2>
+          <p>設問に添付ファイルを追加します。添付ファイル追加ポップアップ画面を表示します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">削除ボタン</h2>
+          <p>設問に追加した添付ファイルを削除します。</p>
+        </td>
+        </tr>
+
+        </table>
+
+        <!-- 項目の説明 -->
+        <p class="help-right-func-p">表示・入力項目説明</p>
+        <div class="help-right-func-item">
+        <h2>必須</h2><p>回答の必須区分を選択します。アンケート回答者に必ず回答させたい場合に、チェックを入れてください。</p>
+        <h2>設問</h2><p>アンケートの設問を入力します。</p>
+        <h2>説明文</h2><p>数値入力に説明文を入力します。設問に補足等が必要な場合に使用します。</p>
+        <h2>位置</h2><p>追加した添付ファイルの表示位置を選択します。「上」を選択すると説明文の上部に、「下」を選択すると説明文の下部に表示します。添付ファイルが存在するときだけ利用できます。</p>
+        <h2>初期値</h2><p>「有り」を選択すると、初期値の入力欄が表示されます。数値入力の回答欄に、予め入力しておきたい数値を入力します。</p>
+        <h2>入力範囲</h2><p>「有り」を選択すると、入力範囲の入力欄が表示されます。数値入力の回答時に、上限・下限を設定したい場合に使用します。</p>
+        <h2>単位</h2><p>数値入力で使用する単位を入力します。</p>
+        </div>
+
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt="スペーサー"></div></div>
+
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+</div>
+</body>
+</html>

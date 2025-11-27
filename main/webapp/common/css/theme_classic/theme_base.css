@@ -1,0 +1,2482 @@
+/*要素指定------------------------------------------------------------------------------------------------------------*/
+button,
+input,
+optgroup,
+select,
+textarea,
+.inputcomponent {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input,
+optgroup,
+select {
+  line-height: 1.15;
+}
+
+body {
+  font-family: Meiryo, 'メイリオ', 'Hiragino Sans','ヒラギノ角ゴシック', 'ＭＳ Ｐゴシック','MS PGothic',system-ui,sans-serif;
+}
+
+footer {
+  border: 1px solid #ccc;
+}
+
+footer a,footer a:hover,footer a:visited,footer a:link {
+  text-decoration: none;
+  color: #666;
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+  height: 23px;
+}
+
+textarea,
+.inputcomponent {
+  line-height: 1.5em;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*配色指定------------------------------------------------------------------------------------------------------------*/
+.bgC_none {
+  background-color: rgba(0, 0, 0, 0)!important;
+  background-image: none!important;
+}
+
+.bgI_none {
+  background-image: none!important;
+}
+
+
+/* ⑥   背景  画面背景 */
+.bgC_body {
+  background-color: #ffffff!important;
+}
+
+body,
+.tabBody,
+.tabHeader_tab-on,
+.topFrame-fixed,
+.jqplot-highlighter-tooltip {
+  background-color: #ffffff;
+}
+/*テーブル内のベース背景*/
+.bgC_tableCell,
+.table_col-even > tbody > tr:nth-child(odd) {
+  background-color: #ffffff!important;
+}
+
+/** 吹き出し背景色 色指定変数*/
+:root {
+  --bubble-background-color: #ffffff;
+}
+
+.cal_colHeader,
+.easyRegister-bubble,
+.helpBubbleBtn > .helpBubble,
+.table-top,
+.table-left,
+.borderBlock-white,
+.searchMenu_title-select,
+#calendar .fc-event-skin.fc-event-head,
+#calendar .fc-event-vert > .fc-event-inner > .fc-event-bg {
+  background-color: #ffffff;
+}
+
+/*基本背景色（他１）グループスケジュール、ユーザ情報（無効ユーザ）テーブル内セル背景*/
+.bgC_other1 {
+ background-color: #d9dee9!important;
+}
+
+/* ⑦   メインメニュー背景   cmn003の背景 */
+
+/* 選択背景色 */
+.bgC_select {
+  background-color: #fff9cf!important;
+}
+
+/* カレンダー選択背景色 */
+.bgC_cal_select {
+  background-color: #fde6b6!important;
+}
+
+.menu_btn:hover,
+.baseLabel /*回覧板ラベル背景色*/ {
+  background: #fff9cf;
+}
+
+/* サイボウズLive取込 警告背景色 */
+.bgC_cybozuAlert {
+    background-color: #ffe3e3!important;
+}
+
+/* カレンダー日曜日背景色 */
+.bgC_calSunday {
+    background-color: #ffe3e3!important;
+}
+
+tbody td:first-child a.ui-state-default{
+    background: #ffe3e3!important;
+}
+
+/* カレンダー土曜日背景色 */
+.bgC_calSaturday {
+    background-color: #dceeff!important;
+}
+
+/* チャットメンション */
+.bgC_chtMention {
+  background-color: #d1ebe6!important;
+}
+.bgC_chtMention-select {
+  background-color: #fff9cf!important;
+}
+
+tbody td:last-child a.ui-state-default{
+    background: #dceeff!important;
+}
+
+.bgc_transparent {
+  background-color: transparent!important;
+}
+
+/* 在籍管理状態（在籍）背景色 */
+.bgC_zaiseki {
+    background-color: #FFFFFF!important;
+}
+
+.main_zskLadio-zaiseki,
+.zai_header-zaiseki,
+.zskBtn-zaiseki,
+.cal_colHeader-zaiseki,
+.zsk_label-zaiseki,
+.zsk_listColor-zaiseki {
+    background-color: #FFFFFF;
+}
+
+/* 在籍管理状態（不在）背景色 */
+.bgC_huzai,
+.bgC_progress {
+    background-color: #9BDBAF!important;
+}
+
+.cal_colHeader-huzai,
+.main_zskLadio-huzai,
+.zai_header-huzai,
+.zskBtn-huzai,
+.zsk_label-huzai,
+.zsk_listColor-huzai {
+    background-color: #9BDBAF;
+}
+
+/* 在籍管理状態（その他）背景色 */
+.bgC_zskOther {
+    background-color: #FFEEAA!important;
+}
+
+.cal_colHeader-sonota,
+.main_zskLadio-sonota,
+.zai_header-sonota,
+.zskBtn-sonota,
+.zsk_label-sonota,
+.zsk_listColor-sonota {
+    background-color: #FFEEAA;
+}
+
+/* その他背景色２ スケジュール時間指定なし背景*/
+.bgC_other2 {
+  background-color: #d1ebe6!important;
+}
+.cal_periodCell {
+    background-color: #d1ebe6;
+}
+
+.cal_periodCell-less {
+    background-color: #f4f4f4;
+}
+
+/* セレクトボックスドロップダウン背景*/
+.bgC_dropMenu {
+    background-color: #ffffff!important;
+}
+
+
+/** 薄いグレー背景 選択テーブルの不選択要素など*/
+.bgC_lightGray {
+  background-color: #eeeeee!important;
+}
+
+.searchMenu_title,
+.tabHeader_tab-off:hover,
+#ttp {
+  background-color: #eeeeee;
+}
+
+/* formbuilder */
+.dandd_droptable .dandd_dropArea.default.over {
+  background-color: #eeeeee;
+}
+
+/* formbuilder */
+.dandd_root .drop .contents .ui-draggable:hover:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 6px;
+  background-image: url(../../../common/images/classic/icon_dand.gif);
+  vertical-align: middle;
+  left: 5px;
+  top: 4px;
+  bottom: 4px;
+  vertical-align: middle;
+}
+
+.toggle-button {
+  background-color: #aaaaaa;
+}
+
+.toggle-button:has(:checked) {
+  background-color: #4bd865;
+}
+
+.toggle-button:has(:disabled) {
+  background-color: #dddddd;
+}
+
+.toggle-button::after {
+  background-color: #fff;
+}
+
+.tooltip_body {
+  background-color: #eeeeee!important;
+}
+
+/** グレー背景 フッターなど*/
+.bgC_gray {
+  background-color: #ccc!important;
+}
+
+/** 濃いグレー背景 */
+.bgC_darkGray {
+  background-color: #838383!important;
+}
+.tabHeader_tab-off {
+  background-color: #838383;
+}
+.cht_pinMessage:hover .pinMessageSortHandle {
+  background-color: #838383;
+}
+/* ピンク背景 */
+.bgC_warn {
+  background-color: #ffcccc!important;
+}
+
+/* 最終ログイン */
+.bgC_lastLoginToday {
+  background-color: #ffffff!important;
+}
+.bgC_lastLoginYesterday {
+  background-color: #f4f4f4!important;
+}
+.bgC_lastLogin2 {
+  background-color: #dceeff!important;
+}
+.bgC_lastLogin3 {
+  background-color: #d1ebe6!important;
+}
+.bgC_lastLogin4 {
+  background-color: #fff9cf!important;
+}
+.bgC_lastLogin5 {
+  background-color: #ffe3e3!important;
+}
+.bgC_lastLogin10 {
+  background-color: #ffc1c1!important;
+}
+.bgC_lastLogin20 {
+  background-color: #d9dee9!important;
+}
+
+/* 日報 日付線 */
+.ntp_dayLine:before,
+.ntp_dayLine:after {
+  background-color: #838383!important;
+}
+
+/* 日報 未読カラー */
+.ntp_midokuContent {
+  background-color: #dceeff!important;
+}
+
+.cht_icon-star {
+  color: #eda90a!important;
+  -webkit-text-stroke: 1px #333;
+}
+
+.cht_icon-mute_off {
+  color: #e5e00f!important;
+  -webkit-text-stroke: 1px #333;
+}
+
+/* チャット 日付線 */
+.cht_dayLine:before,
+.cht_dayLine:after {
+  background-color: #838383!important;
+}
+
+.cht_newLine:before,
+.cht_newLine:after {
+  background-color: #1976d2!important;
+}
+
+/* スクロールバー（カスタマイズ） */
+.customScrollBar::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 日報 案件達成率 */
+.bgC_ntpParcent {
+  background: radial-gradient(farthest-side circle at center top, #7076da, #0108aa);
+}
+.bgC_ntpParcentComp {
+  background: radial-gradient(farthest-side circle at center top, #d67364, #b01a00);
+}
+
+/* 日報 案件達成率(バー) */
+.bgC_ntpBarParcent {
+  background: linear-gradient(#3b6fff, #0e02fd);
+}
+.bgC_ntpBarParcentComp {
+  background: linear-gradient(#f36565, #eb0101);
+}
+
+/* チャット 未読バッジ */
+.timelineBach.midokuBach-on {
+    background: #0085ff;
+}
+
+.chattextArea {
+  border-color: transparent!important;
+}
+
+.chattextArea:focus {
+  outline: none;
+}
+
+.cht_inputArea {
+  border-color: initial;
+}
+
+.inputcomponent:focus-within,
+.cht_inputArea:focus-within {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.cht_reaction {
+  background-color: #f9f9f9;
+}
+
+.cht_tempFile:hover, .cht_tempFile:has(~ .cht_deleteIcon:hover) {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(33,33,33, 0.6);
+}
+
+/* メイン 在籍コメント背景色 */
+.main_zskComment {
+    background-color: #ffcccc;
+}
+.main_zskComment:before {
+    border-color:transparent;
+    border-bottom-color:#ffcccc;
+}
+
+/* 罫線色（薄） */
+.borC_light {
+  border-color: #cdcdcd!important;
+}
+
+/* 罫線色（極薄） */
+.borC_weak {
+  border-color: #ebebeb!important;
+}
+
+/* 簡易登録ダイアログ */
+.bubble-leftBottom:before,
+.bubble-rightBottom:before,
+.helpBubbleBtn > .helpBubble.helpBubble-topright:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topleft:after,
+.helpBubbleBtn > .helpBubble.helpBubble-topcenter:after {
+  border-top: 20px solid #ffffff!important;
+}
+
+.bubble-leftTop:before,
+.bubble-rightTop:before,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomright:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomleft:after,
+.helpBubbleBtn > .helpBubble.helpBubble-bottomcenter:after {
+  border-bottom: 20px solid #ffffff!important;
+}
+
+/* 日報 選択メニュー */
+.ntp_sideMenu,
+.ntp_sideMenuArea,
+.cmnSetting_sideMenu,
+.cmnSetting_sideMenuArea {
+  border-right-color: #bbbbbb;
+}
+
+.ntp_sideMenu-select,
+.cmnSetting_sideMenu-select {
+  border-top-color: #bbbbbb;
+  border-bottom-color: #bbbbbb;
+  border-right-color: #ffffff;
+}
+
+/* ユーザ選択コンボ 項目タイトル */
+.userGroup_title {
+  border-color: #aaaaaa;
+}
+
+.userSelect_fromTo select {
+  border-color: #aaaaaa;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div,
+table,
+th,
+td,
+ul,
+li,
+dl,
+::before,
+::after {
+  border-color: #cdcdcd;
+}
+
+/* 罫線色（濃） */
+.borC_deep {
+  border-color: #b0b0b0!important;
+}
+.outC_deep {
+  outline-color: #b0b0b0!important;
+}
+
+/* チャット ホバー時罫線 */
+.cht_onePost,
+.cht_grpConfSelectGroup {
+  border-color: rgba(0,0,0,0.0);
+}
+
+/* チャット 検索アイコン */
+.searchIcon-submit::before {
+  box-shadow: 0 0 0 2px #aaa;
+}
+.searchIcon-submit::after {
+  border-top: solid 2px #aaa;
+}
+
+/* 絵文字選択パレット */
+emoji-picker {
+  --themeBase: classic;
+}
+
+/* 文字色（黒） */
+.cl_fontBody,
+.main_listbox-dt {
+  color: #333!important;
+}
+
+/* 文字色（白） */
+.cl_white{
+  color: #fff!important;
+}
+
+body,
+.dialog_changeSel-select,
+.mainSchData div,
+.menu_btn,
+.menu_btn:hover,
+.selectForm,
+.side_headerTitle,
+.mainTable_title-sub a,
+.tabHeader_tab-on,
+.text_pickUp-small,
+#calendar .fc-event-time,
+#ttp {
+  color: #333;
+}
+
+/* トップヘッダー内文字色（白）背景が濃い画面用白抜き文字 */
+.cl_fontOutline,
+.main_pluginTitle,
+.main_pluginTitle:hover {
+  color: #333!important;
+}
+/* 文字色（黒） */
+.dialog_changeSel,
+.pageTitle,
+.table_title-color,
+.table_title-color a,
+.table-top th a,
+.kojinHeader_rokuyou::after {
+  color: #333333;
+}
+/* 文字色（白） */
+.kanriPageTitle,
+.information_top,
+.rng_apiResult-success,
+.rng_apiResult-failure,
+.tabHeader_tab-off:not(:hover),
+#calendar .fc-event-skin.fc-event-hori .fc-event-title,
+.ui-dialog .ui-dialog-title {
+  color: #ffffff;
+}
+
+/* 警告表示文字色（赤） */
+.cl_fontWarn {
+  color:#CC3333!important;
+}
+
+/* 警告表示枠線色（赤） */
+.borColor-Warn {
+  border-color:#CC3333!important;
+}
+
+.formCounter_over,
+.hikokai_text,
+.textError,
+.cht_timeline_mute {
+  color: #CC3333;
+}
+
+/* 警告表示文字色（黄土） */
+/* ランキング */
+.cl_fontWeekWarn,
+.cl_ranking {
+  color: #d8962a!important;
+}
+
+/* 安全文字色（緑） */
+.cl_fontSafe {
+  color: #32cf32!important;
+}
+
+/* 1段階薄目文字色（濃いグレー） */
+.cl_fontMiddle {
+  color:#666666!important;
+}
+
+
+/* 2段階薄目文字色（グレー） */
+.cl_fontWeek {
+  color:#828282!important;
+}
+
+.side_accountName {
+  color:#828282;
+}
+
+/* 休日表現文字色 */
+.cl_fontSunday,
+.ui-datepicker > .ui-datepicker-calendar .cl_fontSunday > .ui-state-default,
+thead .ui-datepicker-week-end:first-child {
+    color: #f44336!important;
+}
+
+/* 土曜表現文字色 */
+.cl_fontSaturday {
+    color: #0085ff!important;
+}
+
+thead .ui-datepicker-week-end:last-child {
+    color: #0085ff!important;
+}
+
+/*基本リンク色*/
+.cl_linkDef {
+  color: #1976d2!important;
+}
+
+a,
+.table-top td a,
+.table-left td a,
+.textLink {
+  color: #1976d2;
+}
+
+/*既読リンク色*/
+.cl_linkVisit {
+  color: #7745ac!important;
+}
+.cl_linkVisit-content a:visited {
+  color: #7745ac!important;
+}
+
+/*ホバーリンク色(Important)*/
+.cl_linkVisit-content a:hover,
+.cl_linkHoverChange:hover,
+.compBtn:hover {
+  color: #ff5252!important;
+}
+
+/*ホバーリンク色*/
+.cl_linkHover,
+.textLink:hover {
+  color: #ff5252;
+}
+/*リンク選択色*/
+.cl_linkSelected {
+  color: #ff5252!important;
+}
+
+a:hover,
+.table-top td a:hover,
+ .table-left td a:hover {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+/* タイムカード通常色*/
+.bgc_timecard-normal {
+  background-color: #FFFFcc!important;
+}
+
+/* タイムカード残業色*/
+.bgc_timecard-zangyo {
+  background-color: #17488E!important;
+  color: #fff!important;
+}
+
+/* タイムカード深夜残業色*/
+.bgc_timecard-sinya {
+  background-color: #4F74F2!important;
+  color: #fff!important;
+}
+
+/* タイムカード休憩色*/
+.anp_kunren,
+.bgc_timecard-kyuukei {
+  background-color: #ffc1c1!important;
+}
+
+/* スケジュールタイトル設定用背景色（青） */
+.bgc_fontSchTitleBlue {
+  background-color: #0000FF!important;
+}
+/*fullcalendar.js スケジュールヘッダー色（未指定）*/
+#calendar .fc-event-skin.fc-event-vert {
+  background-color: #0000FF;
+}
+
+/* スケジュールタイトル設定用背景色（赤 */
+.bgc_fontSchTitleRed {
+  background-color: #FF0000!important;
+}
+
+/* スケジュールタイトル設定用背景色（緑 */
+.bgc_fontSchTitleGreen {
+  background-color: #009900!important;
+}
+
+/* スケジュールタイトル設定用背景色（黄 */
+.bgc_fontSchTitleYellow {
+  background-color: #ff9900!important;
+}
+
+/* スケジュールタイトル設定用背景色（黒 */
+.bgc_fontSchTitleBlack {
+  background-color: #333333!important;
+}
+
+/* スケジュールタイトル設定用背景色（紺 */
+.bgc_fontSchTitleNavy {
+  background-color: #000080!important;
+}
+
+/* スケジュールタイトル設定用背景色（赤紫 */
+.bgc_fontSchTitleWine {
+  background-color: #800000!important;
+}
+
+/* スケジュールタイトル設定用背景色（シアン */
+.bgc_fontSchTitleCien {
+  background-color: #008080!important;
+}
+
+/* スケジュールタイトル設定用背景色（グレー */
+.bgc_fontSchTitleGray {
+  background-color: #808080!important;
+}
+
+/* スケジュールタイトル設定用背景色（水色 */
+.bgc_fontSchTitleMarine {
+  background-color: #008DCB!important;
+}
+
+/* スケジュールタイトル色（青） */
+.cl_fontSchTitleBlue,
+.cl_fontNtpTitleBlue,
+.cl_fontWmlTitleBlue {
+  color: #0000FF!important;
+}
+
+/* スケジュールタイトル色（赤 */
+.cl_fontSchTitleRed,
+.cl_fontNtpTitleRed,
+.cl_fontWmlTitleRed {
+  color: #FF0000!important;
+}
+
+/* スケジュールタイトル色（緑 */
+.cl_fontSchTitleGreen,
+.cl_fontNtpTitleGreen,
+.cl_fontWmlTitleGreen {
+    color: #009900!important;
+}
+
+/* スケジュールタイトル色（黄 */
+.cl_fontSchTitleYellow,
+.cl_fontNtpTitleYellow,
+.cl_fontWmlTitleYellow {
+  color: #ff9900!important;
+}
+
+/* スケジュールタイトル色（黒 */
+.cl_fontSchTitleBlack,
+.cl_fontNtpTitleBlack,
+.cl_fontWmlTitleBlack {
+  color: #333333!important;
+}
+
+/* スケジュールタイトル色（紺 */
+.cl_fontSchTitleNavy,
+.cl_fontWmlTitleNavy {
+    color: #000080!important;
+}
+
+/* スケジュールタイトル色（赤紫 */
+.cl_fontSchTitleWine,
+.cl_fontWmlTitleWine {
+    color: #800000!important;
+}
+
+/* スケジュールタイトル色（シアン */
+.cl_fontSchTitleCien,
+.cl_fontWmlTitleCien {
+  color: #008080!important;
+}
+
+/* スケジュールタイトル色（グレー */
+.cl_fontSchTitleGray,
+.cl_fontWmlTitleGray {
+  color: #808080!important;
+}
+
+/* スケジュールタイトル色（水色 */
+.cl_fontSchTitleMarine,
+.cl_fontWmlTitleMarine {
+  color: #008DCB!important;
+}
+
+/* メイン画面 テーブル枠線 */
+.mainTable tr:nth-child(even){
+  border-color: #cdcdcd;
+}
+
+/* メイン画面 インフォメーション プラグイン名 */
+.info_pluginName {
+    background-color: #ff9600;
+    color: #fff;
+}
+
+.info_status-display {
+  color: #0ceb18;
+}
+
+.info_status-plan {
+  color: #0ed2ec;
+}
+
+.info_status-end {
+  color: #CC3333;
+  line-height: 12pt;
+}
+
+/* 在席管理 施設予約ラベル */
+.zsk_rsvLabel-used,
+.zsk_headerLabel-used {
+  background-color: #ffa093;
+}
+
+.zsk_rsvLabel-unused,
+.zsk_headerLabel-unused {
+  background-color: #e1e1e1;
+}
+
+.cl_fontArrow {
+  color: #1976d2!important;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*BEMにのっとったclass------------------------------------------------------------------------------------------------*/
+
+.baseBtn,
+.mailMenu_button,
+.ntp_goodButton,
+.webIconBtn,
+.labelBtn,
+.ui-dialog-buttonpane .ui-dialog-buttonset button {
+  background-image: linear-gradient(to bottom, #fff, #d9dae7)!important;
+  border-color: #010864!important;
+  color: #010864!important;
+}
+
+.baseBtn i,
+.mainBtn i,
+.iconBtn-border i,
+.mailMenu_button i {
+/*グレー    */background-image: linear-gradient(315deg, #137ab0, #95e0f4);
+}
+@media all and (-ms-high-contrast: none) { /* IE10,11用 */
+    .baseBtn i{
+        background: none!important;
+        color: #bfdb60;
+    }
+}
+
+.baseBtn,
+.mailMenu_button,
+.ntp_goodButton,
+.webIconBtn,
+.labelBtn {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.baseBtn,
+.webIconBtn,
+.labelBtn {
+  border-radius: 3px;
+}
+
+.fw_b {
+  font-weight: bold!important;
+}
+
+.forum_closeIcon:before,
+.forum_closeIcon-side:before{
+  content: "+";
+}
+
+.forum_openIcon:before,
+.forum_openIcon-side:before {
+  content: "-";
+}
+
+.hikokai_photo-m {
+  BACKGROUND-IMAGE: url(../../images/classic/bg_photo_hikokai.gif);
+  background-repeat: no-repeat;
+  background-size:contain;
+  color: #363636;
+}
+
+.hikokai_photo-l {
+  BACKGROUND-IMAGE: url(../../images/classic/photo.png);
+  background-repeat: no-repeat;
+  color: #363636;
+}
+
+.hikokai_photo-s {
+  /* border: solid 1px; */
+  BACKGROUND-IMAGE: url(../../images/classic/bg_photo_hikokai.gif);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #363636;
+}
+
+/* 管理者設定用ページタイトルkanriPageTitle */
+.kanriPageTitle {
+  background-image: linear-gradient(to bottom, #031aa3, #021f5f);
+}
+
+/* メイン new表示背景色 */
+.labelNew {
+    background-color: #ff6600;
+}
+
+.loader-ball {
+  display: none;
+}
+
+/* オプション 無効ユーザ */
+.mukoUserOption {
+  color: #999;
+}
+
+/** リンク他 無効ユーザ */
+.mukoUser {
+  opacity: 0.6;
+  filter: alpha(opacity=60);        /* ie lt 8 */
+  -ms-filter: "alpha(opacity=60)";  /* ie 8 */
+  -moz-opacity: 0.6;                 /* FF lt 1.5, Netscape */
+  -khtml-opacity: 0.6;              /* Safari 1.x */
+  zoom: 1;
+}
+
+/** 選択UI 無効化カラー*/
+.multiselector_searchBtn-teisi::after,
+.multiselector_selectTbl-teisi::after,
+.multiselector_selection-teisi::after,
+fieldset:disabled .multiselector_searchBtn::after,
+fieldset:disabled .multiselector_selectTbl::after,
+fieldset:disabled .multiselector_selection::after {
+  background-color: #ccc;
+}
+
+/* 日報 未チェック */
+.ntp_checkContent {
+  border-color: #0000FF!important;
+}
+
+/* 日報 分析 ラベルカラー */
+.ntp_labelJutyu {
+  background-color: #eaa228;
+}
+.ntp_labelMitsumori {
+  background-color: #4bb2c5;
+}
+
+/* オプション 削除ユーザ */
+.delUser {
+  text-decoration: line-through;
+}
+
+.kanriPageTitle .baseBtn i {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+}
+
+/*セレクトボックス マイグループ */
+.select_mygroup-bgc {
+  background-color: #ffeebb;
+}
+
+/*セレクトボックス 表示リスト */
+.select_myschedule-bgc {
+  background-color: #e5edfe;
+}
+
+/*セレクトボックス 代表アカウント */
+.select_daihyo-bgc {
+  background-color: #aab4ff;
+}
+
+.side_accountName {
+  cursor: pointer;
+}
+
+.side_accountName-hover {
+  color: #002aa2!important;
+  text-decoration: underline;
+}
+
+.side_folderImg-line {
+  background-image: url(../../images/classic/icon_left_line.gif);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.side_folderImg-line2 {
+  background-image: url(../../images/classic/icon_left_line_long_pertical.gif);
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.side_folderImg-lineBottom {
+  background-image: url(../../images/classic/icon_left_line_bottom.gif);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.side_folderImg-dust {
+  background-image: url(../../images/classic/icon_trash_2.png);
+}
+
+.side_folderImg-folder {
+  background-image: url(../../images/classic/icon_folder_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-jushin {
+  background-image: url(../../images/classic/icon_folder_jushin_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-koetu {
+  background-image: url(../../images/classic/icon_folder_koetu_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-mail-jushin {
+  background-image: url(../../images/classic/icon_folder_jushin_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-mail-soshin {
+  background-image: url(../../images/classic/icon_folder_soushin_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-mail-dust {
+  background-image: url(../../images/classic/icon_trash_2.png);
+  background-position: 1px 3px;
+}
+
+.side_folderImg-mail-folder {
+  background-image: url(../../images/classic/icon_folder_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-mail-koetu {
+  background-image: url(../../images/classic/icon_folder_koetu_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-label {
+  background-image: url(../../images/classic/icon_folder_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-lineMinus {
+  background-image: url(../../images/classic/icon_left_minus.png);
+}
+
+.side_folderImg-lineMinusBottom {
+  background-image: url(../../images/classic/icon_left_line_minus_bottom.png);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.side_folderImg-lineMinusBottom2 {
+  background-image: url(../../images/classic/icon_left_line_minus_center2.png);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.side_folderImg-linePlus {
+  background-image: url(../../images/classic/icon_left_plus.gif);
+}
+
+
+.side_folderImg-linePlusBottom {
+  background-image: url(../../images/classic/icon_left_line_plus_bottom.png);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.side_folderImg-linePlusBottom2 {
+  background-image: url(../../images/classic/icon_left_line_plus_center2.png);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.side_folderImg-lineTop {
+  background-image: url(../../images/classic/icon_left_line_top.gif);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.side_folderImg-soshin {
+  background-image: url(../../images/classic/icon_folder_soushin_box.png);
+  cursor: pointer;
+}
+
+.side_folderImg-kanryo {
+  background-image: url(../../images/classic/icon_folder_kanryo_box.png);
+  cursor: pointer;
+}
+
+.side_header-close,
+.labelSelect_category-close {
+  background-image: url(../../images/classic/icon_arrow_r.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  position: relative;
+}
+
+.side_header-open,
+.labelSelect_category-open {
+  background-image: url(../../images/classic/icon_arrow_d.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.mainTable_title-sub {
+  background-color: #f8f8f8!important;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* 統計情報 */
+.nippou_menuArea,
+.cmnSetting_menuArea,
+.cmnSetting_menuArea,
+.ntp_sideMenuArea,
+.ntp_sideMenu,
+.cmnSetting_sideMenuArea,
+.cmnSetting_sideMenu,
+.toukei_plugin,
+.toukei_pluginArea,
+.toukei_optionClose {
+  background-color: #f9f9f9;
+}
+
+.ntp_sideMenu:hover,
+.cmnSetting_sideMenu:hover,
+.toukei_plugin:hover,
+.toukei_plugin-select {
+  background-color:#ffffff;
+}
+
+.toukei_optionClose:hover {
+  background-color: #838383;
+}
+
+
+.toukei_option {
+  background-color: #f4f4f4;
+}
+
+.toukei_option-select {
+  font-weight: bold;
+}
+
+.toukei_option:hover {
+  background-color: #efefef;
+}
+
+.labelNew {
+  background-color: #ff9600;
+}
+
+.borderBlock-pink {
+  background-color: #ffc1c1;
+}
+
+
+.dialog_changeSel {
+  background-color: #eeeeee;
+}
+
+.dialog_changeSel.dialog_changeSel-hover {
+  background-color: #908f8f;
+}
+
+.dialog_changeSel-select {
+  background-color: #ffffff;
+}
+
+/* use opacity */
+#glayer {
+  background-color: #1F1F1F;
+}
+
+.webIconBtn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: 26px;
+  line-height: 100%;
+  margin: 2px;
+  padding: 1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 22px;
+}
+
+/* カレンダー日曜日背景色(明細行) */
+.bgC_tableCell_Sunday {
+    background-color: #ffe3e3!important;
+}
+
+/* カレンダー土曜日背景色(明細行) */
+.bgC_tableCell_Saturday {
+    background-color: #dceeff!important;
+}
+
+/* スクロールバー(ホバー時に表示され、リストの上に被せるタイプ) */
+.scrollInList1::-webkit-scrollbar{
+  background-color: #fff;
+}
+.scrollInList1::-webkit-scrollbar-thumb{
+  background-color: #aaa;
+}
+/* スクロールバー(常に表示され、リストの上に被せるタイプ) */
+.scrollInList2::-webkit-scrollbar{
+  background-color: #fff;
+}
+.scrollInList2::-webkit-scrollbar-thumb{
+  background-color: #fff;
+}
+.scrollInList2:hover::-webkit-scrollbar-thumb{
+  background-color: #aaa!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*配色以外設定--------------------------------------------------------------------------------------------------------*/
+
+.btn_originalImg-display,
+.original-display {
+  display: none!important;
+}
+
+#clock div{
+    border-radius: 3px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#clock div a {
+  display: block!important;
+}
+
+.clock_year, .clock_time {
+  display: inline-block;
+  margin-top: 0!important;
+  margin-bottom: 15px!important;
+}
+input[type="text"].clockpicker + .picker-acs,
+input[type="text"].datepicker + .picker-acs
+ {
+  background-color: #e9ecef;
+  border-color: #aaa;
+  color: #495057;
+
+}
+
+#clock-year {
+  font-size: 0.9rem!important;
+}
+#clock-day, #clock-time {
+  font-size: 1.66rem!important;
+}
+
+.footerBtn_block {
+    margin-right: 11px;
+    text-align: right;
+}
+
+
+/* ヘッダー内プラグイン画像 */
+.header_pluginImg  {
+  display: none;
+}
+
+.header_pluginImg-classic {
+  display: inline-block;
+}
+
+.iconBtn-border{
+    border: 1px #b0b0b0 solid;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
+.iconBtn-noBorder {
+  color: #010864;
+  background-color: transparent;
+}
+
+.labelNew {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 0.71rem;
+    margin: 3px 5px;
+    font-weight: normal;
+    background-color: #ff6600;
+}
+
+.mainSchHeader_move {
+    float: right;
+}
+
+.mainSchData div {
+    color: #333;
+    border-radius: 3px;
+    padding: 2px 5px 0px 5px;
+    display: inline-block;
+    text-align: left;
+    font-size: 0.69rem;
+}
+.mainSch_button-today {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+    padding: 4px 10px 2px 10px;
+}
+.mainSchHeader_contents {
+    margin-left: 20px;
+}
+.mainSchHeader_contents button {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.main_zskLadio-zaiseki {
+    background-color: #ff9600;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskLadio-huzai {
+    background-color: #539ee5;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskLadio-sonota {
+    background-color: #44b944;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskComment {
+    position: relative;
+    margin-top: 10px;
+    background-color: #ffd2cc;
+    font-size: 0.87rem;
+    padding: 3px 5px;
+    border-radius: 3px;
+    line-height: 140%;
+}
+.main_zskComment:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #ffd2cc;
+}
+.main_zskSchedule {
+/*     background-color: #c4ddf5; */
+    margin-top: 10px;
+    padding: 5px;
+}
+.main_zskProfArea {
+    width: 100%;
+    padding: 0 0 0 10px!important;
+}
+.main_rss_contents div {
+    padding: 7px 0px;
+    line-height: 140%;
+}
+.main_rss_contents_border {
+    border-top: 1px solid #cdcdcd;
+}
+
+.labelNew {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px;
+    font-weight: normal;
+}
+
+.mailMenu_button,
+.ntp_goodButton {
+  border-radius: 3px;
+}
+
+.mailMenu_buttonSet > .mailMenu_button:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius:0px;
+  margin-left: -1px;
+}
+.mailMenu_buttonSet > .mailMenu_button:not(:last-child) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius:0px;
+  margin-right: 0px;
+}
+
+.mainSchHeader_move {
+    float: right;
+}
+
+.mainSchData div {
+    color: #333;
+    border-radius: 3px;
+    padding: 2px 5px 0px 5px;
+    display: inline-block;
+    text-align: left;
+    font-size: 0.83rem;
+}
+
+.mainSch_button-move {
+    margin-right: 5px!important;
+    margin-left: 5px!important;
+}
+.mainSch_button-today {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+    padding: 4px 10px 2px 10px;
+}
+.mainSchHeader_contents {
+    margin-left: 20px;
+}
+.mainSchHeader_contents button {
+    margin-right: 0px;
+    margin-left: 0px;
+}.main_zskLadio-zaiseki {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskLadio-huzai {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskLadio-sonota {
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px 3px 0px;
+}
+.main_zskComment {
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.87rem;
+    padding: 3px 5px;
+    border-radius: 3px;
+    line-height: 140%;
+}
+.main_zskComment:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 10px;
+}
+.main_zskSchedule {
+    margin-top: 10px;
+    padding: 5px;
+}
+.main_zskProfArea {
+    width: 100%;
+    padding: 0 0 0 10px!important;
+}
+.main_rss_contents div {
+    padding: 7px 0px;
+    line-height: 140%;
+}
+.main_rss_contents_border {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.baseLabel {
+    color: #0000ff;
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 0.71rem;
+    margin: 3px 5px;
+    border: solid 1px #cccccc;
+}
+
+.mainBtn {
+    padding: 3px 10px 2px 10px;
+}
+
+
+.mainTable_title {
+  padding: 6px!important;
+}
+
+.mainConfigBtn, .mainBtn {
+    color: #1d1b1b;
+    font-weight: normal;
+    line-height: 120%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 10px 2px 10px;
+    margin: 1px 5px;
+    font-size: 0.87rem;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #ffffff, #d3d8d8);
+    display: inline-block;
+}
+
+.mainTable_title {
+  padding: 6px!important;
+}
+
+.mainBtn {
+    padding: 3px 10px 2px 10px;
+}
+
+
+.portalTabList_tab-forcus {
+    font-weight: bold!important;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+.portalTabList_tab-nonforcus {
+    font-weight: bold!important;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+}
+
+.forum_button {
+  background: #ffffff;
+  border-color: #CCCCCC;
+  color: #bbbbbb;
+  border-radius: 50%;
+}
+
+.forum_indent {
+  color: #bbbbbb;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+}
+
+/* メイン 管理者設定、個人設定 */
+.settingList dl {
+    width: 100%;
+}
+
+.wrapper>.settingList dt {
+  cursor: pointer;
+}
+
+.settingList dl dt {
+  color: #1976d2;
+}
+
+
+/* ヘッダー */
+.pageTitle{
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px;
+  margin-bottom:10px!important;
+  margin-top:15px!important;
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+}
+
+.pageTitle .baseBtn i {
+  display: none;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+/* 管理者設定用ページタイトルkanriPageTitle */
+.kanriPageTitle {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top:15px!important;
+  overflow: hidden;
+  padding: 5px 5px;
+}
+
+
+.kanriPageTitle .baseBtn i {
+  display: none;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.portalTabList {
+    width: 100%;
+    margin-top: 3px;
+    float: left;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    text-align: center;
+}
+
+.portalTabList ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    zoom: 1;
+    text-align: left;
+    width: auto;
+}
+
+.portalTabList ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right:5px;
+    margin-left:5px;
+}
+.pluginIcon_size {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.searchMenu_title.searchMenu_title-hover,
+.searchMenu_title-select.searchMenu_title-hover,
+.searchMenu_title:hover,
+.searchMenu_title-select:hover {
+  background-color: #908f8f;
+}
+
+/* 管理画面top　*/
+.settingList {
+  width: 100%;
+  margin: 0px;
+}
+
+.settingList dt {
+  color: #414142;
+  font-weight: bold;
+  padding: 5px;
+  border: solid 1px #cccccc;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+ background-color: #ececf8;
+    font-size: 1.14rem;
+    text-align: left;
+}
+
+.settingList dd {
+  margin: 0 0 0 20px;
+  position: relative;
+  z-index: 1;
+  top: -10px;
+  border: solid 1px #cccccc;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.settingList_text {
+  padding: 20px 10px 10px 10px;
+  border-left: solid 20px #eeeeee;
+}
+
+.side_confGear:hover,
+.cl_helpIcon-hover:hover {
+  color: #002aa2!important;
+  text-decoration: underline;
+}
+
+.schMonth_userName-space {
+  margin-top: 5px;
+}
+
+.mainTable_title-sub {
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+.table_header-evt:hover {
+  cursor: pointer;
+}
+
+.table_headerSort-top {
+  align-items: center;
+  display:inline-flex;
+}
+
+.table_headerSort-top i {
+  font-size: 0.9rem;
+}
+
+.table_headerSort-top:hover,
+.schedule_headerDay:hover,
+.ul-hov:hover {
+  text-decoration: underline!important;
+}
+.table_title-color {
+    font-weight: bold;
+    font-size: 1.11rem;
+}
+
+.table-top {
+    text-align: center;
+}
+
+/* ユーザ非公開画像*/
+.userImg-hikokai {
+  background-image: url(../../images/classic/bg_photo_hikokai.gif);
+  background-repeat: no-repeat;
+  color: #363636;
+}
+
+.cal_space {
+  margin-bottom: 3px;
+}
+
+.cal_content-space {
+  line-height: 140%!important;
+}
+
+.cal_userNameTime-space {
+  line-height: 100%!important;
+  margin-bottom: 2px;
+}
+.cal_time{
+    border-radius: 3px;
+    padding: 2px 5px 0px 0px;
+    text-align: left;
+    font-size: 0.76rem;
+}
+
+.cal_userName > span{
+    border-radius: 3px;
+    padding: 2px 5px 0px 5px;
+    text-align: left;
+    font-size: 0.83rem;
+}
+
+
+/** テーブル ヘッダー */
+.cal_header {
+      background-color:#dcd9d9;
+      text-align: center!important;
+}
+
+
+/** スケジュール */
+
+.zskBtn-huzai,
+.zskBtn-sonota,
+.zskBtn-zaiseki{
+  border-style : solid;
+  border-width : 1px;
+  border-radius: 3px;
+  font-size:10px;
+  height:17px;
+  line-height: 100%;
+  margin: 2px;
+  padding: 3px 8px 3px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50px;
+}
+
+/* ユーザ/グループ選択 項目名 */
+.userGroup_title {
+  border-style : solid;
+  border-width : 1px;
+  height: 51px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*クラシック 独自*/
+.baseBtn img{
+margin-right: 3px;
+margin-left: -3px;
+height: auto;
+}
+span > i,
+div > i,
+th > i,
+.webfontIcon i,
+.baseBtn i,
+.mailMenu_button i,
+.webIconBtn i {
+display: none;
+}
+.gsLogo {
+  background-image: url(../../images/classic/menu_logo1.png);
+}
+.gsLogo2 {
+  background-image: url(../../images/classic/menu_logo2.png);
+}
+
+
+/* ヘッダーメニュー */
+.menu_bg,.menu_no {
+  width:100px;
+  height:30px;
+  background: url(../../images/classic/bg_menu_base.gif) no-repeat 0 0;
+}
+.menu_bg:hover {
+  cursor: pointer;
+  background: url(../../images/classic/bg_menu_base.gif) no-repeat -104px 0;
+}
+
+.menu_position {
+    text-align:center;
+    text-align: -webkit-center;
+}
+/**
+ *  ヘッダーカルーセルボタンHorizontal Buttons
+ */
+.jcarousel-skin-jts .jcarousel-next-horizontal {
+    background: transparent url(./skins/jts/next-horizontal.png) no-repeat 0 0;
+}
+.jcarousel-skin-jts .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    background-image: url(./skins/jts/next-horizontal.png);
+}
+
+.jcarousel-skin-jts .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    background-image: url(./skins/jts/prev-horizontal.png);
+}
+
+.jcarousel-skin-jts .jcarousel-prev-horizontal {
+    background: transparent url(./skins/jts/prev-horizontal.png) no-repeat -96px 0;
+}
+
+
+
+/* メイン画面復旧用 */
+
+.main_listbox-dt {
+  width: 80%!important;
+}
+.main_listboxImg_border {
+  border: solid 1px #333333;
+}
+
+.mainPlugin_icon {
+    background-color: #fff;
+    border: 1px #7e7e7e solid!important;
+}
+
+.mainTable_th {
+      background-color: #ededfe!important;
+      text-align: center!important;
+}
+
+.main_oddcol_table tr:nth-child(odd) {
+    background-color: #f8f8ff;
+}
+
+.main_evencol_table tr:nth-child(even) {
+    background-color: #f8f8ff;
+}
+
+
+.mainConfigBtn {
+    border: 0px;
+    color: #40a06b;
+    font-size: 10px;
+    font-weight: bold;
+    width: 60px;
+    height: 17px;
+    background-color: #fff!important;
+    border: solid 1px #cccccc;
+}
+.mainBtn {
+    height: 27px;
+    color: #010864;
+    border: 1px solid #010864;
+    background-image: linear-gradient(to bottom, #fff, #d9dae7);
+}
+.mainBtn i{
+   display: none;
+}
+
+.mainTable_title {
+  background-image: linear-gradient(to bottom, #efeffa, #dfdfee);
+  color: #333333!important;
+}
+
+.mainTable_title-sub {
+  background-color: #f8f8f8;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mainTable_title a, .mainTable_title-sub a {
+  color: #333333!important;
+}
+
+.pageTitle .baseBtn .btn_originalImg-display {
+    display: none;
+}
+
+.portalTabList {
+    width: 100%;
+    margin-top: 3px;
+    float: left;
+    background-image: linear-gradient(to bottom, #fff, #e7e7e7);
+    border-top: solid 1px #eeeeee;
+    border-left: solid 1px #eeeeee;
+    border-right: solid 1px #eeeeee;
+    text-align: center;
+}
+
+.portalTabList ul {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    zoom: 1;
+    text-align: left;
+}
+
+.portalTabList ul li {
+    list-style-type: none;
+    margin: 0 0 -300px 0;
+    padding: 10px 5px 300px 5px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.portalTabList_tab-forcus {
+    font-weight: bold!important;
+    color: #000000!important;
+    background-color: #fff;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-radius: 5px!important;
+    width: 130px;
+}
+
+.portalTabList_tab-nonforcus {
+    font-weight: bold!important;
+    color: #999999!important;
+    background-color: #41546e;
+    border-top: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-radius: 5px!important;
+    width: 130px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.portalTabList ul li span {
+    padding-right: 5px;
+}
+
+.portalTabList ul li a {
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+#clock {
+  border-radius: 5px!important;
+  background-image: linear-gradient(to bottom, #fff, #e7e7e7);
+  border: 1px #cdcdcd solid;
+}
+#clock p.clock_year {
+    font-size: 70%;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 0px;
+    padding-left: 8px;
+}
+#clock p.clock_time {
+    font-size: 150%;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #333333;
+}
+.mainSchData div {
+    font-size: 0.69rem;
+}
+
+.mainSchHeader_contents {
+    float: right;
+}
+.mainSchHeader_move {
+    margin-left: 10px;
+}
+.main_sch_space {
+  background-color: #f9f9f9;
+}
+.main_zskSchedule {
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    border: 1px;
+    border-color: #333333;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    border-right-style: dotted;
+}
+.main_bmkCount,
+.bmkCount,
+.rssCount {
+  font-size: 10px;
+  color:#ff0000!important;
+  background-color:#ffcccc;
+}
+
+.rng_apiResult-success {
+  background-color: #52cd3d;
+}
+
+.rng_apiResult-failure {
+  background-color: #f54343;
+}
+
+/* スケジュール **/
+
+.zskBtn-zaiseki{
+  border: 1px #cdcdcd solid;
+  font-size:10px;
+  font-weight:bold;
+  height:17px;
+  white-space: nowrap;
+}
+
+.zskBtn-huzai{
+  border: 1px #cdcdcd solid;
+  font-size:10px;
+  font-weight:bold;
+  height:17px;
+  white-space: nowrap;
+}
+
+.zskBtn-sonota{
+  border: 1px #cdcdcd solid;
+  font-size:10px;
+  font-weight:bold;
+  height:17px;
+  white-space: nowrap;
+}
+
+.cal_content {
+  line-height: 120%;
+}
+
+.cal_label-g {
+  background-color:#dddddd;
+  color: #333333;
+  font-weight:bold;
+  border: 1px;
+  border-color:#333333;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  margin:  0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 0.69rem;
+}
+
+.cal_link_g:after {
+    content:"G";
+}
+
+.cal_label-todo {
+    background-color:#dddddd;
+    color: #333333;
+    font-weight:bold;
+    border: 1px;
+    border-color:#333333;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin:  0px 0px 0px 0px;
+    padding: 2px 0px 2px 0px;
+    font-size: 0.69rem;
+}
+
+.cal_label-action {
+    background-color:#dddddd;
+    color: #333333;
+    font-weight:bold;
+    border: 1px;
+    border-color:#333333;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin:  0px 0px 0px 0px;
+    padding: 2px 0px 2px 0px;
+    font-size: 0.69rem;
+}
+
+/** スケジュール ユーザ名 */
+.cal_userName {
+  margin-top: 7px;
+}
+
+.cal_userName > span {
+  background-color: #ccd8dc;
+  border-color: #c0c0c0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/** 稟議 */
+.rngSinseiId_format-input {
+  height: 23px;
+}
+
+/** ショートメール */
+.sml_noRead {
+  background-color:#1976d2;
+}
+
+
+.mail_btn_on {
+  border:1px solid #bfbfbf!important;
+  background-color:#ececec!important;
+  color:#474747!important;
+}
+
+.table_header_icon_search {
+    background-color: #ffffff;
+    border:1px #333 solid;
+}
+
+/* タブ表示 */
+.tab_list {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+
+/* ショートメール 宛先選択ダイアログ*/
+.sml_dialogTab-select {
+  background-repeat: repeat-x;
+  text-align:center;
+  padding:3px;
+  border-top:1px #cdcdcd solid;
+  border-right:1px #cdcdcd solid;
+  border-bottom:0px;
+  cursor:pointer;
+}
+
+.sml_dialogContent-border {
+  border-top:0px;
+  border-bottom:1px solid #cdcdcd;
+  border-left:1px solid #cdcdcd;
+  border-right:1px solid #cdcdcd;
+}
+
+.sml_dialogTabGroup {
+  border-left:1px solid #cdcdcd!important;
+}
+
+.sml_dialogTab {
+  background:none!important;
+  background-color:#bfbfbf!important;
+  border-bottom:1px solid #cdcdcd!important;
+}
+
+.sml_dialogTab span {
+  color:#ffffff!important;
+}
+
+.sml_dialogTab-hover {
+  background-color:#989898!important;
+}
+
+.sml_dialogTabSpace {
+  border-bottom:1px solid #cdcdcd!important;
+}
+
+/* カレンダーダイアログ*/
+.ui-datepicker {
+  background: #fff!important;
+}
+
+.ui-datepicker-calendar {
+  background-color: #f8f8f8;
+}
+
+.cht_reply {
+  background-color: #ddd;
+}
+
+#ui-datepicker-div {
+  background-color: #f8f8f8!important;
+}
+
+.ui-datepicker-month {
+  color: #999999;
+}
+
+.ui-datepicker-year {
+  color: #999999;
+}
+
+.ui-datepicker-title {
+  color: #999999;
+}
+
+.ui-datepicker  .ui-datepicker-today .ui-state-default {
+  background: #fff9cf!important;
+}
+
+.ui-datepicker .ui-widget-header {
+  background: #fff!important;
+  border: 1px solid #ebebeb;
+  color: #222222;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-state-default,
+.clpClear_button {
+  background: linear-gradient(to bottom, #fff, #d9dae7)!important;
+  border-color: #b0b0b0;
+  border-radius: 3px;
+}
+
+.ui-datepicker .ui-state-default:hover,
+.ui-datepicker  .ui-datepicker-today .ui-state-default:hover,
+.clpClear_button:hover {
+  background: #c0e5f7!important;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.clpClear_button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  color:#666!important;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url(../../images/ui-icons.png);
+}
+
+.zsk_label-zaiseki,
+.zsk_label-huzai,
+.zsk_label-sonota,
+.zsk_rsvLabel-used,
+.zsk_rsvLabel-unused,
+.main_zskLabel {
+  padding: 1px 5px 1px 5px;
+}
+
+.zsk_labelTextColor {
+  color: #000!important;
+}
+
+.zaiseki_select-zaiseki option,
+.zaiseki_select-huzai option,
+.zaiseki_select-sonota option {
+  color: #333;
+  background: #fff;
+}
+
+.zaiseki_select-zaiseki {
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #333;
+}
+
+.zaiseki_select-huzai {
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #333;
+}
+
+.zaiseki_select-sonota {
+  background-position: right 4px top 6px, top!important;
+  background-repeat: no-repeat, repeat!important;
+  background-size: 8px 9px,100%!important;
+  color: #333;
+}
+
+input[type="text"].clockpicker,
+input[type="text"].datepicker {
+  border-color: #aaa;
+  border-radius: 3px 0px 0px 3px;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  height: 23px;
+}
+
+/* Auto Complete */
+.ui-autocomplete {
+  background-color: #ffffff!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*HTML属性指定*/
+
+.information_body {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.information_top {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+}
+
+.information_middle {
+    padding-top: 10px;
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+}
+
+.information_messageArea {
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+  width: 85%;
+}
+
+.information_bottom {
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-left-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-width: 7px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 20px;
+}
+
+#information_top+.information_middle_div {
+  padding-top: 10px!important;
+}
+
+.fileDropArea-drag {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fileDropArea-label {
+  color: #ffffff;
+  background-color: rgba(90, 112, 140, 0.8);
+}
+
+.fileUpload-loading {
+  color: #ffffff;
+  background-color: rgba(90, 112, 140, 0.8);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.fileUpload-loading-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+/*--treeview.js用*/
+
+.treeview, .treeview ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.treeview ul {
+  line-height: 24px;
+}
+.treeview li {
+    line-height: 24px;
+  margin: 0;
+  padding: 0px 0pt 0px 16px;
+}
+
+.treeview .hitarea {
+  background: url(../../images/classic/icon_left_line_minus_center.gif) 0px 1px no-repeat;
+  height: 18px;
+  width: 18px;
+  margin-left: -16px;
+  float: left;
+  cursor: pointer;
+}
+.treeview li {
+  background: url(../../images/classic/icon_left_line_long_pertical.gif) 0px 0px no-repeat;
+}
+
+.treeview li.collapsable, .treeview li.expandable {
+  background: url(../../images/classic/icon_left_line_long_pertical.gif) 0px -176px no-repeat;
+}
+.treeview li.expandable > .hitarea {
+  background: url(../../images/classic/icon_left_line_plus_center.gif) -0px 1px no-repeat;
+}
+
+.treeview li:not(.expandable):not(.collapsable):before {
+  content: " ";
+  display: inline-block;
+  height: 18px;
+  width: 2px;
+}
+
+/** 一番下要素 */
+.treeview li:last-child {
+  background: url(../../images/classic/icon_left_line_bottom.gif) 1px 1px no-repeat;
+}
+.treeview li:last-child > div.collapsable-hitarea{
+  background: url(../../images/classic/icon_left_line_minus_bottom.png) 1px 1px no-repeat;
+}
+.treeview li:last-child > div.expandable-hitarea {
+  background: url(../../images/classic/icon_left_line_plus_bottom.png) 1px 1px no-repeat;
+}
+
+

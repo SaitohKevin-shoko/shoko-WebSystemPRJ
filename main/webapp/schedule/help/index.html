@@ -1,0 +1,368 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] ヘルププラグイン情報</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../common/js/cmd.js"></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+</head>
+
+  <body onLoad="ajaxGetContents('help-left-plugin-list', '../../help/hlp000.do');ajaxGetContents('plugin-top', '../../help/hlp000ptop.do?pluginId=schedule');chengeHeaderText('[ スケジュール ]');"">
+
+  <div id="container"><a name="top"></a>
+    <div id="help-left">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_list.gif" alt="プラグイン情報" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+        <div id="help-left-plugin-list"><!-- ここにメニューが入ります --></div>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="right-content">
+
+    <div class="help-right">
+    <!-- プラグイン情報 // ここから -->
+    <div id="plugin-top"></div>
+
+    <!-- 画面一覧 -->
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+        <div class="help-content-mr"><div class="help-content-ml pad">
+        <table class="help-content-m-table" summary="スケジュール画面一覧" cellpadding="0" cellspacing="0">
+
+        <tr>
+        <th><a href="h_sch010.html"><img src="./images/scr_help_sch010.gif" alt="スケジュール週間"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch010.html">スケジュール　週間</a>
+          </strong>
+          <br><br>
+          週間表示でスケジュールを表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch020.html"><img src="./images/scr_help_sch020.gif" alt="スケジュール月間"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch020.html">スケジュール　月間</a>
+          </strong>
+          <br><br>
+          月間表示でスケジュールを表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch030.html"><img src="./images/scr_help_sch030.gif" alt="スケジュール日間"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch030.html">スケジュール　日間</a>
+          </strong>
+          <br><br>
+          日間表示でスケジュールを表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch200.html"><img src="./images/scr_help_sch200.gif" alt="スケジュール個人週間"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch200.html">スケジュール　個人週間</a>
+          </strong>
+          <br><br>
+          個人週間スケジュールを表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch100.html"><img src="./images/scr_help_sch100.gif" alt="スケジュール一覧"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch100.html">スケジュール一覧</a>
+          </strong>
+          <br><br>
+          詳細な検索条件を入力しスケジュールの一覧を表示します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch0400add.html"><img src="./images/scr_help_sch0400add.gif" alt="スケジュール新規登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch0400add.html">スケジュール　新規登録</a>
+          ・
+          <a href="h_sch0400edit.html">変更（出欠確認しない）</a>
+          ・
+          <a href="h_sch0402edit.html">変更（出欠確認依頼側）</a>
+          ・
+          <a href="h_sch0403edit.html">変更（出欠確認回答側）</a>
+          ・
+          <a href="h_sch040kn0.html">確認</a>
+          <br>
+          <a href="h_sch0401add.html">グループスケジュール　新規登録</a>
+          ・
+          <a href="h_sch0401edit.html">変更</a>
+          ・
+          <a href="h_sch040kn1.html">確認</a>
+          </strong>
+          <br><br>
+          スケジュールの登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch0410add.html"><img src="./images/scr_help_sch0410add.gif" alt="スケジュール新規繰り返し登録"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch0410add.html">スケジュール　繰り返し登録</a>
+          ・
+          <a href="h_sch041kn0add.html">確認</a>
+          ・
+          <a href="h_sch0410edit.html">変更</a>
+          ・
+          <a href="h_sch041kn0edit.html">確認</a>
+          ・
+          <a href="h_sch041kn0del.html">削除</a>
+          <br>
+          <a href="h_sch0411add.html">グループスケジュール　繰り返し登録</a>
+          ・
+          <a href="h_sch041kn1add.html">確認</a>
+          ・
+          <a href="h_sch0411edit.html">変更</a>
+          ・
+          <a href="h_sch041kn1edit.html">確認</a>
+          ・
+          <a href="h_sch041kn1del.html">削除</a>
+          </strong>
+          <br><br>
+          スケジュールの繰り返し登録を行います。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch080.html"><img src="./images/scr_help_sch080.gif" alt="管理者設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch080.html">管理者設定</a>
+          </strong>
+          <br><br>
+          スケジュール機能に関する管理者設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch081.html"><img src="./images/scr_help_sch081.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch081.html">基本設定（管理者設定）</a>
+          </strong>
+          <br><br>
+          スケジュール機能に関する基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch082.html"><img src="./images/scr_help_sch082.gif" alt="自動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch082.html">自動データ削除設定</a>
+          </strong>
+          <br><br>
+          指定期間が経過した古いスケジュールデータを自動で削除する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch083.html"><img src="./images/scr_help_sch083.gif" alt="手動データ削除設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch083.html">手動データ削除設定</a>
+          </strong>
+          <br><br>
+          手動で、スケジュール終了日時から指定した年月が経過したスケジュールデータを削除します。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch084.html"><img src="./images/scr_help_sch084.gif" alt="スケジュールインポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch084.html">スケジュールインポート</a>
+          ・
+          <a href="h_sch084kn.html">確認（管理者設定）</a>
+          </strong>
+          <br><br>
+         ユーザ単位、または、グループ単位のスケジュールのインポートを行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch085.html"><img src="./images/scr_help_sch085.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch085.html">表示設定（管理者設定）</a>
+          </strong>
+          <br><br>
+          メンバー表示順、表示グループのデフォルト値の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch086.html"><img src="./images/scr_help_sch086.gif" alt="スケジュール初期値設定（管理者設定）"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch086.html">スケジュール初期値設定（管理者設定）</a>
+          </strong>
+          <br><br>
+         スケジュール機能に関する初期値設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch088.html"><img src="./images/scr_help_sch088.gif" alt="ショートメール通知設定（管理者設定）"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch088.html">ショートメール通知設定（管理者設定）</a>
+          </strong>
+          <br><br>
+         ショートメールの通知設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch090.html"><img src="./images/scr_help_sch090.gif" alt="個人設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch090.html">個人設定</a>
+          </strong>
+          <br><br>
+          スケジュール機能に関する個人設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch091.html"><img src="./images/scr_help_sch091.gif" alt="初期値設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch091.html">初期値設定</a>
+          </strong>
+          <br><br>
+          ユーザごとのスケジュール機能に関する初期値設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch092.html"><img src="./images/scr_help_sch092.gif" alt="表示設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch092.html">表示設定</a>
+          </strong>
+          <br><br>
+          メンバー表示順など、スケジュールの表示に関する設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch095.html"><img src="./images/scr_help_sch095.gif" alt="スケジュール ショートメール通知設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch095.html">ショートメール通知設定</a>
+          </strong>
+          <br><br>
+          スケジュール登録時のショートメール通知の設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch097.html"><img src="./images/scr_help_sch097.gif" alt="基本設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch095.html">基本設定</a>
+          </strong>
+          <br><br>
+          スケジュール機能に関する基本設定を行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch110.html"><img src="./images/scr_help_sch110.gif" alt="スケジュールインポート"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch110.html">スケジュールインポート</a>
+          ・
+          <a href="h_sch110kn.html">確認</a>
+          </strong>
+          <br><br>
+         ユーザ単位のスケジュールのインポートを行います。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch230.html"><img src="./images/scr_help_sch230.gif" alt="特例アクセス管理"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch230.html">特例アクセス管理</a>
+          </strong>
+          <br><br>
+         特例アクセスの一覧が表示されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch240.html"><img src="./images/scr_help_sch2400.gif" alt="特例アクセス　登録・登録確認・編集・編集確認"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch2400.html">特例アクセス　登録</a>
+          ・
+          <a href="h_sch240kn0.html">登録確認</a>
+          ・
+          <a href="h_sch2401.html">編集</a>
+          ・
+          <a href="h_sch240kn1.html">編集確認</a>
+          </strong>
+          <br><br>
+          特例アクセスを追加・編集します。<br>
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch250.html"><img src="./images/scr_help_sch250.gif" alt="表示リスト設定"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch250.html">表示リスト設定</a>
+          </strong>
+          <br><br>
+         表示リストの一覧が表示されます。
+        </td>
+        </tr>
+
+        <tr>
+        <th><a href="h_sch260.html"><img src="./images/scr_help_sch2600add.gif" alt="表示リスト　登録・編集"></a></th>
+        <td>
+          <strong>
+          <a href="h_sch2600add.html">表示リスト　登録</a>
+          ・
+          <a href="h_sch2601edit.html">編集</a>
+          </strong>
+          <br><br>
+          表示リストを追加・編集します。<br>
+        </td>
+        </tr>
+
+        <!-- // ここまでを編集 -->
+        </table>
+        <br>
+        </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

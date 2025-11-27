@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>[GROUPSESSION ヘルプ] アドレス帳 コンタクト履歴登録</title>
+<link rel=stylesheet href="../../help/css/default.css" type="text/css">
+<link rel=stylesheet href="../../help/css/help.css" type="text/css">
+<script src='../../common/js/jquery-1.5.2.min.js'></script>
+<script type="text/javascript" src="../../help/js/help.js"></script>
+
+</head>
+<!-- '../help_ajax/ajax_xxx_left_list.html' を編集 -->
+<body onLoad="ajaxGetContents('help-left-func-in', '../help_ajax/ajax_adr_left_list.html');chengeHeaderText('[ アドレス帳 コンタクト履歴登録 ]');">
+<div id="container"><a name="top"></a>
+
+  <div align="right" class="help-align-right">
+  <input type="button" value="アドレス帳 トップへ" class="btn_base0" onClick="commonHelpLocationChange('./index.html');">
+  </div>
+  <!-- ナビゲーション -->
+  <div id="help-left-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_dsp.gif" alt="画面一覧" height="30"></div></div>
+      <div class="help-content-mr"><div class="help-content-ml">
+      <div id="help-left-func-in">
+            <!-- ここにajax_xxx_left_list.htmlが入ります -->
+      </div>
+    </div></div>
+        <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div>
+      </div>
+  </div>
+
+  <!-- コンテンツ -->
+  <div id="help-right-func">
+    <div class="help-content-tr"><div class="help-content-tl"><img src="../../help/images/help_content_text_func.gif" alt="機能詳細" height="30"></div></div>
+    <div class="help-content-mr"><div class="help-content-ml pad">
+    <p>コンタクト履歴の登録を行う画面です。</p>
+    <!-- img要素のsrc,alt属性を編集 -->
+    <h1 class="help-right-func-img"><img src="images/scr_help_big_adr1700.gif" alt="コンタクト履歴登録画面 機能詳細"></h1>
+        <p class="help-right-func-p">機能説明</p>
+    <table summary="機能詳細" class="help-right-func-more" cellpadding="0" cellspacing="0">
+    <!-- h2要素の中身と、p要素の中身を編集。項目数の調整 -->
+        <tr>
+        <th>
+          <h2 class="num-back01">OKボタン</h2>
+          <p>コンタクト履歴確認画面へ遷移します。入力内容に不備がある場合エラーメッセージが表示されます。</p>
+        </th>
+        <td>
+          <h2 class="num-back02">戻るボタン</h2>
+          <p>遷移元の画面へ遷移します。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back03">カレンダーボタン</h2>
+          <p>カレンダー画面をポップアップで表示します。日付を選択するとコンタクト日時にセットされます。</p>
+        </td>
+        <th>
+          <h2 class="num-back04">前日・今日・翌日ボタン</h2>
+          <p>年・月・日コンボを切り替えます。<br>
+            前日：1日前を設定<br>
+            今日：本日を設定<br>
+            後日：1日後を設定</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back05">プロジェクト削除ボタン</h2>
+          <p>プロジェクトをコンタクト履歴から除外します。</p>
+        </th>
+        <td>
+          <h2 class="num-back06">プロジェクトボタン</h2>
+          <p>ポップアップでプロジェクト選択画面を開きます。</p>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back07">会社コンボ</h2>
+          <p>選択した会社に所属するアドレス帳のユーザがユーザリストに表示されます<br>
+          （既に追加されているユーザは表示されません）。</p>
+        </td>
+        <th>
+          <h2 class="num-back08">ユーザ追加ボタン</h2>
+          <p>ユーザリストで選択されているユーザを、同時登録ユーザリストに追加します。</p>
+        </th>
+        </tr>
+
+        <tr>
+        <th>
+          <h2 class="num-back09">ユーザ削除ボタン</h2>
+          <p>同時登録リストで選択されているユーザを、同時登録リストから除外します。</p>
+        </th>
+        <td>
+          <h2 class="num-back10">添付ボタン</h2>
+          <p>添付ファイル選択画面をポップアップで表示します。ファイルを選択し、確定すると添付のリストに選択したファイル名が追加されます。</p>        
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <h2 class="num-back11">削除ボタン</h2>
+          <p>添付のリストで選択中の添付ファイルを削除します。</p>
+        </td>
+        <td>&nbsp;</td>
+        </tr>
+
+    </table>
+
+    <br>
+    <!-- 項目の説明 -->
+    <p class="help-right-func-p">表示・入力項目説明</p>
+    <div class="help-right-func-item">
+    <h2>タイトル</h2><p>タイトルを入力します（100文字以内）。</p>
+    <h2>種別</h2><p>種別を選択します。</p>
+    <h2>コンタクト日時</h2><p>コンタクト日時を選択します。</p>
+    <h2>プロジェクト</h2><p>プロジェクトを選択します。</p>
+    <h2>備考</h2><p>備考を入力します（10,000文字以内）。</p>
+    <h2>同時登録</h2><p>当コンタクト履歴を同時に他のユーザにも登録する場合に、同時登録するユーザを選択します。</p>
+    <h2>添付</h2><p>添付するファイルを選択します。</p>
+    </div>
+    </div></div>
+    <div class="help-content-br"><div class="help-content-bl"><img src="../../help/images/spacer.gif" width="1" height="15" alt=""></div></div>
+    <div class="help-align-right"><a href="#top">▲画面トップへ</a></div>
+  </div>
+</div>
+
+</body>
+</html>

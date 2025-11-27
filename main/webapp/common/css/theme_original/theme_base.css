@@ -1,0 +1,1311 @@
+/*メニューロゴ背景画像*/
+.gsLogo {
+  background-image: url(../../images/original/menu_logo.png);
+}
+
+/*要素指定------------------------------------------------------------------------------------------------------------*/
+button,
+input,
+optgroup,
+select,
+textarea,
+.inputcomponent {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input,
+optgroup {
+  line-height: 1.15;
+}
+
+body {
+  font-family: 'Hiragino Sans','ヒラギノ角ゴシック', 'メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',system-ui,sans-serif;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  height: 23px;
+}
+
+select {
+  appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  height:23px;
+  line-height: 1.1em;
+  padding: 0px 23px 0px 6px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select[multiple] {
+    padding-right:0px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea,
+.inputcomponent {
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  line-height: 1.5em;
+}
+
+th {
+  font-weight: normal;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*BEMにのっとったclass------------------------------------------------------------------------------------------------*/
+
+.baseBtn,
+.labelBtn,
+.mailMenu_button,
+.ntp_goodButton,
+.ui-dialog-buttonpane .ui-dialog-buttonset button {
+  text-align: center!important;
+  border-style: solid!important;
+  border-width: 1px!important;
+}
+
+.baseBtn,
+.labelBtn,
+.ui-dialog-buttonpane .ui-dialog-buttonset button {
+  border-radius: 3px!important;
+}
+
+
+.baseBtn i,
+.mailMenu_button i
+ {
+  font-size:1.11rem;
+  background: #333;
+}
+
+.baseBtn i,
+.mainBtn i,
+.iconBtn-border i,
+.mailMenu_button i {
+  margin: 0 2px;
+  -webkit-background-clip: text;
+}
+
+.baseLabel {
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 5px;
+  font-size: 0.71rem;
+  margin: 3px 5px;
+}
+
+.bgc_transparent {
+  background-color: transparent!important;
+}
+
+.btn_classicImg-display,
+.classic-display {
+  display: none!important;
+}
+
+.cal_content {
+  line-height: 120%!important;
+}
+
+/** スケジュール */
+/** 時間背景 */
+.cal_time{
+  border-radius: 3px;
+  padding: 2px 5px 0px 0px;
+  text-align: left;
+  font-size: 0.76rem;
+  line-height: 100%!important;
+}
+
+.cal_userName > span {
+  border-radius: 3px;
+  padding: 2px 5px 0px 5px;
+  text-align: left;
+  font-size: 0.83rem;
+  line-height: 100%!important;
+}
+
+.cal_userName {
+  line-height: 120%!important;
+  margin-top: 12px;
+}
+
+.cal_userName-space {
+  margin-top: 6px;
+}
+
+.cal_userNameTime-space {
+  line-height: 130%!important;
+  margin-bottom: 2px;
+}
+
+.cal_colHeader {
+  padding-left: 15px!important;
+}
+
+.cal_colHeader-huzai,
+.cal_colHeader-sonota,
+.cal_colHeader-zaiseki,
+.zai_header-huzai,
+.zai_header-sonota,
+.zai_header-zaiseki {
+  padding-left: 15px!important;
+}
+
+.cal_header {
+  text-align: center!important;
+}
+
+.cal_label-action {
+  border-radius: 3px;
+  font-weight:bold;
+  margin:  0px 0px 0px 0px;
+  padding: 1px 3px;
+  font-size: 0.69rem;
+}
+
+.cal_label-g {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../../../schedule/images/original/sch_group_original.png);
+  vertical-align: middle;
+}
+
+.cal_label-todo {
+  border-radius: 3px;
+  font-weight:bold;
+  margin:  0px 0px 0px 0px;
+  padding: 1px 3px;
+  font-size: 0.69rem;
+}
+
+.cal_space {
+  margin-bottom: 3px;
+}
+
+.cht_icon-star {
+  color: #eda90a!important;
+  -webkit-text-stroke: 1px #333;
+}
+
+.cht_icon-mute_off {
+  color: #e5e00f!important;
+  -webkit-text-stroke: 1px #333;
+}
+
+.cht_changeIcon {
+  padding-top: 6px!important;
+}
+
+.chattextArea {
+  border-color: transparent!important;
+}
+
+.clock_year, .clock_time {
+  display: inline-block;
+  margin-top: 0!important;
+  margin-bottom: 15px!important;
+}
+
+/* formbuilder */
+.dandd_root .drop .contents .ui-draggable:hover:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 6px;
+  background-image: url(../../../common/images/original/icon_dand.png);
+  vertical-align: middle;
+  left: 5px;
+  top: 4px;
+  bottom: 4px;
+  vertical-align: middle;
+}
+
+.wrapper .footerBtn_block {
+    margin-right: 11px;
+    text-align: right;
+}
+
+.forum_closeIcon:before {
+  content: "\e917";
+  float: left;
+  font-family: "icomoon";
+  font-size: 1.38rem;
+  height:24px;
+  line-height:20px;
+  margin: 6px 6px 6px 6px;
+  text-align: center;
+  vertical-align:middle;
+  width:24px;
+}
+
+.forum_closeIcon-side:before {
+  content: "\e917";
+  float: left;
+  font-family: "icomoon";
+  font-size: 0.9rem;
+  height:14px;
+  line-height:15px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  vertical-align:middle;
+  width:14px;
+}
+
+.forum_closeIcon:hover,
+.forum_closeIcon-side:hover {
+  cursor: pointer;
+}
+
+.forum_openIcon:before {
+  content: "\e915";
+  float: left;
+  font-family: "icomoon";
+  font-size: 1.38rem;
+  height:24px;
+  line-height:20px;
+  margin: 6px 6px 6px 6px;
+  text-align: center;
+  vertical-align:middle;
+  width:24px;
+}
+
+.forum_openIcon-side:before {
+  content: "\e915";
+  float: left;
+  font-family: "icomoon";
+  font-size: 0.9rem;
+  height:14px;
+  line-height:15px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  vertical-align:middle;
+  width:14px;
+}
+
+.forum_openIcon:hover,
+.forum_closeIcon-side:hover {
+  cursor: pointer;
+}
+
+/* 掲示板 */
+.forum_list-right {
+  padding-right: 10px;
+}
+
+.footerBtn_block .baseBtn {
+  width: 70px;
+  height:44px;
+  font-size: 0.76rem;
+  background-color: rgba(255,255,255,0);
+  margin: 0px 1px 0px 1px;
+  padding: 0px;
+}
+
+.footerBtn_block .baseBtn img {
+  display: block;
+  margin: 0 auto 6px auto;
+}
+
+/* ヘッダー内プラグイン画像 */
+.header_pluginImg  {
+  display: inline-block;
+  margin: auto;
+}
+
+.header_pluginImg-classic {
+  display: none;
+}
+
+.iconBtn-border {
+  border: 1px #b0b0b0 solid;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #fff, #eee);
+  height: 23px;
+  width: 22px;
+}
+
+.icon-sort_up,
+.icon-sort_down {
+  margin-left: 3px;
+}
+
+.importance-blue {
+  color: #446EE7;
+}
+
+.importance-gray {
+  color: #C0C0C0;
+}
+
+.importance-red {
+  color: #F3574B;
+}
+
+.importance-yellow {
+  color: #FAB738;
+}
+
+
+.information_middle_div {
+  border-right-style: solid;
+  border-right-width: 7px;
+  border-left-style: solid;
+  border-left-width: 7px;
+}
+
+.info_status-display {
+  color: #1fb629;
+}
+
+.info_status-plan {
+  color: #0e5feccf;
+}
+
+.info_status-end {
+  color: #CC3333;
+  line-height: 12pt;
+}
+
+#information_top+.information_middle_div {
+  padding-top: 10px!important;
+}
+
+/* 管理者設定用ページタイトルkanriPageTitle */
+.kanriPageTitle {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 56px;
+  margin-top:15px!important;
+  margin-bottom:15px!important;
+  overflow: hidden;
+  padding: 5px 5px;
+}
+
+.labelNew {
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 5px;
+  font-size: 0.71rem;
+  margin: 3px 5px;
+  font-weight: normal;
+}
+
+@-webkit-keyframes loader-ball {
+  25% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  75% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+}
+@keyframes loader-ball {
+  25% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  75% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+}
+.loader-ball {
+  display:inline-flex;
+  align-items: center;
+  width: 32px;
+  height:32px
+}
+
+.loader-ball > *:nth-child(1) {
+  -webkit-animation: loader-ball 0.6s -0.1s infinite linear;
+          animation: loader-ball 0.6s -0.1s infinite linear; }
+
+.loader-ball > *:nth-child(2) {
+  -webkit-animation: loader-ball 0.6s -0.05s infinite linear;
+          animation: loader-ball 0.6s -0.05s infinite linear; }
+
+.loader-ball > *:nth-child(3) {
+  -webkit-animation: loader-ball 0.6s 0s infinite linear;
+          animation: loader-ball 0.6s 0s infinite linear; }
+
+.loader-ball > * {
+  border-radius: 100%;
+  width:25%;
+  height:25%;
+  will-change: animation;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: inline-block;
+  margin:auto;
+}
+
+.main_listbox--dt {
+  margin-left: 0px!important;
+}
+
+.mailMenu_button {
+  border-radius: 3px;
+}
+
+.mailMenu_buttonSet > .mailMenu_button:not(:first-child) {
+  border-top-left-radius: 0px!important;
+  border-bottom-left-radius:0px!important;
+  margin-left: -1px;
+}
+
+.mailMenu_buttonSet > .mailMenu_button:not(:last-child) {
+  border-top-right-radius: 0px!important;
+  border-bottom-right-radius:0px!important;
+  margin-right: 0px;
+}
+
+.main_bbsList-header {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.main_bbsList-header .main_bbsListTitle-left,
+.main_bbsList-header .forum_title_right {
+  padding: 5px 0px;
+}
+
+.mainSchHeader_move {
+  float: right;
+}
+
+.mainSchData div {
+  border-radius: 3px;
+  padding: 2px 5px 0px 5px;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.69rem;
+}
+.mainSch_button-move {
+  padding-right: 5px!important;
+  padding-left: 5px!important;
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+}
+.mainSch_button-today {
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+  padding: 4px 10px 2px 10px;
+}
+.mainSch_moveIcon,
+.ptl_moveIcon {
+  color: #fff;
+}
+.mainSch_moveIcon:hover,
+.ptl_moveIcon:hover {
+  color: #ff5252!important;
+}
+.mainSchHeader_contents {
+  margin-left: 20px;
+}
+.mainSchHeader_contents button {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.main_zskLadio-zaiseki,
+.main_zskLadio-huzai,
+.main_zskLadio-sonota {
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 5px;
+  font-size: 0.71rem;
+  margin: 3px 5px 3px 0px;
+}
+
+.main_zskComment {
+  position: relative;
+  margin-top: 5px;
+  font-size: 0.87rem;
+  padding: 3px 5px;
+  border-radius: 3px;
+  line-height: 140%;
+}
+
+.main_zskComment:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 5%;
+  margin-left: -10px;
+  border-style: solid;
+  border-width: 10px;
+}
+.main_zskSchedule {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.main_zskScheduleAdd {
+  height: 20px;
+}
+
+.main_zskProfArea {
+  width: 100%;
+  padding: 0 0 0 10px!important;
+}
+
+.main_rss_contents div {
+  padding: 7px 0px;
+  line-height: 140%;
+}
+
+.main_rss_contents_border {
+  border-top-style: dashed;
+  border-top-width: 1px;
+}
+
+.main_bmkCount,
+.bmkCount,
+.rssCount {
+  font-size: 10px;
+  padding: 2px 5px;
+  color: #ffffff!important;
+  background-color: #a0b5c3;
+  border-radius: 5px;
+}
+
+.main_bmkCount:hover,
+.bmkCount:hover {
+  color: #ffffff!important;
+}
+
+.mainConfigBtn, .mainBtn {
+  color: #1d1b1b;
+  font-weight: normal;
+  line-height: 120%;
+  border-radius: 3px;
+  text-align: center;
+  padding: 3px 10px 2px 10px;
+  margin: 1px 5px;
+  font-size: 0.87rem;
+  border: 1px solid #ccc;
+  background-image: linear-gradient(to bottom, #ffffff, #d3d8d8);
+  display: inline-block;
+}
+.mainConfigBtn {
+  padding: 4px 10px 2px 10px;
+}
+.mainBtn {
+  padding: 3px 10px 2px 10px;
+}
+.mainBtn i {
+  padding-top: 2px;
+}
+
+.mainTable_th {
+  text-align: center!important;
+}
+
+.mainTable_title {
+  padding: 6px!important;
+}
+
+.mainTable_title-sub {
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mainPlugin_icon {
+  display: none!important;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu_btn:hover .menu_ico_base {
+  background: none;
+  transition: 0.2s;
+}
+
+
+.paging .paging_combo {
+  border-radius: 20px;
+  padding-left: 12px;
+  padding-right: 29px;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+
+/* ヘッダー */
+.pageTitle{
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px;
+  height:56px;
+  margin-top:15px!important;
+  margin-bottom:10px!important;
+}
+
+.pageTitle .baseBtn .btn_originalImg-display
+.kanriPageTitle .baseBtn .btn_originalImg-display {
+  display: block;
+  margin: 0 auto 6px auto;
+}
+
+/* ヘッダー左端要素（プラグインアイコン部） */
+.pageTitle li:first-child {
+  display:inline-flex;
+  width:46px;
+  height:56px;
+  margin-top:-6px;
+  margin-bottom:-6px;
+  margin-left:0px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.pageTitle .baseBtn,
+.kanriPageTitle .baseBtn {
+  width: 70px;
+  height:44px;
+  font-size: 0.76rem;
+  background-color: rgba(255,255,255,0);
+  margin: 0px 1px 0px 1px;
+  padding: 0px;
+}
+
+.pageTitle .baseBtn i,
+.kanriPageTitle .baseBtn i {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.pageTitle .baseBtn img,
+.kanriPageTitle .baseBtn img {
+  display: block;
+  margin: 0 auto 6px auto;
+}
+
+.portalTabList {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.portalTabList_tab-forcus {
+  font-weight: bold!important;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.portalTabList_tab-nonforcus {
+  font-weight: bold!important;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+}
+
+.portalTabList ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  zoom: 1;
+  text-align: left;
+  width: auto;
+}
+
+.portalTabList ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+.portalTabList ul .portalTabList_tab-nonforcus a {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  display: block!important;
+  box-sizing: content-box!important;
+  border: 3px solid transparent;
+}
+
+.portalTabList ul .portalTabList_tab-nonforcus a:hover {
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+/* 管理画面top　*/
+.settingList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  text-align:center;
+  width: 100%;
+}
+
+.settingList_title {
+  border-radius: 20px;
+  font-weight: bold;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.settingList_title:before {
+  content: '\e902';
+  font-family: 'icomoon';
+  margin-right: 10px;
+  padding-top: 3px;
+}
+
+.main_listbox-r>.settingList dl,
+.main_listbox-l>.settingList dl {
+  width: 32%;
+  min-width: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px 10px 0;
+  margin: 5px 2px 5px 8px;
+}
+
+.wrapper>.settingList dl{
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px 2px 5px 8px;
+  min-width: 250px;
+  position: relative;
+  width: 32%;
+}
+
+.main_listbox-r>.settingList dt,
+.main_listbox-l>.settingList dt {
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+.wrapper>.settingList dt {
+  bottom: 0px;
+  display: flex;
+  left: 0px;
+  padding-top: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.main_listbox-r>.settingList dt:before,
+.main_listbox-l>.settingList dt:before {
+  font-family: 'icomoon';
+  content: '\e902';
+  margin-right: 10px;
+  padding-top: 3px;
+}
+
+.wrapper>.settingList dt:hover {
+  cursor: pointer;
+}
+
+.settingList dd {
+  text-align: left;
+}
+
+.wrapper>.settingList dd {
+  margin: 40px 10px 0px 10px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.settingList_text {
+  padding: 15px 10px 10px 10px;
+}
+
+/* 管理者設定/個人設定一覧 */
+.settingList dl dt a {
+  display: block!important;
+}
+
+.side_accountName {
+  cursor: pointer;
+}
+
+.side_folderImg-line:before,
+.side_folderImg-line2:before {
+  content: "-";
+  margin-left: 5px;
+}
+
+.side_folderImg-lineBottom:before {
+  content: "-";
+  margin-left: 5px;
+}
+
+.side_folderImg-lineMinus:before,
+.side_folderImg-lineMinusBottom:before,
+.side_folderImg-lineMinusBottom2:before {
+  content: "\e915";
+  float: left;
+  font-family: "icomoon";
+  margin-left: 2px;
+}
+
+.side_folderImg-linePlus:before,
+.side_folderImg-linePlusBottom:before,
+.side_folderImg-linePlusBottom2:before {
+  content: "\e917";
+  float: left;
+  font-family: "icomoon";
+  margin-left: 2px;
+}
+
+.side_folderImg-dust {
+  background-image: url(../../images/original/icon_trash.png);
+  margin-left: 10px;
+}
+
+.side_folderImg-folder {
+  background-image: url(../../images/original/icon_folder_box.png);
+  margin-left: 10px;
+}
+
+.side_folderImg-jushin {
+  background-image: url(../../images/original/icon_folder_jushin_box.png);
+  margin-left: 10px;
+}
+
+.side_folderImg-koetu {
+  background-image: url(../../images/original/icon_folder_koetu_box.png);
+  margin-left: 10px;
+}
+
+.side_folderImg-label {
+  background-image: url(../../images/original/icon_label.png);
+  background-position: center;
+  margin-left: 10px;
+}
+
+.side_folderImg-soshin {
+  background-image: url(../../images/original/icon_folder_soushin_box.png);
+  margin-left: 10px;
+}
+
+.side_folderImg-kanryo {
+  background-image: url(../../images/original/icon_folder_kanryo_box.png);
+  margin-left: 10px;
+}
+
+
+.side_folderImg-mail-jushin {
+  background-image: url(../../images/original/icon_folder_jushin_box.png);
+  background-position: 0% 2px;
+  margin-left: 10px;
+}
+
+.side_folderImg-mail-soshin {
+  background-image: url(../../images/original/icon_folder_soushin_box.png);
+  background-position: 0% 2px;
+  margin-left: 10px;
+}
+
+.side_folderImg-mail-dust {
+  background-image: url(../../images/original/icon_trash.png);
+  background-position: 0% 3px;
+  margin-left: 10px;
+}
+
+.side_folderImg-mail-folder {
+  background-image: url(../../images/original/icon_folder_box.png);
+  background-position: 0% 2px;
+  margin-left: 10px;
+}
+
+.side_folderImg-mail-koetu {
+  background-image: url(../../images/original/icon_folder_koetu_box.png);
+  background-position: 0% 3px;
+  margin-left: 10px;
+}
+
+
+
+
+.side_header-close {
+  margin-left: -19px;
+}
+
+.side_header-close .side_headerArrow:before {
+  content: "\e90e";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 1.25rem;
+  margin-left: 4px;
+}
+
+.side_header-close .side_headerArrow-left:before {
+  content: "\e909";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 1.25rem;
+  margin-left: 5px;
+}
+
+.side_header-open {
+    margin-left: -20px;
+}
+
+.side_header-open .side_headerArrow:before {
+  content: "\e906";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 1.25rem;
+  margin-left: 5px;
+}
+
+.side_header-open .side_headerArrow-left:before {
+  content: "\e906";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 1.25rem;
+  margin-left: 5px;
+}
+
+.labelSelect_category-close .labelSelect_category:before {
+  content: "\e917";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+.labelSelect_category-open .labelSelect_category:before {
+  content: "\e915";
+  float: left;
+  font-family: 'icomoon';
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.table_header-evt:hover {
+  cursor: pointer;
+}
+
+.table_headerSort-top {
+  align-items: center;
+  display:inline-flex;
+}
+
+.table_headerSort-top i {
+  font-size: 0.9rem;
+}
+
+.schedule_headerDay:hover {
+  text-decoration: underline!important;
+}
+
+.schMonth_userName-space {
+  margin-top: 10px;
+}
+
+.table_title-color {
+  font-weight: bold;
+  font-size: 1.11rem;
+}
+
+.table-top {
+  text-align: center;
+}
+
+.treeview li.file_select-0 {
+    margin-left: -10px;
+    padding-left: 32px;
+}
+
+.treeview li.file_select-1 {
+    margin-left: -32px;
+    padding-left: 54px;
+}
+
+.treeview li.file_select-2 {
+    margin-left: -54px;
+    padding-left: 76px;
+}
+
+.treeview li.file_select-3 {
+    margin-left: -76px;
+    padding-left: 98px;
+}
+
+.treeview li.file_select-4 {
+    margin-left: -98px;
+    padding-left: 120px;
+}
+
+.treeview li.file_select-5 {
+    margin-left: -120px;
+    padding-left: 142px;
+}
+
+.treeview li.file_select-6 {
+    margin-left: -142px;
+    padding-left: 164px;
+}
+
+.treeview li.file_select-7 {
+    margin-left: -164px;
+    padding-left: 186px;
+}
+
+.treeview li.file_select-8 {
+    margin-left: -186px;
+    padding-left: 208px;
+}
+
+.treeview li.file_select-9 {
+    margin-left: -208px;
+    padding-left: 230px;
+}
+
+.treeview li.file_select-10 {
+    margin-left: -230px;
+    padding-left: 252px;
+}
+
+.todayBtn {
+  border-radius: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.ui-dialog {
+  background-image:none;
+}
+
+/* ユーザ/グループ選択 項目名 */
+.userGroup_title {
+  border-style : solid;
+  border-width : 1px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* テーマ切り替え */
+.webfontIcon img {
+  display: none;
+}
+
+.webIcon-gradation {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.webIconBtn {
+  border-style: none;
+  display: inline-flex;
+  font-size: 1.18rem;
+  font-weight: normal;
+  height: 26px;
+  line-height: 100%;
+  margin: 1px;
+  padding: 3px 3px;
+  text-align: center;
+  align-items: center;
+}
+
+.zskBtn-huzai,
+.zskBtn-sonota,
+.zskBtn-zaiseki{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  font-size:10px;
+  height:17px;
+  line-height: 100%;
+  margin: 2px;
+  padding: 3px 8px 3px;
+  text-align: center!important;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50px;
+}
+
+.zsk_headerLabel-used {
+  padding-left: 15px!important;
+}
+
+.zsk_headerLabel-unused {
+  padding-left: 15px!important;
+}
+
+.zsk_label-zaiseki,
+.zsk_label-huzai,
+.zsk_label-sonota,
+.zsk_rsvLabel-used,
+.zsk_rsvLabel-unused,
+.main_zskLabel {
+  padding: 1px 3px 1px 7px;
+}
+
+.zsk_labelTextColor {
+  color: #000!important;
+}
+
+.zsk_listStatus-zaiseki,
+.zsk_listStatus-huzai,
+.zsk_listStatus-sonota {
+  border-radius: 3px;
+  text-align: center;
+  padding: 1px 5px;
+  font-size: 0.9rem;
+  margin: 3px 5px 3px 0px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*HTML属性指定*/
+
+#clock div{
+  border-radius: 3px;
+  margin: 10px 0;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#clock div a {
+  display: block!important;
+}
+
+#clock-day, #clock-time {
+  font-size: 1.66rem!important;
+}
+
+#clock-year {
+  font-size: 0.9rem!important;
+}
+
+#information_body {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+#information_bottom {
+  border-right-style: solid;
+  border-right-width: 7px;
+  border-left-style: solid;
+  border-left-width: 7px;
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 20px;
+  text-align: center;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#information_top {
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*--treeview.js用*/
+.treeview a {
+  margin-left:5px;
+}
+/*--treeview.js用*/
+.treeview, .treeview ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.treeview ul {
+  margin-top: -1px;
+}
+.treeview li {
+  margin: 0;
+  padding: 1px 0pt 1px 22px;
+}
+.treeview .hitarea {
+  height: 18px;
+  width: 18px;
+  margin-left: -3px;
+  float: left;
+  flex-shrink:0;
+  cursor: pointer;
+}
+
+.treeview li.collapsable > .hitarea:before {
+  margin-left: -1px;
+  font-family: "icomoon";
+  content: "\e915";
+}
+
+.treeview li:not(.expandable):not(.collapsable):before {
+  content: "-";
+  display: inline-block;
+  height: 18px;
+  width: 15px;
+}
+
+.treeview li.expandable  > .hitarea:before {
+  font-family: "icomoon";
+  content: "\e917";
+}
+
+
+

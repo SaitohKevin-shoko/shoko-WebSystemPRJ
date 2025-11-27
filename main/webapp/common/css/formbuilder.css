@@ -1,0 +1,437 @@
+/*要素指定------------------------------------------------------------------------------------------------------------*/
+div.formRoot {
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+div.formRoot > div.formTable > div.formRow > div.formBlock {
+  display: flex;
+  display: -webkit-flex;
+  flex-basis: 50%;
+  -webkit-flex-basis: 50%;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  word-break: break-all;
+  min-width: 0;
+}
+
+div.formRoot > div.formTable > div.formRow.label.ueyose {
+  padding-bottom:15px;
+  text-align: left;
+}
+
+div.formRoot > div.formTable > div.formRow.label.sitayose {
+  padding-top:15px;
+  text-align: left;
+}
+
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.form_title {
+  font-weight: bold;
+  flex-basis: 160px;
+  -webkit-flex-basis: 160px;
+  min-width: 160px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  padding: 5px;
+  text-align: left;
+}
+
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.formContent {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 5px;
+  text-align: left;
+}
+
+div.formContent.blocklist > div > div.blocklist_header > div {
+  padding-bottom: 5px;
+}
+
+div.formContent.blocklist > div > div.blocklist_body > div {
+  padding-bottom: 5px;
+}
+
+div.formContent.blocklist > div > div+div.blocklist_body > div {
+  padding-top: 5px;
+}
+
+div.formContent.blocklist > div > div+div.blocklist_footer > div {
+  padding-top: 5px;
+}
+
+div.formContent.blocklist > div > div+div.blocklist_body,
+div.formContent.blocklist > div > div+div.blocklist_footer {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+div.formContent.blocklist > div {
+  display: table;
+  overflow-x: scroll;
+  white-space: nowrap;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div.formContent.blocklist > div > div > div > div.formRow > div.formBlock {
+    display: table-cell;
+    width: 200px;
+    padding-right: 3px;
+    min-width: 200px;
+    vertical-align: top;
+}
+
+div.formContent.blocklist > div > div {
+    display: table-row;
+}
+
+div.formContent.blocklist > div > div > div {
+  display: table-cell;
+  white-space: normal;
+}
+
+div.formBlock > div.formContent > div.formTable > div.formRow {
+    display: flex;
+    display: -webkit-flex;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock {
+    display: flex;
+    display: -webkit-flex;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    width: auto;
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+div.blocklist_body > div.formTable > div.formRow > div.formBlock > div.formContent,
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.formContent {
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    min-width: 0px;
+    border: none;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+div.formRoot > div.formTable > div.formRow {
+    display: flex;
+    display: -webkit-flex;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+}
+
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.form_title > div.form_title_str {
+    padding-right: 10px;
+}
+
+div.blocklist_body > div.formTable > div.formRow > div.formBlock > div.formContent.radio,
+div.blocklist_body > div.formTable > div.formRow > div.formBlock > div.formContent.check,
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.formContent.radio > div,
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.formContent.check > div {
+    align-items: center;
+    display: inline-flex;
+}
+
+div.blocklist_body > div.formTable > div.formRow > div.formBlock > div.formContent.radio > div > div,
+div.blocklist_body > div.formTable > div.formRow > div.formBlock > div.formContent.check > div > div,
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.formContent.radio > div > div,
+div.formBlock > div.formContent > div.formTable > div.formRow > div.formBlock > div.formContent.check > div > div {
+    margin-right: 10px;
+}
+
+div.formBlock.block div.formTable > div.formRow > div.formBlock.group {
+    display: block;
+}
+
+div.formRoot > div.formTable > div.formRow > div.formBlock.file,
+div.formRoot > div.formTable > div.formRow > div.formBlock.user.multisel,
+div.formRoot > div.formTable > div.formRow > div.formBlock.group.multisel {
+  flex-basis: 100%!important;
+  -webkit-flex-basis: 100%!important;
+}
+
+div.formContent.block div.formTable > div.formRow > div.formBlock.textarea {
+    display: block;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    width: 100%;
+}
+
+div.formContent.blocklist {
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
+    overflow-x: auto;
+}
+
+div.formRoot {
+  min-width:initial;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+
+/*BEMにのっとったclass------------------------------------------------------------------------------------------------*/
+
+.iconButton_delete {
+  right: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+/*HTML属性指定--------------------------------------------------------------------------------------------------------*/
+
+#form_builder td {
+  border-right-style: solid;
+  border-right-width: 1px;
+  font-size: 0.9rem;
+}
+
+#form_builder .dandd_droptable .contents.row:nth-of-type(2) {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+#form_builder .contents.row {
+  border-left-style: solid;
+  border-left-width: 1px;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#form_builder .contents.cell {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  width: 25%;
+  min-height: 40px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-basis: auto;
+  -webkit-flex-basis: auto;
+  min-width: 200px;
+}
+
+#form_builder .dandd_droptable .contents.cell .contents.row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-sizing: border-box;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#form_builder .contents.cell div.body.blocklist,
+#form_builder .contents.cell div.body.block {
+  width: 100%;
+}
+
+#form_builder .contents.cell > .notAddibleW ~ .dandd_dropArea.left,
+#form_builder .contents.cell > .notAddibleW ~ .dandd_dropArea.right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+}
+
+#form_builder .dandd_droptable .contents.cell .dandd_droptable .drop_area-default {
+  width: 100%;
+  display: block;
+  border: none;
+}
+
+#form_builder .dandd_droptable .contents.cell .contents.row > .contents.cell {
+  margin: 3px;
+  border-width: 1px;
+  border-style: dashed;
+  min-width: 0px;
+  width: auto;
+  padding: 5px 5px 5px 15px;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  max-width: calc(100% - 6px);
+  box-sizing: border-box;
+}
+
+#form_builder .dandd_droptable .contents.cell .contents.row > .contents.cell div.title {
+  box-sizing: border-box;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  width: auto;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0)!important;
+  border: none;
+  padding: 0px;
+  font-weight: bold;
+}
+
+#form_builder .dandd_droptable .contents.cell .contents.row > .contents.cell div.body {
+  padding: 0px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  width: auto;
+}
+
+#form_builder .dandd_droptable .contents.cell .dandd_droptable {
+  width: 100%;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: gray;
+  min-height: 40px;
+}
+
+#form_builder .contents.row {
+  display: flex;
+  position: relative;
+}
+
+#form_builder .contents.cell .title {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  padding: 5px 5px 5px 10px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+#form_builder .contents.cell .title,
+#form_builder .contents.cell .body {
+  padding: 5px 5px 5px 13px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-basis: 100%;
+  -webkit-flex-basis: 1;
+  word-break: break-all;
+}
+
+#form_builder .contents.cell .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+#form_builder.kakunin .dandd_droptable .contents.cell {
+  cursor: default;
+}
+
+#form_builder .contents.cell .left {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 50%;
+  bottom: 10px;
+}
+
+#form_builder .contents.cell .right {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  right: 0;
+  bottom: 10px;
+}
+
+#form_builder .contents.cell .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+#form_prefarence_dialog div.body > input[name="useSeigen"][value="1"]:checked ~ span.selectable {
+  display: block;
+}
+#form_prefarence_dialog div.body > input[name="useSeigen"][value="0"]:checked ~ span.selectable {
+  display: none;
+}
+
+/* formbuilder */
+#form_builder .contents.cell div.title ,
+div.formRoot ,
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.form_title,
+div.formRoot > div.formTable > div.formRow > div.formBlock > div.formContent,
+#form_builder .dandd_droptable  .contents.cell .contents.row > .contents.cell div.title,
+div.formTable > div.formRow > div.formBlock > div.formContent
+{
+  border-width: 1px;
+}
+#form_prefarence_dialog input.clockpicker,
+#form_builder input.clockpicker {
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+}
+input.clockpicker ~ *,
+input.clockpicker ~ * {
+  align-items: center;
+  background-color: #e9ecef;
+  border: 1px solid #aaa;
+  border-bottom-left-radius: 0!important;
+  border-left:none;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0!important;
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding:0rem 0.5rem;
+  text-align:center;
+  white-space: nowrap;
+  height: 23px;
+}
